@@ -1,0 +1,506 @@
+version: '3.1'
+rules:
+  - rule: rule_ask_boat_ride_location
+    steps:
+      - intent: ask_boat_ride_location
+      - action: utter_ask_boat_ride_location
+  - rule: rule_ask_boat_ride_details
+    steps:
+      - intent: ask_boat_ride_details
+      - action: utter_ask_boat_ride_details
+  - rule: rule for river description
+    steps:
+      - intent: ask_river_description
+      - action: utter_ask_river_description
+  - rule: rule_ask_river_activity
+    steps:
+      - intent: ask_river_activity
+      - action: utter_ask_river_activity
+  - rule: Direct video request
+    steps:
+      - intent: request_video
+      - action: utter_request_video
+  - rule: Direct info request about Ahsan Manzil
+    steps:
+      - intent: ask_ahsan_manzil_info
+      - action: utter_ask_ahsan_manzil_info
+  - rule: Directly asking about Dhaka University places
+    steps:
+      - intent: ask_dhaka_university_places
+      - action: utter_ask_dhaka_university_places
+  - rule: Directly asking about Curzon Hall
+    steps:
+      - intent: ask_curzon_hall
+      - action: utter_ask_curzon_hall
+  - rule: rule for architectural style question
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - rule: Rule for asking building's history
+    steps:
+      - intent: ask_history
+      - action: utter_ask_history
+  - rule: Rule for asking about previous use
+    steps:
+      - intent: ask_previous_use
+      - action: utter_ask_previous_use
+  - rule: Rule for asking about current use
+    steps:
+      - intent: ask_current_use
+      - action: utter_ask_current_use
+  - rule: Directly answer if it's a tourist attraction
+    steps:
+      - intent: ask_tourist_attraction
+      - action: utter_ask_tourist_attraction
+  - rule: Directly answer Sadarghat directions
+    steps:
+      - intent: ask_sadarghat_directions
+      - action: utter_ask_sadarghat_directions
+  - rule: Location Rule
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - rule: Size Rule
+    steps:
+      - intent: ask_size
+      - action: utter_ask_size
+  - rule: Region Rule
+    steps:
+      - intent: ask_region
+      - action: utter_ask_region
+  - rule: Rule for Sadarghat usage question
+    steps:
+      - intent: ask_sadarghat_usage
+      - action: utter_ask_sadarghat_usage
+  - rule: rule_ask_market_type
+    steps:
+      - intent: ask_market_type
+      - action: utter_ask_market_type
+  - rule: rule_ask_market_products
+    steps:
+      - intent: ask_market_products
+      - action: utter_ask_market_products
+  - rule: rule_ask_market_location
+    steps:
+      - intent: ask_market_location
+      - action: utter_ask_market_location
+  - rule: rule_ask_shop_types
+    steps:
+      - intent: ask_shop_types
+      - action: utter_ask_shop_types
+  - rule: Direct location request
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - rule: Directly ask for WhatsApp number
+    steps:
+      - intent: ask_whatsapp_number
+      - action: utter_ask_whatsapp_number
+  - rule: pickup_rule
+    steps:
+      - intent: ask_pickup
+      - action: utter_ask_pickup
+  - rule: website_rule
+    steps:
+      - intent: ask_website
+      - action: utter_ask_website
+  - rule: email_rule
+    steps:
+      - intent: ask_email
+      - action: utter_ask_email
+  - rule: Rule for weekday pickup time
+    steps:
+      - intent: ask_pickup_time_weekday
+      - action: utter_ask_pickup_time_weekday
+  - rule: Rule for weekend pickup time
+    steps:
+      - intent: ask_pickup_time_weekend
+      - action: utter_ask_pickup_time_weekend
+  - rule: Rule for holiday pickup time
+    steps:
+      - intent: ask_pickup_time_holiday
+      - action: utter_ask_pickup_time_holiday
+  - rule: Direct Destination Inquiry
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+  - rule: rule_ask_location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - rule: rule_ask_architect
+    steps:
+      - intent: ask_architect
+      - action: utter_ask_architect
+  - rule: rule_ask_description
+    steps:
+      - intent: ask_description
+      - action: utter_ask_description
+  - rule: rule for architectural style
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - rule: rule for recognition
+    steps:
+      - intent: ask_recognition
+      - action: utter_ask_recognition
+  - rule: rule for importance
+    steps:
+      - intent: ask_importance
+      - action: utter_ask_importance
+  - rule: rule for design
+    steps:
+      - intent: ask_design
+      - action: utter_ask_design
+  - rule: Rule for asking about the palace
+    steps:
+      - intent: ask_about_palace
+      - action: utter_ask_about_palace
+  - rule: Rule for asking about the palace history
+    steps:
+      - intent: ask_palace_history
+      - action: utter_ask_palace_history
+  - rule: Rule for asking about the palace location
+    steps:
+      - intent: ask_palace_location
+      - action: utter_ask_palace_location
+  - rule: Rule about Hindu Street
+    steps:
+      - intent: ask_hindu_street
+      - action: utter_ask_hindu_street
+  - rule: Rule about Rickshaw Rides
+    steps:
+      - intent: ask_rickshaw_ride
+      - action: utter_ask_rickshaw_ride
+  - rule: Rule about Star Mosque
+    steps:
+      - intent: ask_star_mosque
+      - action: utter_ask_star_mosque
+  - rule: Rule about Armenian Church
+    steps:
+      - intent: ask_armenian_church
+      - action: utter_ask_armenian_church
+  - rule: Rule about Bongshal
+    steps:
+      - intent: ask_bongshal
+      - action: utter_ask_bongshal
+  - rule: lunch_break_rule
+    steps:
+      - intent: ask_lunch_break
+      - action: utter_ask_lunch_break
+  - rule: rule_ask_lalbagh_fort_info
+    steps:
+      - intent: ask_lalbagh_fort_info
+      - action: utter_ask_lalbagh_fort_info
+  - rule: rule_ask_lalbagh_fort_period
+    steps:
+      - intent: ask_lalbagh_fort_period
+      - action: utter_ask_lalbagh_fort_period
+  - rule: rule_ask_lalbagh_fort_location
+    steps:
+      - intent: ask_lalbagh_fort_location
+      - action: utter_ask_lalbagh_fort_location
+  - rule: Direct Dhakeshary Temple Inquiry
+    steps:
+      - intent: ask_dhakeshary_temple
+      - action: utter_ask_dhakeshary_temple
+  - rule: Confirm Dropoff Rule
+    steps:
+      - intent: confirm_dropoff
+      - action: utter_confirm_dropoff
+  - rule: Confirm tour end rule
+    steps:
+      - intent: confirm_tour_end
+      - action: utter_confirm_tour_end
+  - rule: Directly asking for palace info
+    steps:
+      - intent: ask_palace_info
+      - action: utter_ask_palace_info
+  - rule: rule_hindu_street
+    steps:
+      - intent: ask_hindu_street
+      - action: utter_ask_hindu_street
+  - rule: rule_rickshaw_ride
+    steps:
+      - intent: ask_rickshaw_ride
+      - action: utter_ask_rickshaw_ride
+  - rule: rule_star_mosque
+    steps:
+      - intent: ask_star_mosque
+      - action: utter_ask_star_mosque
+  - rule: rule_armenian_church
+    steps:
+      - intent: ask_armenian_church
+      - action: utter_ask_armenian_church
+  - rule: rule_bongshal
+    steps:
+      - intent: ask_bongshal
+      - action: utter_ask_bongshal
+  - rule: lunch_break_direct_answer
+    steps:
+      - intent: ask_lunch_break
+      - action: utter_ask_lunch_break
+  - rule: Answer location of Lalbagh Fort
+    steps:
+      - intent: ask_lalbagh_fort_location
+      - action: utter_ask_lalbagh_fort_location
+  - rule: Answer period of Lalbagh Fort
+    steps:
+      - intent: ask_lalbagh_fort_period
+      - action: utter_ask_lalbagh_fort_period
+  - rule: Answer description of Lalbagh Fort
+    steps:
+      - intent: ask_lalbagh_fort_description
+      - action: utter_ask_lalbagh_fort_description
+  - rule: rule_ask_dhakeshwar_temple_location
+    steps:
+      - intent: ask_dhakeshwar_temple_location
+      - action: utter_ask_dhakeshwar_temple_location
+  - rule: rule_confirm_dhakeshwar_temple_visit
+    steps:
+      - intent: confirm_dhakeshwar_temple_visit
+      - action: utter_confirm_dhakeshwar_temple_visit
+  - rule: rule_ask_tour_end
+    steps:
+      - intent: ask_tour_end
+      - action: utter_ask_tour_end
+  - rule: Confirm dropoff rule
+    steps:
+      - intent: confirm_dropoff
+      - action: utter_confirm_dropoff
+  - rule: Confirm Tour End Rule
+    steps:
+      - intent: confirm_tour_end
+      - action: utter_confirm_tour_end
+  - rule: rule_ask_boat_ride_location
+    steps:
+      - intent: ask_boat_ride_location
+      - action: utter_ask_boat_ride_location
+  - rule: rule_ask_boat_ride_details
+    steps:
+      - intent: ask_boat_ride_details
+      - action: utter_ask_boat_ride_details
+  - rule: greet_rule
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: describe_river_rule
+    steps:
+      - intent: describe_river
+      - action: utter_describe_river
+  - rule: rule_ask_river_activity
+    steps:
+      - intent: ask_river_activity
+      - action: utter_ask_river_activity
+  - rule: Direct video request
+    steps:
+      - intent: request_video
+      - action: utter_request_video
+  - rule: Directly asking about Ahsan Manzil
+    steps:
+      - intent: ask_ahsan_manzil_info
+      - action: utter_ask_ahsan_manzil_info
+  - rule: Directly asking about Dhaka University places
+    steps:
+      - intent: ask_dhaka_university_places
+      - action: utter_ask_dhaka_university_places
+  - rule: Directly asking about Curzon Hall
+    steps:
+      - intent: ask_curzon_hall
+      - action: utter_ask_curzon_hall
+  - rule: Rule for architectural style question
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - rule: Rule for building history question
+    steps:
+      - intent: ask_history_dhaka_college
+      - action: utter_ask_history_dhaka_college
+  - rule: Rule for building use question
+    steps:
+      - intent: ask_building_use
+      - action: utter_ask_building_use
+  - rule: popularity_rule
+    steps:
+      - intent: ask_popularity
+      - action: utter_ask_popularity
+  - rule: Directly asking for Sadarghat directions
+    steps:
+      - intent: ask_sadarghat_directions
+      - action: utter_ask_sadarghat_directions
+  - rule: rule for location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - rule: rule for size
+    steps:
+      - intent: ask_size
+      - action: utter_ask_size
+  - rule: Rule for Sadarghat usage question
+    steps:
+      - intent: ask_sadarghat_usage
+      - action: utter_ask_sadarghat_usage
+  - rule: Describe the market directly
+    steps:
+      - intent: ask_market_description
+      - action: utter_ask_market_description
+  - rule: Rule for shop types
+    steps:
+      - intent: ask_shop_types
+      - action: utter_ask_shop_types
+  - rule: rule_ask_sorting_factors
+    steps:
+      - intent: ask_sorting_factors
+      - action: utter_ask_sorting_factors
+  - rule: rule_ask_algorithms_tested
+    steps:
+      - intent: ask_algorithms_tested
+      - action: utter_ask_algorithms_tested
+  - rule: rule_ask_test_data
+    steps:
+      - intent: ask_test_data
+      - action: utter_ask_test_data
+  - rule: rule_ask_measurement_method
+    steps:
+      - intent: ask_measurement_method
+      - action: utter_ask_measurement_method
+  - rule: Directly asking for tables
+    steps:
+      - intent: ask_tables
+      - action: utter_ask_tables
+  - rule: Directly asking for figures
+    steps:
+      - intent: ask_figures
+      - action: utter_ask_figures
+  - rule: simple definition of selection sort
+    steps:
+      - intent: ask_selection_sort_definition
+      - action: utter_ask_selection_sort_definition
+  - rule: rule for efficiency of small files
+    steps:
+      - intent: ask_efficiency_small_files
+      - action: utter_ask_efficiency_small_files
+  - rule: rule for application
+    steps:
+      - intent: ask_application
+      - action: utter_ask_application
+  - rule: rule for item movement
+    steps:
+      - intent: ask_movement_characteristic
+      - action: utter_ask_movement_characteristic
+  - rule: rule for time complexity question
+    steps:
+      - intent: ask_time_complexity
+      - action: utter_ask_time_complexity
+  - rule: Rule for selection sort advantage
+    steps:
+      - intent: ask_advantage_selection_sort
+      - action: utter_ask_advantage_selection_sort
+  - rule: rule for data movement question
+    steps:
+      - intent: ask_data_movement
+      - action: utter_ask_data_movement
+  - rule: rule for selection sort speed question
+    steps:
+      - intent: ask_selection_sort_speed
+      - action: utter_ask_selection_sort_speed
+  - rule: Rule for execution time question
+    steps:
+      - intent: ask_execution_time
+      - action: utter_ask_execution_time
+  - rule: Rule for number of elements question
+    steps:
+      - intent: ask_number_elements
+      - action: utter_ask_number_elements
+  - rule: Rule for Table 1 info question
+    steps:
+      - intent: ask_table_info
+      - action: utter_ask_table_info
+  - rule: Rule for journal name
+    steps:
+      - intent: ask_journal_name
+      - action: utter_ask_journal_name
+  - rule: Rule for authors' names
+    steps:
+      - intent: ask_authors
+      - action: utter_ask_authors
+  - rule: Rule for volume, issue, year
+    steps:
+      - intent: ask_volume_issue_year
+      - action: utter_ask_volume_issue_year
+  - rule: Rule for time complexity question
+    steps:
+      - intent: ask_time_complexity
+      - action: utter_ask_time_complexity
+  - rule: Rule for stability question
+    steps:
+      - intent: ask_stability
+      - action: utter_ask_stability
+  - rule: Simple number sequence request
+    steps:
+      - intent: ask_number_sequence
+      - action: utter_ask_number_sequence
+  - rule: Stable algorithms rule
+    steps:
+      - intent: ask_stable_algorithms
+      - action: utter_ask_stable_algorithms
+  - rule: Unstable algorithms rule
+    steps:
+      - intent: ask_unstable_algorithms
+      - action: utter_ask_unstable_algorithms
+  - rule: Memory usage rule
+    steps:
+      - intent: ask_memory_usage
+      - action: utter_ask_memory_usage
+  - rule: Algorithm modification rule
+    steps:
+      - intent: ask_algorithm_modification
+      - action: utter_ask_algorithm_modification
+  - rule: Compare algorithms rule
+    steps:
+      - intent: ask_algorithm_comparison
+      - action: utter_ask_algorithm_comparison
+  - rule: Rule_Adhikari_Study
+    steps:
+      - intent: ask_adhikari_study
+      - action: utter_ask_adhikari_study
+  - rule: Rule_Pasetto_Akhriev_Study
+    steps:
+      - intent: ask_pasetto_akhriev_study
+      - action: utter_ask_pasetto_akhriev_study
+  - rule: Rule_Sorting_Algorithms_Comparison
+    steps:
+      - intent: ask_sorting_algorithms_comparison
+      - action: utter_ask_sorting_algorithms_comparison
+  - rule: rule for asking sorting algorithms
+    steps:
+      - intent: ask_sorting_algorithms
+      - action: utter_ask_sorting_algorithms
+  - rule: rule for asking dataset size
+    steps:
+      - intent: ask_dataset_size
+      - action: utter_ask_dataset_size
+  - rule: rule for asking algorithm purpose
+    steps:
+      - intent: ask_algorithm_purpose
+      - action: utter_ask_algorithm_purpose
+  - rule: rule for asking authors
+    steps:
+      - intent: ask_authors
+      - action: utter_ask_authors
+  - rule: rule for asking publication year
+    steps:
+      - intent: ask_year
+      - action: utter_ask_year
+  - rule: Rule for asking about performance measures
+    steps:
+      - intent: ask_performance_measures
+      - action: utter_ask_performance_measures
+  - rule: Publish GitHub Rule
+    steps:
+      - intent: publish_github
+      - action: utter_publish_github
+  - rule: Directly asking about portfolio publishing
+    steps:
+      - intent: publish_portfolio_github
+      - action: utter_publish_portfolio_github

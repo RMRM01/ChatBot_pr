@@ -1,0 +1,355 @@
+version: '3.1'
+intents:
+  - ask_boat_ride_location
+  - greet
+  - bye
+  - ask_boat_ride_details
+  - ask_river_description
+  - ask_river_activity
+  - request_video
+  - ask_ahsan_manzil_info
+  - ask_dhaka_university_places
+  - ask_curzon_hall
+  - ask_architectural_style
+  - ask_history
+  - ask_previous_use
+  - ask_current_use
+  - ask_tourist_attraction
+  - ask_sadarghat_directions
+  - ask_location
+  - ask_size
+  - ask_region
+  - ask_sadarghat_usage
+  - ask_market_type
+  - ask_market_products
+  - ask_market_location
+  - ask_shop_types
+  - ask_whatsapp_number
+  - ask_pickup
+  - ask_website
+  - ask_email
+  - ask_pickup_time_weekday
+  - ask_pickup_time_weekend
+  - ask_pickup_time_holiday
+  - ask_destination
+  - ask_architect
+  - ask_description
+  - ask_recognition
+  - ask_importance
+  - ask_design
+  - ask_about_palace
+  - ask_palace_history
+  - ask_palace_location
+  - ask_hindu_street
+  - ask_rickshaw_ride
+  - ask_star_mosque
+  - ask_armenian_church
+  - ask_bongshal
+  - ask_lunch_break
+  - ask_lalbagh_fort_info
+  - ask_lalbagh_fort_period
+  - ask_lalbagh_fort_location
+  - ask_dhakeshary_temple
+  - confirm_dropoff
+  - confirm_tour_end
+  - ask_palace_info
+  - ask_lalbagh_fort_description
+  - ask_dhakeshwar_temple_location
+  - confirm_dhakeshwar_temple_visit
+  - ask_tour_end
+  - describe_river
+  - ask_history_dhaka_college
+  - ask_building_use
+  - ask_popularity
+  - ask_market_description
+  - ask_sorting_factors
+  - ask_algorithms_tested
+  - ask_test_data
+  - ask_measurement_method
+  - ask_tables
+  - ask_figures
+  - ask_selection_sort_definition
+  - ask_efficiency_small_files
+  - ask_application
+  - ask_movement_characteristic
+  - ask_time_complexity
+  - ask_advantage_selection_sort
+  - ask_data_movement
+  - ask_selection_sort_speed
+  - ask_execution_time
+  - ask_number_elements
+  - ask_table_info
+  - ask_journal_name
+  - ask_authors
+  - ask_volume_issue_year
+  - ask_stability
+  - ask_number_sequence
+  - ask_stable_algorithms
+  - ask_unstable_algorithms
+  - ask_memory_usage
+  - ask_algorithm_modification
+  - ask_algorithm_comparison
+  - ask_sorting_algorithms_comparison
+  - ask_adhikari_study
+  - ask_pasetto_akhriev_study
+  - ask_sorting_algorithms
+  - ask_dataset_size
+  - ask_algorithm_purpose
+  - ask_year
+  - ask_performance_measures
+  - publish_github
+  - publish_portfolio_github
+responses:
+  utter_ask_boat_ride_location:
+    - text: The boat ride is at Dhaka’s busy Buriganga river, Sadarghat.
+  utter_greet:
+    - text: Hey, How are you?
+  utter_bye:
+    - text: best wishes for you!
+  utter_ask_boat_ride_details:
+    - text: Enjoy a boat ride on a rowboat at Dhaka’s busy Buriganga river. It's a
+        fascinating experience.
+  utter_ask_river_description:
+    - text: This river is an alive and vibrant place full of activities.
+  utter_ask_river_activity:
+    - text: You'll see hundreds of rowboats crossing people between the two sides
+        of the river, small vendors selling goods on their boats, and passenger and
+        cargo ferries passing by.
+  utter_request_video:
+    - text: 'Here''s the video: [Click here to view the video of this river port.]'
+  utter_ask_ahsan_manzil_info:
+    - text: Ahsan Manzil, also known as the Pink Palace, is a beautiful and well-maintained
+        building.
+  utter_ask_dhaka_university_places:
+    - text: Dhaka University includes Curzon Hall, TSC, Central Shahid Minar, and
+        areas within the university perimeter.
+  utter_ask_curzon_hall:
+    - text: Curzon Hall is known for its beautiful blend of European and Mughal architectural
+        styles, making it one of the best structural designs in Dhaka.
+  utter_ask_architectural_style:
+    - text: It has Mughal symbolic forms with arches and domes.
+  utter_ask_history:
+    - text: The building was used by Dhaka College until 1911.  After Dhaka University
+        was established in 1921, the university took over and continues to use it
+        for educational purposes.
+  utter_ask_previous_use:
+    - text: Until 1911, the building was used by Dhaka College.
+  utter_ask_current_use:
+    - text: The building is currently used for education by Dhaka University.
+  utter_ask_tourist_attraction:
+    - text: Yes, it is now a popular tourist destination in the country, attracting
+        both domestic and international visitors.
+  utter_ask_sadarghat_directions:
+    - text: Continue driving to Sadarghat River Station.
+  utter_ask_location:
+    - text: This is the main river port in Dhaka.
+  utter_ask_size:
+    - text: It is one of the largest river stations in South Asia.
+  utter_ask_region:
+    - text: This port is located in South Asia.
+  utter_ask_sadarghat_usage:
+    - text: Sadarghat is used by hundreds of small boats and gigantic overnight passenger
+        ferries for communication with the southern districts. Cargo barges also use
+        it for loading and unloading.
+  utter_ask_market_type:
+    - text: It's a large daily market.
+  utter_ask_market_products:
+    - text: It sells fruits, vegetables, and miscellaneous items.
+  utter_ask_market_location:
+    - text: Items are carried to and from different parts of Bangladesh.
+  utter_ask_shop_types:
+    - text: Numerous retail and wholesale shops can be found on both sides of the
+        road.
+  utter_ask_whatsapp_number:
+    - text: '+8801714085999'
+  utter_ask_pickup:
+    - text: Our guide and driver will pick you up from your hotel/residence.
+  utter_ask_website:
+    - text: Our website is www.travelandexplorebd.com
+  utter_ask_email:
+    - text: You can reach us at sayed@travelandexplorebd.com
+  utter_ask_pickup_time_weekday:
+    - text: We pick up guests a bit early at 8:00 am during the weekdays.
+  utter_ask_pickup_time_weekend:
+    - text: On weekends and government holidays, we pick you up at 9:00 am.
+  utter_ask_pickup_time_holiday:
+    - text: On weekends and government holidays, we pick you up at 9:00 am.
+  utter_ask_destination:
+    - text: Our car will be heading toward the National Parliament building.
+  utter_ask_architect:
+    - text: The National Parliament Building was designed by Louis Kahn, a world-famous
+        US architect.
+  utter_ask_description:
+    - text: The National Parliament Building is one of the largest legislative buildings
+        in the world and is considered a fine piece of architecture.
+  utter_ask_recognition:
+    - text: It won the prestigious Aga Khan Award for Architecture in 1989.
+  utter_ask_importance:
+    - text: It's considered one of Kahn's greatest works and a milestone in 20th-century
+        architecture due to its monumental scale and the blending of modernism and
+        context.
+  utter_ask_design:
+    - text: The building is famous for its composition of simple geometric shapes
+        creating a harmonious composition.
+  utter_ask_about_palace:
+    - text: It's a palace from the colonial period in Dhaka, home to a very influential
+        family. It's a popular tourist spot.
+  utter_ask_palace_history:
+    - text: The palace was home to Dhaka's most influential family during the colonial
+        period.
+  utter_ask_palace_location:
+    - text: I'm sorry, I don't have the exact address of the palace, but it is located
+        in Dhaka city.
+  utter_ask_hindu_street:
+    - text: Hindu Street, also known as Shankharia Bazar, is the center of Hindu culture
+        in Old Dhaka.  It's filled with shops selling jewelry, musical instruments,
+        bridal wear, kites, and food, alongside temples and bustling activity. It
+        extends to Tati Bazar.
+  utter_ask_rickshaw_ride:
+    - text: Rickshaw rides are a common and convenient way to get around, especially
+        in Old Dhaka.  You can take a rickshaw to visit the Star Mosque and Armenian
+        Church.
+  utter_ask_star_mosque:
+    - text: The Star Mosque is a beautiful mosque decorated with star motifs.
+  utter_ask_armenian_church:
+    - text: The Armenian Church is an orthodox church built by Armenians in Dhaka.
+  utter_ask_bongshal:
+    - text: Bongshal can be reached from the Star Mosque on foot or by rickshaw.
+  utter_ask_lunch_break:
+    - text: Lunch includes experiencing local authentic food at a local restaurant
+        with popular Bangladeshi dishes.
+  utter_ask_lalbagh_fort_info:
+    - text: Lalbagh Fort is a beautiful fort from the Mughal period, a key tourist
+        attraction in Dhaka city.
+  utter_ask_lalbagh_fort_period:
+    - text: Lalbagh Fort is from the Mughal period.
+  utter_ask_lalbagh_fort_location:
+    - text: Lalbagh Fort is located in Dhaka city.
+  utter_ask_dhakeshary_temple:
+    - text: After visiting Lalbagh Fort, we will visit Dhakeshary Temple. This is
+        the end of the tour.
+  utter_confirm_dropoff:
+    - text: We will take you to your hotel/residence after the tour.
+  utter_confirm_tour_end:
+    - text: Yes, this is the end of the Old Dhaka tour.
+  utter_ask_palace_info:
+    - text: That's the colonial-era palace in Dhaka, once home to the city's most
+        influential family. It's a popular tourist destination.
+  utter_ask_lalbagh_fort_description:
+    - text: Lalbagh Fort is a beautiful fort from the Mughal period and a key tourist
+        attraction in Dhaka city.
+  utter_ask_dhakeshwar_temple_location:
+    - text: I'm sorry, I don't have the exact address of Dhakeshwar Temple.  The document
+        only mentions it as a location visited after Lalbagh Fort.
+  utter_confirm_dhakeshwar_temple_visit:
+    - text: Yes, the tour includes a visit to Dhakeshwar Temple after Lalbagh Fort.
+  utter_ask_tour_end:
+    - text: The tour ends after the visit to Dhakeshwar Temple.
+  utter_describe_river:
+    - text: This river is an alive and vibrant place full of activities.
+  utter_ask_history_dhaka_college:
+    - text: Until 1911, the building was used by Dhaka College.  After Dhaka University
+        was established in 1921, the university took over the building and continues
+        to use it for educational purposes.
+  utter_ask_building_use:
+    - text: The building is currently used by Dhaka University for education.
+  utter_ask_popularity:
+    - text: Yes, it is now a popular tourist destination, attracting both domestic
+        and international visitors.
+  utter_ask_market_description:
+    - text: This bustling place has become a large daily market for fruits, vegetables,
+        and miscellaneous items carried to and from different parts of Bangladesh.
+  utter_ask_sorting_factors:
+    - text: Factors to consider include list size, programming effort, available memory,
+        disk/tape size, pre-sorted extent, and value distribution.
+  utter_ask_algorithms_tested:
+    - text: The paper implemented Selection sort, Quick sort, Insertion sort, Merge
+        sort, Bubble sort, and GCS algorithms.
+  utter_ask_test_data:
+    - text: Random test data from sizes 10000 to 30000 were used for average case
+        testing.
+  utter_ask_measurement_method:
+    - text: Execution time was measured in milliseconds using the built-in C++ clock()
+        function.
+  utter_ask_tables:
+    - text: The results are presented in Table 1 through Table 6.
+  utter_ask_figures:
+    - text: The curves are shown in figure 1.
+  utter_ask_selection_sort_definition:
+    - text: Selection sort is the simplest of sorting techniques.
+  utter_ask_efficiency_small_files:
+    - text: It works very well for small files.
+  utter_ask_application:
+    - text: It has a quite important application.
+  utter_ask_movement_characteristic:
+    - text: Each item is actually moved at most once.
+  utter_ask_time_complexity:
+    - text: It has O(n^2) time complexity.
+  utter_ask_advantage_selection_sort:
+    - text: Selection sort has one advantage over other sort techniques.
+  utter_ask_data_movement:
+    - text: It moves the least amount of data, despite making many comparisons.
+  utter_ask_selection_sort_speed:
+    - text: Selection sort is quickest when your data has small keys but a large data
+        area.
+  utter_ask_execution_time:
+    - text: The document mentions execution time in Table 1.
+  utter_ask_number_elements:
+    - text: The document mentions the number of elements in Table 1.
+  utter_ask_table_info:
+    - text: Table 1 contains information on execution time and the number of elements.
+  utter_ask_journal_name:
+    - text: The article is from the International Journal of Computer Science and
+        Security (IJCSS).
+  utter_ask_authors:
+    - text: The authors are Khalid Suleiman Al-Kharabsheh, Ibrahim Mahmoud AlTurani,
+        Abdallah Mahmoud Ibrahim AlTurani, and Nabeel Imhammed Zanoon.
+  utter_ask_volume_issue_year:
+    - text: The article is from Volume (7), Issue (3), 2013.
+  utter_ask_stability:
+    - text: Algorithm stability means that elements with equal values maintain their
+        relative order in the output as they were in the input.
+  utter_ask_number_sequence:
+    - text: The number sequence is 2, 3, 9.
+  utter_ask_stable_algorithms:
+    - text: Insertion sort, merge sort, and bubble sort are examples of stable sorting
+        algorithms.
+  utter_ask_unstable_algorithms:
+    - text: Quicksort is an example of an unstable sorting algorithm.
+  utter_ask_memory_usage:
+    - text: Algorithms using recursive techniques require more memory due to the need
+        for copies of the sorting data.
+  utter_ask_algorithm_modification:
+    - text: Yes, unstable sorting algorithms can be modified to become stable.
+  utter_ask_algorithm_comparison:
+    - text: Most of these algorithms use a comparative operation between the oldest
+        and newest algorithms to prove their effectiveness.
+  utter_ask_sorting_algorithms_comparison:
+    - text: Several studies compare sorting algorithms, such as one comparing selection
+        sort and shell sort, and another focusing on parallel sorting algorithms on
+        multi-core hardware.
+  utter_ask_adhikari_study:
+    - text: Pooja Adhikari's 2007 study compared the performance of selection sort
+        and shell sort algorithms.
+  utter_ask_pasetto_akhriev_study:
+    - text: The 2011 paper by Davide Pasetto and Albert Akhriev provided a qualitative
+        and quantitative analysis of parallel sorting algorithms on modern multi-core
+        hardware.
+  utter_ask_sorting_algorithms:
+    - text: The document mentions several general-purpose sorting algorithms, focusing
+        on those best suited for very large datasets.
+  utter_ask_dataset_size:
+    - text: The datasets discussed are very large arrays, several gigabytes and more,
+        exceeding L2/L3 cache size.
+  utter_ask_algorithm_purpose:
+    - text: The purpose of the algorithms is sorting database records and very large
+        arrays.
+  utter_ask_year:
+    - text: The research was published in 2008.
+  utter_ask_performance_measures:
+    - text: The average number of operations and average execution times were investigated
+        and compared.
+  utter_publish_github:
+    - text: Use GitHub to publish all projects for your portfolio.
+  utter_publish_portfolio_github:
+    - text: Use GitHub to publish all projects for your portfolio.

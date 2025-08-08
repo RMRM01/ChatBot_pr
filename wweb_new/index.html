@@ -1,0 +1,32 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NetBot - AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>NetBot - Your Networking Assistant</h1>
+
+    <div class="chat-box" id="chat-box">
+      <div class="You"> Hello</div>
+    </div>
+
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Ask your question..." autocomplete="off">
+      <button type="submit">Send</button>
+    </form>
+
+    <div class="upload-section">
+      <label for="pdf-upload">Upload PDF to learn from:</label>
+      <input type="file" id="pdf-upload" accept="application/pdf">
+      <button onclick="uploadPDF()">Upload</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

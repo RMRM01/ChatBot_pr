@@ -1,0 +1,514 @@
+version: '3.1'
+stories:
+  - story: story_ask_boat_ride_location
+    steps:
+      - intent: ask_boat_ride_location
+      - action: utter_ask_boat_ride_location
+  - story: story_thank_you
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - story: story_bye
+    steps:
+      - intent: bye
+      - action: utter_bye
+  - story: story_ask_boat_ride_details
+    steps:
+      - intent: ask_boat_ride_details
+      - action: utter_ask_boat_ride_details
+  - story: user asks for river description
+    steps:
+      - intent: ask_river_description
+      - action: utter_ask_river_description
+  - story: story_ask_river_activity
+    steps:
+      - intent: ask_river_activity
+      - action: utter_ask_river_activity
+  - story: User requests video
+    steps:
+      - intent: request_video
+      - action: utter_request_video
+  - story: Ask about Ahsan Manzil
+    steps:
+      - intent: ask_ahsan_manzil_info
+      - action: utter_ask_ahsan_manzil_info
+  - story: Visiting Dhaka University
+    steps:
+      - intent: ask_dhaka_university_places
+      - action: utter_ask_dhaka_university_places
+  - story: Learning about Curzon Hall
+    steps:
+      - intent: ask_curzon_hall
+      - action: utter_ask_curzon_hall
+  - story: user asks about architectural style
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - story: User asks about the building's history
+    steps:
+      - intent: ask_history
+      - action: utter_ask_history
+  - story: User asks about previous use
+    steps:
+      - intent: ask_previous_use
+      - action: utter_ask_previous_use
+  - story: User asks about current use
+    steps:
+      - intent: ask_current_use
+      - action: utter_ask_current_use
+  - story: A user asks if it's a tourist attraction
+    steps:
+      - intent: ask_tourist_attraction
+      - action: utter_ask_tourist_attraction
+  - story: Get directions to Sadarghat
+    steps:
+      - intent: ask_sadarghat_directions
+      - action: utter_ask_sadarghat_directions
+  - story: Location Story
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - story: Size Story
+    steps:
+      - intent: ask_size
+      - action: utter_ask_size
+  - story: Region Story
+    steps:
+      - intent: ask_region
+      - action: utter_ask_region
+  - story: User asks about Sadarghat usage
+    steps:
+      - intent: ask_sadarghat_usage
+      - action: utter_ask_sadarghat_usage
+  - story: story_ask_market_type
+    steps:
+      - intent: ask_market_type
+      - action: utter_ask_market_type
+  - story: story_ask_market_products
+    steps:
+      - intent: ask_market_products
+      - action: utter_ask_market_products
+  - story: story_ask_market_location
+    steps:
+      - intent: ask_market_location
+      - action: utter_ask_market_location
+  - story: story_ask_shop_types
+    steps:
+      - intent: ask_shop_types
+      - action: utter_ask_shop_types
+  - story: Ask for location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - story: Get WhatsApp number
+    steps:
+      - intent: ask_whatsapp_number
+      - action: utter_ask_whatsapp_number
+  - story: pickup_inquiry
+    steps:
+      - intent: ask_pickup
+      - action: utter_ask_pickup
+  - story: website_inquiry
+    steps:
+      - intent: ask_website
+      - action: utter_ask_website
+  - story: email_inquiry
+    steps:
+      - intent: ask_email
+      - action: utter_ask_email
+  - story: Weekday pickup time enquiry
+    steps:
+      - intent: ask_pickup_time_weekday
+      - action: utter_ask_pickup_time_weekday
+  - story: Weekend pickup time enquiry
+    steps:
+      - intent: ask_pickup_time_weekend
+      - action: utter_ask_pickup_time_weekend
+  - story: Holiday pickup time enquiry
+    steps:
+      - intent: ask_pickup_time_holiday
+      - action: utter_ask_pickup_time_holiday
+  - story: Going to Parliament
+    steps:
+      - intent: ask_destination
+      - action: utter_ask_destination
+  - story: story_ask_location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - story: story_ask_architect
+    steps:
+      - intent: ask_architect
+      - action: utter_ask_architect
+  - story: story_ask_description
+    steps:
+      - intent: ask_description
+      - action: utter_ask_description
+  - story: user asks about architectural style
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - story: user asks about recognition
+    steps:
+      - intent: ask_recognition
+      - action: utter_ask_recognition
+  - story: user asks about importance
+    steps:
+      - intent: ask_importance
+      - action: utter_ask_importance
+  - story: user asks about design
+    steps:
+      - intent: ask_design
+      - action: utter_ask_design
+  - story: Story about the palace
+    steps:
+      - intent: ask_about_palace
+      - action: utter_ask_about_palace
+  - story: Story about the palace history
+    steps:
+      - intent: ask_palace_history
+      - action: utter_ask_palace_history
+  - story: Story about palace location
+    steps:
+      - intent: ask_palace_location
+      - action: utter_ask_palace_location
+  - story: Story about Hindu Street
+    steps:
+      - intent: ask_hindu_street
+      - action: utter_ask_hindu_street
+  - story: Story about Rickshaw Rides
+    steps:
+      - intent: ask_rickshaw_ride
+      - action: utter_ask_rickshaw_ride
+  - story: Story about Star Mosque
+    steps:
+      - intent: ask_star_mosque
+      - action: utter_ask_star_mosque
+  - story: Story about Armenian Church
+    steps:
+      - intent: ask_armenian_church
+      - action: utter_ask_armenian_church
+  - story: Story about Bongshal
+    steps:
+      - intent: ask_bongshal
+      - action: utter_ask_bongshal
+  - story: lunch_break_inquiry
+    steps:
+      - intent: ask_lunch_break
+      - action: utter_ask_lunch_break
+  - story: story_ask_lalbagh_fort_info
+    steps:
+      - intent: ask_lalbagh_fort_info
+      - action: utter_ask_lalbagh_fort_info
+  - story: story_ask_lalbagh_fort_period
+    steps:
+      - intent: ask_lalbagh_fort_period
+      - action: utter_ask_lalbagh_fort_period
+  - story: story_ask_lalbagh_fort_location
+    steps:
+      - intent: ask_lalbagh_fort_location
+      - action: utter_ask_lalbagh_fort_location
+  - story: Visiting Dhakeshary Temple
+    steps:
+      - intent: ask_dhakeshary_temple
+      - action: utter_ask_dhakeshary_temple
+  - story: Confirm Dropoff Story
+    steps:
+      - intent: confirm_dropoff
+      - action: utter_confirm_dropoff
+  - story: Confirm tour end
+    steps:
+      - intent: confirm_tour_end
+      - action: utter_confirm_tour_end
+  - story: Learn about the Dhaka palace
+    steps:
+      - intent: ask_palace_info
+      - action: utter_ask_palace_info
+  - story: story_hindu_street
+    steps:
+      - intent: ask_hindu_street
+      - action: utter_ask_hindu_street
+  - story: story_rickshaw_ride
+    steps:
+      - intent: ask_rickshaw_ride
+      - action: utter_ask_rickshaw_ride
+  - story: story_star_mosque
+    steps:
+      - intent: ask_star_mosque
+      - action: utter_ask_star_mosque
+  - story: story_armenian_church
+    steps:
+      - intent: ask_armenian_church
+      - action: utter_ask_armenian_church
+  - story: story_bongshal
+    steps:
+      - intent: ask_bongshal
+      - action: utter_ask_bongshal
+  - story: lunch_break_inquiry
+    steps:
+      - intent: ask_lunch_break
+      - action: utter_ask_lunch_break
+  - story: Find Lalbagh Fort location
+    steps:
+      - intent: ask_lalbagh_fort_location
+      - action: utter_ask_lalbagh_fort_location
+  - story: Learn about Lalbagh Fort's period
+    steps:
+      - intent: ask_lalbagh_fort_period
+      - action: utter_ask_lalbagh_fort_period
+  - story: Get description of Lalbagh Fort
+    steps:
+      - intent: ask_lalbagh_fort_description
+      - action: utter_ask_lalbagh_fort_description
+  - story: story_ask_dhakeshwar_temple_location
+    steps:
+      - intent: ask_dhakeshwar_temple_location
+      - action: utter_ask_dhakeshwar_temple_location
+  - story: story_confirm_dhakeshwar_temple_visit
+    steps:
+      - intent: confirm_dhakeshwar_temple_visit
+      - action: utter_confirm_dhakeshwar_temple_visit
+  - story: story_ask_tour_end
+    steps:
+      - intent: ask_tour_end
+      - action: utter_ask_tour_end
+  - story: Confirm dropoff story
+    steps:
+      - intent: confirm_dropoff
+      - action: utter_confirm_dropoff
+  - story: Confirm Tour End
+    steps:
+      - intent: confirm_tour_end
+      - action: utter_confirm_tour_end
+  - story: story_ask_boat_ride_location
+    steps:
+      - intent: ask_boat_ride_location
+      - action: utter_ask_boat_ride_location
+  - story: story_ask_boat_ride_details
+    steps:
+      - intent: ask_boat_ride_details
+      - action: utter_ask_boat_ride_details
+  - story: describe river
+    steps:
+      - intent: describe_river
+      - action: utter_describe_river
+  - story: greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - story: see_river_activity
+    steps:
+      - intent: ask_river_activity
+      - action: utter_ask_river_activity
+  - story: Request and view video
+    steps:
+      - intent: request_video
+      - action: utter_request_video
+  - story: Ask about Ahsan Manzil
+    steps:
+      - intent: ask_ahsan_manzil_info
+      - action: utter_ask_ahsan_manzil_info
+  - story: Visiting Dhaka University
+    steps:
+      - intent: ask_dhaka_university_places
+      - action: utter_ask_dhaka_university_places
+  - story: Learning about Curzon Hall
+    steps:
+      - intent: ask_curzon_hall
+      - action: utter_ask_curzon_hall
+  - story: User asks about architectural style
+    steps:
+      - intent: ask_architectural_style
+      - action: utter_ask_architectural_style
+  - story: User asks about the building's history
+    steps:
+      - intent: ask_history_dhaka_college
+      - action: utter_ask_history_dhaka_college
+  - story: User asks about building's current use
+    steps:
+      - intent: ask_building_use
+      - action: utter_ask_building_use
+  - story: popularity_story
+    steps:
+      - intent: ask_popularity
+      - action: utter_ask_popularity
+  - story: Get directions to Sadarghat
+    steps:
+      - intent: ask_sadarghat_directions
+      - action: utter_ask_sadarghat_directions
+  - story: user asks about location
+    steps:
+      - intent: ask_location
+      - action: utter_ask_location
+  - story: user asks about size
+    steps:
+      - intent: ask_size
+      - action: utter_ask_size
+  - story: User asks about Sadarghat usage
+    steps:
+      - intent: ask_sadarghat_usage
+      - action: utter_ask_sadarghat_usage
+  - story: Describe the market
+    steps:
+      - intent: ask_market_description
+      - action: utter_ask_market_description
+  - story: Story about shop types
+    steps:
+      - intent: ask_shop_types
+      - action: utter_ask_shop_types
+  - story: ask sorting factors story
+    steps:
+      - intent: ask_sorting_factors
+      - action: utter_ask_sorting_factors
+  - story: ask algorithms tested story
+    steps:
+      - intent: ask_algorithms_tested
+      - action: utter_ask_algorithms_tested
+  - story: ask test data story
+    steps:
+      - intent: ask_test_data
+      - action: utter_ask_test_data
+  - story: ask measurement method story
+    steps:
+      - intent: ask_measurement_method
+      - action: utter_ask_measurement_method
+  - story: User asks for tables
+    steps:
+      - intent: ask_tables
+      - action: utter_ask_tables
+  - story: User asks for figures
+    steps:
+      - intent: ask_figures
+      - action: utter_ask_figures
+  - story: user asks about selection sort
+    steps:
+      - intent: ask_selection_sort_definition
+      - action: utter_ask_selection_sort_definition
+  - story: user asks about efficiency for small files
+    steps:
+      - intent: ask_efficiency_small_files
+      - action: utter_ask_efficiency_small_files
+  - story: user asks about the main application
+    steps:
+      - intent: ask_application
+      - action: utter_ask_application
+  - story: user asks about item movement characteristic
+    steps:
+      - intent: ask_movement_characteristic
+      - action: utter_ask_movement_characteristic
+  - story: user asks about time complexity
+    steps:
+      - intent: ask_time_complexity
+      - action: utter_ask_time_complexity
+  - story: User asks about selection sort advantage
+    steps:
+      - intent: ask_advantage_selection_sort
+      - action: utter_ask_advantage_selection_sort
+  - story: user asks about data movement
+    steps:
+      - intent: ask_data_movement
+      - action: utter_ask_data_movement
+  - story: user asks about selection sort speed
+    steps:
+      - intent: ask_selection_sort_speed
+      - action: utter_ask_selection_sort_speed
+  - story: User asks about execution time
+    steps:
+      - intent: ask_execution_time
+      - action: utter_ask_execution_time
+  - story: User asks about number of elements
+    steps:
+      - intent: ask_number_elements
+      - action: utter_ask_number_elements
+  - story: User asks for Table 1 info
+    steps:
+      - intent: ask_table_info
+      - action: utter_ask_table_info
+  - story: Get journal name
+    steps:
+      - intent: ask_journal_name
+      - action: utter_ask_journal_name
+  - story: Get authors' names
+    steps:
+      - intent: ask_authors
+      - action: utter_ask_authors
+  - story: Get volume, issue, and year
+    steps:
+      - intent: ask_volume_issue_year
+      - action: utter_ask_volume_issue_year
+  - story: User asks about time complexity
+    steps:
+      - intent: ask_time_complexity
+      - action: utter_ask_time_complexity
+  - story: User asks about stability
+    steps:
+      - intent: ask_stability
+      - action: utter_ask_stability
+  - story: Get number sequence
+    steps:
+      - intent: ask_number_sequence
+      - action: utter_ask_number_sequence
+  - story: Stable algorithms story
+    steps:
+      - intent: ask_stable_algorithms
+      - action: utter_ask_stable_algorithms
+  - story: Unstable algorithms story
+    steps:
+      - intent: ask_unstable_algorithms
+      - action: utter_ask_unstable_algorithms
+  - story: Memory usage story
+    steps:
+      - intent: ask_memory_usage
+      - action: utter_ask_memory_usage
+  - story: Algorithm modification story
+    steps:
+      - intent: ask_algorithm_modification
+      - action: utter_ask_algorithm_modification
+  - story: Compare algorithms story
+    steps:
+      - intent: ask_algorithm_comparison
+      - action: utter_ask_algorithm_comparison
+  - story: Compare Sorting Algorithms
+    steps:
+      - intent: ask_sorting_algorithms_comparison
+      - action: utter_ask_sorting_algorithms_comparison
+  - story: Learn about Adhikari's Study
+    steps:
+      - intent: ask_adhikari_study
+      - action: utter_ask_adhikari_study
+  - story: Learn about Pasetto and Akhriev's Study
+    steps:
+      - intent: ask_pasetto_akhriev_study
+      - action: utter_ask_pasetto_akhriev_study
+  - story: user asks about sorting algorithms
+    steps:
+      - intent: ask_sorting_algorithms
+      - action: utter_ask_sorting_algorithms
+  - story: user asks about dataset size
+    steps:
+      - intent: ask_dataset_size
+      - action: utter_ask_dataset_size
+  - story: user asks about algorithm purpose
+    steps:
+      - intent: ask_algorithm_purpose
+      - action: utter_ask_algorithm_purpose
+  - story: user asks about authors
+    steps:
+      - intent: ask_authors
+      - action: utter_ask_authors
+  - story: user asks about publication year
+    steps:
+      - intent: ask_year
+      - action: utter_ask_year
+  - story: User asks about performance measures
+    steps:
+      - intent: ask_performance_measures
+      - action: utter_ask_performance_measures
+  - story: Publish Portfolio on GitHub
+    steps:
+      - intent: publish_github
+      - action: utter_publish_github
+  - story: Publish portfolio on GitHub
+    steps:
+      - intent: publish_portfolio_github
+      - action: utter_publish_portfolio_github

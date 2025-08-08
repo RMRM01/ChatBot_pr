@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "publish_portfolio_github",
+        "examples": [
+          "How can I publish my portfolio projects?",
+          "Where should I host my portfolio projects?",
+          "I want to publish my portfolio, what platform do you recommend?",
+          "What's the best place to publish my portfolio?",
+          "How do I share my portfolio online?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_publish_portfolio_github": [
+        {
+          "text": "Use GitHub to publish all projects for your portfolio."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Publish portfolio on GitHub",
+      "steps": [
+        {
+          "intent": "publish_portfolio_github"
+        },
+        {
+          "action": "utter_publish_portfolio_github"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly asking about portfolio publishing",
+      "steps": [
+        {
+          "intent": "publish_portfolio_github"
+        },
+        {
+          "action": "utter_publish_portfolio_github"
+        }
+      ]
+    }
+  ]
+}

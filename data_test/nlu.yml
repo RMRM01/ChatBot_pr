@@ -1,0 +1,643 @@
+version: '3.1'
+nlu:
+  - intent: ask_boat_ride_location
+    examples: |-
+      - Where can I go for a boat ride?
+      - Where is the boat ride?
+      - What's the location of the boat ride?
+      - Tell me the place for the boat ride.
+  - intent: greet
+    examples: |-
+      - hello
+      - hi
+      - how are you
+      - hey boss
+      - hey
+      - good
+      - are you there?
+  - intent: bye
+    examples: |-
+      - see you
+      - bye
+      - that's all for today
+      - no more today
+      - cu
+      - good bye
+  - intent: ask_boat_ride_details
+    examples: |-
+      - Tell me about the boat ride.
+      - What kind of boat ride is it?
+      - What can you tell me about the boat ride at Sadarghat?
+      - Describe the boat ride.
+  - intent: ask_river_description
+    examples: |-
+      - Tell me about the river.
+      - What's the river like?
+      - Describe the river.
+      - Give me some information about this river.
+      - Can you tell me something about the river?
+  - intent: ask_river_activity
+    examples: |-
+      - What can I see on the river?
+      - What activities are there on the river?
+      - Describe the river activity.
+      - Tell me about the river.
+      - What's happening on the river?
+  - intent: request_video
+    examples: |-
+      - Can I see the video?
+      - Show me the video of the river port.
+      - I'd like to watch the video.
+      - Play the video please.
+      - Where's the video?
+  - intent: ask_ahsan_manzil_info
+    examples: |-
+      - Tell me about Ahsan Manzil
+      - What is Ahsan Manzil?
+      - Give me some information on Ahsan Manzil
+      - I want to know about the Pink Palace
+      - Tell me about the Pink Palace
+  - intent: ask_dhaka_university_places
+    examples: |-
+      - What places are in Dhaka University?
+      - Tell me about the areas within Dhaka University.
+      - What are some notable places to visit in Dhaka University?
+      - List the places I can visit at Dhaka University.
+  - intent: ask_curzon_hall
+    examples: |-
+      - Tell me about Curzon Hall.
+      - What's special about Curzon Hall?
+      - Describe Curzon Hall.
+      - What is Curzon Hall known for?
+  - intent: ask_architectural_style
+    examples: |-
+      - What is the architectural style?
+      - What style of architecture is it?
+      - Can you describe the architecture?
+      - Tell me about its design.
+      - What's its architectural design?
+  - intent: ask_history
+    examples: |-
+      - What's the history of this building?
+      - Tell me about the building's past.
+      - What was here before?
+      - Could you share the building's historical background?
+      - I'd like to know the history of this place.
+  - intent: ask_previous_use
+    examples: |-
+      - What was the building used for before 1911?
+      - Who used this building before the university?
+      - What's the building's history before Dhaka University?
+      - Can you tell me about its previous use?
+  - intent: ask_current_use
+    examples: |-
+      - What is the building used for now?
+      - What's the building's current purpose?
+      - How is the building used today?
+      - What does the university use this building for?
+  - intent: ask_tourist_attraction
+    examples: |-
+      - Is this place a tourist attraction?
+      - Is it a popular tourist spot?
+      - Is this place of tourist interest?
+      - Is this a tourist destination?
+      - Do many tourists visit here?
+  - intent: ask_sadarghat_directions
+    examples: |-
+      - How do I get to Sadarghat River Station?
+      - What's the way to Sadarghat?
+      - Give me directions to Sadarghat River Station
+      - I need directions to Sadarghat.
+      - How can I reach Sadarghat?
+  - intent: ask_location
+    examples: |-
+      - Where is the river port located?
+      - What's the location of the port?
+      - Tell me the location of Dhaka's main river port.
+      - Where is this river port?
+  - intent: ask_size
+    examples: |-
+      - How big is this river station?
+      - What's the size of the port?
+      - Is it a large port?
+      - What are the port's dimensions?
+  - intent: ask_region
+    examples: |-
+      - Where is the port located geographically?
+      - Which region is this port in?
+      - What's the region of the port?
+      - In what part of the world is this port located?
+  - intent: ask_sadarghat_usage
+    examples: |-
+      - What is Sadarghat used for?
+      - What happens at Sadarghat?
+      - Tell me about the activities at Sadarghat.
+      - What kind of traffic does Sadarghat handle?
+      - Describe the use of Sadarghat.
+  - intent: ask_market_type
+    examples: |-
+      - What kind of market is this?
+      - What type of market is this place?
+      - Can you describe the market?
+      - What do they sell at the market?
+  - intent: ask_market_products
+    examples: |-
+      - What products are sold there?
+      - What items are available at the market?
+      - What do they sell in the market?
+      - What can I buy at this market?
+  - intent: ask_market_location
+    examples: |-
+      - Where is this market located?
+      - Where is the market?
+      - What is the location of this market?
+      - What part of Bangladesh is this market in?
+  - intent: ask_shop_types
+    examples: |-
+      - What kinds of shops are there?
+      - What types of stores can I find?
+      - What shops are available?
+      - Are there any retail stores?
+      - What kind of retail is there?
+  - intent: ask_whatsapp_number
+    examples: |-
+      - What's your WhatsApp number?
+      - Can I contact you on WhatsApp?
+      - Give me your WhatsApp number please
+      - Your WhatsApp number?
+      - What is your WhatsApp contact?
+  - intent: ask_pickup
+    examples: |-
+      - What about pickup?
+      - Where will you pick me up from?
+      - How will I get picked up?
+      - Tell me about the pickup arrangement.
+      - What's the pickup procedure?
+  - intent: ask_website
+    examples: |-
+      - What's your website?
+      - Can I find more information online?
+      - Where can I find your website address?
+      - What is your company's website?
+  - intent: ask_email
+    examples: |-
+      - What's your email address?
+      - How can I contact you by email?
+      - May I have your company email?
+      - What is your company's contact email?
+  - intent: ask_pickup_time_weekday
+    examples: |-
+      - What time do you pick up on weekdays?
+      - What's the weekday pickup time?
+      - When are pickups during the week?
+      - Pick up time on a Tuesday?
+  - intent: ask_pickup_time_weekend
+    examples: |-
+      - What time is pickup on weekends?
+      - What time do you pick up on Saturdays?
+      - Pickup time on a Sunday?
+      - Weekend pickup time?
+  - intent: ask_pickup_time_holiday
+    examples: |-
+      - What time is pickup on holidays?
+      - What's the pickup time for government holidays?
+      - Pickup time on a public holiday?
+      - When do you pick up on a bank holiday?
+  - intent: ask_destination
+    examples: |-
+      - Where are we going?
+      - What's our destination?
+      - Where is the car heading?
+      - Could you tell me our destination?
+  - intent: ask_architect
+    examples: |-
+      - Who designed the Parliament Building?
+      - Who is the architect of the National Assembly Building?
+      - Who designed this building?
+      - Architect's name please.
+  - intent: ask_description
+    examples: |-
+      - Tell me about the Parliament Building.
+      - Describe the National Assembly Building.
+      - Give me some information on the Parliament Building.
+      - What is the National Parliament Building?
+  - intent: ask_recognition
+    examples: |-
+      - What awards has it won?
+      - Has it received any recognition?
+      - Is it a famous building?
+      - What awards did this building win?
+  - intent: ask_importance
+    examples: |-
+      - Why is this building important?
+      - What's significant about this architecture?
+      - What makes this building a masterpiece?
+      - Why is it considered a milestone in architecture?
+  - intent: ask_design
+    examples: |-
+      - How is the building designed?
+      - Describe the building's design.
+      - What are the geometric forms used?
+      - What is the composition of the building?
+  - intent: ask_about_palace
+    examples: |-
+      - Tell me about the palace.
+      - What's the palace like?
+      - Give me some information on the palace.
+      - What do you know about the colonial palace in Dhaka?
+      - Describe the palace.
+  - intent: ask_palace_history
+    examples: |-
+      - What's the history of the palace?
+      - When was the palace built?
+      - Who lived in the palace?
+      - Tell me about the palace's past.
+      - What is the historical significance of this palace?
+  - intent: ask_palace_location
+    examples: |-
+      - Where is the palace located?
+      - What's the address of the palace?
+      - How can I get to the palace?
+      - Where is this palace in Dhaka?
+      - What's the palace's location?
+  - intent: ask_hindu_street
+    examples: |-
+      - Tell me about Hindu Street
+      - What's special about Shankharia Bazar?
+      - What can I see on Hindu Street?
+      - Describe Hindu Street in Old Dhaka
+      - I want to know more about Shankharia Bazar
+  - intent: ask_rickshaw_ride
+    examples: |-
+      - Can I take a rickshaw ride?
+      - Tell me about rickshaw rides.
+      - What are the rickshaw options?
+      - How can I get around by rickshaw?
+      - I'd like to take a rickshaw.
+  - intent: ask_star_mosque
+    examples: |-
+      - What is the Star Mosque?
+      - Tell me about the Star Mosque.
+      - Where is the Star Mosque located?
+      - I want to visit the Star Mosque.
+      - Can you describe the Star Mosque?
+  - intent: ask_armenian_church
+    examples: |-
+      - What is the Armenian Church?
+      - Tell me about the Armenian Church.
+      - Where is the Armenian Church located?
+      - I want to visit the Armenian Church.
+      - Can you describe the Armenian Church?
+  - intent: ask_bongshal
+    examples: |-
+      - What is Bongshal?
+      - Tell me about Bongshal.
+      - How do I get to Bongshal?
+      - Where is Bongshal located?
+      - I want to go to Bongshal.
+  - intent: ask_lunch_break
+    examples: |-
+      - What's the lunch break activity?
+      - Tell me about lunch
+      - What's planned for lunch?
+      - Can you describe the lunch break?
+      - What do we have for lunch?
+  - intent: ask_lalbagh_fort_info
+    examples: |-
+      - Tell me about Lalbagh Fort
+      - What is Lalbagh Fort?
+      - Give me some information on Lalbagh Fort
+      - What's the Lalbagh Fort?
+      - Tell me about the Lalbagh Fort's history
+  - intent: ask_lalbagh_fort_period
+    examples: |-
+      - When was Lalbagh Fort built?
+      - What period is Lalbagh Fort from?
+      - What's the historical period of Lalbagh Fort?
+      - From which era is Lalbagh Fort?
+  - intent: ask_lalbagh_fort_location
+    examples: |-
+      - Where is Lalbagh Fort located?
+      - What is the location of Lalbagh Fort?
+      - Where can I find Lalbagh Fort?
+      - Where is Lalbagh Fort in Dhaka?
+  - intent: ask_dhakeshary_temple
+    examples: |-
+      - What is the Dhakeshary Temple?
+      - Tell me about Dhakeshary Temple
+      - When do we visit Dhakeshary Temple?
+      - What's next after Lalbagh Fort?
+      - Is there a temple visit planned?
+  - intent: confirm_dropoff
+    examples: |-
+      - Will you drop me off at my hotel?
+      - Can I get a ride to my place?
+      - Take me back to my hotel, please.
+      - I need a drop off at my residence.
+      - Drop me off please.
+  - intent: confirm_tour_end
+    examples: |-
+      - Is the tour over?
+      - Has the Old Dhaka tour finished?
+      - Is this the end of the tour?
+      - Are we done?
+      - Did the tour end?
+  - intent: ask_palace_info
+    examples: |-
+      - Tell me about the colonial palace in Dhaka.
+      - What's the history of that influential family's home?
+      - Give me some information on the Dhaka palace.
+      - I'd like to know more about the colonial-era palace.
+      - Tell me about the popular tourist place in Dhaka
+  - intent: ask_lalbagh_fort_description
+    examples: |-
+      - Tell me about Lalbagh fort
+      - Describe Lalbagh fort
+      - What is Lalbagh fort?
+      - Give me some information on Lalbagh fort
+      - What can you tell me about Lalbagh fort?
+  - intent: ask_dhakeshwar_temple_location
+    examples: |-
+      - Where is Dhakeshwar Temple located?
+      - What's the address of Dhakeshwar Temple?
+      - Can you tell me the location of Dhakeshwar Temple?
+      - I want to know where Dhakeshwar Temple is.
+  - intent: confirm_dhakeshwar_temple_visit
+    examples: |-
+      - Will we visit Dhakeshwar Temple?
+      - Is Dhakeshwar Temple on the itinerary?
+      - Are we going to see Dhakeshwar Temple?
+      - Does the tour include Dhakeshwar Temple?
+  - intent: ask_tour_end
+    examples: |-
+      - When does the tour end?
+      - What time is the tour over?
+      - What's the end time of the tour?
+      - When will the tour finish?
+  - intent: describe_river
+    examples: |-
+      - Tell me about the river.
+      - Describe the river.
+      - What's the river like?
+      - What can you tell me about this river?
+  - intent: ask_building_use
+    examples: |-
+      - What is the building used for now?
+      - What does the university use this building for?
+      - What's the purpose of this building?
+      - How is the building used today?
+  - intent: ask_popularity
+    examples: |-
+      - Is this place popular?
+      - How popular is this tourist spot?
+      - Is it a well-known tourist attraction?
+      - Many people visit this place, right?
+      - Does this place attract many tourists?
+  - intent: ask_market_description
+    examples: |-
+      - What is this place?
+      - Tell me about this market
+      - Describe the market
+      - What's this place like?
+      - Give me some information about the market
+  - intent: ask_sorting_factors
+    examples: |-
+      - What factors affect the choice of a sorting algorithm?
+      - What should I consider when picking a sorting algorithm?
+      - Which factors influence sorting algorithm selection?
+      - Explain the factors to consider for choosing a sorting algorithm.
+  - intent: ask_algorithms_tested
+    examples: |-
+      - Which sorting algorithms were tested in the paper?
+      - What algorithms did you use for the experiment?
+      - List the sorting algorithms implemented in C++.
+      - What algorithms are mentioned in this document?
+  - intent: ask_test_data
+    examples: |-
+      - What kind of data was used for testing?
+      - What was the size of the test data?
+      - Describe the test data used in the experiments.
+      - How much data did you use for testing?
+  - intent: ask_measurement_method
+    examples: |-
+      - How was the execution time measured?
+      - What method was used to measure the performance?
+      - What tools were used for performance measurement?
+      - Explain the method for measuring the execution time.
+  - intent: ask_tables
+    examples: |-
+      - Where are the results?
+      - Show me the tables with the results.
+      - Which tables contain the results?
+      - I need the tables.
+      - Can I see the result tables?
+  - intent: ask_figures
+    examples: |-
+      - Show me the figures.
+      - Where are the curves shown?
+      - I need to see the figures.
+      - Can I see figure 1?
+      - Where are the graphs?
+  - intent: ask_selection_sort_definition
+    examples: |-
+      - What is selection sort?
+      - Explain selection sort
+      - Define selection sort
+      - Tell me about selection sort
+      - What's selection sort?
+  - intent: ask_efficiency_small_files
+    examples: |-
+      - How efficient is it for small files?
+      - Does it work well with small files?
+      - What's its performance like on small files?
+      - Is it efficient for small file processing?
+  - intent: ask_application
+    examples: |-
+      - What is its main application?
+      - What is it used for?
+      - What are its applications?
+      - Where is this used?
+  - intent: ask_movement_characteristic
+    examples: |-
+      - How many times is each item moved?
+      - What's the movement characteristic of each item?
+      - Describe the movement of each item.
+      - Is there a limit to how many times items are moved?
+  - intent: ask_time_complexity
+    examples: |-
+      - What's the time complexity?
+      - What is the time complexity of the algorithm?
+      - How complex is this algorithm?
+      - Can you tell me about the time complexity?
+      - What's the time complexity of this?
+  - intent: ask_advantage_selection_sort
+    examples: |-
+      - What is the advantage of selection sort?
+      - Tell me the advantage of selection sort.
+      - What's good about selection sort?
+      - What is a benefit of using selection sort?
+      - Selection sort advantage?
+  - intent: ask_data_movement
+    examples: |-
+      - How much data does it move?
+      - What's the data movement like?
+      - Describe the data movement.
+      - How efficient is it in terms of data transfer?
+      - Does it minimize data movement?
+  - intent: ask_selection_sort_speed
+    examples: |-
+      - When is selection sort the fastest?
+      - Is selection sort ever the quickest sorting algorithm?
+      - Under what conditions is selection sort the best choice?
+      - When should I use selection sort?
+      - What are the advantages of selection sort?
+  - intent: ask_execution_time
+    examples: |-
+      - What's the execution time?
+      - How long did it take to execute?
+      - Can you tell me about the execution time?
+      - What was the execution time in Table 1?
+  - intent: ask_number_elements
+    examples: |-
+      - How many elements are there?
+      - What's the number of elements?
+      - Can I get the number of elements from Table 1?
+      - What about the number of elements?
+  - intent: ask_table_info
+    examples: |-
+      - Tell me about Table 1.
+      - What's in Table 1?
+      - Give me information on Table 1.
+      - What does Table 1 show?
+  - intent: ask_journal_name
+    examples: |-
+      - What's the name of the journal?
+      - Which journal is this article from?
+      - Can you tell me the journal's name?
+      - What journal published this?
+      - Journal name please.
+  - intent: ask_authors
+    examples: |-
+      - Who are the authors?
+      - Who wrote this article?
+      - What are the authors' names?
+      - Author names please.
+      - Can I get the list of authors?
+  - intent: ask_volume_issue_year
+    examples: |-
+      - What is the volume, issue, and year?
+      - What's the volume and issue number?
+      - When was this published?
+      - What year was this published?
+      - Can you give me the publication details?
+  - intent: ask_stability
+    examples: |-
+      - What is stability in an algorithm?
+      - Explain the concept of algorithm stability.
+      - What does algorithm stability mean?
+      - How does stability affect sorting algorithms?
+  - intent: ask_number_sequence
+    examples: |-
+      - What's the number sequence?
+      - Tell me the numbers.
+      - Can I get the sequence?
+      - What are the numbers in the sequence?
+      - Show me the numbers.
+  - intent: ask_stable_algorithms
+    examples: |-
+      - What sorting algorithms are stable?
+      - Name some stable sorting algorithms.
+      - Which algorithms are inherently stable?
+      - Give me examples of stable sorting algorithms.
+      - Tell me about stable sorts.
+  - intent: ask_unstable_algorithms
+    examples: |-
+      - What sorting algorithms are unstable?
+      - Which algorithms are not stable?
+      - Name some unstable sorting algorithms.
+      - Give me examples of unstable sorting algorithms.
+  - intent: ask_memory_usage
+    examples: |-
+      - How does memory usage affect sorting algorithms?
+      - What is the memory impact of sorting?
+      - Do all sorting algorithms use the same amount of memory?
+      - Which algorithms use more memory?
+      - Explain memory space in sorting algorithms.
+  - intent: ask_algorithm_modification
+    examples: |-
+      - Can unstable algorithms be made stable?
+      - Is it possible to modify an unstable sort to be stable?
+      - How can I make a sorting algorithm stable?
+      - What are the modifications for unstable sorting algorithms to become stable?
+  - intent: ask_algorithm_comparison
+    examples: |-
+      - How do these algorithms compare?
+      - What's the comparison between the oldest and newest algorithm?
+      - Can you explain the comparative operation between the algorithms?
+      - Tell me about the comparison of algorithms used.
+      - How are the algorithms compared?
+  - intent: ask_sorting_algorithms_comparison
+    examples: |-
+      - What's the comparison between different sorting algorithms?
+      - How do selection sort and shell sort compare?
+      - Can you compare the performance of various sorting algorithms?
+      - Tell me about a study comparing sorting algorithms.
+  - intent: ask_adhikari_study
+    examples: |-
+      - What did Pooja Adhikari's 2007 study find?
+      - Tell me about the Adhikari study on sorting algorithm performance.
+      - I'm interested in the 2007 research on sorting algorithm comparison.
+  - intent: ask_pasetto_akhriev_study
+    examples: |-
+      - What did Pasetto and Akhriev study in 2011?
+      - Tell me about the 2011 research on parallel sorting algorithms.
+      - I'm interested in the Pasetto and Akhriev paper on parallel sorting.
+  - intent: ask_sorting_algorithms
+    examples: |-
+      - What sorting algorithms are mentioned?
+      - Tell me about the sorting algorithms discussed.
+      - What algorithms are used for sorting?
+      - Which algorithms are used in the document for sorting large datasets?
+      - What are the sorting methods discussed in the document?
+  - intent: ask_dataset_size
+    examples: |-
+      - How large are the datasets considered?
+      - What size of datasets are discussed?
+      - What is the size range of the arrays?
+      - How big are the arrays being sorted?
+      - What's the scale of data being sorted?
+  - intent: ask_algorithm_purpose
+    examples: |-
+      - What is the purpose of these algorithms?
+      - Why are these algorithms used?
+      - What's the application of these sorting methods?
+      - What problem do these algorithms solve?
+      - For what are these algorithms used?
+  - intent: ask_year
+    examples: |-
+      - When was this research published?
+      - What year is this from?
+      - What's the publication year?
+      - When was this written?
+      - What is the year of this document?
+  - intent: ask_performance_measures
+    examples: |-
+      - What performance measures were used?
+      - How did you measure performance?
+      - What metrics did you use to evaluate performance?
+      - Can you tell me about the performance evaluation?
+      - Which performance metrics were investigated?
+  - intent: publish_github
+    examples: |-
+      - How can I publish my projects on GitHub?
+      - I want to publish my portfolio on GitHub.
+      - What's the best way to publish projects to GitHub?
+      - Publish my projects to GitHub.
+      - GitHub for portfolio publishing
+  - intent: publish_portfolio_github
+    examples: |-
+      - How can I publish my portfolio projects?
+      - Where should I host my portfolio projects?
+      - I want to publish my portfolio, what platform do you recommend?
+      - What's the best place to publish my portfolio?
+      - How do I share my portfolio online?

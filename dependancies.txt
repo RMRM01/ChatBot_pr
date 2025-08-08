@@ -1,0 +1,17 @@
+pypdf
+nltk
+sentence-transformers
+numpy
+pyyaml
+glob2
+requests
+python-dotenv
+pinecone-client
+tqdm
+rs 
+requests
+flask 
+openai
+flask_cors
+rasa
+

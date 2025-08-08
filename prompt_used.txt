@@ -1,0 +1,274 @@
+
+You are an expert Rasa chatbot designer. Your task is to generate Rasa 3.1-compliant configuration files based **only on the current semantic content chunk**.
+
+---
+
+🎯 Your Goal:
+
+1. Think like a real person reading this content.
+2. Identify **what user intents** this chunk supports or could answer.
+3. For each intent:
+   - Generate **at least 10 realistic natural language examples**, including:
+    - Direct queries
+    - Polite or indirect phrasing (e.g., “Thanks, that’s all”)
+    - Casual or conversational tone
+    - Consider the **user’s motivation** behind the utterance.
+4. Create **bot responses** that clearly and helpfully fulfill each intent using information from the chunk.
+5. Structure the output as clean, valid YAML that works with **Rasa version 3.1**.
+
+
+🧱 Generate These Files:
+
+- **nlu.yml**
+  - Extract realistic intents from the content.
+  - Include at least 10 examples per intent.
+  - Annotate important entities (e.g.):
+  - Phone numbers (e.g., 01XXXXXXXXX)
+  - Places or addresses (e.g., House 22, Mirpur)
+  - Cities, landmarks, or universities (e.g., Dhaka, Rajshahi University)
+
+DO NOT USE ANY ```yaml or ``` anywhere
+DO NOT add greed affirm or thanks i already added them. 
+
+- **domain.yml**
+  - Follow this structure exactly:
+  there is a tab space. before each intant. as a member of the intents: .
+    - version: "3.1"
+    - intents:
+      - intent_name1
+      - intent_name2
+    - entities:
+      -entiey1
+      -entity2
+    - responses: (every response must start with `utter_`)
+    - do not add action in domain.yml
+    - ⚠️ Do NOT place responses or entities inside the intents section.
+
+- **stories.yml**
+  - Create one short, realistic story per intent.
+  - Show a believable user-to-bot interaction using the intent and its response.
+
+- **rules.yml**
+  - Add one rule per intent.
+  - Each rule should map: intent → utter response.
+  - If no rules apply, leave the section empty but include version header.
+
+- **actions.py**
+  - Include only if the bot requires custom behavior (e.g., dynamic responses).
+  - Keep the code minimal and clean.
+
+🧾 Naming Rules:
+
+- Add the unique code `_3` to all intent names, entity names, and response names.
+  - Examples: `ask_address_3`, `mobile_3`, `utter_ask_address_3`
+
+📄 Formatting Rules:
+
+- **DO NOT** use Markdown syntax (e.g., no ```yaml).
+- **DO NOT** include comments, explanations, or emojis.
+- **DO** wrap each file’s like below... 
+
+### START NLU ###
+<your nlu content>
+### END NLU ###
+
+### START DOMAIN ###
+<your domain content>
+### END DOMAIN ###
+
+### START STORIES ###
+<your stories content>
+### END STORIES ###
+
+### START RULES ###
+<your rules content>
+### END RULES ###
+
+### START ACTIONS ###
+<your actions content if needed, otherwise leave empty>
+### END ACTIONS ###
+
+
+📦 Now process the following standalone content chunk. Think step-by-step, extract intents and entities, and generate YAML for all five files based only on the information inside this chunk.
+
+UNIQUE CODE: **3**
+
+Content:
+{'index': 25, 'chunk': 'Tour Price 1 Pax Tour:$127 USD / 14000 BDT 2 Pax Tour:$83 USD / 9000 BDT 3 Pax Tour:$73 USD / 8000 BDT TRAVEL AND EXPLORE BD a step into the school of life...'}
+
+
+    
+*************************888888888888888888888 good *************************88888888
+You are an expert Rasa chatbot designer. Your task is to generate Rasa 3.1-compliant configuration files based 
+**only on the current semantic content chunk**.
+
+
+🎯 Your Goal:
+
+1. Think like a real person reading this content.
+2. Identify **what user intents** this chunk supports or could answer.
+3. For each intent:
+   - Generate **at least 10 realistic natural language examples**, including:
+    - Direct queries
+    - Casual or conversational tone
+    - Consider the **user’s motivation** behind the utterance.
+    - give response for each intent. in next domain section. then give atleast one stories against each intent.
+4. Create **bot responses** that clearly and helpfully fulfill each intent using information from the chunk.
+5. Structure the output as clean, valid YAML that works with **Rasa version 3.1**.
+6. even If no intents , response, stories is possible. generate AT LEAST ONE.
+
+🧱 Generate These Files:
+
+- **nlu.yml**
+  - Extract realistic intents from the content.
+  - Include at least 10 examples per intent.
+  - consider user might ask about info like Phone numbers (e.g., 01XXXXXXXXX)
+  - historical or any place Places or addresses (e.g., House 22, Mirpur)
+
+DO NOT USE ANY ```yaml or ``` anywhere
+DO NOT add greed affirm or thanks i already added them. 
+
+- **domain.yml**
+  - Follow this structure exactly:
+  there is a tab space. before each intant. as a member of the intents: .
+    - version: "3.1"
+    - intents:
+      - intent_name1
+      - intent_name2
+ DO NOT NEED TO WRITE ANY ENTITIES
+ 
+    - responses: (every response must start with `utter_`)
+    - DO NOT ADD ACTION in domain.yml
+
+
+- **stories.yml**
+  - Create one short, realistic story per intent.
+  - Show a believable user-to-bot interaction using the intent and its response.
+
+- **rules.yml**
+  - Add one rule per intent.
+  - Each rule should map: intent → utter response.
+  - If no rules apply, leave the section empty but include version header.
+
+NO ACTIONS FILE IS NEEDED
+
+🧾 Naming Rules:
+
+- Add the unique code `_3` to all intent names, entity names, and response names.
+  - Examples: `ask_address_3`, `mobile_3`, `utter_ask_address_3`
+
+📄 Formatting Rules:
+
+- **DO NOT** use Markdown syntax (e.g., no ```yaml).
+- **DO NOT** include comments, explanations, or emojis.
+- **DO** wrap each file’s like below... 
+DO NOT MIX UP ONE SECTION WITH ANOTHER SECTION LIKE WRITING UTTER INSIDE INTENT OR STORIES INSIDE DOMAIN
+
+### START NLU ###
+<your nlu content>
+### END NLU ###
+
+### START DOMAIN ###
+<your domain content>
+### END DOMAIN ###
+
+### START STORIES ###
+<your stories content>
+### END STORIES ###
+
+### START RULES ###
+<your rules content>
+### END RULES ###
+
+ Think step-by-step, extract intents and entities, and generate YAML. 
+
+UNIQUE CODE: **4**
+
+Content:
+{chunk}
+
+
+
+9999999999999999999999999999999999999999999
+
+
+
+You are an expert Rasa chatbot designer. Your task is to generate Rasa 3.1-compliant configuration files based 
+**only on the current semantic content chunk**.
+
+AT LEASE ONE INTENT, RESPONSE, STORY, RULE IS MANDATORY
+Your Goal:
+
+1. Think like a real person reading this content.
+2. Identify **what user intents** this chunk supports or could answer.
+3. For each intent:
+   - Generate **at least 10 realistic natural language examples**.
+   - Create **bot responses in domain and story for stories** that clearly and helpfully fulfill each intent.
+   - Generate at least one story and one rule for the intents.
+4. Structure the output as clean, valid YAML that works with **Rasa version 3.1**.
+
+** DOUBLE CHECK : EACH INTENT MUST HAVE RESPONSES (WHERE EACHRESPONSE MUST BE UNIQUE), THERE MUST BE A STORY OF THE CONVERSATION AGAINST EACH INTENT, WHERE RESPONSE IS PROVIDED THROUGH action: AND AT LEAST ONE RULE.  **
+** DO NOT ADD INTENT LIKE greet, goodbye, affirm, deny, chitchat, bot_challenge, out_of_scope, fallback. **
+**DO NOT** use Markdown syntax (e.g., no ```yaml).
+**DO NOT** include comments or explanations.
+**DO** wrap each file’s content within the specified START/END markers.
+**DO NOT** mix sections (e.g., no responses in the NLU section).
+YOU DO NOT NEED TO WRITE ENTITIES OR ACTIONS.
+
+
+
+### START NLU ###
+<YOUR NLU CONTENT WITH JUST INTENTS>
+### END NLU ###
+
+### START DOMAIN ###
+<YOUR DOMAIN CONTENT WITH INTENTS, RESPONSES>
+### END DOMAIN ###
+
+### START STORIES ###
+<YOUR STORIES CONTENT WITH STORIES>
+### END STORIES ###
+
+### START RULES ###
+<YOUR RULES CONTENT WITH RULES>
+### END RULES ###
+EXAMPLE:
+NLU CONTENT:
+nlu:
+- intent: greet_5
+  examples: |
+    - hi
+    - hello
+
+DOMAIN CONTENT:
+intents:
+  - greet_5
+
+responses:
+  utter_how_are_you_5:
+    - text: "how are you."
+
+  utter_how_can_i_help_you_with_5:
+    - text: "How can I help you."
+
+STORIES CONTENT:
+stories:
+- story: Respond to hello
+  steps:
+    - intent: greet_5
+    - action: utter_how_are_you_5
+    - action: utter_how_can_i_help_you_with_5
+
+RULES CONTENT:
+rules:
+- rule: Respond to sorting algorithm performance
+  steps:
+    - intent: greet_5
+    - action: utter_how_can_i_help_you_with_5
+
+
+UNIQUE CODE: **5**
+
+Content:
+{chunk["chunk"]}
+        """
