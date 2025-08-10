@@ -152,11 +152,18 @@ def create_semantic_chunks(sentences, model, similarity_threshold):
 
 
 #new my work
+def backup_old_json():
+    backup_path= ".//old_new_output_marger//backup_of_old_json//backup_old_.json"
+    old_file_path= ".//old_new_output_marger//old_json//old_.json"
+    with open(old_file_path,'r',encoding='utf-8') as f:
+        old_json = json.load(f)
+    with open(backup_path,'w',encoding='utf-8') as f:
+        json.dump(old_json, f, indent=2, ensure_ascii=False)
 
 
 
 # ===================================================================
-# --- THIS IS WHERE RUN EVERYTHING ---
+# --- THIS IS WHERE EVERYTHING RUNS---
 # ===================================================================
 
 
@@ -222,72 +229,74 @@ def run_full_pipeline():
     save_in_data.move()
 
 
-# --- Configuration ---
-PDF_FILE = ".//learned_document//file.pdf"             # Path to your PDF file
-MODEL_NAME = 'all-MiniLM-L6-v2'     # free AI model
-# MODEL_NAME = 'BAAI/bge-large-en-v1.5'     # AI model we will use
+# # --- Configuration ---
+# PDF_FILE = ".//learned_document//file.pdf"             # Path to your PDF file
+# MODEL_NAME = 'all-MiniLM-L6-v2'     # free AI model
+# # MODEL_NAME = 'BAAI/bge-large-en-v1.5'     # AI model we will use
 
-# This is "sensitivity" knob. Lower value = more chunks.
-SIMILARITY_THRESHOLD = 0.5   
+# # This is "sensitivity" knob. Lower value = more chunks.
+# SIMILARITY_THRESHOLD = 0.5   
 
-# 1. Get the raw text
-raw_text = extract_text_from_pdf(PDF_FILE)
+# # 1. Get the raw text
+# raw_text = extract_text_from_pdf(PDF_FILE)
 
-with open("raw_text.txt","w",encoding="utf-8") as f:
-    f.write(raw_text)
+# with open("raw_text.txt","w",encoding="utf-8") as f:
+#     f.write(raw_text)
 
-# 2. Split into sentences
-sentences = smart_split_text_into_sentences(raw_text)
+# # 2. Split into sentences
+# sentences = smart_split_text_into_sentences(raw_text)
 
-# 3. Load the AI Model
-print("-> Loading the AI model (this may take a moment on first run)...")
-ai_model = SentenceTransformer(MODEL_NAME)
+# # 3. Load the AI Model
+# print("-> Loading the AI model (this may take a moment on first run)...")
+# ai_model = SentenceTransformer(MODEL_NAME)
 
-# 4. Create the chunks
-final_chunks = create_semantic_chunks(sentences, ai_model, SIMILARITY_THRESHOLD)
-print('--------------------- *************************** final chunk done')
-
-
-#send Message to LLM
-send_message_to_llm.sending_chunks_to_gemini(final_chunks)
+# # 4. Create the chunks
+# final_chunks = create_semantic_chunks(sentences, ai_model, SIMILARITY_THRESHOLD)
+# print('--------------------- *************************** final chunk done')
 
 
+# #send Message to LLM
+# send_message_to_llm.sending_chunks_to_gemini(final_chunks)
 
-# add all chunck 
 
-json_file_merge.merge_chunked_json_responses()
 
-# Deleting all chuncks 
+# # add all chunck 
 
-delete_all_chunk.deleteAll("./old_new_output_marger/output_from_gemeini_json/")
+# json_file_merge.merge_chunked_json_responses()
 
-# ==== merging old and new json file
+# # Deleting all chuncks 
 
-merged_data = mon.merge_gemini_outputs(
-    ".//old_new_output_marger//old_json//old_.json",
-    ".//old_new_output_marger//new_json/merged_response.json"
-)
+# delete_all_chunk.deleteAll("./old_new_output_marger/output_from_gemeini_json/")
 
-# Optionally, save it:
-with open(".//old_new_output_marger//old_json//old_.json", "w", encoding="utf-8") as f:
-    json.dump(merged_data, f, indent=2, ensure_ascii=False)
+# # ==== merging old and new json file
 
-print("Merged new_ into merged_response.json")
+# merged_data = mon.merge_gemini_outputs(
+#     ".//old_new_output_marger//old_json//old_.json",
+#     ".//old_new_output_marger//new_json/merged_response.json"
+# )
 
-# convert into yaml file and save into data folder and domain folder
+# # Optionally, save it:
+# with open(".//old_new_output_marger//old_json//old_.json", "w", encoding="utf-8") as f:
+#     json.dump(merged_data, f, indent=2, ensure_ascii=False)
 
-with open(".//old_new_output_marger//old_json//old_.json", "r", encoding="utf-8") as f:
-  old_json_file_data = json.load(f)
-  make_yaml.generate_final_rasa_yamls(old_json_file_data)
+# print("Merged new_ into merged_response.json")
 
-print("EVERYTHING IS DONE CURRECTLY CHECK DATA_TEST FOLDER< THANK YOU")
+# # convert into yaml file and save into data folder and domain folder
 
-# copyint uploaded document to a new folder 
-copy.copy_folder_contents("./uploads", "./learned_document")
+# with open(".//old_new_output_marger//old_json//old_.json", "r", encoding="utf-8") as f:
+#   old_json_file_data = json.load(f)
+#   make_yaml.generate_final_rasa_yamls(old_json_file_data)
 
-# cleaning uploads folder 
-delete_all_chunk.deleteAll("./uploads/")
-delete_all_chunk.deleteAll("./data/")
-# delete_all_chunk.deleteAll("./")
+# print("EVERYTHING IS DONE CURRECTLY CHECK DATA_TEST FOLDER< THANK YOU")
 
-save_in_data.move()
+# # copyint uploaded document to a new folder 
+# copy.copy_folder_contents("./uploads", "./learned_document")
+
+# # cleaning uploads folder 
+# delete_all_chunk.deleteAll("./uploads/")
+# delete_all_chunk.deleteAll("./data/")
+# # delete_all_chunk.deleteAll("./")
+
+# save_in_data.move()
+
+backup_old_json()

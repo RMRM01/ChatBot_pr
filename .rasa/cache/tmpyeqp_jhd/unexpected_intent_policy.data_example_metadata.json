@@ -1,0 +1,882 @@
+[
+  {
+    "key": "action_name",
+    "components": [
+      {
+        "key": "mask",
+        "number_of_dimensions": 3,
+        "features": [
+          {
+            "type": "group",
+            "subcomponents": [
+              {
+                "type": "dense",
+                "key": "component_action_name_mask_0_0_array",
+                "shape": [
+                  1,
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "sentence",
+        "number_of_dimensions": 4,
+        "features": [
+          {
+            "type": "group",
+            "subcomponents": [
+              {
+                "type": "group",
+                "subcomponents": [
+                  {
+                    "type": "sparse",
+                    "key": "component_action_name_sentence_0_0_0",
+                    "shape": [
+                      0,
+                      202
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "dialogue",
+    "components": [
+      {
+        "key": "length",
+        "number_of_dimensions": 1,
+        "features": [
+          {
+            "type": "list",
+            "key": "component_dialogue_length_0_list"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "intent",
+    "components": [
+      {
+        "key": "mask",
+        "number_of_dimensions": 3,
+        "features": [
+          {
+            "type": "group",
+            "subcomponents": [
+              {
+                "type": "dense",
+                "key": "component_intent_mask_0_0_array",
+                "shape": [
+                  1,
+                  1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "key": "sentence",
+        "number_of_dimensions": 4,
+        "features": [
+          {
+            "type": "group",
+            "subcomponents": [
+              {
+                "type": "group",
+                "subcomponents": [
+                  {
+                    "type": "sparse",
+                    "key": "component_intent_sentence_0_0_0",
+                    "shape": [
+                      0,
+                      194
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "label",
+    "components": [
+      {
+        "key": "ids",
+        "number_of_dimensions": 3,
+        "features": [
+          {
+            "type": "group",
+            "subcomponents": [
+              {
+                "type": "group",
+                "subcomponents": [
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_0_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_1_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_2_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_3_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_4_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_5_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_6_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_7_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_8_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_9_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_10_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_11_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_12_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_13_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_14_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_15_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_16_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_17_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_18_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_19_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_20_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_21_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_22_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_23_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_24_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_25_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_26_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_27_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_28_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_29_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_30_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_31_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_32_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_33_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_34_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_35_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_36_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_37_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_38_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_39_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_40_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_41_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_42_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_43_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_44_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_45_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_46_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_47_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_48_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_49_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_50_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_51_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_52_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_53_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_54_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_55_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_56_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_57_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_58_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_59_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_60_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_61_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_62_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_63_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_64_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_65_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_66_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_67_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_68_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_69_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_70_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_71_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_72_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_73_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_74_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_75_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_76_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_77_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_78_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_79_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_80_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_81_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_82_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_83_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_84_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_85_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_86_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_87_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_88_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_89_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_90_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_91_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_92_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_93_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_94_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_95_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_96_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_97_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_98_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_99_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_100_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_101_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_102_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_103_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_104_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_105_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_106_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_107_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_108_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_109_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_110_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_111_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_112_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_113_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_114_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_115_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_116_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_117_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_118_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_119_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_120_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_121_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_122_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_123_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_124_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_125_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_126_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_127_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_128_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_129_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_130_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_131_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_132_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_133_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_134_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_135_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_136_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_137_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_138_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_139_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_140_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_141_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_142_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_143_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_144_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_145_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_146_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_147_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_148_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_149_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_150_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_151_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_152_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_153_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_154_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_155_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_156_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_157_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_158_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_159_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_160_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_161_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_162_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_163_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_164_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_165_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_166_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_167_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_168_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_169_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_170_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_171_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_172_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_173_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_174_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_175_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_176_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_177_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_178_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_179_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_180_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_181_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_182_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_183_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_184_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_185_list"
+                  },
+                  {
+                    "type": "list",
+                    "key": "component_label_ids_0_0_186_list"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

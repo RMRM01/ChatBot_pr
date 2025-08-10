@@ -10,7 +10,7 @@ chatForm.addEventListener("submit", async (e) => {
   appendMessage("You", message);
   userInput.value = "";
 
-  const response = await fetch("http://192.168.57.11:8080/chat", {
+  const response = await fetch("http://192.168.254.100:8080/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ message })
@@ -39,7 +39,7 @@ async function uploadPDF() {
   const formData = new FormData();
   formData.append("file", file);
 
-  const response = await fetch("http://192.168.57.11:8080/upload-pdf", {
+  const response = await fetch("http://192.168.254.100:8080/upload-pdf", {
     method: "POST",
     body: formData,
   });

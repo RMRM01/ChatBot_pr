@@ -1,0 +1,7653 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_boat_ride_location",
+        "examples": [
+          "Where can I go for a boat ride?",
+          "Where is the boat ride?",
+          "What's the location of the boat ride?",
+          "Tell me the place for the boat ride."
+        ]
+      },
+      {
+        "name": "greet",
+        "examples": [
+          "hello",
+          "hi",
+          "how are you",
+          "hey boss",
+          "hey",
+          "good",
+          "are you there?"
+        ]
+      },
+      {
+        "name": "bye",
+        "examples": [
+          "see you",
+          "bye",
+          "that's all for today",
+          "no more today",
+          "cu",
+          "good bye"
+        ]
+      },
+      {
+        "name": "ask_boat_ride_details",
+        "examples": [
+          "Tell me about the boat ride.",
+          "What kind of boat ride is it?",
+          "What can you tell me about the boat ride at Sadarghat?",
+          "Describe the boat ride."
+        ]
+      },
+      {
+        "name": "ask_river_description",
+        "examples": [
+          "Tell me about the river.",
+          "What's the river like?",
+          "Describe the river.",
+          "Give me some information about this river.",
+          "Can you tell me something about the river?"
+        ]
+      },
+      {
+        "name": "ask_river_activity",
+        "examples": [
+          "What can I see on the river?",
+          "What activities are there on the river?",
+          "Describe the river activity.",
+          "Tell me about the river.",
+          "What's happening on the river?"
+        ]
+      },
+      {
+        "name": "request_video",
+        "examples": [
+          "Can I see the video?",
+          "Show me the video of the river port.",
+          "I'd like to watch the video.",
+          "Play the video please.",
+          "Where's the video?"
+        ]
+      },
+      {
+        "name": "ask_ahsan_manzil_info",
+        "examples": [
+          "Tell me about Ahsan Manzil",
+          "What is Ahsan Manzil?",
+          "Give me some information on Ahsan Manzil",
+          "I want to know about the Pink Palace",
+          "Tell me about the Pink Palace"
+        ]
+      },
+      {
+        "name": "ask_dhaka_university_places",
+        "examples": [
+          "What places are in Dhaka University?",
+          "Tell me about the areas within Dhaka University.",
+          "What are some notable places to visit in Dhaka University?",
+          "List the places I can visit at Dhaka University."
+        ]
+      },
+      {
+        "name": "ask_curzon_hall",
+        "examples": [
+          "Tell me about Curzon Hall.",
+          "What's special about Curzon Hall?",
+          "Describe Curzon Hall.",
+          "What is Curzon Hall known for?"
+        ]
+      },
+      {
+        "name": "ask_architectural_style",
+        "examples": [
+          "What is the architectural style?",
+          "What style of architecture is it?",
+          "Can you describe the architecture?",
+          "Tell me about its design.",
+          "What's its architectural design?"
+        ]
+      },
+      {
+        "name": "ask_history",
+        "examples": [
+          "What's the history of this building?",
+          "Tell me about the building's past.",
+          "What was here before?",
+          "Could you share the building's historical background?",
+          "I'd like to know the history of this place."
+        ]
+      },
+      {
+        "name": "ask_previous_use",
+        "examples": [
+          "What was the building used for before 1911?",
+          "Who used this building before the university?",
+          "What's the building's history before Dhaka University?",
+          "Can you tell me about its previous use?"
+        ]
+      },
+      {
+        "name": "ask_current_use",
+        "examples": [
+          "What is the building used for now?",
+          "What's the building's current purpose?",
+          "How is the building used today?",
+          "What does the university use this building for?"
+        ]
+      },
+      {
+        "name": "ask_tourist_attraction",
+        "examples": [
+          "Is this place a tourist attraction?",
+          "Is it a popular tourist spot?",
+          "Is this place of tourist interest?",
+          "Is this a tourist destination?",
+          "Do many tourists visit here?"
+        ]
+      },
+      {
+        "name": "ask_sadarghat_directions",
+        "examples": [
+          "How do I get to Sadarghat River Station?",
+          "What's the way to Sadarghat?",
+          "Give me directions to Sadarghat River Station",
+          "I need directions to Sadarghat.",
+          "How can I reach Sadarghat?"
+        ]
+      },
+      {
+        "name": "ask_location",
+        "examples": [
+          "Where is the river port located?",
+          "What's the location of the port?",
+          "Tell me the location of Dhaka's main river port.",
+          "Where is this river port?"
+        ]
+      },
+      {
+        "name": "ask_size",
+        "examples": [
+          "How big is this river station?",
+          "What's the size of the port?",
+          "Is it a large port?",
+          "What are the port's dimensions?"
+        ]
+      },
+      {
+        "name": "ask_region",
+        "examples": [
+          "Where is the port located geographically?",
+          "Which region is this port in?",
+          "What's the region of the port?",
+          "In what part of the world is this port located?"
+        ]
+      },
+      {
+        "name": "ask_sadarghat_usage",
+        "examples": [
+          "What is Sadarghat used for?",
+          "What happens at Sadarghat?",
+          "Tell me about the activities at Sadarghat.",
+          "What kind of traffic does Sadarghat handle?",
+          "Describe the use of Sadarghat."
+        ]
+      },
+      {
+        "name": "ask_market_type",
+        "examples": [
+          "What kind of market is this?",
+          "What type of market is this place?",
+          "Can you describe the market?",
+          "What do they sell at the market?"
+        ]
+      },
+      {
+        "name": "ask_market_products",
+        "examples": [
+          "What products are sold there?",
+          "What items are available at the market?",
+          "What do they sell in the market?",
+          "What can I buy at this market?"
+        ]
+      },
+      {
+        "name": "ask_market_location",
+        "examples": [
+          "Where is this market located?",
+          "Where is the market?",
+          "What is the location of this market?",
+          "What part of Bangladesh is this market in?"
+        ]
+      },
+      {
+        "name": "ask_shop_types",
+        "examples": [
+          "What kinds of shops are there?",
+          "What types of stores can I find?",
+          "What shops are available?",
+          "Are there any retail stores?",
+          "What kind of retail is there?"
+        ]
+      },
+      {
+        "name": "ask_whatsapp_number",
+        "examples": [
+          "What's your WhatsApp number?",
+          "Can I contact you on WhatsApp?",
+          "Give me your WhatsApp number please",
+          "Your WhatsApp number?",
+          "What is your WhatsApp contact?"
+        ]
+      },
+      {
+        "name": "ask_pickup",
+        "examples": [
+          "What about pickup?",
+          "Where will you pick me up from?",
+          "How will I get picked up?",
+          "Tell me about the pickup arrangement.",
+          "What's the pickup procedure?"
+        ]
+      },
+      {
+        "name": "ask_website",
+        "examples": [
+          "What's your website?",
+          "Can I find more information online?",
+          "Where can I find your website address?",
+          "What is your company's website?"
+        ]
+      },
+      {
+        "name": "ask_email",
+        "examples": [
+          "What's your email address?",
+          "How can I contact you by email?",
+          "May I have your company email?",
+          "What is your company's contact email?"
+        ]
+      },
+      {
+        "name": "ask_pickup_time_weekday",
+        "examples": [
+          "What time do you pick up on weekdays?",
+          "What's the weekday pickup time?",
+          "When are pickups during the week?",
+          "Pick up time on a Tuesday?"
+        ]
+      },
+      {
+        "name": "ask_pickup_time_weekend",
+        "examples": [
+          "What time is pickup on weekends?",
+          "What time do you pick up on Saturdays?",
+          "Pickup time on a Sunday?",
+          "Weekend pickup time?"
+        ]
+      },
+      {
+        "name": "ask_pickup_time_holiday",
+        "examples": [
+          "What time is pickup on holidays?",
+          "What's the pickup time for government holidays?",
+          "Pickup time on a public holiday?",
+          "When do you pick up on a bank holiday?"
+        ]
+      },
+      {
+        "name": "ask_destination",
+        "examples": [
+          "Where are we going?",
+          "What's our destination?",
+          "Where is the car heading?",
+          "Could you tell me our destination?"
+        ]
+      },
+      {
+        "name": "ask_architect",
+        "examples": [
+          "Who designed the Parliament Building?",
+          "Who is the architect of the National Assembly Building?",
+          "Who designed this building?",
+          "Architect's name please."
+        ]
+      },
+      {
+        "name": "ask_description",
+        "examples": [
+          "Tell me about the Parliament Building.",
+          "Describe the National Assembly Building.",
+          "Give me some information on the Parliament Building.",
+          "What is the National Parliament Building?"
+        ]
+      },
+      {
+        "name": "ask_recognition",
+        "examples": [
+          "What awards has it won?",
+          "Has it received any recognition?",
+          "Is it a famous building?",
+          "What awards did this building win?"
+        ]
+      },
+      {
+        "name": "ask_importance",
+        "examples": [
+          "Why is this building important?",
+          "What's significant about this architecture?",
+          "What makes this building a masterpiece?",
+          "Why is it considered a milestone in architecture?"
+        ]
+      },
+      {
+        "name": "ask_design",
+        "examples": [
+          "How is the building designed?",
+          "Describe the building's design.",
+          "What are the geometric forms used?",
+          "What is the composition of the building?"
+        ]
+      },
+      {
+        "name": "ask_about_palace",
+        "examples": [
+          "Tell me about the palace.",
+          "What's the palace like?",
+          "Give me some information on the palace.",
+          "What do you know about the colonial palace in Dhaka?",
+          "Describe the palace."
+        ]
+      },
+      {
+        "name": "ask_palace_history",
+        "examples": [
+          "What's the history of the palace?",
+          "When was the palace built?",
+          "Who lived in the palace?",
+          "Tell me about the palace's past.",
+          "What is the historical significance of this palace?"
+        ]
+      },
+      {
+        "name": "ask_palace_location",
+        "examples": [
+          "Where is the palace located?",
+          "What's the address of the palace?",
+          "How can I get to the palace?",
+          "Where is this palace in Dhaka?",
+          "What's the palace's location?"
+        ]
+      },
+      {
+        "name": "ask_hindu_street",
+        "examples": [
+          "Tell me about Hindu Street",
+          "What's special about Shankharia Bazar?",
+          "What can I see on Hindu Street?",
+          "Describe Hindu Street in Old Dhaka",
+          "I want to know more about Shankharia Bazar"
+        ]
+      },
+      {
+        "name": "ask_rickshaw_ride",
+        "examples": [
+          "Can I take a rickshaw ride?",
+          "Tell me about rickshaw rides.",
+          "What are the rickshaw options?",
+          "How can I get around by rickshaw?",
+          "I'd like to take a rickshaw."
+        ]
+      },
+      {
+        "name": "ask_star_mosque",
+        "examples": [
+          "What is the Star Mosque?",
+          "Tell me about the Star Mosque.",
+          "Where is the Star Mosque located?",
+          "I want to visit the Star Mosque.",
+          "Can you describe the Star Mosque?"
+        ]
+      },
+      {
+        "name": "ask_armenian_church",
+        "examples": [
+          "What is the Armenian Church?",
+          "Tell me about the Armenian Church.",
+          "Where is the Armenian Church located?",
+          "I want to visit the Armenian Church.",
+          "Can you describe the Armenian Church?"
+        ]
+      },
+      {
+        "name": "ask_bongshal",
+        "examples": [
+          "What is Bongshal?",
+          "Tell me about Bongshal.",
+          "How do I get to Bongshal?",
+          "Where is Bongshal located?",
+          "I want to go to Bongshal."
+        ]
+      },
+      {
+        "name": "ask_lunch_break",
+        "examples": [
+          "What's the lunch break activity?",
+          "Tell me about lunch",
+          "What's planned for lunch?",
+          "Can you describe the lunch break?",
+          "What do we have for lunch?"
+        ]
+      },
+      {
+        "name": "ask_lalbagh_fort_info",
+        "examples": [
+          "Tell me about Lalbagh Fort",
+          "What is Lalbagh Fort?",
+          "Give me some information on Lalbagh Fort",
+          "What's the Lalbagh Fort?",
+          "Tell me about the Lalbagh Fort's history"
+        ]
+      },
+      {
+        "name": "ask_lalbagh_fort_period",
+        "examples": [
+          "When was Lalbagh Fort built?",
+          "What period is Lalbagh Fort from?",
+          "What's the historical period of Lalbagh Fort?",
+          "From which era is Lalbagh Fort?"
+        ]
+      },
+      {
+        "name": "ask_lalbagh_fort_location",
+        "examples": [
+          "Where is Lalbagh Fort located?",
+          "What is the location of Lalbagh Fort?",
+          "Where can I find Lalbagh Fort?",
+          "Where is Lalbagh Fort in Dhaka?"
+        ]
+      },
+      {
+        "name": "ask_dhakeshary_temple",
+        "examples": [
+          "What is the Dhakeshary Temple?",
+          "Tell me about Dhakeshary Temple",
+          "When do we visit Dhakeshary Temple?",
+          "What's next after Lalbagh Fort?",
+          "Is there a temple visit planned?"
+        ]
+      },
+      {
+        "name": "confirm_dropoff",
+        "examples": [
+          "Will you drop me off at my hotel?",
+          "Can I get a ride to my place?",
+          "Take me back to my hotel, please.",
+          "I need a drop off at my residence.",
+          "Drop me off please."
+        ]
+      },
+      {
+        "name": "confirm_tour_end",
+        "examples": [
+          "Is the tour over?",
+          "Has the Old Dhaka tour finished?",
+          "Is this the end of the tour?",
+          "Are we done?",
+          "Did the tour end?"
+        ]
+      },
+      {
+        "name": "ask_palace_info",
+        "examples": [
+          "Tell me about the colonial palace in Dhaka.",
+          "What's the history of that influential family's home?",
+          "Give me some information on the Dhaka palace.",
+          "I'd like to know more about the colonial-era palace.",
+          "Tell me about the popular tourist place in Dhaka"
+        ]
+      },
+      {
+        "name": "ask_lalbagh_fort_description",
+        "examples": [
+          "Tell me about Lalbagh fort",
+          "Describe Lalbagh fort",
+          "What is Lalbagh fort?",
+          "Give me some information on Lalbagh fort",
+          "What can you tell me about Lalbagh fort?"
+        ]
+      },
+      {
+        "name": "ask_dhakeshwar_temple_location",
+        "examples": [
+          "Where is Dhakeshwar Temple located?",
+          "What's the address of Dhakeshwar Temple?",
+          "Can you tell me the location of Dhakeshwar Temple?",
+          "I want to know where Dhakeshwar Temple is."
+        ]
+      },
+      {
+        "name": "confirm_dhakeshwar_temple_visit",
+        "examples": [
+          "Will we visit Dhakeshwar Temple?",
+          "Is Dhakeshwar Temple on the itinerary?",
+          "Are we going to see Dhakeshwar Temple?",
+          "Does the tour include Dhakeshwar Temple?"
+        ]
+      },
+      {
+        "name": "ask_tour_end",
+        "examples": [
+          "When does the tour end?",
+          "What time is the tour over?",
+          "What's the end time of the tour?",
+          "When will the tour finish?"
+        ]
+      },
+      {
+        "name": "describe_river",
+        "examples": [
+          "Tell me about the river.",
+          "Describe the river.",
+          "What's the river like?",
+          "What can you tell me about this river?"
+        ]
+      },
+      {
+        "name": "ask_building_use",
+        "examples": [
+          "What is the building used for now?",
+          "What does the university use this building for?",
+          "What's the purpose of this building?",
+          "How is the building used today?"
+        ]
+      },
+      {
+        "name": "ask_popularity",
+        "examples": [
+          "Is this place popular?",
+          "How popular is this tourist spot?",
+          "Is it a well-known tourist attraction?",
+          "Many people visit this place, right?",
+          "Does this place attract many tourists?"
+        ]
+      },
+      {
+        "name": "ask_market_description",
+        "examples": [
+          "What is this place?",
+          "Tell me about this market",
+          "Describe the market",
+          "What's this place like?",
+          "Give me some information about the market"
+        ]
+      },
+      {
+        "name": "ask_sorting_factors",
+        "examples": [
+          "What factors affect the choice of a sorting algorithm?",
+          "What should I consider when picking a sorting algorithm?",
+          "Which factors influence sorting algorithm selection?",
+          "Explain the factors to consider for choosing a sorting algorithm."
+        ]
+      },
+      {
+        "name": "ask_algorithms_tested",
+        "examples": [
+          "Which sorting algorithms were tested in the paper?",
+          "What algorithms did you use for the experiment?",
+          "List the sorting algorithms implemented in C++.",
+          "What algorithms are mentioned in this document?"
+        ]
+      },
+      {
+        "name": "ask_test_data",
+        "examples": [
+          "What kind of data was used for testing?",
+          "What was the size of the test data?",
+          "Describe the test data used in the experiments.",
+          "How much data did you use for testing?"
+        ]
+      },
+      {
+        "name": "ask_measurement_method",
+        "examples": [
+          "How was the execution time measured?",
+          "What method was used to measure the performance?",
+          "What tools were used for performance measurement?",
+          "Explain the method for measuring the execution time."
+        ]
+      },
+      {
+        "name": "ask_tables",
+        "examples": [
+          "Where are the results?",
+          "Show me the tables with the results.",
+          "Which tables contain the results?",
+          "I need the tables.",
+          "Can I see the result tables?"
+        ]
+      },
+      {
+        "name": "ask_figures",
+        "examples": [
+          "Show me the figures.",
+          "Where are the curves shown?",
+          "I need to see the figures.",
+          "Can I see figure 1?",
+          "Where are the graphs?"
+        ]
+      },
+      {
+        "name": "ask_selection_sort_definition",
+        "examples": [
+          "What is selection sort?",
+          "Explain selection sort",
+          "Define selection sort",
+          "Tell me about selection sort",
+          "What's selection sort?"
+        ]
+      },
+      {
+        "name": "ask_efficiency_small_files",
+        "examples": [
+          "How efficient is it for small files?",
+          "Does it work well with small files?",
+          "What's its performance like on small files?",
+          "Is it efficient for small file processing?"
+        ]
+      },
+      {
+        "name": "ask_application",
+        "examples": [
+          "What is its main application?",
+          "What is it used for?",
+          "What are its applications?",
+          "Where is this used?"
+        ]
+      },
+      {
+        "name": "ask_movement_characteristic",
+        "examples": [
+          "How many times is each item moved?",
+          "What's the movement characteristic of each item?",
+          "Describe the movement of each item.",
+          "Is there a limit to how many times items are moved?"
+        ]
+      },
+      {
+        "name": "ask_time_complexity",
+        "examples": [
+          "What's the time complexity?",
+          "What is the time complexity of the algorithm?",
+          "How complex is this algorithm?",
+          "Can you tell me about the time complexity?",
+          "What's the time complexity of this?"
+        ]
+      },
+      {
+        "name": "ask_advantage_selection_sort",
+        "examples": [
+          "What is the advantage of selection sort?",
+          "Tell me the advantage of selection sort.",
+          "What's good about selection sort?",
+          "What is a benefit of using selection sort?",
+          "Selection sort advantage?"
+        ]
+      },
+      {
+        "name": "ask_data_movement",
+        "examples": [
+          "How much data does it move?",
+          "What's the data movement like?",
+          "Describe the data movement.",
+          "How efficient is it in terms of data transfer?",
+          "Does it minimize data movement?"
+        ]
+      },
+      {
+        "name": "ask_selection_sort_speed",
+        "examples": [
+          "When is selection sort the fastest?",
+          "Is selection sort ever the quickest sorting algorithm?",
+          "Under what conditions is selection sort the best choice?",
+          "When should I use selection sort?",
+          "What are the advantages of selection sort?"
+        ]
+      },
+      {
+        "name": "ask_execution_time",
+        "examples": [
+          "What's the execution time?",
+          "How long did it take to execute?",
+          "Can you tell me about the execution time?",
+          "What was the execution time in Table 1?"
+        ]
+      },
+      {
+        "name": "ask_number_elements",
+        "examples": [
+          "How many elements are there?",
+          "What's the number of elements?",
+          "Can I get the number of elements from Table 1?",
+          "What about the number of elements?"
+        ]
+      },
+      {
+        "name": "ask_table_info",
+        "examples": [
+          "Tell me about Table 1.",
+          "What's in Table 1?",
+          "Give me information on Table 1.",
+          "What does Table 1 show?"
+        ]
+      },
+      {
+        "name": "ask_journal_name",
+        "examples": [
+          "What's the name of the journal?",
+          "Which journal is this article from?",
+          "Can you tell me the journal's name?",
+          "What journal published this?",
+          "Journal name please."
+        ]
+      },
+      {
+        "name": "ask_authors",
+        "examples": [
+          "Who are the authors?",
+          "Who wrote this article?",
+          "What are the authors' names?",
+          "Author names please.",
+          "Can I get the list of authors?"
+        ]
+      },
+      {
+        "name": "ask_volume_issue_year",
+        "examples": [
+          "What is the volume, issue, and year?",
+          "What's the volume and issue number?",
+          "When was this published?",
+          "What year was this published?",
+          "Can you give me the publication details?"
+        ]
+      },
+      {
+        "name": "ask_stability",
+        "examples": [
+          "What is stability in an algorithm?",
+          "Explain the concept of algorithm stability.",
+          "What does algorithm stability mean?",
+          "How does stability affect sorting algorithms?"
+        ]
+      },
+      {
+        "name": "ask_number_sequence",
+        "examples": [
+          "What's the number sequence?",
+          "Tell me the numbers.",
+          "Can I get the sequence?",
+          "What are the numbers in the sequence?",
+          "Show me the numbers."
+        ]
+      },
+      {
+        "name": "ask_stable_algorithms",
+        "examples": [
+          "What sorting algorithms are stable?",
+          "Name some stable sorting algorithms.",
+          "Which algorithms are inherently stable?",
+          "Give me examples of stable sorting algorithms.",
+          "Tell me about stable sorts."
+        ]
+      },
+      {
+        "name": "ask_unstable_algorithms",
+        "examples": [
+          "What sorting algorithms are unstable?",
+          "Which algorithms are not stable?",
+          "Name some unstable sorting algorithms.",
+          "Give me examples of unstable sorting algorithms."
+        ]
+      },
+      {
+        "name": "ask_memory_usage",
+        "examples": [
+          "How does memory usage affect sorting algorithms?",
+          "What is the memory impact of sorting?",
+          "Do all sorting algorithms use the same amount of memory?",
+          "Which algorithms use more memory?",
+          "Explain memory space in sorting algorithms."
+        ]
+      },
+      {
+        "name": "ask_algorithm_modification",
+        "examples": [
+          "Can unstable algorithms be made stable?",
+          "Is it possible to modify an unstable sort to be stable?",
+          "How can I make a sorting algorithm stable?",
+          "What are the modifications for unstable sorting algorithms to become stable?"
+        ]
+      },
+      {
+        "name": "ask_algorithm_comparison",
+        "examples": [
+          "How do these algorithms compare?",
+          "What's the comparison between the oldest and newest algorithm?",
+          "Can you explain the comparative operation between the algorithms?",
+          "Tell me about the comparison of algorithms used.",
+          "How are the algorithms compared?"
+        ]
+      },
+      {
+        "name": "ask_sorting_algorithms_comparison",
+        "examples": [
+          "What's the comparison between different sorting algorithms?",
+          "How do selection sort and shell sort compare?",
+          "Can you compare the performance of various sorting algorithms?",
+          "Tell me about a study comparing sorting algorithms."
+        ]
+      },
+      {
+        "name": "ask_adhikari_study",
+        "examples": [
+          "What did Pooja Adhikari's 2007 study find?",
+          "Tell me about the Adhikari study on sorting algorithm performance.",
+          "I'm interested in the 2007 research on sorting algorithm comparison."
+        ]
+      },
+      {
+        "name": "ask_pasetto_akhriev_study",
+        "examples": [
+          "What did Pasetto and Akhriev study in 2011?",
+          "Tell me about the 2011 research on parallel sorting algorithms.",
+          "I'm interested in the Pasetto and Akhriev paper on parallel sorting."
+        ]
+      },
+      {
+        "name": "ask_sorting_algorithms",
+        "examples": [
+          "What sorting algorithms are mentioned?",
+          "Tell me about the sorting algorithms discussed.",
+          "What algorithms are used for sorting?",
+          "Which algorithms are used in the document for sorting large datasets?",
+          "What are the sorting methods discussed in the document?"
+        ]
+      },
+      {
+        "name": "ask_dataset_size",
+        "examples": [
+          "How large are the datasets considered?",
+          "What size of datasets are discussed?",
+          "What is the size range of the arrays?",
+          "How big are the arrays being sorted?",
+          "What's the scale of data being sorted?"
+        ]
+      },
+      {
+        "name": "ask_algorithm_purpose",
+        "examples": [
+          "What is the purpose of these algorithms?",
+          "Why are these algorithms used?",
+          "What's the application of these sorting methods?",
+          "What problem do these algorithms solve?",
+          "For what are these algorithms used?"
+        ]
+      },
+      {
+        "name": "ask_year",
+        "examples": [
+          "When was this research published?",
+          "What year is this from?",
+          "What's the publication year?",
+          "When was this written?",
+          "What is the year of this document?"
+        ]
+      },
+      {
+        "name": "ask_performance_measures",
+        "examples": [
+          "What performance measures were used?",
+          "How did you measure performance?",
+          "What metrics did you use to evaluate performance?",
+          "Can you tell me about the performance evaluation?",
+          "Which performance metrics were investigated?"
+        ]
+      },
+      {
+        "name": "publish_github",
+        "examples": [
+          "How can I publish my projects on GitHub?",
+          "I want to publish my portfolio on GitHub.",
+          "What's the best way to publish projects to GitHub?",
+          "Publish my projects to GitHub.",
+          "GitHub for portfolio publishing"
+        ]
+      },
+      {
+        "name": "publish_portfolio_github",
+        "examples": [
+          "How can I publish my portfolio projects?",
+          "Where should I host my portfolio projects?",
+          "I want to publish my portfolio, what platform do you recommend?",
+          "What's the best place to publish my portfolio?",
+          "How do I share my portfolio online?"
+        ]
+      },
+      {
+        "name": "ask_javascript_info",
+        "examples": [
+          "What's the JavaScript.info website?",
+          "Tell me about javascript.info",
+          "Can you give me the link to javascript.info?",
+          "I need the javascript.info website"
+        ]
+      },
+      {
+        "name": "ask_mozilla_developer_docs",
+        "examples": [
+          "What's the Mozilla Developer Network JavaScript guide?",
+          "Tell me about MDN's JavaScript documentation",
+          "Can you give me the link to MDN's JavaScript guide?",
+          "I need the MDN JavaScript documentation"
+        ]
+      },
+      {
+        "name": "ask_key_topics",
+        "examples": [
+          "What are the key topics?",
+          "What's covered in the course?",
+          "What are the main subjects?",
+          "Key topics please.",
+          "What are the important concepts?"
+        ]
+      },
+      {
+        "name": "define_react",
+        "examples": [
+          "What is React?",
+          "Explain React to me.",
+          "Tell me about React.",
+          "What's React?",
+          "Can you define React?"
+        ]
+      },
+      {
+        "name": "ask_jsx_syntax",
+        "examples": [
+          "What is JSX syntax?",
+          "Explain JSX syntax to me.",
+          "Tell me about JSX syntax.",
+          "Can you describe JSX syntax?",
+          "What's JSX syntax all about?"
+        ]
+      },
+      {
+        "name": "ask_functional_components",
+        "examples": [
+          "What are the functional components?",
+          "Tell me about the functional components.",
+          "Explain the functional components.",
+          "Can you describe the functional components?",
+          "What are the parts of the functional components?"
+        ]
+      },
+      {
+        "name": "ask_usestate_hook",
+        "examples": [
+          "What is useState hook?",
+          "Explain useState hook",
+          "Tell me about useState hook",
+          "What does useState do?",
+          "How to use useState hook?"
+        ]
+      },
+      {
+        "name": "ask_props",
+        "examples": [
+          "What are the props?",
+          "Tell me about the props.",
+          "What props are available?",
+          "Can you describe the props?"
+        ]
+      },
+      {
+        "name": "ask_event_handling",
+        "examples": [
+          "How is event handling managed?",
+          "What's your event handling system like?",
+          "Explain your event handling.",
+          "Tell me about event handling."
+        ]
+      },
+      {
+        "name": "ask_conditional_rendering",
+        "examples": [
+          "What is conditional rendering?",
+          "Explain conditional rendering.",
+          "Tell me about conditional rendering",
+          "Can you explain conditional rendering?",
+          "What does conditional rendering mean?"
+        ]
+      },
+      {
+        "name": "ask_about_lists",
+        "examples": [
+          "Tell me about lists",
+          "What are lists?",
+          "Explain lists",
+          "What can you tell me about lists in javascript?",
+          "How do lists work?"
+        ]
+      },
+      {
+        "name": "ask_about_map",
+        "examples": [
+          "What is map()?",
+          "Explain the map() function",
+          "How does map() work?",
+          "Tell me about .map()",
+          "Describe the .map() method"
+        ]
+      },
+      {
+        "name": "ask_forms",
+        "examples": [
+          "What forms do you have?",
+          "Tell me about the available forms.",
+          "I need information on forms.",
+          "What forms are there?",
+          "Show me the forms."
+        ]
+      },
+      {
+        "name": "ask_inputs",
+        "examples": [
+          "What kind of inputs do you accept?",
+          "What information do you need?",
+          "What data do I need to provide?",
+          "Tell me about the required inputs.",
+          "Explain the inputs."
+        ]
+      },
+      {
+        "name": "ask_technologies",
+        "examples": [
+          "What technologies are used?",
+          "Which tools are involved?",
+          "What's the tech stack?",
+          "What technologies does this roadmap cover?"
+        ]
+      },
+      {
+        "name": "ask_prerequisites",
+        "examples": [
+          "What are the prerequisites?",
+          "What do I need to know beforehand?",
+          "What skills are required?",
+          "What's the prior knowledge needed?"
+        ]
+      },
+      {
+        "name": "ask_useEffect_resources",
+        "examples": [
+          "Where can I find resources on useEffect?",
+          "I need some information about useEffect hook resources.",
+          "Tell me more about resources for useEffect hook.",
+          "Can you point me to some resources on useEffect?",
+          "I'm looking for learning materials on useEffect Hook."
+        ]
+      },
+      {
+        "name": "ask_official_docs",
+        "examples": [
+          "Where can I find the official React documentation?",
+          "What's the URL for the official React docs?",
+          "Give me a link to the official React documentation.",
+          "I need the React official documentation link."
+        ]
+      },
+      {
+        "name": "ask_youtube_channels",
+        "examples": [
+          "Which YouTube channels teach React?",
+          "Recommend some YouTube channels for learning React.",
+          "What are some good React YouTube tutorials?",
+          "Where can I find React tutorials on YouTube?"
+        ]
+      },
+      {
+        "name": "ask_mini_projects",
+        "examples": [
+          "Do you have any mini projects for practicing React?",
+          "I'm looking for some small React projects.",
+          "Suggest some mini projects to improve my React skills.",
+          "Where can I find some React mini projects?"
+        ]
+      },
+      {
+        "name": "ask_features",
+        "examples": [
+          "What can this app do?",
+          "What are the features?",
+          "Tell me about the app's capabilities",
+          "What are its functions?"
+        ]
+      },
+      {
+        "name": "goodbye",
+        "examples": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Talk to you later"
+        ]
+      },
+      {
+        "name": "ask_weather",
+        "examples": [
+          "What's the weather like today?",
+          "Tell me the weather forecast.",
+          "How's the weather?",
+          "Give me a weather update.",
+          "What's the weather going to be like?"
+        ]
+      },
+      {
+        "name": "ask_weather_location",
+        "examples": [
+          "What's the weather in London?",
+          "Tell me the weather forecast for Paris.",
+          "How's the weather in New York?",
+          "Give me a weather update for Tokyo."
+        ]
+      },
+      {
+        "name": "ask_calculator_stage_topic",
+        "examples": [
+          "What are the key topics in Calculator Stage 3?",
+          "Tell me about the topics covered in Calculator Stage 3",
+          "What's the curriculum for Calculator Stage 3?",
+          "Can you list the key topics of Calculator Stage 3?"
+        ]
+      },
+      {
+        "name": "ask_navigation_components",
+        "examples": [
+          "What components are used for navigation?",
+          "Tell me about navigation components.",
+          "Which components handle routing?",
+          "Explain the navigation components.",
+          "What are the main navigation elements?"
+        ]
+      },
+      {
+        "name": "ask_about_BrowserRouter",
+        "examples": [
+          "What's BrowserRouter?",
+          "Tell me about BrowserRouter.",
+          "What does BrowserRouter do?",
+          "Explain BrowserRouter."
+        ]
+      },
+      {
+        "name": "ask_about_Routes",
+        "examples": [
+          "What are Routes?",
+          "Explain Routes.",
+          "What does Routes do?",
+          "Tell me about Routes."
+        ]
+      },
+      {
+        "name": "ask_about_Route",
+        "examples": [
+          "What is Route?",
+          "Tell me about Route.",
+          "What does Route do?",
+          "Explain Route."
+        ]
+      },
+      {
+        "name": "ask_about_Link",
+        "examples": [
+          "What is Link?",
+          "Tell me about Link.",
+          "What does Link do?",
+          "Explain Link."
+        ]
+      },
+      {
+        "name": "ask_about_Navigate",
+        "examples": [
+          "What is Navigate?",
+          "Tell me about Navigate.",
+          "What does Navigate do?",
+          "Explain Navigate."
+        ]
+      },
+      {
+        "name": "ask_nested_routes",
+        "examples": [
+          "What are nested routes?",
+          "Explain nested routes to me.",
+          "Tell me about nested routes.",
+          "Can you describe nested routes?",
+          "What do nested routes mean?"
+        ]
+      },
+      {
+        "name": "ask_404_page_resources",
+        "examples": [
+          "What are 404 page resources?",
+          "Explain 404 page resources.",
+          "Tell me about 404 page resources.",
+          "Can you describe 404 page resources?"
+        ]
+      },
+      {
+        "name": "ask_project_idea",
+        "examples": [
+          "What's a project idea?",
+          "I need a project idea.",
+          "Give me a project idea using React Router.",
+          "Suggest a project using React Router.",
+          "Looking for project inspiration with React Router."
+        ]
+      },
+      {
+        "name": "ask_dashboard_pages",
+        "examples": [
+          "What pages are in the dashboard?",
+          "Which pages does the dashboard have?",
+          "Tell me about the dashboard pages.",
+          "Can you list the dashboard pages?",
+          "What are the sections of the dashboard?"
+        ]
+      },
+      {
+        "name": "ask_recommended_tools",
+        "examples": [
+          "What tools are recommended?",
+          "Which tools do you suggest?",
+          "What are the suggested tools?",
+          "Recommend some tools.",
+          "What tools should I use?"
+        ]
+      },
+      {
+        "name": "ask_app_styling_stage",
+        "examples": [
+          "What stage is app styling?",
+          "What's the stage for styling?",
+          "Which stage is styling the app?",
+          "In what stage do I style the app?",
+          "What stage are we at for styling?"
+        ]
+      },
+      {
+        "name": "define_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Explain Tailwind CSS",
+          "Define Tailwind CSS",
+          "Tell me about Tailwind CSS"
+        ]
+      },
+      {
+        "name": "ask_features_tailwind",
+        "examples": [
+          "What are the features of Tailwind?",
+          "What does Tailwind offer?",
+          "What are Tailwind's key features?",
+          "Tell me about Tailwind's features"
+        ]
+      },
+      {
+        "name": "ask_css_modules",
+        "examples": [
+          "Tell me about CSS Modules",
+          "What are CSS Modules?",
+          "Explain CSS Modules",
+          "What is CSS Modules?",
+          "Can you explain CSS Modules?"
+        ]
+      },
+      {
+        "name": "ask_styled_components",
+        "examples": [
+          "Tell me about Styled Components",
+          "What are Styled Components?",
+          "Explain Styled Components",
+          "What is Styled Components?",
+          "Can you explain Styled Components?"
+        ]
+      },
+      {
+        "name": "ask_scoped_styling_resources",
+        "examples": [
+          "Where can I find resources on scoped styling?",
+          "I need resources for scoped styling",
+          "Show me some resources on scoped styling",
+          "Resources on scoped styling please",
+          "Looking for information on scoped styling resources"
+        ]
+      },
+      {
+        "name": "ask_what_is_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Tell me about Tailwind CSS",
+          "Explain Tailwind CSS",
+          "What's Tailwind?",
+          "Can you describe Tailwind CSS?"
+        ]
+      },
+      {
+        "name": "ask_tailwind_features",
+        "examples": [
+          "What are the features of Tailwind CSS?",
+          "What are Tailwind's features?",
+          "What does Tailwind offer?",
+          "What are some of Tailwind's capabilities?",
+          "Tell me about Tailwind's features."
+        ]
+      },
+      {
+        "name": "ask_tailwind_website",
+        "examples": [
+          "What's the website for Tailwind CSS?",
+          "Where can I find more information about Tailwind?",
+          "What's the URL for Tailwind CSS?",
+          "Give me the link to the Tailwind CSS website.",
+          "Show me the Tailwind CSS website."
+        ]
+      },
+      {
+        "name": "ask_global_state_management",
+        "examples": [
+          "What is global state management?",
+          "Explain global state management in Tailwind.",
+          "Tell me about global state management for larger apps.",
+          "When should I use global state management?",
+          "What are the benefits of global state management?"
+        ]
+      },
+      {
+        "name": "ask_when_to_use_global_state",
+        "examples": [
+          "When do I need global state management?",
+          "In what situations should I use global state?",
+          "For which apps is global state management suitable?",
+          "Is global state management necessary for small apps?"
+        ]
+      },
+      {
+        "name": "ask_global_state_options",
+        "examples": [
+          "What options are available for global state management?",
+          "What are some ways to implement global state?",
+          "List the options for global state management in Tailwind."
+        ]
+      },
+      {
+        "name": "ask_react_context_api",
+        "examples": [
+          "What is React Context API?",
+          "Tell me about React Context API",
+          "Explain React Context API",
+          "What's the React Context API?",
+          "Can you explain the React Context API?"
+        ]
+      },
+      {
+        "name": "ask_redux_toolkit_resource",
+        "examples": [
+          "Where can I find Redux Toolkit resources?",
+          "What are the resources for Redux Toolkit?",
+          "I need some documentation on Redux Toolkit.",
+          "Show me the Redux Toolkit resources.",
+          "Can you provide a link to Redux Toolkit documentation?"
+        ]
+      },
+      {
+        "name": "ask_redux_backend_integration",
+        "examples": [
+          "What are the backend integration options in Codevolution's Redux playlist?",
+          "Tell me about backend integration in Codevolution's Redux Stage 6.",
+          "Explain the backend integration choices for Redux in Codevolution's YouTube series.",
+          "I need info on backend integration from Codevolution's Redux tutorial, Stage 6.",
+          "What are my options for integrating a backend with Redux in Codevolution's course?"
+        ]
+      },
+      {
+        "name": "ask_backend_language",
+        "examples": [
+          "What backend language is used?",
+          "Which language is used for the backend?",
+          "Tell me about the backend technology.",
+          "What's the backend framework?",
+          "What programming language is used on the server-side?"
+        ]
+      },
+      {
+        "name": "ask_database",
+        "examples": [
+          "What database does it use?",
+          "Which database is used?",
+          "What database technology is used?",
+          "Tell me the database."
+        ]
+      },
+      {
+        "name": "ask_backend_service",
+        "examples": [
+          "What backend services do you use?",
+          "Which backend services are used?",
+          "What is the backend?",
+          "Tell me about the backend services.",
+          "What backend is this built on?"
+        ]
+      },
+      {
+        "name": "ask_key_skills",
+        "examples": [
+          "What are the key skills needed?",
+          "What skills are required?",
+          "List the key skills.",
+          "Tell me about the key skills."
+        ]
+      },
+      {
+        "name": "ask_about_axios",
+        "examples": [
+          "What is Axios?",
+          "Tell me about Axios",
+          "Explain Axios",
+          "What's Axios used for?",
+          "What is Axios for API calls?"
+        ]
+      },
+      {
+        "name": "ask_about_fetch",
+        "examples": [
+          "What is Fetch?",
+          "Tell me about Fetch",
+          "Explain Fetch API",
+          "What is Fetch used for?",
+          "How does Fetch work with APIs?"
+        ]
+      },
+      {
+        "name": "ask_create",
+        "examples": [
+          "How do I create a new record?",
+          "What's the process for creating data?",
+          "I need to add a new entry, how?",
+          "Explain the create operation.",
+          "Can you tell me about creating data?"
+        ]
+      },
+      {
+        "name": "ask_read",
+        "examples": [
+          "How do I retrieve existing data?",
+          "What's the process for reading data?",
+          "I need to access some records, how?",
+          "Explain the read operation.",
+          "Can you tell me about retrieving data?"
+        ]
+      },
+      {
+        "name": "ask_update",
+        "examples": [
+          "How do I modify an existing record?",
+          "What's the process for updating data?",
+          "I need to change some data, how?",
+          "Explain the update operation.",
+          "Can you tell me about modifying data?"
+        ]
+      },
+      {
+        "name": "ask_delete",
+        "examples": [
+          "How do I delete a record?",
+          "What's the process for deleting data?",
+          "I need to remove an entry, how?",
+          "Explain the delete operation.",
+          "Can you tell me about deleting data?"
+        ]
+      },
+      {
+        "name": "ask_html_experience",
+        "examples": [
+          "Do you have experience with HTML?",
+          "What's your HTML experience?",
+          "Have you worked with HTML before?",
+          "Tell me about your HTML skills."
+        ]
+      },
+      {
+        "name": "ask_css_experience",
+        "examples": [
+          "Do you have experience with CSS?",
+          "What about your CSS skills?",
+          "How experienced are you with CSS?",
+          "Tell me about your CSS experience."
+        ]
+      },
+      {
+        "name": "ask_javascript_experience",
+        "examples": [
+          "What's your JavaScript experience?",
+          "Do you know JavaScript?",
+          "Have you worked with JavaScript before?",
+          "Tell me about your JavaScript skills."
+        ]
+      },
+      {
+        "name": "ask_login_resources",
+        "examples": [
+          "Where can I find login resources?",
+          "I need help with logging in.",
+          "What are the resources for login?",
+          "Login resources please.",
+          "I'm having trouble logging in, where can I find help?"
+        ]
+      },
+      {
+        "name": "ask_register_resources",
+        "examples": [
+          "Where can I find registration resources?",
+          "I need help registering.",
+          "What are the resources for registration?",
+          "Registration resources please.",
+          "I'm having trouble registering, where can I find help?"
+        ]
+      },
+      {
+        "name": "ask_mern_definition",
+        "examples": [
+          "What is the MERN stack?",
+          "Explain the MERN stack",
+          "Tell me about MERN",
+          "What does MERN stand for?",
+          "Define MERN stack"
+        ]
+      },
+      {
+        "name": "ask_tutorial_availability",
+        "examples": [
+          "Do you have a tutorial on the MERN stack?",
+          "Is there a tutorial available?",
+          "Where can I find a MERN tutorial?",
+          "Show me a MERN tutorial",
+          "I want to learn MERN, do you have resources?"
+        ]
+      },
+      {
+        "name": "ask_blog_login",
+        "examples": [
+          "How do I log in to the blog?",
+          "What's the process for logging in?",
+          "I need to log in, what do I do?",
+          "Can you help me with the blog login?",
+          "Login instructions please."
+        ]
+      },
+      {
+        "name": "ask_about_app",
+        "examples": [
+          "What is this app?",
+          "Tell me about this app",
+          "What's this app all about?",
+          "Explain the app to me.",
+          "Can you describe the app?"
+        ]
+      },
+      {
+        "name": "ask_deployment_stage",
+        "examples": [
+          "What stage is deployment?",
+          "What's the current deployment stage?",
+          "Which stage are we at in deployment?",
+          "Deployment stage?"
+        ]
+      },
+      {
+        "name": "ask_recommended_platforms",
+        "examples": [
+          "What platforms are recommended for deployment?",
+          "Which platforms are suggested for deployment?",
+          "Recommended deployment platforms?",
+          "What platforms should we deploy on?"
+        ]
+      },
+      {
+        "name": "ask_best_for_react_spas",
+        "examples": [
+          "What's the best platform for React SPAs?",
+          "Which platform is best suited for React single page applications?",
+          "Recommend a platform for building React SPAs.",
+          "I need a platform for my React SPA, what do you suggest?",
+          "What platform works well with React SPAs?"
+        ]
+      },
+      {
+        "name": "ask_javascript_refresher",
+        "examples": [
+          "Is there a JavaScript refresher?",
+          "Do you offer a JavaScript refresher course?",
+          "I need a JavaScript refresher, do you have one?",
+          "Is the JavaScript section a refresher course?"
+        ]
+      },
+      {
+        "name": "ask_mongodb_integration",
+        "examples": [
+          "What about MongoDB?",
+          "Is MongoDB required?",
+          "Do I need to know MongoDB?",
+          "Is there MongoDB integration?"
+        ]
+      },
+      {
+        "name": "ask_stage1_topics",
+        "examples": [
+          "What are the topics in Stage 1?",
+          "Can you list the key topics for Stage 1?",
+          "What does Stage 1 cover?",
+          "Tell me about Stage 1"
+        ]
+      },
+      {
+        "name": "enroll_in_course",
+        "examples": [
+          "I want to enroll in a course.",
+          "How do I sign up for a class?",
+          "I'd like to register for a course.",
+          "Let me enroll in a class."
+        ]
+      },
+      {
+        "name": "check_course_availability",
+        "examples": [
+          "Are there any spots left in the course?",
+          "Is the course full?",
+          "What's the course availability?",
+          "How many spots are available?"
+        ]
+      },
+      {
+        "name": "get_course_information",
+        "examples": [
+          "Tell me about the course.",
+          "What's the course description?",
+          "Can I get some information on the course?",
+          "Give me details about the course."
+        ]
+      },
+      {
+        "name": "ask_es6_syntax",
+        "examples": [
+          "What's new in ES6 syntax?",
+          "Tell me about ES6+ features.",
+          "What are some ES6+ additions?",
+          "Explain ES6 syntax.",
+          "I need information on ES6+."
+        ]
+      },
+      {
+        "name": "ask_map_function",
+        "examples": [
+          "What does the .map() method do?",
+          "Explain the map function.",
+          "Tell me about the .map() array method.",
+          "Describe the map array method.",
+          "What is .map() used for?"
+        ]
+      },
+      {
+        "name": "ask_filter_function",
+        "examples": [
+          "What does the .filter() method do?",
+          "Explain the filter function.",
+          "Tell me about the .filter() array method.",
+          "Describe the filter array method."
+        ]
+      },
+      {
+        "name": "ask_reduce_function",
+        "examples": [
+          "What does the .reduce() method do?",
+          "Explain the reduce function.",
+          "Tell me about the .reduce() array method.",
+          "Describe the reduce array method."
+        ]
+      },
+      {
+        "name": "ask_object_destructuring",
+        "examples": [
+          "What is object destructuring?",
+          "Explain object destructuring",
+          "Tell me about object destructuring",
+          "Can you explain object destructuring?",
+          "What does object destructuring do?"
+        ]
+      },
+      {
+        "name": "ask_array_destructuring",
+        "examples": [
+          "What is array destructuring?",
+          "Explain array destructuring",
+          "Tell me about array destructuring",
+          "Can you explain array destructuring?",
+          "What does array destructuring do?"
+        ]
+      },
+      {
+        "name": "ask_promises",
+        "examples": [
+          "What are promises?",
+          "Explain promises to me.",
+          "Tell me about promises.",
+          "Can you explain promises in Javascript?",
+          "What do promises do?"
+        ]
+      },
+      {
+        "name": "ask_async_await",
+        "examples": [
+          "What is async/await?",
+          "Explain async/await.",
+          "Tell me about async/await.",
+          "How does async/await work?",
+          "What are the benefits of async/await?"
+        ]
+      },
+      {
+        "name": "ask_dom_virtual_dom_difference",
+        "examples": [
+          "What's the difference between DOM and Virtual DOM?",
+          "Explain the difference between DOM and Virtual DOM.",
+          "Can you tell me about the differences between DOM and Virtual DOM?",
+          "What is the difference between the DOM and the Virtual DOM?",
+          "DOM vs Virtual DOM - what's the key difference?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_boat_ride_location": [
+        {
+          "text": "The boat ride is at Dhaka’s busy Buriganga river, Sadarghat."
+        }
+      ],
+      "utter_greet": [
+        {
+          "text": "Hello! Welcome to the To-Do List App."
+        }
+      ],
+      "utter_bye": [
+        {
+          "text": "best wishes for you!"
+        }
+      ],
+      "utter_ask_boat_ride_details": [
+        {
+          "text": "Enjoy a boat ride on a rowboat at Dhaka’s busy Buriganga river. It's a fascinating experience."
+        }
+      ],
+      "utter_ask_river_description": [
+        {
+          "text": "This river is an alive and vibrant place full of activities."
+        }
+      ],
+      "utter_ask_river_activity": [
+        {
+          "text": "You'll see hundreds of rowboats crossing people between the two sides of the river, small vendors selling goods on their boats, and passenger and cargo ferries passing by."
+        }
+      ],
+      "utter_request_video": [
+        {
+          "text": "Here's the video: [Click here to view the video of this river port.]"
+        }
+      ],
+      "utter_ask_ahsan_manzil_info": [
+        {
+          "text": "Ahsan Manzil, also known as the Pink Palace, is a beautiful and well-maintained building."
+        }
+      ],
+      "utter_ask_dhaka_university_places": [
+        {
+          "text": "Dhaka University includes Curzon Hall, TSC, Central Shahid Minar, and areas within the university perimeter."
+        }
+      ],
+      "utter_ask_curzon_hall": [
+        {
+          "text": "Curzon Hall is known for its beautiful blend of European and Mughal architectural styles, making it one of the best structural designs in Dhaka."
+        }
+      ],
+      "utter_ask_architectural_style": [
+        {
+          "text": "It has Mughal symbolic forms with arches and domes."
+        }
+      ],
+      "utter_ask_history": [
+        {
+          "text": "The building was used by Dhaka College until 1911.  After Dhaka University was established in 1921, the university took over and continues to use it for educational purposes."
+        }
+      ],
+      "utter_ask_previous_use": [
+        {
+          "text": "Until 1911, the building was used by Dhaka College."
+        }
+      ],
+      "utter_ask_current_use": [
+        {
+          "text": "The building is currently used for education by Dhaka University."
+        }
+      ],
+      "utter_ask_tourist_attraction": [
+        {
+          "text": "Yes, it is now a popular tourist destination in the country, attracting both domestic and international visitors."
+        }
+      ],
+      "utter_ask_sadarghat_directions": [
+        {
+          "text": "Continue driving to Sadarghat River Station."
+        }
+      ],
+      "utter_ask_location": [
+        {
+          "text": "This is the main river port in Dhaka."
+        }
+      ],
+      "utter_ask_size": [
+        {
+          "text": "It is one of the largest river stations in South Asia."
+        }
+      ],
+      "utter_ask_region": [
+        {
+          "text": "This port is located in South Asia."
+        }
+      ],
+      "utter_ask_sadarghat_usage": [
+        {
+          "text": "Sadarghat is used by hundreds of small boats and gigantic overnight passenger ferries for communication with the southern districts. Cargo barges also use it for loading and unloading."
+        }
+      ],
+      "utter_ask_market_type": [
+        {
+          "text": "It's a large daily market."
+        }
+      ],
+      "utter_ask_market_products": [
+        {
+          "text": "It sells fruits, vegetables, and miscellaneous items."
+        }
+      ],
+      "utter_ask_market_location": [
+        {
+          "text": "Items are carried to and from different parts of Bangladesh."
+        }
+      ],
+      "utter_ask_shop_types": [
+        {
+          "text": "Numerous retail and wholesale shops can be found on both sides of the road."
+        }
+      ],
+      "utter_ask_whatsapp_number": [
+        {
+          "text": "+8801714085999"
+        }
+      ],
+      "utter_ask_pickup": [
+        {
+          "text": "Our guide and driver will pick you up from your hotel/residence."
+        }
+      ],
+      "utter_ask_website": [
+        {
+          "text": "Our website is www.travelandexplorebd.com"
+        }
+      ],
+      "utter_ask_email": [
+        {
+          "text": "You can reach us at sayed@travelandexplorebd.com"
+        }
+      ],
+      "utter_ask_pickup_time_weekday": [
+        {
+          "text": "We pick up guests a bit early at 8:00 am during the weekdays."
+        }
+      ],
+      "utter_ask_pickup_time_weekend": [
+        {
+          "text": "On weekends and government holidays, we pick you up at 9:00 am."
+        }
+      ],
+      "utter_ask_pickup_time_holiday": [
+        {
+          "text": "On weekends and government holidays, we pick you up at 9:00 am."
+        }
+      ],
+      "utter_ask_destination": [
+        {
+          "text": "Our car will be heading toward the National Parliament building."
+        }
+      ],
+      "utter_ask_architect": [
+        {
+          "text": "The National Parliament Building was designed by Louis Kahn, a world-famous US architect."
+        }
+      ],
+      "utter_ask_description": [
+        {
+          "text": "The National Parliament Building is one of the largest legislative buildings in the world and is considered a fine piece of architecture."
+        }
+      ],
+      "utter_ask_recognition": [
+        {
+          "text": "It won the prestigious Aga Khan Award for Architecture in 1989."
+        }
+      ],
+      "utter_ask_importance": [
+        {
+          "text": "It's considered one of Kahn's greatest works and a milestone in 20th-century architecture due to its monumental scale and the blending of modernism and context."
+        }
+      ],
+      "utter_ask_design": [
+        {
+          "text": "The building is famous for its composition of simple geometric shapes creating a harmonious composition."
+        }
+      ],
+      "utter_ask_about_palace": [
+        {
+          "text": "It's a palace from the colonial period in Dhaka, home to a very influential family. It's a popular tourist spot."
+        }
+      ],
+      "utter_ask_palace_history": [
+        {
+          "text": "The palace was home to Dhaka's most influential family during the colonial period."
+        }
+      ],
+      "utter_ask_palace_location": [
+        {
+          "text": "I'm sorry, I don't have the exact address of the palace, but it is located in Dhaka city."
+        }
+      ],
+      "utter_ask_hindu_street": [
+        {
+          "text": "Hindu Street, also known as Shankharia Bazar, is the center of Hindu culture in Old Dhaka.  It's filled with shops selling jewelry, musical instruments, bridal wear, kites, and food, alongside temples and bustling activity. It extends to Tati Bazar."
+        }
+      ],
+      "utter_ask_rickshaw_ride": [
+        {
+          "text": "Rickshaw rides are a common and convenient way to get around, especially in Old Dhaka.  You can take a rickshaw to visit the Star Mosque and Armenian Church."
+        }
+      ],
+      "utter_ask_star_mosque": [
+        {
+          "text": "The Star Mosque is a beautiful mosque decorated with star motifs."
+        }
+      ],
+      "utter_ask_armenian_church": [
+        {
+          "text": "The Armenian Church is an orthodox church built by Armenians in Dhaka."
+        }
+      ],
+      "utter_ask_bongshal": [
+        {
+          "text": "Bongshal can be reached from the Star Mosque on foot or by rickshaw."
+        }
+      ],
+      "utter_ask_lunch_break": [
+        {
+          "text": "Lunch includes experiencing local authentic food at a local restaurant with popular Bangladeshi dishes."
+        }
+      ],
+      "utter_ask_lalbagh_fort_info": [
+        {
+          "text": "Lalbagh Fort is a beautiful fort from the Mughal period, a key tourist attraction in Dhaka city."
+        }
+      ],
+      "utter_ask_lalbagh_fort_period": [
+        {
+          "text": "Lalbagh Fort is from the Mughal period."
+        }
+      ],
+      "utter_ask_lalbagh_fort_location": [
+        {
+          "text": "Lalbagh Fort is located in Dhaka city."
+        }
+      ],
+      "utter_ask_dhakeshary_temple": [
+        {
+          "text": "After visiting Lalbagh Fort, we will visit Dhakeshary Temple. This is the end of the tour."
+        }
+      ],
+      "utter_confirm_dropoff": [
+        {
+          "text": "We will take you to your hotel/residence after the tour."
+        }
+      ],
+      "utter_confirm_tour_end": [
+        {
+          "text": "Yes, this is the end of the Old Dhaka tour."
+        }
+      ],
+      "utter_ask_palace_info": [
+        {
+          "text": "That's the colonial-era palace in Dhaka, once home to the city's most influential family. It's a popular tourist destination."
+        }
+      ],
+      "utter_ask_lalbagh_fort_description": [
+        {
+          "text": "Lalbagh Fort is a beautiful fort from the Mughal period and a key tourist attraction in Dhaka city."
+        }
+      ],
+      "utter_ask_dhakeshwar_temple_location": [
+        {
+          "text": "I'm sorry, I don't have the exact address of Dhakeshwar Temple.  The document only mentions it as a location visited after Lalbagh Fort."
+        }
+      ],
+      "utter_confirm_dhakeshwar_temple_visit": [
+        {
+          "text": "Yes, the tour includes a visit to Dhakeshwar Temple after Lalbagh Fort."
+        }
+      ],
+      "utter_ask_tour_end": [
+        {
+          "text": "The tour ends after the visit to Dhakeshwar Temple."
+        }
+      ],
+      "utter_describe_river": [
+        {
+          "text": "This river is an alive and vibrant place full of activities."
+        }
+      ],
+      "utter_ask_history_dhaka_college": [
+        {
+          "text": "Until 1911, the building was used by Dhaka College.  After Dhaka University was established in 1921, the university took over the building and continues to use it for educational purposes."
+        }
+      ],
+      "utter_ask_building_use": [
+        {
+          "text": "The building is currently used by Dhaka University for education."
+        }
+      ],
+      "utter_ask_popularity": [
+        {
+          "text": "Yes, it is now a popular tourist destination, attracting both domestic and international visitors."
+        }
+      ],
+      "utter_ask_market_description": [
+        {
+          "text": "This bustling place has become a large daily market for fruits, vegetables, and miscellaneous items carried to and from different parts of Bangladesh."
+        }
+      ],
+      "utter_ask_sorting_factors": [
+        {
+          "text": "Factors to consider include list size, programming effort, available memory, disk/tape size, pre-sorted extent, and value distribution."
+        }
+      ],
+      "utter_ask_algorithms_tested": [
+        {
+          "text": "The paper implemented Selection sort, Quick sort, Insertion sort, Merge sort, Bubble sort, and GCS algorithms."
+        }
+      ],
+      "utter_ask_test_data": [
+        {
+          "text": "Random test data from sizes 10000 to 30000 were used for average case testing."
+        }
+      ],
+      "utter_ask_measurement_method": [
+        {
+          "text": "Execution time was measured in milliseconds using the built-in C++ clock() function."
+        }
+      ],
+      "utter_ask_tables": [
+        {
+          "text": "The results are presented in Table 1 through Table 6."
+        }
+      ],
+      "utter_ask_figures": [
+        {
+          "text": "The curves are shown in figure 1."
+        }
+      ],
+      "utter_ask_selection_sort_definition": [
+        {
+          "text": "Selection sort is the simplest of sorting techniques."
+        }
+      ],
+      "utter_ask_efficiency_small_files": [
+        {
+          "text": "It works very well for small files."
+        }
+      ],
+      "utter_ask_application": [
+        {
+          "text": "It has a quite important application."
+        }
+      ],
+      "utter_ask_movement_characteristic": [
+        {
+          "text": "Each item is actually moved at most once."
+        }
+      ],
+      "utter_ask_time_complexity": [
+        {
+          "text": "It has O(n^2) time complexity."
+        }
+      ],
+      "utter_ask_advantage_selection_sort": [
+        {
+          "text": "Selection sort has one advantage over other sort techniques."
+        }
+      ],
+      "utter_ask_data_movement": [
+        {
+          "text": "It moves the least amount of data, despite making many comparisons."
+        }
+      ],
+      "utter_ask_selection_sort_speed": [
+        {
+          "text": "Selection sort is quickest when your data has small keys but a large data area."
+        }
+      ],
+      "utter_ask_execution_time": [
+        {
+          "text": "The document mentions execution time in Table 1."
+        }
+      ],
+      "utter_ask_number_elements": [
+        {
+          "text": "The document mentions the number of elements in Table 1."
+        }
+      ],
+      "utter_ask_table_info": [
+        {
+          "text": "Table 1 contains information on execution time and the number of elements."
+        }
+      ],
+      "utter_ask_journal_name": [
+        {
+          "text": "The article is from the International Journal of Computer Science and Security (IJCSS)."
+        }
+      ],
+      "utter_ask_authors": [
+        {
+          "text": "The authors are Khalid Suleiman Al-Kharabsheh, Ibrahim Mahmoud AlTurani, Abdallah Mahmoud Ibrahim AlTurani, and Nabeel Imhammed Zanoon."
+        }
+      ],
+      "utter_ask_volume_issue_year": [
+        {
+          "text": "The article is from Volume (7), Issue (3), 2013."
+        }
+      ],
+      "utter_ask_stability": [
+        {
+          "text": "Algorithm stability means that elements with equal values maintain their relative order in the output as they were in the input."
+        }
+      ],
+      "utter_ask_number_sequence": [
+        {
+          "text": "The number sequence is 2, 3, 9."
+        }
+      ],
+      "utter_ask_stable_algorithms": [
+        {
+          "text": "Insertion sort, merge sort, and bubble sort are examples of stable sorting algorithms."
+        }
+      ],
+      "utter_ask_unstable_algorithms": [
+        {
+          "text": "Quicksort is an example of an unstable sorting algorithm."
+        }
+      ],
+      "utter_ask_memory_usage": [
+        {
+          "text": "Algorithms using recursive techniques require more memory due to the need for copies of the sorting data."
+        }
+      ],
+      "utter_ask_algorithm_modification": [
+        {
+          "text": "Yes, unstable sorting algorithms can be modified to become stable."
+        }
+      ],
+      "utter_ask_algorithm_comparison": [
+        {
+          "text": "Most of these algorithms use a comparative operation between the oldest and newest algorithms to prove their effectiveness."
+        }
+      ],
+      "utter_ask_sorting_algorithms_comparison": [
+        {
+          "text": "Several studies compare sorting algorithms, such as one comparing selection sort and shell sort, and another focusing on parallel sorting algorithms on multi-core hardware."
+        }
+      ],
+      "utter_ask_adhikari_study": [
+        {
+          "text": "Pooja Adhikari's 2007 study compared the performance of selection sort and shell sort algorithms."
+        }
+      ],
+      "utter_ask_pasetto_akhriev_study": [
+        {
+          "text": "The 2011 paper by Davide Pasetto and Albert Akhriev provided a qualitative and quantitative analysis of parallel sorting algorithms on modern multi-core hardware."
+        }
+      ],
+      "utter_ask_sorting_algorithms": [
+        {
+          "text": "The document mentions several general-purpose sorting algorithms, focusing on those best suited for very large datasets."
+        }
+      ],
+      "utter_ask_dataset_size": [
+        {
+          "text": "The datasets discussed are very large arrays, several gigabytes and more, exceeding L2/L3 cache size."
+        }
+      ],
+      "utter_ask_algorithm_purpose": [
+        {
+          "text": "The purpose of the algorithms is sorting database records and very large arrays."
+        }
+      ],
+      "utter_ask_year": [
+        {
+          "text": "The research was published in 2008."
+        }
+      ],
+      "utter_ask_performance_measures": [
+        {
+          "text": "The average number of operations and average execution times were investigated and compared."
+        }
+      ],
+      "utter_publish_github": [
+        {
+          "text": "Use GitHub to publish all projects for your portfolio."
+        }
+      ],
+      "utter_publish_portfolio_github": [
+        {
+          "text": "Use GitHub to publish all projects for your portfolio."
+        }
+      ],
+      "utter_ask_javascript_info": [
+        {
+          "text": "Here's the link to javascript.info: https://javascript.info/"
+        }
+      ],
+      "utter_ask_mozilla_developer_docs": [
+        {
+          "text": "Here's the link to the Mozilla Developer Network JavaScript Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ],
+      "utter_ask_javascript_course_stage": [
+        {
+          "text": "The React.js Core Concepts are covered in FreeCodeCamp's JavaScript Course Stage."
+        }
+      ],
+      "utter_ask_key_topics": [
+        {
+          "text": "The key topics are React.js Core Concepts."
+        }
+      ],
+      "utter_define_react": [
+        {
+          "text": "I am not able to provide a definition for React based on the given text.  The document only contains the question 'What is React?'.  To get a definition, please search online or consult a relevant resource."
+        }
+      ],
+      "utter_ask_jsx_syntax": [
+        {
+          "text": "JSX (JavaScript XML) is a syntax extension to JavaScript. It allows you to write HTML-like code within your JavaScript code.  It's primarily used with React, a JavaScript library for building user interfaces."
+        }
+      ],
+      "utter_ask_functional_components": [
+        {
+          "text": "The document mentions 'Functional Components', but does not provide details on what they are."
+        }
+      ],
+      "utter_ask_usestate_hook": [
+        {
+          "text": "useState is a Hook in React that lets you add state to functional components. It takes an initial state as an argument and returns an array with two elements: the current state value and a function to update it."
+        }
+      ],
+      "utter_ask_props": [
+        {
+          "text": "Information on props is not available in this document."
+        }
+      ],
+      "utter_ask_event_handling": [
+        {
+          "text": "Information on event handling is not available in this document."
+        }
+      ],
+      "utter_ask_conditional_rendering": [
+        {
+          "text": "Conditional rendering is a technique used to dynamically render parts of a user interface based on certain conditions.  It allows you to show or hide elements, or change their content, based on the state of your application."
+        }
+      ],
+      "utter_ask_about_lists": [
+        {
+          "text": "Lists are used to store multiple items in a single variable."
+        }
+      ],
+      "utter_ask_about_map": [
+        {
+          "text": ".map() is a higher-order function that creates a new array by applying a function to each element of an existing array."
+        }
+      ],
+      "utter_ask_forms": [
+        {
+          "text": "We offer various forms.  Please specify what type of form you're looking for more information on."
+        }
+      ],
+      "utter_ask_inputs": [
+        {
+          "text": "The required inputs vary depending on the form. Please specify which form you are using."
+        }
+      ],
+      "utter_ask_objective": [
+        {
+          "text": "The objective is to become proficient in building professional, scalable Single Page Applications (SPAs) using React.js and modern web development tools."
+        }
+      ],
+      "utter_ask_technologies": [
+        {
+          "text": "This roadmap focuses on React.js and modern web development tools."
+        }
+      ],
+      "utter_ask_prerequisites": [
+        {
+          "text": "This roadmap is for web developers with HTML, CSS, and JavaScript skills."
+        }
+      ],
+      "utter_ask_useEffect_resources": [
+        {
+          "text": "I don't have specific links to resources, but the document mentions that resources exist for the useEffect hook."
+        }
+      ],
+      "utter_ask_official_docs": [
+        {
+          "text": "The official React documentation can be found at https://react.dev/learn"
+        }
+      ],
+      "utter_ask_youtube_channels": [
+        {
+          "text": "Check out Codevolution and freeCodeCamp on YouTube for React tutorials."
+        }
+      ],
+      "utter_ask_mini_projects": [
+        {
+          "text": "I have a list of mini projects, but more information is needed to give you specific recommendations."
+        }
+      ],
+      "utter_ask_features": [
+        {
+          "text": "This app allows you to create and manage to-do lists."
+        }
+      ],
+      "utter_goodbye": [
+        {
+          "text": "Goodbye! Have a great day!"
+        }
+      ],
+      "utter_ask_weather": [
+        {
+          "text": "This is a weather app.  Please specify a location for a weather forecast."
+        }
+      ],
+      "utter_ask_weather_location": [
+        {
+          "text": "I need a location to provide a weather forecast. For example, try asking 'What's the weather in London?'"
+        }
+      ],
+      "utter_ask_calculator_stage_topic": [
+        {
+          "text": "The key topic for Calculator Stage 3 is: react-router-dom setup"
+        }
+      ],
+      "utter_ask_navigation_components": [
+        {
+          "text": "The main navigation components are BrowserRouter, Routes, Route, Link, and Navigate."
+        }
+      ],
+      "utter_ask_about_BrowserRouter": [
+        {
+          "text": "BrowserRouter is a component that provides the context for routing in React Router."
+        }
+      ],
+      "utter_ask_about_Routes": [
+        {
+          "text": "Routes is a component that renders a single child route matching the current location."
+        }
+      ],
+      "utter_ask_about_Route": [
+        {
+          "text": "Route is a component that renders an element based on the current location."
+        }
+      ],
+      "utter_ask_about_Link": [
+        {
+          "text": "Link is a component that allows you to navigate between routes without causing a full page reload."
+        }
+      ],
+      "utter_ask_about_Navigate": [
+        {
+          "text": "Navigate is a component that allows you to imperatively navigate to a different location."
+        }
+      ],
+      "utter_ask_nested_routes": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ],
+      "utter_ask_404_page_resources": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ],
+      "utter_ask_project_idea": [
+        {
+          "text": "One project idea is building a single-page application using React Router for navigation."
+        }
+      ],
+      "utter_ask_dashboard_pages": [
+        {
+          "text": "The dashboard includes Home, Profile, and Notification pages."
+        }
+      ],
+      "utter_ask_recommended_tools": [
+        {
+          "text": "Recommended tools are mentioned in the document."
+        }
+      ],
+      "utter_ask_app_styling_stage": [
+        {
+          "text": "App styling is in Stage 4."
+        }
+      ],
+      "utter_define_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework."
+        }
+      ],
+      "utter_ask_features_tailwind": [
+        {
+          "text": "Tailwind CSS offers a wide range of pre-built utility classes for rapid UI development."
+        }
+      ],
+      "utter_ask_css_modules": [
+        {
+          "text": "CSS Modules allow you to scope CSS to a specific component."
+        }
+      ],
+      "utter_ask_styled_components": [
+        {
+          "text": "Styled Components is a CSS-in-JS library that enables scoping styles to components."
+        }
+      ],
+      "utter_ask_scoped_styling_resources": [
+        {
+          "text": "The provided text only mentions CSS Modules and Styled Components as resources for scoped styling."
+        }
+      ],
+      "utter_ask_what_is_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.  It's known for its highly customizable nature and large community."
+        }
+      ],
+      "utter_ask_tailwind_features": [
+        {
+          "text": "Tailwind CSS offers pre-defined CSS utility classes, allowing for rapid development and customization. It's responsive by default and provides tools for managing design systems."
+        }
+      ],
+      "utter_ask_tailwind_website": [
+        {
+          "text": "The website for Tailwind CSS is tailwindcss.com"
+        }
+      ],
+      "utter_ask_global_state_management": [
+        {
+          "text": "Global state management is for larger apps with shared state."
+        }
+      ],
+      "utter_ask_when_to_use_global_state": [
+        {
+          "text": "Use global state management for larger apps with shared state."
+        }
+      ],
+      "utter_ask_global_state_options": [
+        {
+          "text": "The document only mentions that options exist for global state management in larger apps, but doesn't specify them."
+        }
+      ],
+      "utter_ask_react_context_api": [
+        {
+          "text": "React Context API is a built-in feature."
+        }
+      ],
+      "utter_ask_redux_toolkit_resource": [
+        {
+          "text": "Here's a link to Redux Toolkit resources: https://redux-toolkit.js.org/"
+        }
+      ],
+      "utter_ask_redux_backend_integration": [
+        {
+          "text": "Codevolution's Redux playlist, Stage 6, covers backend integration options.  The specific options aren't detailed in this short description."
+        }
+      ],
+      "utter_ask_backend_language": [
+        {
+          "text": "The backend uses Express.js."
+        }
+      ],
+      "utter_ask_database": [
+        {
+          "text": "The database used is MongoDB."
+        }
+      ],
+      "utter_ask_backend_service": [
+        {
+          "text": "The backend services used are Supabase and Firebase."
+        }
+      ],
+      "utter_ask_key_skills": [
+        {
+          "text": "Key skills are Supabase and Firebase."
+        }
+      ],
+      "utter_ask_about_axios": [
+        {
+          "text": "Axios is a popular JavaScript library used for making HTTP requests to APIs."
+        }
+      ],
+      "utter_ask_about_fetch": [
+        {
+          "text": "Fetch is a built-in browser API for making HTTP requests to APIs."
+        }
+      ],
+      "utter_ask_create": [
+        {
+          "text": "The create operation adds new data to the system."
+        }
+      ],
+      "utter_ask_read": [
+        {
+          "text": "The read operation retrieves existing data from the system."
+        }
+      ],
+      "utter_ask_update": [
+        {
+          "text": "The update operation modifies existing data in the system."
+        }
+      ],
+      "utter_ask_delete": [
+        {
+          "text": "The delete operation removes data from the system."
+        }
+      ],
+      "utter_ask_html_experience": [
+        {
+          "text": "Yes, I have experience with HTML."
+        }
+      ],
+      "utter_ask_css_experience": [
+        {
+          "text": "Yes, I have experience with CSS."
+        }
+      ],
+      "utter_ask_javascript_experience": [
+        {
+          "text": "Yes, I have experience with JavaScript."
+        }
+      ],
+      "utter_ask_login_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with login."
+        }
+      ],
+      "utter_ask_register_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with registration."
+        }
+      ],
+      "utter_ask_mern_definition": [
+        {
+          "text": "MERN stands for MongoDB, Express.js, React, and Node.js.  It's a popular JavaScript stack for building web applications."
+        }
+      ],
+      "utter_ask_tutorial_availability": [
+        {
+          "text": "Yes, MongoDB provides a tutorial on the MERN stack. You can find it on their website."
+        }
+      ],
+      "utter_ask_blog_login": [
+        {
+          "text": "To access the blog, you'll need to log in.  Further instructions are available on the blog's login page."
+        }
+      ],
+      "utter_ask_about_app": [
+        {
+          "text": "This is a Hall/Hostel Management App."
+        }
+      ],
+      "utter_ask_deployment_stage": [
+        {
+          "text": "The current stage is Stage 7: Deployment."
+        }
+      ],
+      "utter_ask_recommended_platforms": [
+        {
+          "text": "Recommended platforms for deployment are mentioned in the document but not specified."
+        }
+      ],
+      "utter_ask_best_for_react_spas": [
+        {
+          "text": "Netlify is best for React SPAs."
+        }
+      ],
+      "utter_ask_javascript_refresher": [
+        {
+          "text": "Yes, Stage 1 includes a JavaScript refresher."
+        }
+      ],
+      "utter_ask_mongodb_integration": [
+        {
+          "text": "MongoDB is optional, for backend integration."
+        }
+      ],
+      "utter_ask_stage1_topics": [
+        {
+          "text": "Stage 1 covers JavaScript Foundations."
+        }
+      ],
+      "utter_enroll_in_course": [
+        {
+          "text": "To enroll in a course, please visit our website and follow the instructions."
+        }
+      ],
+      "utter_check_course_availability": [
+        {
+          "text": "Course availability varies.  Please check our website for the most up-to-date information."
+        }
+      ],
+      "utter_get_course_information": [
+        {
+          "text": "For course information, please visit our website."
+        }
+      ],
+      "utter_ask_es6_syntax": [
+        {
+          "text": "ES6+ introduces let and const for variable declarations, and arrow functions for concise function expressions."
+        }
+      ],
+      "utter_ask_map_function": [
+        {
+          "text": "The .map() method creates a new array by applying a function to each element of an existing array."
+        }
+      ],
+      "utter_ask_filter_function": [
+        {
+          "text": "The .filter() method creates a new array containing only the elements that pass a certain condition (defined by a provided function)."
+        }
+      ],
+      "utter_ask_reduce_function": [
+        {
+          "text": "The .reduce() method applies a function to each element of an array to reduce it to a single value."
+        }
+      ],
+      "utter_ask_object_destructuring": [
+        {
+          "text": "Object destructuring is a JavaScript feature that allows you to extract properties from objects and assign them to variables."
+        }
+      ],
+      "utter_ask_array_destructuring": [
+        {
+          "text": "Array destructuring is a JavaScript feature that allows you to unpack elements from arrays into distinct variables."
+        }
+      ],
+      "utter_ask_promises": [
+        {
+          "text": "Promises are a way to handle asynchronous operations in JavaScript. They represent the eventual result of an asynchronous operation."
+        }
+      ],
+      "utter_ask_async_await": [
+        {
+          "text": "Async/await makes asynchronous code look and behave a bit more like synchronous code, making it easier to read and write. It's built on top of promises."
+        }
+      ],
+      "utter_ask_dom_virtual_dom_difference": [
+        {
+          "text": "I'm sorry, but I cannot answer that question. My knowledge base does not contain information on the difference between DOM and Virtual DOM."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "story_ask_boat_ride_location",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_location"
+        },
+        {
+          "action": "utter_ask_boat_ride_location"
+        }
+      ]
+    },
+    {
+      "story": "story_thank_you",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "story": "story_bye",
+      "steps": [
+        {
+          "intent": "bye"
+        },
+        {
+          "action": "utter_bye"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_boat_ride_details",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_details"
+        },
+        {
+          "action": "utter_ask_boat_ride_details"
+        }
+      ]
+    },
+    {
+      "story": "user asks for river description",
+      "steps": [
+        {
+          "intent": "ask_river_description"
+        },
+        {
+          "action": "utter_ask_river_description"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_river_activity",
+      "steps": [
+        {
+          "intent": "ask_river_activity"
+        },
+        {
+          "action": "utter_ask_river_activity"
+        }
+      ]
+    },
+    {
+      "story": "User requests video",
+      "steps": [
+        {
+          "intent": "request_video"
+        },
+        {
+          "action": "utter_request_video"
+        }
+      ]
+    },
+    {
+      "story": "Ask about Ahsan Manzil",
+      "steps": [
+        {
+          "intent": "ask_ahsan_manzil_info"
+        },
+        {
+          "action": "utter_ask_ahsan_manzil_info"
+        }
+      ]
+    },
+    {
+      "story": "Visiting Dhaka University",
+      "steps": [
+        {
+          "intent": "ask_dhaka_university_places"
+        },
+        {
+          "action": "utter_ask_dhaka_university_places"
+        }
+      ]
+    },
+    {
+      "story": "Learning about Curzon Hall",
+      "steps": [
+        {
+          "intent": "ask_curzon_hall"
+        },
+        {
+          "action": "utter_ask_curzon_hall"
+        }
+      ]
+    },
+    {
+      "story": "user asks about architectural style",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "story": "User asks about the building's history",
+      "steps": [
+        {
+          "intent": "ask_history"
+        },
+        {
+          "action": "utter_ask_history"
+        }
+      ]
+    },
+    {
+      "story": "User asks about previous use",
+      "steps": [
+        {
+          "intent": "ask_previous_use"
+        },
+        {
+          "action": "utter_ask_previous_use"
+        }
+      ]
+    },
+    {
+      "story": "User asks about current use",
+      "steps": [
+        {
+          "intent": "ask_current_use"
+        },
+        {
+          "action": "utter_ask_current_use"
+        }
+      ]
+    },
+    {
+      "story": "A user asks if it's a tourist attraction",
+      "steps": [
+        {
+          "intent": "ask_tourist_attraction"
+        },
+        {
+          "action": "utter_ask_tourist_attraction"
+        }
+      ]
+    },
+    {
+      "story": "Get directions to Sadarghat",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_directions"
+        },
+        {
+          "action": "utter_ask_sadarghat_directions"
+        }
+      ]
+    },
+    {
+      "story": "Location Story",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "story": "Size Story",
+      "steps": [
+        {
+          "intent": "ask_size"
+        },
+        {
+          "action": "utter_ask_size"
+        }
+      ]
+    },
+    {
+      "story": "Region Story",
+      "steps": [
+        {
+          "intent": "ask_region"
+        },
+        {
+          "action": "utter_ask_region"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Sadarghat usage",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_usage"
+        },
+        {
+          "action": "utter_ask_sadarghat_usage"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_market_type",
+      "steps": [
+        {
+          "intent": "ask_market_type"
+        },
+        {
+          "action": "utter_ask_market_type"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_market_products",
+      "steps": [
+        {
+          "intent": "ask_market_products"
+        },
+        {
+          "action": "utter_ask_market_products"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_market_location",
+      "steps": [
+        {
+          "intent": "ask_market_location"
+        },
+        {
+          "action": "utter_ask_market_location"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_shop_types",
+      "steps": [
+        {
+          "intent": "ask_shop_types"
+        },
+        {
+          "action": "utter_ask_shop_types"
+        }
+      ]
+    },
+    {
+      "story": "Ask for location",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "story": "Get WhatsApp number",
+      "steps": [
+        {
+          "intent": "ask_whatsapp_number"
+        },
+        {
+          "action": "utter_ask_whatsapp_number"
+        }
+      ]
+    },
+    {
+      "story": "pickup_inquiry",
+      "steps": [
+        {
+          "intent": "ask_pickup"
+        },
+        {
+          "action": "utter_ask_pickup"
+        }
+      ]
+    },
+    {
+      "story": "website_inquiry",
+      "steps": [
+        {
+          "intent": "ask_website"
+        },
+        {
+          "action": "utter_ask_website"
+        }
+      ]
+    },
+    {
+      "story": "email_inquiry",
+      "steps": [
+        {
+          "intent": "ask_email"
+        },
+        {
+          "action": "utter_ask_email"
+        }
+      ]
+    },
+    {
+      "story": "Weekday pickup time enquiry",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_weekday"
+        },
+        {
+          "action": "utter_ask_pickup_time_weekday"
+        }
+      ]
+    },
+    {
+      "story": "Weekend pickup time enquiry",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_weekend"
+        },
+        {
+          "action": "utter_ask_pickup_time_weekend"
+        }
+      ]
+    },
+    {
+      "story": "Holiday pickup time enquiry",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_holiday"
+        },
+        {
+          "action": "utter_ask_pickup_time_holiday"
+        }
+      ]
+    },
+    {
+      "story": "Going to Parliament",
+      "steps": [
+        {
+          "intent": "ask_destination"
+        },
+        {
+          "action": "utter_ask_destination"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_location",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_architect",
+      "steps": [
+        {
+          "intent": "ask_architect"
+        },
+        {
+          "action": "utter_ask_architect"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_description",
+      "steps": [
+        {
+          "intent": "ask_description"
+        },
+        {
+          "action": "utter_ask_description"
+        }
+      ]
+    },
+    {
+      "story": "user asks about architectural style",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "story": "user asks about recognition",
+      "steps": [
+        {
+          "intent": "ask_recognition"
+        },
+        {
+          "action": "utter_ask_recognition"
+        }
+      ]
+    },
+    {
+      "story": "user asks about importance",
+      "steps": [
+        {
+          "intent": "ask_importance"
+        },
+        {
+          "action": "utter_ask_importance"
+        }
+      ]
+    },
+    {
+      "story": "user asks about design",
+      "steps": [
+        {
+          "intent": "ask_design"
+        },
+        {
+          "action": "utter_ask_design"
+        }
+      ]
+    },
+    {
+      "story": "Story about the palace",
+      "steps": [
+        {
+          "intent": "ask_about_palace"
+        },
+        {
+          "action": "utter_ask_about_palace"
+        }
+      ]
+    },
+    {
+      "story": "Story about the palace history",
+      "steps": [
+        {
+          "intent": "ask_palace_history"
+        },
+        {
+          "action": "utter_ask_palace_history"
+        }
+      ]
+    },
+    {
+      "story": "Story about palace location",
+      "steps": [
+        {
+          "intent": "ask_palace_location"
+        },
+        {
+          "action": "utter_ask_palace_location"
+        }
+      ]
+    },
+    {
+      "story": "Story about Hindu Street",
+      "steps": [
+        {
+          "intent": "ask_hindu_street"
+        },
+        {
+          "action": "utter_ask_hindu_street"
+        }
+      ]
+    },
+    {
+      "story": "Story about Rickshaw Rides",
+      "steps": [
+        {
+          "intent": "ask_rickshaw_ride"
+        },
+        {
+          "action": "utter_ask_rickshaw_ride"
+        }
+      ]
+    },
+    {
+      "story": "Story about Star Mosque",
+      "steps": [
+        {
+          "intent": "ask_star_mosque"
+        },
+        {
+          "action": "utter_ask_star_mosque"
+        }
+      ]
+    },
+    {
+      "story": "Story about Armenian Church",
+      "steps": [
+        {
+          "intent": "ask_armenian_church"
+        },
+        {
+          "action": "utter_ask_armenian_church"
+        }
+      ]
+    },
+    {
+      "story": "Story about Bongshal",
+      "steps": [
+        {
+          "intent": "ask_bongshal"
+        },
+        {
+          "action": "utter_ask_bongshal"
+        }
+      ]
+    },
+    {
+      "story": "lunch_break_inquiry",
+      "steps": [
+        {
+          "intent": "ask_lunch_break"
+        },
+        {
+          "action": "utter_ask_lunch_break"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_lalbagh_fort_info",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_info"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_info"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_lalbagh_fort_period",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_period"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_period"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_lalbagh_fort_location",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_location"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_location"
+        }
+      ]
+    },
+    {
+      "story": "Visiting Dhakeshary Temple",
+      "steps": [
+        {
+          "intent": "ask_dhakeshary_temple"
+        },
+        {
+          "action": "utter_ask_dhakeshary_temple"
+        }
+      ]
+    },
+    {
+      "story": "Confirm Dropoff Story",
+      "steps": [
+        {
+          "intent": "confirm_dropoff"
+        },
+        {
+          "action": "utter_confirm_dropoff"
+        }
+      ]
+    },
+    {
+      "story": "Confirm tour end",
+      "steps": [
+        {
+          "intent": "confirm_tour_end"
+        },
+        {
+          "action": "utter_confirm_tour_end"
+        }
+      ]
+    },
+    {
+      "story": "Learn about the Dhaka palace",
+      "steps": [
+        {
+          "intent": "ask_palace_info"
+        },
+        {
+          "action": "utter_ask_palace_info"
+        }
+      ]
+    },
+    {
+      "story": "story_hindu_street",
+      "steps": [
+        {
+          "intent": "ask_hindu_street"
+        },
+        {
+          "action": "utter_ask_hindu_street"
+        }
+      ]
+    },
+    {
+      "story": "story_rickshaw_ride",
+      "steps": [
+        {
+          "intent": "ask_rickshaw_ride"
+        },
+        {
+          "action": "utter_ask_rickshaw_ride"
+        }
+      ]
+    },
+    {
+      "story": "story_star_mosque",
+      "steps": [
+        {
+          "intent": "ask_star_mosque"
+        },
+        {
+          "action": "utter_ask_star_mosque"
+        }
+      ]
+    },
+    {
+      "story": "story_armenian_church",
+      "steps": [
+        {
+          "intent": "ask_armenian_church"
+        },
+        {
+          "action": "utter_ask_armenian_church"
+        }
+      ]
+    },
+    {
+      "story": "story_bongshal",
+      "steps": [
+        {
+          "intent": "ask_bongshal"
+        },
+        {
+          "action": "utter_ask_bongshal"
+        }
+      ]
+    },
+    {
+      "story": "lunch_break_inquiry",
+      "steps": [
+        {
+          "intent": "ask_lunch_break"
+        },
+        {
+          "action": "utter_ask_lunch_break"
+        }
+      ]
+    },
+    {
+      "story": "Find Lalbagh Fort location",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_location"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_location"
+        }
+      ]
+    },
+    {
+      "story": "Learn about Lalbagh Fort's period",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_period"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_period"
+        }
+      ]
+    },
+    {
+      "story": "Get description of Lalbagh Fort",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_description"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_description"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_dhakeshwar_temple_location",
+      "steps": [
+        {
+          "intent": "ask_dhakeshwar_temple_location"
+        },
+        {
+          "action": "utter_ask_dhakeshwar_temple_location"
+        }
+      ]
+    },
+    {
+      "story": "story_confirm_dhakeshwar_temple_visit",
+      "steps": [
+        {
+          "intent": "confirm_dhakeshwar_temple_visit"
+        },
+        {
+          "action": "utter_confirm_dhakeshwar_temple_visit"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_tour_end",
+      "steps": [
+        {
+          "intent": "ask_tour_end"
+        },
+        {
+          "action": "utter_ask_tour_end"
+        }
+      ]
+    },
+    {
+      "story": "Confirm dropoff story",
+      "steps": [
+        {
+          "intent": "confirm_dropoff"
+        },
+        {
+          "action": "utter_confirm_dropoff"
+        }
+      ]
+    },
+    {
+      "story": "Confirm Tour End",
+      "steps": [
+        {
+          "intent": "confirm_tour_end"
+        },
+        {
+          "action": "utter_confirm_tour_end"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_boat_ride_location",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_location"
+        },
+        {
+          "action": "utter_ask_boat_ride_location"
+        }
+      ]
+    },
+    {
+      "story": "story_ask_boat_ride_details",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_details"
+        },
+        {
+          "action": "utter_ask_boat_ride_details"
+        }
+      ]
+    },
+    {
+      "story": "describe river",
+      "steps": [
+        {
+          "intent": "describe_river"
+        },
+        {
+          "action": "utter_describe_river"
+        }
+      ]
+    },
+    {
+      "story": "greeting",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "story": "see_river_activity",
+      "steps": [
+        {
+          "intent": "ask_river_activity"
+        },
+        {
+          "action": "utter_ask_river_activity"
+        }
+      ]
+    },
+    {
+      "story": "Request and view video",
+      "steps": [
+        {
+          "intent": "request_video"
+        },
+        {
+          "action": "utter_request_video"
+        }
+      ]
+    },
+    {
+      "story": "Ask about Ahsan Manzil",
+      "steps": [
+        {
+          "intent": "ask_ahsan_manzil_info"
+        },
+        {
+          "action": "utter_ask_ahsan_manzil_info"
+        }
+      ]
+    },
+    {
+      "story": "Visiting Dhaka University",
+      "steps": [
+        {
+          "intent": "ask_dhaka_university_places"
+        },
+        {
+          "action": "utter_ask_dhaka_university_places"
+        }
+      ]
+    },
+    {
+      "story": "Learning about Curzon Hall",
+      "steps": [
+        {
+          "intent": "ask_curzon_hall"
+        },
+        {
+          "action": "utter_ask_curzon_hall"
+        }
+      ]
+    },
+    {
+      "story": "User asks about architectural style",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "story": "User asks about the building's history",
+      "steps": [
+        {
+          "intent": "ask_history_dhaka_college"
+        },
+        {
+          "action": "utter_ask_history_dhaka_college"
+        }
+      ]
+    },
+    {
+      "story": "User asks about building's current use",
+      "steps": [
+        {
+          "intent": "ask_building_use"
+        },
+        {
+          "action": "utter_ask_building_use"
+        }
+      ]
+    },
+    {
+      "story": "popularity_story",
+      "steps": [
+        {
+          "intent": "ask_popularity"
+        },
+        {
+          "action": "utter_ask_popularity"
+        }
+      ]
+    },
+    {
+      "story": "Get directions to Sadarghat",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_directions"
+        },
+        {
+          "action": "utter_ask_sadarghat_directions"
+        }
+      ]
+    },
+    {
+      "story": "user asks about location",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "story": "user asks about size",
+      "steps": [
+        {
+          "intent": "ask_size"
+        },
+        {
+          "action": "utter_ask_size"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Sadarghat usage",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_usage"
+        },
+        {
+          "action": "utter_ask_sadarghat_usage"
+        }
+      ]
+    },
+    {
+      "story": "Describe the market",
+      "steps": [
+        {
+          "intent": "ask_market_description"
+        },
+        {
+          "action": "utter_ask_market_description"
+        }
+      ]
+    },
+    {
+      "story": "Story about shop types",
+      "steps": [
+        {
+          "intent": "ask_shop_types"
+        },
+        {
+          "action": "utter_ask_shop_types"
+        }
+      ]
+    },
+    {
+      "story": "ask sorting factors story",
+      "steps": [
+        {
+          "intent": "ask_sorting_factors"
+        },
+        {
+          "action": "utter_ask_sorting_factors"
+        }
+      ]
+    },
+    {
+      "story": "ask algorithms tested story",
+      "steps": [
+        {
+          "intent": "ask_algorithms_tested"
+        },
+        {
+          "action": "utter_ask_algorithms_tested"
+        }
+      ]
+    },
+    {
+      "story": "ask test data story",
+      "steps": [
+        {
+          "intent": "ask_test_data"
+        },
+        {
+          "action": "utter_ask_test_data"
+        }
+      ]
+    },
+    {
+      "story": "ask measurement method story",
+      "steps": [
+        {
+          "intent": "ask_measurement_method"
+        },
+        {
+          "action": "utter_ask_measurement_method"
+        }
+      ]
+    },
+    {
+      "story": "User asks for tables",
+      "steps": [
+        {
+          "intent": "ask_tables"
+        },
+        {
+          "action": "utter_ask_tables"
+        }
+      ]
+    },
+    {
+      "story": "User asks for figures",
+      "steps": [
+        {
+          "intent": "ask_figures"
+        },
+        {
+          "action": "utter_ask_figures"
+        }
+      ]
+    },
+    {
+      "story": "user asks about selection sort",
+      "steps": [
+        {
+          "intent": "ask_selection_sort_definition"
+        },
+        {
+          "action": "utter_ask_selection_sort_definition"
+        }
+      ]
+    },
+    {
+      "story": "user asks about efficiency for small files",
+      "steps": [
+        {
+          "intent": "ask_efficiency_small_files"
+        },
+        {
+          "action": "utter_ask_efficiency_small_files"
+        }
+      ]
+    },
+    {
+      "story": "user asks about the main application",
+      "steps": [
+        {
+          "intent": "ask_application"
+        },
+        {
+          "action": "utter_ask_application"
+        }
+      ]
+    },
+    {
+      "story": "user asks about item movement characteristic",
+      "steps": [
+        {
+          "intent": "ask_movement_characteristic"
+        },
+        {
+          "action": "utter_ask_movement_characteristic"
+        }
+      ]
+    },
+    {
+      "story": "user asks about time complexity",
+      "steps": [
+        {
+          "intent": "ask_time_complexity"
+        },
+        {
+          "action": "utter_ask_time_complexity"
+        }
+      ]
+    },
+    {
+      "story": "User asks about selection sort advantage",
+      "steps": [
+        {
+          "intent": "ask_advantage_selection_sort"
+        },
+        {
+          "action": "utter_ask_advantage_selection_sort"
+        }
+      ]
+    },
+    {
+      "story": "user asks about data movement",
+      "steps": [
+        {
+          "intent": "ask_data_movement"
+        },
+        {
+          "action": "utter_ask_data_movement"
+        }
+      ]
+    },
+    {
+      "story": "user asks about selection sort speed",
+      "steps": [
+        {
+          "intent": "ask_selection_sort_speed"
+        },
+        {
+          "action": "utter_ask_selection_sort_speed"
+        }
+      ]
+    },
+    {
+      "story": "User asks about execution time",
+      "steps": [
+        {
+          "intent": "ask_execution_time"
+        },
+        {
+          "action": "utter_ask_execution_time"
+        }
+      ]
+    },
+    {
+      "story": "User asks about number of elements",
+      "steps": [
+        {
+          "intent": "ask_number_elements"
+        },
+        {
+          "action": "utter_ask_number_elements"
+        }
+      ]
+    },
+    {
+      "story": "User asks for Table 1 info",
+      "steps": [
+        {
+          "intent": "ask_table_info"
+        },
+        {
+          "action": "utter_ask_table_info"
+        }
+      ]
+    },
+    {
+      "story": "Get journal name",
+      "steps": [
+        {
+          "intent": "ask_journal_name"
+        },
+        {
+          "action": "utter_ask_journal_name"
+        }
+      ]
+    },
+    {
+      "story": "Get authors' names",
+      "steps": [
+        {
+          "intent": "ask_authors"
+        },
+        {
+          "action": "utter_ask_authors"
+        }
+      ]
+    },
+    {
+      "story": "Get volume, issue, and year",
+      "steps": [
+        {
+          "intent": "ask_volume_issue_year"
+        },
+        {
+          "action": "utter_ask_volume_issue_year"
+        }
+      ]
+    },
+    {
+      "story": "User asks about time complexity",
+      "steps": [
+        {
+          "intent": "ask_time_complexity"
+        },
+        {
+          "action": "utter_ask_time_complexity"
+        }
+      ]
+    },
+    {
+      "story": "User asks about stability",
+      "steps": [
+        {
+          "intent": "ask_stability"
+        },
+        {
+          "action": "utter_ask_stability"
+        }
+      ]
+    },
+    {
+      "story": "Get number sequence",
+      "steps": [
+        {
+          "intent": "ask_number_sequence"
+        },
+        {
+          "action": "utter_ask_number_sequence"
+        }
+      ]
+    },
+    {
+      "story": "Stable algorithms story",
+      "steps": [
+        {
+          "intent": "ask_stable_algorithms"
+        },
+        {
+          "action": "utter_ask_stable_algorithms"
+        }
+      ]
+    },
+    {
+      "story": "Unstable algorithms story",
+      "steps": [
+        {
+          "intent": "ask_unstable_algorithms"
+        },
+        {
+          "action": "utter_ask_unstable_algorithms"
+        }
+      ]
+    },
+    {
+      "story": "Memory usage story",
+      "steps": [
+        {
+          "intent": "ask_memory_usage"
+        },
+        {
+          "action": "utter_ask_memory_usage"
+        }
+      ]
+    },
+    {
+      "story": "Algorithm modification story",
+      "steps": [
+        {
+          "intent": "ask_algorithm_modification"
+        },
+        {
+          "action": "utter_ask_algorithm_modification"
+        }
+      ]
+    },
+    {
+      "story": "Compare algorithms story",
+      "steps": [
+        {
+          "intent": "ask_algorithm_comparison"
+        },
+        {
+          "action": "utter_ask_algorithm_comparison"
+        }
+      ]
+    },
+    {
+      "story": "Compare Sorting Algorithms",
+      "steps": [
+        {
+          "intent": "ask_sorting_algorithms_comparison"
+        },
+        {
+          "action": "utter_ask_sorting_algorithms_comparison"
+        }
+      ]
+    },
+    {
+      "story": "Learn about Adhikari's Study",
+      "steps": [
+        {
+          "intent": "ask_adhikari_study"
+        },
+        {
+          "action": "utter_ask_adhikari_study"
+        }
+      ]
+    },
+    {
+      "story": "Learn about Pasetto and Akhriev's Study",
+      "steps": [
+        {
+          "intent": "ask_pasetto_akhriev_study"
+        },
+        {
+          "action": "utter_ask_pasetto_akhriev_study"
+        }
+      ]
+    },
+    {
+      "story": "user asks about sorting algorithms",
+      "steps": [
+        {
+          "intent": "ask_sorting_algorithms"
+        },
+        {
+          "action": "utter_ask_sorting_algorithms"
+        }
+      ]
+    },
+    {
+      "story": "user asks about dataset size",
+      "steps": [
+        {
+          "intent": "ask_dataset_size"
+        },
+        {
+          "action": "utter_ask_dataset_size"
+        }
+      ]
+    },
+    {
+      "story": "user asks about algorithm purpose",
+      "steps": [
+        {
+          "intent": "ask_algorithm_purpose"
+        },
+        {
+          "action": "utter_ask_algorithm_purpose"
+        }
+      ]
+    },
+    {
+      "story": "user asks about authors",
+      "steps": [
+        {
+          "intent": "ask_authors"
+        },
+        {
+          "action": "utter_ask_authors"
+        }
+      ]
+    },
+    {
+      "story": "user asks about publication year",
+      "steps": [
+        {
+          "intent": "ask_year"
+        },
+        {
+          "action": "utter_ask_year"
+        }
+      ]
+    },
+    {
+      "story": "User asks about performance measures",
+      "steps": [
+        {
+          "intent": "ask_performance_measures"
+        },
+        {
+          "action": "utter_ask_performance_measures"
+        }
+      ]
+    },
+    {
+      "story": "Publish Portfolio on GitHub",
+      "steps": [
+        {
+          "intent": "publish_github"
+        },
+        {
+          "action": "utter_publish_github"
+        }
+      ]
+    },
+    {
+      "story": "Publish portfolio on GitHub",
+      "steps": [
+        {
+          "intent": "publish_portfolio_github"
+        },
+        {
+          "action": "utter_publish_portfolio_github"
+        }
+      ]
+    },
+    {
+      "story": "Publish_GitHub_Story",
+      "steps": [
+        {
+          "intent": "publish_github"
+        },
+        {
+          "action": "utter_publish_github"
+        }
+      ]
+    },
+    {
+      "story": "user asks for javascript.info",
+      "steps": [
+        {
+          "intent": "ask_javascript_info"
+        },
+        {
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "story": "user asks for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    },
+    {
+      "story": "user asks about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "story": "user asks about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    },
+    {
+      "story": "User asks for React definition",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    },
+    {
+      "story": "user asks about functional components",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    },
+    {
+      "story": "User asks about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    },
+    {
+      "story": "user asks about props",
+      "steps": [
+        {
+          "intent": "ask_props"
+        },
+        {
+          "action": "utter_ask_props"
+        }
+      ]
+    },
+    {
+      "story": "user asks about event handling",
+      "steps": [
+        {
+          "intent": "ask_event_handling"
+        },
+        {
+          "action": "utter_ask_event_handling"
+        }
+      ]
+    },
+    {
+      "story": "User asks about conditional rendering",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    },
+    {
+      "story": "User asks about lists",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "story": "User asks about map",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    },
+    {
+      "story": "User asks about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "story": "User asks about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    },
+    {
+      "story": "user asks objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "story": "user asks technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "story": "user asks prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "story": "user asks for useEffect resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    },
+    {
+      "story": "Find official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "story": "Find YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "story": "Find mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    },
+    {
+      "story": "User greets the bot",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "story": "User asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "story": "User says goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    },
+    {
+      "story": "Ask for weather",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "story": "Ask for weather at specific location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    },
+    {
+      "story": "user asks about navigation components",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "story": "user asks about BrowserRouter",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Routes",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Route",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Link",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Navigate",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    },
+    {
+      "story": "user asks about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    },
+    {
+      "story": "Ask for project idea",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    },
+    {
+      "story": "User asks about dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "story": "User asks about recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "story": "User asks about app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    },
+    {
+      "story": "user greets and asks for definition",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user greets and asks about features",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "User asks about prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "story": "User asks about CSS Modules",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Styled Components",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "story": "User asks for scoped styling resources",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Tailwind CSS",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Tailwind features",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    },
+    {
+      "story": "user asks for the Tailwind website",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    },
+    {
+      "story": "User asks about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "story": "User asks when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "story": "User asks about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    },
+    {
+      "story": "user asks about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    },
+    {
+      "story": "User asks for Redux Toolkit resources",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Redux backend integration options",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    },
+    {
+      "story": "user asks about backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "story": "user asks about database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    },
+    {
+      "story": "User asks about backend services",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "story": "User asks about key skills",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Axios",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Fetch",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    },
+    {
+      "story": "Create operation story",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "story": "Read operation story",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "story": "Update operation story",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "story": "Delete operation story",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    },
+    {
+      "story": "User asks about HTML experience",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about CSS experience",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JavaScript experience",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    },
+    {
+      "story": "user asks for login resources",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "story": "user asks for registration resources",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    },
+    {
+      "story": "User greets and asks about MERN",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "story": "User asks for a tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "story": "User greets and asks for tutorial",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "story": "Login help story",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    },
+    {
+      "story": "user asks about the app",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "story": "Ask about deployment stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "story": "Ask about recommended platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    },
+    {
+      "story": "User asks about best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JavaScript refresher",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "story": "User asks about MongoDB integration",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Stage 1 topics",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    },
+    {
+      "story": "Enroll in course story",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "story": "Check course availability story",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "story": "Get course information story",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    },
+    {
+      "story": "User asks about ES6 syntax",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    },
+    {
+      "story": "user asks about map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about object destructuring",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "story": "user asks about array destructuring",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    },
+    {
+      "story": "User asks about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "story": "User asks about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    },
+    {
+      "story": "User asks about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule_ask_boat_ride_location",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_location"
+        },
+        {
+          "action": "utter_ask_boat_ride_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_boat_ride_details",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_details"
+        },
+        {
+          "action": "utter_ask_boat_ride_details"
+        }
+      ]
+    },
+    {
+      "rule": "rule for river description",
+      "steps": [
+        {
+          "intent": "ask_river_description"
+        },
+        {
+          "action": "utter_ask_river_description"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_river_activity",
+      "steps": [
+        {
+          "intent": "ask_river_activity"
+        },
+        {
+          "action": "utter_ask_river_activity"
+        }
+      ]
+    },
+    {
+      "rule": "Direct video request",
+      "steps": [
+        {
+          "intent": "request_video"
+        },
+        {
+          "action": "utter_request_video"
+        }
+      ]
+    },
+    {
+      "rule": "Direct info request about Ahsan Manzil",
+      "steps": [
+        {
+          "intent": "ask_ahsan_manzil_info"
+        },
+        {
+          "action": "utter_ask_ahsan_manzil_info"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about Dhaka University places",
+      "steps": [
+        {
+          "intent": "ask_dhaka_university_places"
+        },
+        {
+          "action": "utter_ask_dhaka_university_places"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about Curzon Hall",
+      "steps": [
+        {
+          "intent": "ask_curzon_hall"
+        },
+        {
+          "action": "utter_ask_curzon_hall"
+        }
+      ]
+    },
+    {
+      "rule": "rule for architectural style question",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking building's history",
+      "steps": [
+        {
+          "intent": "ask_history"
+        },
+        {
+          "action": "utter_ask_history"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about previous use",
+      "steps": [
+        {
+          "intent": "ask_previous_use"
+        },
+        {
+          "action": "utter_ask_previous_use"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about current use",
+      "steps": [
+        {
+          "intent": "ask_current_use"
+        },
+        {
+          "action": "utter_ask_current_use"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer if it's a tourist attraction",
+      "steps": [
+        {
+          "intent": "ask_tourist_attraction"
+        },
+        {
+          "action": "utter_ask_tourist_attraction"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer Sadarghat directions",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_directions"
+        },
+        {
+          "action": "utter_ask_sadarghat_directions"
+        }
+      ]
+    },
+    {
+      "rule": "Location Rule",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "rule": "Size Rule",
+      "steps": [
+        {
+          "intent": "ask_size"
+        },
+        {
+          "action": "utter_ask_size"
+        }
+      ]
+    },
+    {
+      "rule": "Region Rule",
+      "steps": [
+        {
+          "intent": "ask_region"
+        },
+        {
+          "action": "utter_ask_region"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Sadarghat usage question",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_usage"
+        },
+        {
+          "action": "utter_ask_sadarghat_usage"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_market_type",
+      "steps": [
+        {
+          "intent": "ask_market_type"
+        },
+        {
+          "action": "utter_ask_market_type"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_market_products",
+      "steps": [
+        {
+          "intent": "ask_market_products"
+        },
+        {
+          "action": "utter_ask_market_products"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_market_location",
+      "steps": [
+        {
+          "intent": "ask_market_location"
+        },
+        {
+          "action": "utter_ask_market_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_shop_types",
+      "steps": [
+        {
+          "intent": "ask_shop_types"
+        },
+        {
+          "action": "utter_ask_shop_types"
+        }
+      ]
+    },
+    {
+      "rule": "Direct location request",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "rule": "Directly ask for WhatsApp number",
+      "steps": [
+        {
+          "intent": "ask_whatsapp_number"
+        },
+        {
+          "action": "utter_ask_whatsapp_number"
+        }
+      ]
+    },
+    {
+      "rule": "pickup_rule",
+      "steps": [
+        {
+          "intent": "ask_pickup"
+        },
+        {
+          "action": "utter_ask_pickup"
+        }
+      ]
+    },
+    {
+      "rule": "website_rule",
+      "steps": [
+        {
+          "intent": "ask_website"
+        },
+        {
+          "action": "utter_ask_website"
+        }
+      ]
+    },
+    {
+      "rule": "email_rule",
+      "steps": [
+        {
+          "intent": "ask_email"
+        },
+        {
+          "action": "utter_ask_email"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for weekday pickup time",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_weekday"
+        },
+        {
+          "action": "utter_ask_pickup_time_weekday"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for weekend pickup time",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_weekend"
+        },
+        {
+          "action": "utter_ask_pickup_time_weekend"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for holiday pickup time",
+      "steps": [
+        {
+          "intent": "ask_pickup_time_holiday"
+        },
+        {
+          "action": "utter_ask_pickup_time_holiday"
+        }
+      ]
+    },
+    {
+      "rule": "Direct Destination Inquiry",
+      "steps": [
+        {
+          "intent": "ask_destination"
+        },
+        {
+          "action": "utter_ask_destination"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_location",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_architect",
+      "steps": [
+        {
+          "intent": "ask_architect"
+        },
+        {
+          "action": "utter_ask_architect"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_description",
+      "steps": [
+        {
+          "intent": "ask_description"
+        },
+        {
+          "action": "utter_ask_description"
+        }
+      ]
+    },
+    {
+      "rule": "rule for architectural style",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "rule": "rule for recognition",
+      "steps": [
+        {
+          "intent": "ask_recognition"
+        },
+        {
+          "action": "utter_ask_recognition"
+        }
+      ]
+    },
+    {
+      "rule": "rule for importance",
+      "steps": [
+        {
+          "intent": "ask_importance"
+        },
+        {
+          "action": "utter_ask_importance"
+        }
+      ]
+    },
+    {
+      "rule": "rule for design",
+      "steps": [
+        {
+          "intent": "ask_design"
+        },
+        {
+          "action": "utter_ask_design"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about the palace",
+      "steps": [
+        {
+          "intent": "ask_about_palace"
+        },
+        {
+          "action": "utter_ask_about_palace"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about the palace history",
+      "steps": [
+        {
+          "intent": "ask_palace_history"
+        },
+        {
+          "action": "utter_ask_palace_history"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about the palace location",
+      "steps": [
+        {
+          "intent": "ask_palace_location"
+        },
+        {
+          "action": "utter_ask_palace_location"
+        }
+      ]
+    },
+    {
+      "rule": "Rule about Hindu Street",
+      "steps": [
+        {
+          "intent": "ask_hindu_street"
+        },
+        {
+          "action": "utter_ask_hindu_street"
+        }
+      ]
+    },
+    {
+      "rule": "Rule about Rickshaw Rides",
+      "steps": [
+        {
+          "intent": "ask_rickshaw_ride"
+        },
+        {
+          "action": "utter_ask_rickshaw_ride"
+        }
+      ]
+    },
+    {
+      "rule": "Rule about Star Mosque",
+      "steps": [
+        {
+          "intent": "ask_star_mosque"
+        },
+        {
+          "action": "utter_ask_star_mosque"
+        }
+      ]
+    },
+    {
+      "rule": "Rule about Armenian Church",
+      "steps": [
+        {
+          "intent": "ask_armenian_church"
+        },
+        {
+          "action": "utter_ask_armenian_church"
+        }
+      ]
+    },
+    {
+      "rule": "Rule about Bongshal",
+      "steps": [
+        {
+          "intent": "ask_bongshal"
+        },
+        {
+          "action": "utter_ask_bongshal"
+        }
+      ]
+    },
+    {
+      "rule": "lunch_break_rule",
+      "steps": [
+        {
+          "intent": "ask_lunch_break"
+        },
+        {
+          "action": "utter_ask_lunch_break"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_lalbagh_fort_info",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_info"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_info"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_lalbagh_fort_period",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_period"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_period"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_lalbagh_fort_location",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_location"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_location"
+        }
+      ]
+    },
+    {
+      "rule": "Direct Dhakeshary Temple Inquiry",
+      "steps": [
+        {
+          "intent": "ask_dhakeshary_temple"
+        },
+        {
+          "action": "utter_ask_dhakeshary_temple"
+        }
+      ]
+    },
+    {
+      "rule": "Confirm Dropoff Rule",
+      "steps": [
+        {
+          "intent": "confirm_dropoff"
+        },
+        {
+          "action": "utter_confirm_dropoff"
+        }
+      ]
+    },
+    {
+      "rule": "Confirm tour end rule",
+      "steps": [
+        {
+          "intent": "confirm_tour_end"
+        },
+        {
+          "action": "utter_confirm_tour_end"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking for palace info",
+      "steps": [
+        {
+          "intent": "ask_palace_info"
+        },
+        {
+          "action": "utter_ask_palace_info"
+        }
+      ]
+    },
+    {
+      "rule": "rule_hindu_street",
+      "steps": [
+        {
+          "intent": "ask_hindu_street"
+        },
+        {
+          "action": "utter_ask_hindu_street"
+        }
+      ]
+    },
+    {
+      "rule": "rule_rickshaw_ride",
+      "steps": [
+        {
+          "intent": "ask_rickshaw_ride"
+        },
+        {
+          "action": "utter_ask_rickshaw_ride"
+        }
+      ]
+    },
+    {
+      "rule": "rule_star_mosque",
+      "steps": [
+        {
+          "intent": "ask_star_mosque"
+        },
+        {
+          "action": "utter_ask_star_mosque"
+        }
+      ]
+    },
+    {
+      "rule": "rule_armenian_church",
+      "steps": [
+        {
+          "intent": "ask_armenian_church"
+        },
+        {
+          "action": "utter_ask_armenian_church"
+        }
+      ]
+    },
+    {
+      "rule": "rule_bongshal",
+      "steps": [
+        {
+          "intent": "ask_bongshal"
+        },
+        {
+          "action": "utter_ask_bongshal"
+        }
+      ]
+    },
+    {
+      "rule": "lunch_break_direct_answer",
+      "steps": [
+        {
+          "intent": "ask_lunch_break"
+        },
+        {
+          "action": "utter_ask_lunch_break"
+        }
+      ]
+    },
+    {
+      "rule": "Answer location of Lalbagh Fort",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_location"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_location"
+        }
+      ]
+    },
+    {
+      "rule": "Answer period of Lalbagh Fort",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_period"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_period"
+        }
+      ]
+    },
+    {
+      "rule": "Answer description of Lalbagh Fort",
+      "steps": [
+        {
+          "intent": "ask_lalbagh_fort_description"
+        },
+        {
+          "action": "utter_ask_lalbagh_fort_description"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_dhakeshwar_temple_location",
+      "steps": [
+        {
+          "intent": "ask_dhakeshwar_temple_location"
+        },
+        {
+          "action": "utter_ask_dhakeshwar_temple_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule_confirm_dhakeshwar_temple_visit",
+      "steps": [
+        {
+          "intent": "confirm_dhakeshwar_temple_visit"
+        },
+        {
+          "action": "utter_confirm_dhakeshwar_temple_visit"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_tour_end",
+      "steps": [
+        {
+          "intent": "ask_tour_end"
+        },
+        {
+          "action": "utter_ask_tour_end"
+        }
+      ]
+    },
+    {
+      "rule": "Confirm dropoff rule",
+      "steps": [
+        {
+          "intent": "confirm_dropoff"
+        },
+        {
+          "action": "utter_confirm_dropoff"
+        }
+      ]
+    },
+    {
+      "rule": "Confirm Tour End Rule",
+      "steps": [
+        {
+          "intent": "confirm_tour_end"
+        },
+        {
+          "action": "utter_confirm_tour_end"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_boat_ride_location",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_location"
+        },
+        {
+          "action": "utter_ask_boat_ride_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_boat_ride_details",
+      "steps": [
+        {
+          "intent": "ask_boat_ride_details"
+        },
+        {
+          "action": "utter_ask_boat_ride_details"
+        }
+      ]
+    },
+    {
+      "rule": "greet_rule",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "describe_river_rule",
+      "steps": [
+        {
+          "intent": "describe_river"
+        },
+        {
+          "action": "utter_describe_river"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_river_activity",
+      "steps": [
+        {
+          "intent": "ask_river_activity"
+        },
+        {
+          "action": "utter_ask_river_activity"
+        }
+      ]
+    },
+    {
+      "rule": "Direct video request",
+      "steps": [
+        {
+          "intent": "request_video"
+        },
+        {
+          "action": "utter_request_video"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about Ahsan Manzil",
+      "steps": [
+        {
+          "intent": "ask_ahsan_manzil_info"
+        },
+        {
+          "action": "utter_ask_ahsan_manzil_info"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about Dhaka University places",
+      "steps": [
+        {
+          "intent": "ask_dhaka_university_places"
+        },
+        {
+          "action": "utter_ask_dhaka_university_places"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about Curzon Hall",
+      "steps": [
+        {
+          "intent": "ask_curzon_hall"
+        },
+        {
+          "action": "utter_ask_curzon_hall"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for architectural style question",
+      "steps": [
+        {
+          "intent": "ask_architectural_style"
+        },
+        {
+          "action": "utter_ask_architectural_style"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for building history question",
+      "steps": [
+        {
+          "intent": "ask_history_dhaka_college"
+        },
+        {
+          "action": "utter_ask_history_dhaka_college"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for building use question",
+      "steps": [
+        {
+          "intent": "ask_building_use"
+        },
+        {
+          "action": "utter_ask_building_use"
+        }
+      ]
+    },
+    {
+      "rule": "popularity_rule",
+      "steps": [
+        {
+          "intent": "ask_popularity"
+        },
+        {
+          "action": "utter_ask_popularity"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking for Sadarghat directions",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_directions"
+        },
+        {
+          "action": "utter_ask_sadarghat_directions"
+        }
+      ]
+    },
+    {
+      "rule": "rule for location",
+      "steps": [
+        {
+          "intent": "ask_location"
+        },
+        {
+          "action": "utter_ask_location"
+        }
+      ]
+    },
+    {
+      "rule": "rule for size",
+      "steps": [
+        {
+          "intent": "ask_size"
+        },
+        {
+          "action": "utter_ask_size"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Sadarghat usage question",
+      "steps": [
+        {
+          "intent": "ask_sadarghat_usage"
+        },
+        {
+          "action": "utter_ask_sadarghat_usage"
+        }
+      ]
+    },
+    {
+      "rule": "Describe the market directly",
+      "steps": [
+        {
+          "intent": "ask_market_description"
+        },
+        {
+          "action": "utter_ask_market_description"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for shop types",
+      "steps": [
+        {
+          "intent": "ask_shop_types"
+        },
+        {
+          "action": "utter_ask_shop_types"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_sorting_factors",
+      "steps": [
+        {
+          "intent": "ask_sorting_factors"
+        },
+        {
+          "action": "utter_ask_sorting_factors"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_algorithms_tested",
+      "steps": [
+        {
+          "intent": "ask_algorithms_tested"
+        },
+        {
+          "action": "utter_ask_algorithms_tested"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_test_data",
+      "steps": [
+        {
+          "intent": "ask_test_data"
+        },
+        {
+          "action": "utter_ask_test_data"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_measurement_method",
+      "steps": [
+        {
+          "intent": "ask_measurement_method"
+        },
+        {
+          "action": "utter_ask_measurement_method"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking for tables",
+      "steps": [
+        {
+          "intent": "ask_tables"
+        },
+        {
+          "action": "utter_ask_tables"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking for figures",
+      "steps": [
+        {
+          "intent": "ask_figures"
+        },
+        {
+          "action": "utter_ask_figures"
+        }
+      ]
+    },
+    {
+      "rule": "simple definition of selection sort",
+      "steps": [
+        {
+          "intent": "ask_selection_sort_definition"
+        },
+        {
+          "action": "utter_ask_selection_sort_definition"
+        }
+      ]
+    },
+    {
+      "rule": "rule for efficiency of small files",
+      "steps": [
+        {
+          "intent": "ask_efficiency_small_files"
+        },
+        {
+          "action": "utter_ask_efficiency_small_files"
+        }
+      ]
+    },
+    {
+      "rule": "rule for application",
+      "steps": [
+        {
+          "intent": "ask_application"
+        },
+        {
+          "action": "utter_ask_application"
+        }
+      ]
+    },
+    {
+      "rule": "rule for item movement",
+      "steps": [
+        {
+          "intent": "ask_movement_characteristic"
+        },
+        {
+          "action": "utter_ask_movement_characteristic"
+        }
+      ]
+    },
+    {
+      "rule": "rule for time complexity question",
+      "steps": [
+        {
+          "intent": "ask_time_complexity"
+        },
+        {
+          "action": "utter_ask_time_complexity"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for selection sort advantage",
+      "steps": [
+        {
+          "intent": "ask_advantage_selection_sort"
+        },
+        {
+          "action": "utter_ask_advantage_selection_sort"
+        }
+      ]
+    },
+    {
+      "rule": "rule for data movement question",
+      "steps": [
+        {
+          "intent": "ask_data_movement"
+        },
+        {
+          "action": "utter_ask_data_movement"
+        }
+      ]
+    },
+    {
+      "rule": "rule for selection sort speed question",
+      "steps": [
+        {
+          "intent": "ask_selection_sort_speed"
+        },
+        {
+          "action": "utter_ask_selection_sort_speed"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for execution time question",
+      "steps": [
+        {
+          "intent": "ask_execution_time"
+        },
+        {
+          "action": "utter_ask_execution_time"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for number of elements question",
+      "steps": [
+        {
+          "intent": "ask_number_elements"
+        },
+        {
+          "action": "utter_ask_number_elements"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Table 1 info question",
+      "steps": [
+        {
+          "intent": "ask_table_info"
+        },
+        {
+          "action": "utter_ask_table_info"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for journal name",
+      "steps": [
+        {
+          "intent": "ask_journal_name"
+        },
+        {
+          "action": "utter_ask_journal_name"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for authors' names",
+      "steps": [
+        {
+          "intent": "ask_authors"
+        },
+        {
+          "action": "utter_ask_authors"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for volume, issue, year",
+      "steps": [
+        {
+          "intent": "ask_volume_issue_year"
+        },
+        {
+          "action": "utter_ask_volume_issue_year"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for time complexity question",
+      "steps": [
+        {
+          "intent": "ask_time_complexity"
+        },
+        {
+          "action": "utter_ask_time_complexity"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for stability question",
+      "steps": [
+        {
+          "intent": "ask_stability"
+        },
+        {
+          "action": "utter_ask_stability"
+        }
+      ]
+    },
+    {
+      "rule": "Simple number sequence request",
+      "steps": [
+        {
+          "intent": "ask_number_sequence"
+        },
+        {
+          "action": "utter_ask_number_sequence"
+        }
+      ]
+    },
+    {
+      "rule": "Stable algorithms rule",
+      "steps": [
+        {
+          "intent": "ask_stable_algorithms"
+        },
+        {
+          "action": "utter_ask_stable_algorithms"
+        }
+      ]
+    },
+    {
+      "rule": "Unstable algorithms rule",
+      "steps": [
+        {
+          "intent": "ask_unstable_algorithms"
+        },
+        {
+          "action": "utter_ask_unstable_algorithms"
+        }
+      ]
+    },
+    {
+      "rule": "Memory usage rule",
+      "steps": [
+        {
+          "intent": "ask_memory_usage"
+        },
+        {
+          "action": "utter_ask_memory_usage"
+        }
+      ]
+    },
+    {
+      "rule": "Algorithm modification rule",
+      "steps": [
+        {
+          "intent": "ask_algorithm_modification"
+        },
+        {
+          "action": "utter_ask_algorithm_modification"
+        }
+      ]
+    },
+    {
+      "rule": "Compare algorithms rule",
+      "steps": [
+        {
+          "intent": "ask_algorithm_comparison"
+        },
+        {
+          "action": "utter_ask_algorithm_comparison"
+        }
+      ]
+    },
+    {
+      "rule": "Rule_Adhikari_Study",
+      "steps": [
+        {
+          "intent": "ask_adhikari_study"
+        },
+        {
+          "action": "utter_ask_adhikari_study"
+        }
+      ]
+    },
+    {
+      "rule": "Rule_Pasetto_Akhriev_Study",
+      "steps": [
+        {
+          "intent": "ask_pasetto_akhriev_study"
+        },
+        {
+          "action": "utter_ask_pasetto_akhriev_study"
+        }
+      ]
+    },
+    {
+      "rule": "Rule_Sorting_Algorithms_Comparison",
+      "steps": [
+        {
+          "intent": "ask_sorting_algorithms_comparison"
+        },
+        {
+          "action": "utter_ask_sorting_algorithms_comparison"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking sorting algorithms",
+      "steps": [
+        {
+          "intent": "ask_sorting_algorithms"
+        },
+        {
+          "action": "utter_ask_sorting_algorithms"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking dataset size",
+      "steps": [
+        {
+          "intent": "ask_dataset_size"
+        },
+        {
+          "action": "utter_ask_dataset_size"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking algorithm purpose",
+      "steps": [
+        {
+          "intent": "ask_algorithm_purpose"
+        },
+        {
+          "action": "utter_ask_algorithm_purpose"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking authors",
+      "steps": [
+        {
+          "intent": "ask_authors"
+        },
+        {
+          "action": "utter_ask_authors"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking publication year",
+      "steps": [
+        {
+          "intent": "ask_year"
+        },
+        {
+          "action": "utter_ask_year"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about performance measures",
+      "steps": [
+        {
+          "intent": "ask_performance_measures"
+        },
+        {
+          "action": "utter_ask_performance_measures"
+        }
+      ]
+    },
+    {
+      "rule": "Publish GitHub Rule",
+      "steps": [
+        {
+          "intent": "publish_github"
+        },
+        {
+          "action": "utter_publish_github"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about portfolio publishing",
+      "steps": [
+        {
+          "intent": "publish_portfolio_github"
+        },
+        {
+          "action": "utter_publish_portfolio_github"
+        }
+      ]
+    },
+    {
+      "rule": "Publish_GitHub_Rule",
+      "steps": [
+        {
+          "intent": "publish_github"
+        },
+        {
+          "action": "utter_publish_github"
+        }
+      ]
+    },
+    {
+      "rule": "direct request for javascript.info",
+      "steps": [
+        {
+          "intent": "ask_javascript_info"
+        },
+        {
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "rule": "direct request for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    },
+    {
+      "rule": "Define React directly",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer what is JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    },
+    {
+      "rule": "rule for functional components question",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    },
+    {
+      "rule": "Direct question about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about props",
+      "steps": [
+        {
+          "intent": "ask_props"
+        },
+        {
+          "action": "utter_ask_props"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about event handling",
+      "steps": [
+        {
+          "intent": "ask_event_handling"
+        },
+        {
+          "action": "utter_ask_event_handling"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about conditional rendering directly",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about lists directly",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about map directly",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    },
+    {
+      "rule": "rule for objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "rule": "rule for technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "rule": "rule for prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "rule": "direct_request_useEffect_resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    },
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Answer feature question",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "rule": "Say goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    },
+    {
+      "rule": "Direct weather inquiry",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "rule": "Direct weather inquiry with location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    },
+    {
+      "rule": "respond to navigation components question",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "rule": "respond to BrowserRouter question",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Routes question",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Route question",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Link question",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Navigate question",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Direct project idea request",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    },
+    {
+      "rule": "define Tailwind on direct question",
+      "steps": [
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "greet the user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "answer features question",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for CSS Modules inquiry",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Styled Components inquiry",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Scoped Styling Resources inquiry",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    },
+    {
+      "rule": "direct_website_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    },
+    {
+      "rule": "direct_what_is_tailwind",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "direct_features_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer Redux Toolkit resource question",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    },
+    {
+      "rule": "Direct question about Redux backend integration",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    },
+    {
+      "rule": "rule for backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "rule": "rule for database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for backend service question",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for key skills question",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about Axios directly",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about Fetch directly",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    },
+    {
+      "rule": "Create operation rule",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "rule": "Read operation rule",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "rule": "Update operation rule",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "rule": "Delete operation rule",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for HTML experience question",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for CSS experience question",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for JavaScript experience question",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    },
+    {
+      "rule": "direct login resource request",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "rule": "direct registration resource request",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer to MERN definition",
+      "steps": [
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer about tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "rule": "direct_login_help",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    },
+    {
+      "rule": "user asks what the app is",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "rule": "user asks about app features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_deployment_stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_recommended_platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for JavaScript refresher question",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for MongoDB integration question",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Stage 1 topics question",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    },
+    {
+      "rule": "Enroll in course rule",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "rule": "Check course availability rule",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "rule": "Get course information rule",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for ES6 syntax question",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    },
+    {
+      "rule": "rule_map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    },
+    {
+      "rule": "respond to object destructuring question",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "rule": "respond to array destructuring question",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
+        }
+      ]
+    }
+  ]
+}
