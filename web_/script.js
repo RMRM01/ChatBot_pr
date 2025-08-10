@@ -403,7 +403,7 @@
     const uploadBtn = document.getElementById('upload-btn');
     const statusMessage = document.getElementById('status-message');
 
-    const API_BASE_URL = "http://192.168.254.100:8080";
+    const API_BASE_URL = "http://10.10.122.56:8080";
 
     // Show auth modal by default
     authModal.style.display = 'flex';
@@ -450,7 +450,7 @@
           pdfUpload.disabled = false;
           uploadBtn.disabled = false;
           
-          appendMessage('NetBot', `Hello ${username}! How can I assist you with your networking needs today?`, false);
+          appendMessage('NetBot', `Hello ${username}! How can I assist you today?`, false);
         } else {
           const errorData = await response.json();
           showStatus(errorData.error || 'Login failed', 'error');

@@ -2,22 +2,28 @@ from flask import Flask, request, jsonify, session
 from flask_cors import CORS
 import os
 import requests
-import subprocess
 import pymysql
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 import json
-from datetime import datetime
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
+
+# Secret key for session management
 app.secret_key = os.urandom(24)
 
+# Optional: Configure session cookie for cross-origin if needed
+# (Uncomment and adjust if you use HTTPS)
+# app.config.update(
+#     SESSION_COOKIE_SAMESITE="None",
+#     SESSION_COOKIE_SECURE=True,
+# )
 # Database configuration
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': '1234',
+    'password': 'rimon1610',  # Change to your DB password
     'database': 'chatbot_db',
     'cursorclass': pymysql.cursors.DictCursor
 }
@@ -46,7 +52,7 @@ def register():
     if not all([username, email, password]):
         return jsonify({"error": "Missing required fields"}), 400
 
-    password_hash = generate_password_hash(password)
+    password_hash = password
     
     try:
         conn = get_db_connection()
@@ -67,6 +73,7 @@ def register():
 @app.route('/login', methods=['POST'])
 def login():
     data = request.json
+    print("Login data:", data)
     username = data.get('username')
     password = data.get('password')
 
@@ -81,14 +88,17 @@ def login():
                 (username,)
             )
             user = cursor.fetchone()
-
-        if user and check_password_hash(user['password_hash'], password):
+        print("User fetched:", user)
+        print(user['password_hash']+ password)
+        if user and user['password_hash'] == password:
             session['user_id'] = user['id']
             session['username'] = user['username']
             return jsonify({"message": "Login successful"}), 200
         else:
+            print("Invalid credentials")
             return jsonify({"error": "Invalid credentials"}), 401
     except pymysql.Error as err:
+        print("DB Error:", err)
         return jsonify({"error": str(err)}), 500
     finally:
         if 'conn' in locals():
@@ -154,7 +164,7 @@ def get_conversations():
         if 'conn' in locals():
             conn.close()
 
-# Chat endpoint
+# Chat endpoint that proxies message to Rasa server
 @app.route('/chat', methods=['POST'])
 @login_required
 def chat():
@@ -163,12 +173,15 @@ def chat():
     if not user_message:
         return jsonify({"error": "No message provided"}), 400
 
-    rasa_response = requests.post(
-        'http://localhost:5005/webhooks/rest/webhook',
-        json={"sender": "user", "message": user_message}
-    )
-
-    return jsonify({"responses": rasa_response.json()})
+    try:
+        rasa_response = requests.post(
+            'http://localhost:5005/webhooks/rest/webhook',
+            json={"sender": "user", "message": user_message}
+        )
+        rasa_response.raise_for_status()
+        return jsonify({"responses": rasa_response.json()})
+    except requests.exceptions.RequestException as e:
+        return jsonify({"error": "Failed to contact Rasa server", "details": str(e)}), 500
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
