@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_functional_components",
+        "examples": [
+          "What are the functional components?",
+          "Tell me about the functional components.",
+          "Explain the functional components.",
+          "Can you describe the functional components?",
+          "What are the parts of the functional components?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_functional_components": [
+        {
+          "text": "The document mentions 'Functional Components', but does not provide details on what they are."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about functional components",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for functional components question",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    }
+  ]
+}

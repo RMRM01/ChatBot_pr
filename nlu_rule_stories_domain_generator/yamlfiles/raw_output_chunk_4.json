@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_es6_syntax",
+        "examples": [
+          "What's new in ES6 syntax?",
+          "Tell me about ES6+ features.",
+          "What are some ES6+ additions?",
+          "Explain ES6 syntax.",
+          "I need information on ES6+."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_es6_syntax": [
+        {
+          "text": "ES6+ introduces let and const for variable declarations, and arrow functions for concise function expressions."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about ES6 syntax",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for ES6 syntax question",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    }
+  ]
+}

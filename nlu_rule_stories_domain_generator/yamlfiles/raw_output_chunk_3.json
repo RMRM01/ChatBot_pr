@@ -1,0 +1,122 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_javascript_refresher",
+        "examples": [
+          "Is there a JavaScript refresher?",
+          "Do you offer a JavaScript refresher course?",
+          "I need a JavaScript refresher, do you have one?",
+          "Is the JavaScript section a refresher course?"
+        ]
+      },
+      {
+        "name": "ask_mongodb_integration",
+        "examples": [
+          "What about MongoDB?",
+          "Is MongoDB required?",
+          "Do I need to know MongoDB?",
+          "Is there MongoDB integration?"
+        ]
+      },
+      {
+        "name": "ask_stage1_topics",
+        "examples": [
+          "What are the topics in Stage 1?",
+          "Can you list the key topics for Stage 1?",
+          "What does Stage 1 cover?",
+          "Tell me about Stage 1"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_javascript_refresher": [
+        {
+          "text": "Yes, Stage 1 includes a JavaScript refresher."
+        }
+      ],
+      "utter_ask_mongodb_integration": [
+        {
+          "text": "MongoDB is optional, for backend integration."
+        }
+      ],
+      "utter_ask_stage1_topics": [
+        {
+          "text": "Stage 1 covers JavaScript Foundations."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about JavaScript refresher",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "story": "User asks about MongoDB integration",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Stage 1 topics",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for JavaScript refresher question",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for MongoDB integration question",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Stage 1 topics question",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    }
+  ]
+}

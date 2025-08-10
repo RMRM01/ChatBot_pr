@@ -1,193 +1,96 @@
-```json
 {
   "nlu": {
     "intents": [
       {
-        "name": "ask_prerequisites",
+        "name": "ask_objective",
         "examples": [
-          "What are the prerequisites?",
-          "What do I need to know before starting?",
-          "What are the requirements for this roadmap?",
-          "What skills are needed?"
-        ]
-      },
-      {
-        "name": "ask_stage_1_topics",
-        "examples": [
-          "What are the topics covered in stage 1?",
-          "What will I learn in the JavaScript Foundations stage?",
-          "Tell me about stage 1.",
-          "Can you describe the first stage?"
-        ]
-      },
-      {
-        "name": "ask_react_core_concepts",
-        "examples": [
-          "What are the core React concepts?",
-          "What will I learn in stage 2?",
-          "Tell me about React core concepts.",
-          "What topics are covered in the React.js Core Concepts stage?"
-        ]
-      },
-      {
-        "name": "ask_styling_tools",
-        "examples": [
-          "What styling tools are recommended?",
-          "How should I style my React app?",
-          "What are the options for styling?",
-          "Tell me about styling in stage 4."
-        ]
-      },
-      {
-        "name": "ask_state_management_options",
-        "examples": [
-          "What are the options for state management?",
-          "When should I use global state management?",
-          "How do I manage state in larger apps?",
-          "Tell me about state management options."
-        ]
-      },
-      {
-        "name": "ask_backend_integration_options",
-        "examples": [
-          "What are the backend integration options?",
-          "How can I integrate a backend?",
-          "What are my choices for backend integration?",
-          "Tell me about backend integration in stage 6."
-        ]
-      },
-      {
-        "name": "ask_deployment_platforms",
-        "examples": [
-          "What platforms can I use for deployment?",
-          "How can I deploy my React app?",
-          "What are the recommended deployment platforms?",
-          "Tell me about deployment options."
+          "What is the objective of this roadmap?",
+          "What's the goal?",
+          "Tell me the aim.",
+          "What am I trying to achieve?"
         ]
       }
     ]
   },
   "domain": {
     "responses": {
-      "utter_ask_prerequisites": [
+      "utter_ask_objective": [
         {
-          "text": "Prerequisites include experience with HTML, CSS, and JavaScript. A basic understanding of MongoDB is optional."
+          "text": "The objective is to become proficient in building professional, scalable Single Page Applications (SPAs) using React.js and modern web development tools."
         }
       ],
-      "utter_ask_stage_1_topics": [
+      "utter_ask_technologies": [
         {
-          "text": "Stage 1 covers ES6+ syntax, array methods, object/array destructuring, promises, async/await, and the difference between DOM and Virtual DOM."
+          "text": "This roadmap focuses on React.js and modern web development tools."
         }
       ],
-      "utter_ask_react_core_concepts": [
+      "utter_ask_prerequisites":[
         {
-          "text": "Stage 2 covers JSX syntax, functional components, useState hook, props, event handling, conditional rendering, lists, forms, and the useEffect hook."
-        }
-      ],
-      "utter_ask_styling_tools": [
-        {
-          "text": "Recommended styling tools include Tailwind CSS and CSS Modules or Styled Components."
-        }
-      ],
-      "utter_ask_state_management_options": [
-        {
-          "text": "Options for state management include React Context API and Redux Toolkit."
-        }
-      ],
-      "utter_ask_backend_integration_options": [
-        {
-          "text": "Backend integration options include custom backends (like Express.js + MongoDB) and Backend-as-a-Service options such as Supabase or Firebase."
-        }
-      ],
-      "utter_ask_deployment_platforms": [
-        {
-          "text": "Recommended deployment platforms include Netlify, Vercel, Firebase Hosting, and Render."
+          "text": "This roadmap is for web developers with HTML, CSS, and JavaScript skills."
         }
       ]
     }
   },
   "stories": [
     {
-      "story": "User asks about prerequisites",
+      "story": "user asks objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "story": "user asks technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "story": "user asks prerequisites",
       "steps": [
         {
           "intent": "ask_prerequisites"
         },
         {
           "action": "utter_ask_prerequisites"
-        }
-      ]
-    },
-    {
-      "story": "User asks about stage 1 topics",
-      "steps": [
-        {
-          "intent": "ask_stage_1_topics"
-        },
-        {
-          "action": "utter_ask_stage_1_topics"
-        }
-      ]
-    },
-    {
-      "story": "User asks about React core concepts",
-      "steps": [
-        {
-          "intent": "ask_react_core_concepts"
-        },
-        {
-          "action": "utter_ask_react_core_concepts"
-        }
-      ]
-    },
-    {
-      "story": "User asks about styling tools",
-      "steps": [
-        {
-          "intent": "ask_styling_tools"
-        },
-        {
-          "action": "utter_ask_styling_tools"
-        }
-      ]
-    },
-    {
-      "story": "User asks about state management options",
-      "steps": [
-        {
-          "intent": "ask_state_management_options"
-        },
-        {
-          "action": "utter_ask_state_management_options"
-        }
-      ]
-    },
-    {
-      "story": "User asks about backend integration options",
-      "steps": [
-        {
-          "intent": "ask_backend_integration_options"
-        },
-        {
-          "action": "utter_ask_backend_integration_options"
-        }
-      ]
-    },
-    {
-      "story": "User asks about deployment platforms",
-      "steps": [
-        {
-          "intent": "ask_deployment_platforms"
-        },
-        {
-          "action": "utter_ask_deployment_platforms"
         }
       ]
     }
   ],
   "rules": [
     {
-      "rule": "User asks about prerequisites",
+      "rule": "rule for objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "rule": "rule for technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "rule": "rule for prerequisites",
       "steps": [
         {
           "intent": "ask_prerequisites"
@@ -196,73 +99,28 @@
           "action": "utter_ask_prerequisites"
         }
       ]
-    },
-    {
-      "rule": "User asks about stage 1 topics",
-      "steps": [
-        {
-          "intent": "ask_stage_1_topics"
-        },
-        {
-          "action": "utter_ask_stage_1_topics"
-        }
-      ]
-    },
-    {
-      "rule": "User asks about React core concepts",
-      "steps": [
-        {
-          "intent": "ask_react_core_concepts"
-        },
-        {
-          "action": "utter_ask_react_core_concepts"
-        }
-      ]
-    },
-    {
-      "rule": "User asks about styling tools",
-      "steps": [
-        {
-          "intent": "ask_styling_tools"
-        },
-        {
-          "action": "utter_ask_styling_tools"
-        }
-      ]
-    },
-    {
-      "rule": "User asks about state management options",
-      "steps": [
-        {
-          "intent": "ask_state_management_options"
-        },
-        {
-          "action": "utter_ask_state_management_options"
-        }
-      ]
-    },
-    {
-      "rule": "User asks about backend integration options",
-      "steps": [
-        {
-          "intent": "ask_backend_integration_options"
-        },
-        {
-          "action": "utter_ask_backend_integration_options"
-        }
-      ]
-    },
-    {
-      "rule": "User asks about deployment platforms",
-      "steps": [
-        {
-          "intent": "ask_deployment_platforms"
-        },
-        {
-          "action": "utter_ask_deployment_platforms"
-        }
-      ]
     }
-  ]
+  ],
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_technologies",
+        "examples": [
+          "What technologies are used?",
+          "Which tools are involved?",
+          "What's the tech stack?",
+          "What technologies does this roadmap cover?"
+        ]
+      },
+      {
+        "name": "ask_prerequisites",
+        "examples": [
+          "What are the prerequisites?",
+          "What do I need to know beforehand?",
+          "What skills are required?",
+          "What's the prior knowledge needed?"
+        ]
+      }
+    ]
+  }
 }
-```

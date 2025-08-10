@@ -2,48 +2,3419 @@
   "nlu": {
     "intents": [
       {
-        "name": "publish_portfolio_github",
+        "name": "ask_javascript_info",
         "examples": [
-          "How can I publish my portfolio projects?",
-          "Where should I host my portfolio projects?",
-          "I want to publish my portfolio, what platform do you recommend?",
-          "What's the best place to publish my portfolio?",
-          "How do I share my portfolio online?"
+          "What's the JavaScript.info website?",
+          "Tell me about javascript.info",
+          "Can you give me the link to javascript.info?",
+          "I need the javascript.info website"
+        ]
+      },
+      {
+        "name": "ask_mozilla_developer_docs",
+        "examples": [
+          "What's the Mozilla Developer Network JavaScript guide?",
+          "Tell me about MDN's JavaScript documentation",
+          "Can you give me the link to MDN's JavaScript guide?",
+          "I need the MDN JavaScript documentation"
+        ]
+      },
+      {
+        "name": "ask_key_topics",
+        "examples": [
+          "What are the key topics?",
+          "What's covered in the course?",
+          "What are the main subjects?",
+          "Key topics please.",
+          "What are the important concepts?"
+        ]
+      },
+      {
+        "name": "define_react",
+        "examples": [
+          "What is React?",
+          "Explain React to me.",
+          "Tell me about React.",
+          "What's React?",
+          "Can you define React?"
+        ]
+      },
+      {
+        "name": "ask_jsx_syntax",
+        "examples": [
+          "What is JSX syntax?",
+          "Explain JSX syntax to me.",
+          "Tell me about JSX syntax.",
+          "Can you describe JSX syntax?",
+          "What's JSX syntax all about?"
+        ]
+      },
+      {
+        "name": "ask_functional_components",
+        "examples": [
+          "What are the functional components?",
+          "Tell me about the functional components.",
+          "Explain the functional components.",
+          "Can you describe the functional components?",
+          "What are the parts of the functional components?"
+        ]
+      },
+      {
+        "name": "ask_usestate_hook",
+        "examples": [
+          "What is useState hook?",
+          "Explain useState hook",
+          "Tell me about useState hook",
+          "What does useState do?",
+          "How to use useState hook?"
+        ]
+      },
+      {
+        "name": "ask_props",
+        "examples": [
+          "What are the props?",
+          "Tell me about the props.",
+          "What props are available?",
+          "Can you describe the props?"
+        ]
+      },
+      {
+        "name": "ask_event_handling",
+        "examples": [
+          "How is event handling managed?",
+          "What's your event handling system like?",
+          "Explain your event handling.",
+          "Tell me about event handling."
+        ]
+      },
+      {
+        "name": "ask_conditional_rendering",
+        "examples": [
+          "What is conditional rendering?",
+          "Explain conditional rendering.",
+          "Tell me about conditional rendering",
+          "Can you explain conditional rendering?",
+          "What does conditional rendering mean?"
+        ]
+      },
+      {
+        "name": "ask_about_lists",
+        "examples": [
+          "Tell me about lists",
+          "What are lists?",
+          "Explain lists",
+          "What can you tell me about lists in javascript?",
+          "How do lists work?"
+        ]
+      },
+      {
+        "name": "ask_about_map",
+        "examples": [
+          "What is map()?",
+          "Explain the map() function",
+          "How does map() work?",
+          "Tell me about .map()",
+          "Describe the .map() method"
+        ]
+      },
+      {
+        "name": "ask_forms",
+        "examples": [
+          "What forms do you have?",
+          "Tell me about the available forms.",
+          "I need information on forms.",
+          "What forms are there?",
+          "Show me the forms."
+        ]
+      },
+      {
+        "name": "ask_inputs",
+        "examples": [
+          "What kind of inputs do you accept?",
+          "What information do you need?",
+          "What data do I need to provide?",
+          "Tell me about the required inputs.",
+          "Explain the inputs."
+        ]
+      },
+      {
+        "name": "ask_technologies",
+        "examples": [
+          "What technologies are used?",
+          "Which tools are involved?",
+          "What's the tech stack?",
+          "What technologies does this roadmap cover?"
+        ]
+      },
+      {
+        "name": "ask_prerequisites",
+        "examples": [
+          "What are the prerequisites?",
+          "What do I need to know beforehand?",
+          "What skills are required?",
+          "What's the prior knowledge needed?"
+        ]
+      },
+      {
+        "name": "ask_useEffect_resources",
+        "examples": [
+          "Where can I find resources on useEffect?",
+          "I need some information about useEffect hook resources.",
+          "Tell me more about resources for useEffect hook.",
+          "Can you point me to some resources on useEffect?",
+          "I'm looking for learning materials on useEffect Hook."
+        ]
+      },
+      {
+        "name": "ask_official_docs",
+        "examples": [
+          "Where can I find the official React documentation?",
+          "What's the URL for the official React docs?",
+          "Give me a link to the official React documentation.",
+          "I need the React official documentation link."
+        ]
+      },
+      {
+        "name": "ask_youtube_channels",
+        "examples": [
+          "Which YouTube channels teach React?",
+          "Recommend some YouTube channels for learning React.",
+          "What are some good React YouTube tutorials?",
+          "Where can I find React tutorials on YouTube?"
+        ]
+      },
+      {
+        "name": "ask_mini_projects",
+        "examples": [
+          "Do you have any mini projects for practicing React?",
+          "I'm looking for some small React projects.",
+          "Suggest some mini projects to improve my React skills.",
+          "Where can I find some React mini projects?"
+        ]
+      },
+      {
+        "name": "greet",
+        "examples": [
+          "Hello",
+          "Hi there",
+          "Hey",
+          "Good morning",
+          "Good evening"
+        ]
+      },
+      {
+        "name": "ask_features",
+        "examples": [
+          "What can this app do?",
+          "What are the features?",
+          "Tell me about the app's capabilities",
+          "What are its functions?"
+        ]
+      },
+      {
+        "name": "goodbye",
+        "examples": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Talk to you later"
+        ]
+      },
+      {
+        "name": "ask_weather",
+        "examples": [
+          "What's the weather like today?",
+          "Tell me the weather forecast.",
+          "How's the weather?",
+          "Give me a weather update.",
+          "What's the weather going to be like?"
+        ]
+      },
+      {
+        "name": "ask_weather_location",
+        "examples": [
+          "What's the weather in London?",
+          "Tell me the weather forecast for Paris.",
+          "How's the weather in New York?",
+          "Give me a weather update for Tokyo."
+        ]
+      },
+      {
+        "name": "ask_calculator_stage_topic",
+        "examples": [
+          "What are the key topics in Calculator Stage 3?",
+          "Tell me about the topics covered in Calculator Stage 3",
+          "What's the curriculum for Calculator Stage 3?",
+          "Can you list the key topics of Calculator Stage 3?"
+        ]
+      },
+      {
+        "name": "ask_navigation_components",
+        "examples": [
+          "What components are used for navigation?",
+          "Tell me about navigation components.",
+          "Which components handle routing?",
+          "Explain the navigation components.",
+          "What are the main navigation elements?"
+        ]
+      },
+      {
+        "name": "ask_about_BrowserRouter",
+        "examples": [
+          "What's BrowserRouter?",
+          "Tell me about BrowserRouter.",
+          "What does BrowserRouter do?",
+          "Explain BrowserRouter."
+        ]
+      },
+      {
+        "name": "ask_about_Routes",
+        "examples": [
+          "What are Routes?",
+          "Explain Routes.",
+          "What does Routes do?",
+          "Tell me about Routes."
+        ]
+      },
+      {
+        "name": "ask_about_Route",
+        "examples": [
+          "What is Route?",
+          "Tell me about Route.",
+          "What does Route do?",
+          "Explain Route."
+        ]
+      },
+      {
+        "name": "ask_about_Link",
+        "examples": [
+          "What is Link?",
+          "Tell me about Link.",
+          "What does Link do?",
+          "Explain Link."
+        ]
+      },
+      {
+        "name": "ask_about_Navigate",
+        "examples": [
+          "What is Navigate?",
+          "Tell me about Navigate.",
+          "What does Navigate do?",
+          "Explain Navigate."
+        ]
+      },
+      {
+        "name": "ask_nested_routes",
+        "examples": [
+          "What are nested routes?",
+          "Explain nested routes to me.",
+          "Tell me about nested routes.",
+          "Can you describe nested routes?",
+          "What do nested routes mean?"
+        ]
+      },
+      {
+        "name": "ask_404_page_resources",
+        "examples": [
+          "What are 404 page resources?",
+          "Explain 404 page resources.",
+          "Tell me about 404 page resources.",
+          "Can you describe 404 page resources?"
+        ]
+      },
+      {
+        "name": "ask_project_idea",
+        "examples": [
+          "What's a project idea?",
+          "I need a project idea.",
+          "Give me a project idea using React Router.",
+          "Suggest a project using React Router.",
+          "Looking for project inspiration with React Router."
+        ]
+      },
+      {
+        "name": "ask_dashboard_pages",
+        "examples": [
+          "What pages are in the dashboard?",
+          "Which pages does the dashboard have?",
+          "Tell me about the dashboard pages.",
+          "Can you list the dashboard pages?",
+          "What are the sections of the dashboard?"
+        ]
+      },
+      {
+        "name": "ask_recommended_tools",
+        "examples": [
+          "What tools are recommended?",
+          "Which tools do you suggest?",
+          "What are the suggested tools?",
+          "Recommend some tools.",
+          "What tools should I use?"
+        ]
+      },
+      {
+        "name": "ask_app_styling_stage",
+        "examples": [
+          "What stage is app styling?",
+          "What's the stage for styling?",
+          "Which stage is styling the app?",
+          "In what stage do I style the app?",
+          "What stage are we at for styling?"
+        ]
+      },
+      {
+        "name": "define_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Explain Tailwind CSS",
+          "Define Tailwind CSS",
+          "Tell me about Tailwind CSS"
+        ]
+      },
+      {
+        "name": "ask_features_tailwind",
+        "examples": [
+          "What are the features of Tailwind?",
+          "What does Tailwind offer?",
+          "What are Tailwind's key features?",
+          "Tell me about Tailwind's features"
+        ]
+      },
+      {
+        "name": "ask_css_modules",
+        "examples": [
+          "Tell me about CSS Modules",
+          "What are CSS Modules?",
+          "Explain CSS Modules",
+          "What is CSS Modules?",
+          "Can you explain CSS Modules?"
+        ]
+      },
+      {
+        "name": "ask_styled_components",
+        "examples": [
+          "Tell me about Styled Components",
+          "What are Styled Components?",
+          "Explain Styled Components",
+          "What is Styled Components?",
+          "Can you explain Styled Components?"
+        ]
+      },
+      {
+        "name": "ask_scoped_styling_resources",
+        "examples": [
+          "Where can I find resources on scoped styling?",
+          "I need resources for scoped styling",
+          "Show me some resources on scoped styling",
+          "Resources on scoped styling please",
+          "Looking for information on scoped styling resources"
+        ]
+      },
+      {
+        "name": "ask_what_is_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Tell me about Tailwind CSS",
+          "Explain Tailwind CSS",
+          "What's Tailwind?",
+          "Can you describe Tailwind CSS?"
+        ]
+      },
+      {
+        "name": "ask_tailwind_features",
+        "examples": [
+          "What are the features of Tailwind CSS?",
+          "What are Tailwind's features?",
+          "What does Tailwind offer?",
+          "What are some of Tailwind's capabilities?",
+          "Tell me about Tailwind's features."
+        ]
+      },
+      {
+        "name": "ask_tailwind_website",
+        "examples": [
+          "What's the website for Tailwind CSS?",
+          "Where can I find more information about Tailwind?",
+          "What's the URL for Tailwind CSS?",
+          "Give me the link to the Tailwind CSS website.",
+          "Show me the Tailwind CSS website."
+        ]
+      },
+      {
+        "name": "ask_global_state_management",
+        "examples": [
+          "What is global state management?",
+          "Explain global state management in Tailwind.",
+          "Tell me about global state management for larger apps.",
+          "When should I use global state management?",
+          "What are the benefits of global state management?"
+        ]
+      },
+      {
+        "name": "ask_when_to_use_global_state",
+        "examples": [
+          "When do I need global state management?",
+          "In what situations should I use global state?",
+          "For which apps is global state management suitable?",
+          "Is global state management necessary for small apps?"
+        ]
+      },
+      {
+        "name": "ask_global_state_options",
+        "examples": [
+          "What options are available for global state management?",
+          "What are some ways to implement global state?",
+          "List the options for global state management in Tailwind."
+        ]
+      },
+      {
+        "name": "ask_react_context_api",
+        "examples": [
+          "What is React Context API?",
+          "Tell me about React Context API",
+          "Explain React Context API",
+          "What's the React Context API?",
+          "Can you explain the React Context API?"
+        ]
+      },
+      {
+        "name": "ask_redux_toolkit_resource",
+        "examples": [
+          "Where can I find Redux Toolkit resources?",
+          "What are the resources for Redux Toolkit?",
+          "I need some documentation on Redux Toolkit.",
+          "Show me the Redux Toolkit resources.",
+          "Can you provide a link to Redux Toolkit documentation?"
+        ]
+      },
+      {
+        "name": "ask_redux_backend_integration",
+        "examples": [
+          "What are the backend integration options in Codevolution's Redux playlist?",
+          "Tell me about backend integration in Codevolution's Redux Stage 6.",
+          "Explain the backend integration choices for Redux in Codevolution's YouTube series.",
+          "I need info on backend integration from Codevolution's Redux tutorial, Stage 6.",
+          "What are my options for integrating a backend with Redux in Codevolution's course?"
+        ]
+      },
+      {
+        "name": "ask_backend_language",
+        "examples": [
+          "What backend language is used?",
+          "Which language is used for the backend?",
+          "Tell me about the backend technology.",
+          "What's the backend framework?",
+          "What programming language is used on the server-side?"
+        ]
+      },
+      {
+        "name": "ask_database",
+        "examples": [
+          "What database does it use?",
+          "Which database is used?",
+          "What database technology is used?",
+          "Tell me the database."
+        ]
+      },
+      {
+        "name": "ask_backend_service",
+        "examples": [
+          "What backend services do you use?",
+          "Which backend services are used?",
+          "What is the backend?",
+          "Tell me about the backend services.",
+          "What backend is this built on?"
+        ]
+      },
+      {
+        "name": "ask_key_skills",
+        "examples": [
+          "What are the key skills needed?",
+          "What skills are required?",
+          "List the key skills.",
+          "Tell me about the key skills."
+        ]
+      },
+      {
+        "name": "ask_about_axios",
+        "examples": [
+          "What is Axios?",
+          "Tell me about Axios",
+          "Explain Axios",
+          "What's Axios used for?",
+          "What is Axios for API calls?"
+        ]
+      },
+      {
+        "name": "ask_about_fetch",
+        "examples": [
+          "What is Fetch?",
+          "Tell me about Fetch",
+          "Explain Fetch API",
+          "What is Fetch used for?",
+          "How does Fetch work with APIs?"
+        ]
+      },
+      {
+        "name": "ask_create",
+        "examples": [
+          "How do I create a new record?",
+          "What's the process for creating data?",
+          "I need to add a new entry, how?",
+          "Explain the create operation.",
+          "Can you tell me about creating data?"
+        ]
+      },
+      {
+        "name": "ask_read",
+        "examples": [
+          "How do I retrieve existing data?",
+          "What's the process for reading data?",
+          "I need to access some records, how?",
+          "Explain the read operation.",
+          "Can you tell me about retrieving data?"
+        ]
+      },
+      {
+        "name": "ask_update",
+        "examples": [
+          "How do I modify an existing record?",
+          "What's the process for updating data?",
+          "I need to change some data, how?",
+          "Explain the update operation.",
+          "Can you tell me about modifying data?"
+        ]
+      },
+      {
+        "name": "ask_delete",
+        "examples": [
+          "How do I delete a record?",
+          "What's the process for deleting data?",
+          "I need to remove an entry, how?",
+          "Explain the delete operation.",
+          "Can you tell me about deleting data?"
+        ]
+      },
+      {
+        "name": "ask_html_experience",
+        "examples": [
+          "Do you have experience with HTML?",
+          "What's your HTML experience?",
+          "Have you worked with HTML before?",
+          "Tell me about your HTML skills."
+        ]
+      },
+      {
+        "name": "ask_css_experience",
+        "examples": [
+          "Do you have experience with CSS?",
+          "What about your CSS skills?",
+          "How experienced are you with CSS?",
+          "Tell me about your CSS experience."
+        ]
+      },
+      {
+        "name": "ask_javascript_experience",
+        "examples": [
+          "What's your JavaScript experience?",
+          "Do you know JavaScript?",
+          "Have you worked with JavaScript before?",
+          "Tell me about your JavaScript skills."
+        ]
+      },
+      {
+        "name": "ask_login_resources",
+        "examples": [
+          "Where can I find login resources?",
+          "I need help with logging in.",
+          "What are the resources for login?",
+          "Login resources please.",
+          "I'm having trouble logging in, where can I find help?"
+        ]
+      },
+      {
+        "name": "ask_register_resources",
+        "examples": [
+          "Where can I find registration resources?",
+          "I need help registering.",
+          "What are the resources for registration?",
+          "Registration resources please.",
+          "I'm having trouble registering, where can I find help?"
+        ]
+      },
+      {
+        "name": "ask_mern_definition",
+        "examples": [
+          "What is the MERN stack?",
+          "Explain the MERN stack",
+          "Tell me about MERN",
+          "What does MERN stand for?",
+          "Define MERN stack"
+        ]
+      },
+      {
+        "name": "ask_tutorial_availability",
+        "examples": [
+          "Do you have a tutorial on the MERN stack?",
+          "Is there a tutorial available?",
+          "Where can I find a MERN tutorial?",
+          "Show me a MERN tutorial",
+          "I want to learn MERN, do you have resources?"
+        ]
+      },
+      {
+        "name": "ask_blog_login",
+        "examples": [
+          "How do I log in to the blog?",
+          "What's the process for logging in?",
+          "I need to log in, what do I do?",
+          "Can you help me with the blog login?",
+          "Login instructions please."
+        ]
+      },
+      {
+        "name": "ask_about_app",
+        "examples": [
+          "What is this app?",
+          "Tell me about this app",
+          "What's this app all about?",
+          "Explain the app to me.",
+          "Can you describe the app?"
+        ]
+      },
+      {
+        "name": "ask_deployment_stage",
+        "examples": [
+          "What stage is deployment?",
+          "What's the current deployment stage?",
+          "Which stage are we at in deployment?",
+          "Deployment stage?"
+        ]
+      },
+      {
+        "name": "ask_recommended_platforms",
+        "examples": [
+          "What platforms are recommended for deployment?",
+          "Which platforms are suggested for deployment?",
+          "Recommended deployment platforms?",
+          "What platforms should we deploy on?"
+        ]
+      },
+      {
+        "name": "ask_best_for_react_spas",
+        "examples": [
+          "What's the best platform for React SPAs?",
+          "Which platform is best suited for React single page applications?",
+          "Recommend a platform for building React SPAs.",
+          "I need a platform for my React SPA, what do you suggest?",
+          "What platform works well with React SPAs?"
+        ]
+      },
+      {
+        "name": "ask_javascript_refresher",
+        "examples": [
+          "Is there a JavaScript refresher?",
+          "Do you offer a JavaScript refresher course?",
+          "I need a JavaScript refresher, do you have one?",
+          "Is the JavaScript section a refresher course?"
+        ]
+      },
+      {
+        "name": "ask_mongodb_integration",
+        "examples": [
+          "What about MongoDB?",
+          "Is MongoDB required?",
+          "Do I need to know MongoDB?",
+          "Is there MongoDB integration?"
+        ]
+      },
+      {
+        "name": "ask_stage1_topics",
+        "examples": [
+          "What are the topics in Stage 1?",
+          "Can you list the key topics for Stage 1?",
+          "What does Stage 1 cover?",
+          "Tell me about Stage 1"
+        ]
+      },
+      {
+        "name": "enroll_in_course",
+        "examples": [
+          "I want to enroll in a course.",
+          "How do I sign up for a class?",
+          "I'd like to register for a course.",
+          "Let me enroll in a class."
+        ]
+      },
+      {
+        "name": "check_course_availability",
+        "examples": [
+          "Are there any spots left in the course?",
+          "Is the course full?",
+          "What's the course availability?",
+          "How many spots are available?"
+        ]
+      },
+      {
+        "name": "get_course_information",
+        "examples": [
+          "Tell me about the course.",
+          "What's the course description?",
+          "Can I get some information on the course?",
+          "Give me details about the course."
+        ]
+      },
+      {
+        "name": "ask_es6_syntax",
+        "examples": [
+          "What's new in ES6 syntax?",
+          "Tell me about ES6+ features.",
+          "What are some ES6+ additions?",
+          "Explain ES6 syntax.",
+          "I need information on ES6+."
+        ]
+      },
+      {
+        "name": "ask_map_function",
+        "examples": [
+          "What does the .map() method do?",
+          "Explain the map function.",
+          "Tell me about the .map() array method.",
+          "Describe the map array method.",
+          "What is .map() used for?"
+        ]
+      },
+      {
+        "name": "ask_filter_function",
+        "examples": [
+          "What does the .filter() method do?",
+          "Explain the filter function.",
+          "Tell me about the .filter() array method.",
+          "Describe the filter array method."
+        ]
+      },
+      {
+        "name": "ask_reduce_function",
+        "examples": [
+          "What does the .reduce() method do?",
+          "Explain the reduce function.",
+          "Tell me about the .reduce() array method.",
+          "Describe the reduce array method."
+        ]
+      },
+      {
+        "name": "ask_object_destructuring",
+        "examples": [
+          "What is object destructuring?",
+          "Explain object destructuring",
+          "Tell me about object destructuring",
+          "Can you explain object destructuring?",
+          "What does object destructuring do?"
+        ]
+      },
+      {
+        "name": "ask_array_destructuring",
+        "examples": [
+          "What is array destructuring?",
+          "Explain array destructuring",
+          "Tell me about array destructuring",
+          "Can you explain array destructuring?",
+          "What does array destructuring do?"
+        ]
+      },
+      {
+        "name": "ask_promises",
+        "examples": [
+          "What are promises?",
+          "Explain promises to me.",
+          "Tell me about promises.",
+          "Can you explain promises in Javascript?",
+          "What do promises do?"
+        ]
+      },
+      {
+        "name": "ask_async_await",
+        "examples": [
+          "What is async/await?",
+          "Explain async/await.",
+          "Tell me about async/await.",
+          "How does async/await work?",
+          "What are the benefits of async/await?"
+        ]
+      },
+      {
+        "name": "ask_dom_virtual_dom_difference",
+        "examples": [
+          "What's the difference between DOM and Virtual DOM?",
+          "Explain the difference between DOM and Virtual DOM.",
+          "Can you tell me about the differences between DOM and Virtual DOM?",
+          "What is the difference between the DOM and the Virtual DOM?",
+          "DOM vs Virtual DOM - what's the key difference?"
         ]
       }
     ]
   },
   "domain": {
     "responses": {
-      "utter_publish_portfolio_github": [
+      "utter_ask_javascript_info": [
         {
-          "text": "Use GitHub to publish all projects for your portfolio."
+          "text": "Here's the link to javascript.info: https://javascript.info/"
+        }
+      ],
+      "utter_ask_mozilla_developer_docs": [
+        {
+          "text": "Here's the link to the Mozilla Developer Network JavaScript Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ],
+      "utter_ask_javascript_course_stage": [
+        {
+          "text": "The React.js Core Concepts are covered in FreeCodeCamp's JavaScript Course Stage."
+        }
+      ],
+      "utter_ask_key_topics": [
+        {
+          "text": "The key topics are React.js Core Concepts."
+        }
+      ],
+      "utter_define_react": [
+        {
+          "text": "I am not able to provide a definition for React based on the given text.  The document only contains the question 'What is React?'.  To get a definition, please search online or consult a relevant resource."
+        }
+      ],
+      "utter_ask_jsx_syntax": [
+        {
+          "text": "JSX (JavaScript XML) is a syntax extension to JavaScript. It allows you to write HTML-like code within your JavaScript code.  It's primarily used with React, a JavaScript library for building user interfaces."
+        }
+      ],
+      "utter_ask_functional_components": [
+        {
+          "text": "The document mentions 'Functional Components', but does not provide details on what they are."
+        }
+      ],
+      "utter_ask_usestate_hook": [
+        {
+          "text": "useState is a Hook in React that lets you add state to functional components. It takes an initial state as an argument and returns an array with two elements: the current state value and a function to update it."
+        }
+      ],
+      "utter_ask_props": [
+        {
+          "text": "Information on props is not available in this document."
+        }
+      ],
+      "utter_ask_event_handling": [
+        {
+          "text": "Information on event handling is not available in this document."
+        }
+      ],
+      "utter_ask_conditional_rendering": [
+        {
+          "text": "Conditional rendering is a technique used to dynamically render parts of a user interface based on certain conditions.  It allows you to show or hide elements, or change their content, based on the state of your application."
+        }
+      ],
+      "utter_ask_about_lists": [
+        {
+          "text": "Lists are used to store multiple items in a single variable."
+        }
+      ],
+      "utter_ask_about_map": [
+        {
+          "text": ".map() is a higher-order function that creates a new array by applying a function to each element of an existing array."
+        }
+      ],
+      "utter_ask_forms": [
+        {
+          "text": "We offer various forms.  Please specify what type of form you're looking for more information on."
+        }
+      ],
+      "utter_ask_inputs": [
+        {
+          "text": "The required inputs vary depending on the form. Please specify which form you are using."
+        }
+      ],
+      "utter_ask_objective": [
+        {
+          "text": "The objective is to become proficient in building professional, scalable Single Page Applications (SPAs) using React.js and modern web development tools."
+        }
+      ],
+      "utter_ask_technologies": [
+        {
+          "text": "This roadmap focuses on React.js and modern web development tools."
+        }
+      ],
+      "utter_ask_prerequisites": [
+        {
+          "text": "This roadmap is for web developers with HTML, CSS, and JavaScript skills."
+        }
+      ],
+      "utter_ask_useEffect_resources": [
+        {
+          "text": "I don't have specific links to resources, but the document mentions that resources exist for the useEffect hook."
+        }
+      ],
+      "utter_ask_official_docs": [
+        {
+          "text": "The official React documentation can be found at https://react.dev/learn"
+        }
+      ],
+      "utter_ask_youtube_channels": [
+        {
+          "text": "Check out Codevolution and freeCodeCamp on YouTube for React tutorials."
+        }
+      ],
+      "utter_ask_mini_projects": [
+        {
+          "text": "I have a list of mini projects, but more information is needed to give you specific recommendations."
+        }
+      ],
+      "utter_greet": [
+        {
+          "text": "Hello! Welcome to the To-Do List App."
+        }
+      ],
+      "utter_ask_features": [
+        {
+          "text": "This app allows you to create and manage to-do lists."
+        }
+      ],
+      "utter_goodbye": [
+        {
+          "text": "Goodbye! Have a great day!"
+        }
+      ],
+      "utter_ask_weather": [
+        {
+          "text": "This is a weather app.  Please specify a location for a weather forecast."
+        }
+      ],
+      "utter_ask_weather_location": [
+        {
+          "text": "I need a location to provide a weather forecast. For example, try asking 'What's the weather in London?'"
+        }
+      ],
+      "utter_ask_calculator_stage_topic": [
+        {
+          "text": "The key topic for Calculator Stage 3 is: react-router-dom setup"
+        }
+      ],
+      "utter_ask_navigation_components": [
+        {
+          "text": "The main navigation components are BrowserRouter, Routes, Route, Link, and Navigate."
+        }
+      ],
+      "utter_ask_about_BrowserRouter": [
+        {
+          "text": "BrowserRouter is a component that provides the context for routing in React Router."
+        }
+      ],
+      "utter_ask_about_Routes": [
+        {
+          "text": "Routes is a component that renders a single child route matching the current location."
+        }
+      ],
+      "utter_ask_about_Route": [
+        {
+          "text": "Route is a component that renders an element based on the current location."
+        }
+      ],
+      "utter_ask_about_Link": [
+        {
+          "text": "Link is a component that allows you to navigate between routes without causing a full page reload."
+        }
+      ],
+      "utter_ask_about_Navigate": [
+        {
+          "text": "Navigate is a component that allows you to imperatively navigate to a different location."
+        }
+      ],
+      "utter_ask_nested_routes": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ],
+      "utter_ask_404_page_resources": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ],
+      "utter_ask_project_idea": [
+        {
+          "text": "One project idea is building a single-page application using React Router for navigation."
+        }
+      ],
+      "utter_ask_dashboard_pages": [
+        {
+          "text": "The dashboard includes Home, Profile, and Notification pages."
+        }
+      ],
+      "utter_ask_recommended_tools": [
+        {
+          "text": "Recommended tools are mentioned in the document."
+        }
+      ],
+      "utter_ask_app_styling_stage": [
+        {
+          "text": "App styling is in Stage 4."
+        }
+      ],
+      "utter_define_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework."
+        }
+      ],
+      "utter_ask_features_tailwind": [
+        {
+          "text": "Tailwind CSS offers a wide range of pre-built utility classes for rapid UI development."
+        }
+      ],
+      "utter_ask_css_modules": [
+        {
+          "text": "CSS Modules allow you to scope CSS to a specific component."
+        }
+      ],
+      "utter_ask_styled_components": [
+        {
+          "text": "Styled Components is a CSS-in-JS library that enables scoping styles to components."
+        }
+      ],
+      "utter_ask_scoped_styling_resources": [
+        {
+          "text": "The provided text only mentions CSS Modules and Styled Components as resources for scoped styling."
+        }
+      ],
+      "utter_ask_what_is_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.  It's known for its highly customizable nature and large community."
+        }
+      ],
+      "utter_ask_tailwind_features": [
+        {
+          "text": "Tailwind CSS offers pre-defined CSS utility classes, allowing for rapid development and customization. It's responsive by default and provides tools for managing design systems."
+        }
+      ],
+      "utter_ask_tailwind_website": [
+        {
+          "text": "The website for Tailwind CSS is tailwindcss.com"
+        }
+      ],
+      "utter_ask_global_state_management": [
+        {
+          "text": "Global state management is for larger apps with shared state."
+        }
+      ],
+      "utter_ask_when_to_use_global_state": [
+        {
+          "text": "Use global state management for larger apps with shared state."
+        }
+      ],
+      "utter_ask_global_state_options": [
+        {
+          "text": "The document only mentions that options exist for global state management in larger apps, but doesn't specify them."
+        }
+      ],
+      "utter_ask_react_context_api": [
+        {
+          "text": "React Context API is a built-in feature."
+        }
+      ],
+      "utter_ask_redux_toolkit_resource": [
+        {
+          "text": "Here's a link to Redux Toolkit resources: https://redux-toolkit.js.org/"
+        }
+      ],
+      "utter_ask_redux_backend_integration": [
+        {
+          "text": "Codevolution's Redux playlist, Stage 6, covers backend integration options.  The specific options aren't detailed in this short description."
+        }
+      ],
+      "utter_ask_backend_language": [
+        {
+          "text": "The backend uses Express.js."
+        }
+      ],
+      "utter_ask_database": [
+        {
+          "text": "The database used is MongoDB."
+        }
+      ],
+      "utter_ask_backend_service": [
+        {
+          "text": "The backend services used are Supabase and Firebase."
+        }
+      ],
+      "utter_ask_key_skills": [
+        {
+          "text": "Key skills are Supabase and Firebase."
+        }
+      ],
+      "utter_ask_about_axios": [
+        {
+          "text": "Axios is a popular JavaScript library used for making HTTP requests to APIs."
+        }
+      ],
+      "utter_ask_about_fetch": [
+        {
+          "text": "Fetch is a built-in browser API for making HTTP requests to APIs."
+        }
+      ],
+      "utter_ask_create": [
+        {
+          "text": "The create operation adds new data to the system."
+        }
+      ],
+      "utter_ask_read": [
+        {
+          "text": "The read operation retrieves existing data from the system."
+        }
+      ],
+      "utter_ask_update": [
+        {
+          "text": "The update operation modifies existing data in the system."
+        }
+      ],
+      "utter_ask_delete": [
+        {
+          "text": "The delete operation removes data from the system."
+        }
+      ],
+      "utter_ask_html_experience": [
+        {
+          "text": "Yes, I have experience with HTML."
+        }
+      ],
+      "utter_ask_css_experience": [
+        {
+          "text": "Yes, I have experience with CSS."
+        }
+      ],
+      "utter_ask_javascript_experience": [
+        {
+          "text": "Yes, I have experience with JavaScript."
+        }
+      ],
+      "utter_ask_login_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with login."
+        }
+      ],
+      "utter_ask_register_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with registration."
+        }
+      ],
+      "utter_ask_mern_definition": [
+        {
+          "text": "MERN stands for MongoDB, Express.js, React, and Node.js.  It's a popular JavaScript stack for building web applications."
+        }
+      ],
+      "utter_ask_tutorial_availability": [
+        {
+          "text": "Yes, MongoDB provides a tutorial on the MERN stack. You can find it on their website."
+        }
+      ],
+      "utter_ask_blog_login": [
+        {
+          "text": "To access the blog, you'll need to log in.  Further instructions are available on the blog's login page."
+        }
+      ],
+      "utter_ask_about_app": [
+        {
+          "text": "This is a Hall/Hostel Management App."
+        }
+      ],
+      "utter_ask_deployment_stage": [
+        {
+          "text": "The current stage is Stage 7: Deployment."
+        }
+      ],
+      "utter_ask_recommended_platforms": [
+        {
+          "text": "Recommended platforms for deployment are mentioned in the document but not specified."
+        }
+      ],
+      "utter_ask_best_for_react_spas": [
+        {
+          "text": "Netlify is best for React SPAs."
+        }
+      ],
+      "utter_ask_javascript_refresher": [
+        {
+          "text": "Yes, Stage 1 includes a JavaScript refresher."
+        }
+      ],
+      "utter_ask_mongodb_integration": [
+        {
+          "text": "MongoDB is optional, for backend integration."
+        }
+      ],
+      "utter_ask_stage1_topics": [
+        {
+          "text": "Stage 1 covers JavaScript Foundations."
+        }
+      ],
+      "utter_enroll_in_course": [
+        {
+          "text": "To enroll in a course, please visit our website and follow the instructions."
+        }
+      ],
+      "utter_check_course_availability": [
+        {
+          "text": "Course availability varies.  Please check our website for the most up-to-date information."
+        }
+      ],
+      "utter_get_course_information": [
+        {
+          "text": "For course information, please visit our website."
+        }
+      ],
+      "utter_ask_es6_syntax": [
+        {
+          "text": "ES6+ introduces let and const for variable declarations, and arrow functions for concise function expressions."
+        }
+      ],
+      "utter_ask_map_function": [
+        {
+          "text": "The .map() method creates a new array by applying a function to each element of an existing array."
+        }
+      ],
+      "utter_ask_filter_function": [
+        {
+          "text": "The .filter() method creates a new array containing only the elements that pass a certain condition (defined by a provided function)."
+        }
+      ],
+      "utter_ask_reduce_function": [
+        {
+          "text": "The .reduce() method applies a function to each element of an array to reduce it to a single value."
+        }
+      ],
+      "utter_ask_object_destructuring": [
+        {
+          "text": "Object destructuring is a JavaScript feature that allows you to extract properties from objects and assign them to variables."
+        }
+      ],
+      "utter_ask_array_destructuring": [
+        {
+          "text": "Array destructuring is a JavaScript feature that allows you to unpack elements from arrays into distinct variables."
+        }
+      ],
+      "utter_ask_promises": [
+        {
+          "text": "Promises are a way to handle asynchronous operations in JavaScript. They represent the eventual result of an asynchronous operation."
+        }
+      ],
+      "utter_ask_async_await": [
+        {
+          "text": "Async/await makes asynchronous code look and behave a bit more like synchronous code, making it easier to read and write. It's built on top of promises."
+        }
+      ],
+      "utter_ask_dom_virtual_dom_difference": [
+        {
+          "text": "I'm sorry, but I cannot answer that question. My knowledge base does not contain information on the difference between DOM and Virtual DOM."
         }
       ]
     }
   },
   "stories": [
     {
-      "story": "Publish portfolio on GitHub",
+      "story": "user asks for javascript.info",
       "steps": [
         {
-          "intent": "publish_portfolio_github"
+          "intent": "ask_javascript_info"
         },
         {
-          "action": "utter_publish_portfolio_github"
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "story": "user asks for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    },
+    {
+      "story": "user asks about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "story": "user asks about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    },
+    {
+      "story": "User asks for React definition",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    },
+    {
+      "story": "user asks about functional components",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    },
+    {
+      "story": "User asks about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    },
+    {
+      "story": "user asks about props",
+      "steps": [
+        {
+          "intent": "ask_props"
+        },
+        {
+          "action": "utter_ask_props"
+        }
+      ]
+    },
+    {
+      "story": "user asks about event handling",
+      "steps": [
+        {
+          "intent": "ask_event_handling"
+        },
+        {
+          "action": "utter_ask_event_handling"
+        }
+      ]
+    },
+    {
+      "story": "User asks about conditional rendering",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    },
+    {
+      "story": "User asks about lists",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "story": "User asks about map",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    },
+    {
+      "story": "User asks about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "story": "User asks about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    },
+    {
+      "story": "user asks objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "story": "user asks technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "story": "user asks prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "story": "user asks for useEffect resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    },
+    {
+      "story": "Find official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "story": "Find YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "story": "Find mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    },
+    {
+      "story": "User greets the bot",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "story": "User asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "story": "User says goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    },
+    {
+      "story": "Ask for weather",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "story": "Ask for weather at specific location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    },
+    {
+      "story": "user asks about navigation components",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "story": "user asks about BrowserRouter",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Routes",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Route",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Link",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Navigate",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    },
+    {
+      "story": "user asks about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    },
+    {
+      "story": "Ask for project idea",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    },
+    {
+      "story": "User asks about dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "story": "User asks about recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "story": "User asks about app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    },
+    {
+      "story": "user greets and asks for definition",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user greets and asks about features",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "User asks about prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "story": "User asks about CSS Modules",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Styled Components",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "story": "User asks for scoped styling resources",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Tailwind CSS",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Tailwind features",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    },
+    {
+      "story": "user asks for the Tailwind website",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    },
+    {
+      "story": "User asks about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "story": "User asks when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "story": "User asks about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    },
+    {
+      "story": "user asks about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    },
+    {
+      "story": "User asks for Redux Toolkit resources",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Redux backend integration options",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    },
+    {
+      "story": "user asks about backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "story": "user asks about database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    },
+    {
+      "story": "User asks about backend services",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "story": "User asks about key skills",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Axios",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Fetch",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    },
+    {
+      "story": "Create operation story",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "story": "Read operation story",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "story": "Update operation story",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "story": "Delete operation story",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    },
+    {
+      "story": "User asks about HTML experience",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about CSS experience",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JavaScript experience",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    },
+    {
+      "story": "user asks for login resources",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "story": "user asks for registration resources",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    },
+    {
+      "story": "User greets and asks about MERN",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "story": "User asks for a tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "story": "User greets and asks for tutorial",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "story": "Login help story",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    },
+    {
+      "story": "user asks about the app",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "story": "Ask about deployment stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "story": "Ask about recommended platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    },
+    {
+      "story": "User asks about best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JavaScript refresher",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "story": "User asks about MongoDB integration",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Stage 1 topics",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    },
+    {
+      "story": "Enroll in course story",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "story": "Check course availability story",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "story": "Get course information story",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    },
+    {
+      "story": "User asks about ES6 syntax",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    },
+    {
+      "story": "user asks about map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about object destructuring",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "story": "user asks about array destructuring",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    },
+    {
+      "story": "User asks about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "story": "User asks about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    },
+    {
+      "story": "User asks about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
         }
       ]
     }
   ],
   "rules": [
     {
-      "rule": "Directly asking about portfolio publishing",
+      "rule": "direct request for javascript.info",
       "steps": [
         {
-          "intent": "publish_portfolio_github"
+          "intent": "ask_javascript_info"
         },
         {
-          "action": "utter_publish_portfolio_github"
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "rule": "direct request for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    },
+    {
+      "rule": "Define React directly",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer what is JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    },
+    {
+      "rule": "rule for functional components question",
+      "steps": [
+        {
+          "intent": "ask_functional_components"
+        },
+        {
+          "action": "utter_ask_functional_components"
+        }
+      ]
+    },
+    {
+      "rule": "Direct question about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about props",
+      "steps": [
+        {
+          "intent": "ask_props"
+        },
+        {
+          "action": "utter_ask_props"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about event handling",
+      "steps": [
+        {
+          "intent": "ask_event_handling"
+        },
+        {
+          "action": "utter_ask_event_handling"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about conditional rendering directly",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about lists directly",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about map directly",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    },
+    {
+      "rule": "rule for objective",
+      "steps": [
+        {
+          "intent": "ask_objective"
+        },
+        {
+          "action": "utter_ask_objective"
+        }
+      ]
+    },
+    {
+      "rule": "rule for technologies",
+      "steps": [
+        {
+          "intent": "ask_technologies"
+        },
+        {
+          "action": "utter_ask_technologies"
+        }
+      ]
+    },
+    {
+      "rule": "rule for prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "rule": "direct_request_useEffect_resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    },
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Answer feature question",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "rule": "Say goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    },
+    {
+      "rule": "Direct weather inquiry",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "rule": "Direct weather inquiry with location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    },
+    {
+      "rule": "respond to navigation components question",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "rule": "respond to BrowserRouter question",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Routes question",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Route question",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Link question",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Navigate question",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Direct project idea request",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    },
+    {
+      "rule": "define Tailwind on direct question",
+      "steps": [
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "greet the user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "answer features question",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about prerequisites",
+      "steps": [
+        {
+          "intent": "ask_prerequisites"
+        },
+        {
+          "action": "utter_ask_prerequisites"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for CSS Modules inquiry",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Styled Components inquiry",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Scoped Styling Resources inquiry",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    },
+    {
+      "rule": "direct_website_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    },
+    {
+      "rule": "direct_what_is_tailwind",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "direct_features_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer Redux Toolkit resource question",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    },
+    {
+      "rule": "Direct question about Redux backend integration",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    },
+    {
+      "rule": "rule for backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "rule": "rule for database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for backend service question",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for key skills question",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about Axios directly",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about Fetch directly",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    },
+    {
+      "rule": "Create operation rule",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "rule": "Read operation rule",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "rule": "Update operation rule",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "rule": "Delete operation rule",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for HTML experience question",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for CSS experience question",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for JavaScript experience question",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    },
+    {
+      "rule": "direct login resource request",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "rule": "direct registration resource request",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    },
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer to MERN definition",
+      "steps": [
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer about tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "rule": "direct_login_help",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    },
+    {
+      "rule": "user asks what the app is",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "rule": "user asks about app features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_deployment_stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_recommended_platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for JavaScript refresher question",
+      "steps": [
+        {
+          "intent": "ask_javascript_refresher"
+        },
+        {
+          "action": "utter_ask_javascript_refresher"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for MongoDB integration question",
+      "steps": [
+        {
+          "intent": "ask_mongodb_integration"
+        },
+        {
+          "action": "utter_ask_mongodb_integration"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Stage 1 topics question",
+      "steps": [
+        {
+          "intent": "ask_stage1_topics"
+        },
+        {
+          "action": "utter_ask_stage1_topics"
+        }
+      ]
+    },
+    {
+      "rule": "Enroll in course rule",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "rule": "Check course availability rule",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "rule": "Get course information rule",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for ES6 syntax question",
+      "steps": [
+        {
+          "intent": "ask_es6_syntax"
+        },
+        {
+          "action": "utter_ask_es6_syntax"
+        }
+      ]
+    },
+    {
+      "rule": "rule_map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    },
+    {
+      "rule": "respond to object destructuring question",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "rule": "respond to array destructuring question",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
         }
       ]
     }

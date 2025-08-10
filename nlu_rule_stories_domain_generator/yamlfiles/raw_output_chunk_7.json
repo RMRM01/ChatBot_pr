@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_promises",
+        "examples": [
+          "What are promises?",
+          "Explain promises to me.",
+          "Tell me about promises.",
+          "Can you explain promises in Javascript?",
+          "What do promises do?"
+        ]
+      },
+      {
+        "name": "ask_async_await",
+        "examples": [
+          "What is async/await?",
+          "Explain async/await.",
+          "Tell me about async/await.",
+          "How does async/await work?",
+          "What are the benefits of async/await?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_promises": [
+        {
+          "text": "Promises are a way to handle asynchronous operations in JavaScript. They represent the eventual result of an asynchronous operation."
+        }
+      ],
+      "utter_ask_async_await": [
+        {
+          "text": "Async/await makes asynchronous code look and behave a bit more like synchronous code, making it easier to read and write. It's built on top of promises."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "story": "User asks about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for asking about promises",
+      "steps": [
+        {
+          "intent": "ask_promises"
+        },
+        {
+          "action": "utter_ask_promises"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about async/await",
+      "steps": [
+        {
+          "intent": "ask_async_await"
+        },
+        {
+          "action": "utter_ask_async_await"
+        }
+      ]
+    }
+  ]
+}

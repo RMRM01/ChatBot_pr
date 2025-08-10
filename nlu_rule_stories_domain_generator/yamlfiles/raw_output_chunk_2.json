@@ -1,0 +1,122 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_html_experience",
+        "examples": [
+          "Do you have experience with HTML?",
+          "What's your HTML experience?",
+          "Have you worked with HTML before?",
+          "Tell me about your HTML skills."
+        ]
+      },
+      {
+        "name": "ask_css_experience",
+        "examples": [
+          "Do you have experience with CSS?",
+          "What about your CSS skills?",
+          "How experienced are you with CSS?",
+          "Tell me about your CSS experience."
+        ]
+      },
+      {
+        "name": "ask_javascript_experience",
+        "examples": [
+          "What's your JavaScript experience?",
+          "Do you know JavaScript?",
+          "Have you worked with JavaScript before?",
+          "Tell me about your JavaScript skills."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_html_experience": [
+        {
+          "text": "Yes, I have experience with HTML."
+        }
+      ],
+      "utter_ask_css_experience": [
+        {
+          "text": "Yes, I have experience with CSS."
+        }
+      ],
+      "utter_ask_javascript_experience": [
+        {
+          "text": "Yes, I have experience with JavaScript."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about HTML experience",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about CSS experience",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "story": "User asks about JavaScript experience",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for HTML experience question",
+      "steps": [
+        {
+          "intent": "ask_html_experience"
+        },
+        {
+          "action": "utter_ask_html_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for CSS experience question",
+      "steps": [
+        {
+          "intent": "ask_css_experience"
+        },
+        {
+          "action": "utter_ask_css_experience"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for JavaScript experience question",
+      "steps": [
+        {
+          "intent": "ask_javascript_experience"
+        },
+        {
+          "action": "utter_ask_javascript_experience"
+        }
+      ]
+    }
+  ]
+}

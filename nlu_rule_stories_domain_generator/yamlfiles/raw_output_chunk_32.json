@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_react_context_api",
+        "examples": [
+          "What is React Context API?",
+          "Tell me about React Context API",
+          "Explain React Context API",
+          "What's the React Context API?",
+          "Can you explain the React Context API?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_react_context_api": [
+        {
+          "text": "React Context API is a built-in feature."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for asking about React Context API",
+      "steps": [
+        {
+          "intent": "ask_react_context_api"
+        },
+        {
+          "action": "utter_ask_react_context_api"
+        }
+      ]
+    }
+  ]
+}

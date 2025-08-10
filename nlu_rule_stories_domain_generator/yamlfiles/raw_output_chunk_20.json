@@ -1,0 +1,122 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_official_docs",
+        "examples": [
+          "Where can I find the official React documentation?",
+          "What's the URL for the official React docs?",
+          "Give me a link to the official React documentation.",
+          "I need the React official documentation link."
+        ]
+      },
+      {
+        "name": "ask_youtube_channels",
+        "examples": [
+          "Which YouTube channels teach React?",
+          "Recommend some YouTube channels for learning React.",
+          "What are some good React YouTube tutorials?",
+          "Where can I find React tutorials on YouTube?"
+        ]
+      },
+      {
+        "name": "ask_mini_projects",
+        "examples": [
+          "Do you have any mini projects for practicing React?",
+          "I'm looking for some small React projects.",
+          "Suggest some mini projects to improve my React skills.",
+          "Where can I find some React mini projects?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_official_docs": [
+        {
+          "text": "The official React documentation can be found at https://react.dev/learn"
+        }
+      ],
+      "utter_ask_youtube_channels": [
+        {
+          "text": "Check out Codevolution and freeCodeCamp on YouTube for React tutorials."
+        }
+      ],
+      "utter_ask_mini_projects": [
+        {
+          "text": "I have a list of mini projects, but more information is needed to give you specific recommendations."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Find official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "story": "Find YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "story": "Find mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly answer official docs",
+      "steps": [
+        {
+          "intent": "ask_official_docs"
+        },
+        {
+          "action": "utter_ask_official_docs"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer YouTube channels",
+      "steps": [
+        {
+          "intent": "ask_youtube_channels"
+        },
+        {
+          "action": "utter_ask_youtube_channels"
+        }
+      ]
+    },
+    {
+      "rule": "Directly answer mini projects",
+      "steps": [
+        {
+          "intent": "ask_mini_projects"
+        },
+        {
+          "action": "utter_ask_mini_projects"
+        }
+      ]
+    }
+  ]
+}

@@ -34,20 +34,44 @@ def extract_text_from_pdf(pdf_path):
     print("-> Done. length "+str(len(full_text)))
     return full_text
 
-# --- Split into Sentences (Corrected) ---
-def split_text_into_sentences(text):
-    print("Splitting text into sentences...")
+# Split into Sentences 
+
+
+def smart_split_text_into_sentences(text):
+    print("Splitting text into sentences (no colon split)...")
+
     try:
-        # This checks if the 'punkt' model exists.
         nltk.data.find('tokenizers/punkt')
     except LookupError:
-        # If it doesn't exist, we download it.
         print("-> 'punkt' model not found. Downloading...")
         nltk.download('punkt')
-    
-    sentences = nltk.sent_tokenize(text)
-    print(f"-> Found {len(sentences)} sentences.")
-    return sentences
+
+    # Clean up line breaks after links (e.g., "https://... \n" → "https://... ")
+    text = re.sub(r'(https?://[^\s]+)\n', r'\1 ', text)
+
+    # Normalize multiple line breaks to a space
+    text = re.sub(r'\n+', ' ', text)
+
+    # Fix missing space after period (e.g., "end.Here" → "end. Here")
+    text = re.sub(r'(?<=[a-z])\.(?=[A-Z])', '. ', text)
+
+    # Initial sentence split using NLTK
+    rough_sentences = nltk.sent_tokenize(text)
+
+    # Further clean bullets or numbered lists only (avoid splitting on ':')
+    final_sentences = []
+    for s in rough_sentences:
+        # Don't split on colon
+        # Split only on bullet points and numbered lists
+        parts = re.split(r'[\u2022•\-–—]+\s+|\n|\r|\d+\.\s+', s)
+        for part in parts:
+            part = part.strip()
+            if part and len(part) > 1:
+                final_sentences.append(part)
+
+    print(f"-> Found {len(final_sentences)} refined sentences.")
+    return final_sentences
+
 
 # --- Function to load data into the database
 # def load_in_database(vector_data_to_upload, index_name, dimension, metric='cosine'):
@@ -147,7 +171,7 @@ def run_full_pipeline():
 
     # 1. Get the raw text
     raw_text = extract_text_from_pdf(PDF_FILE)
-
+    
     # 2. Split into sentences
     sentences = split_text_into_sentences(raw_text)
 
@@ -158,7 +182,7 @@ def run_full_pipeline():
     # 4. Create the chunks
     final_chunks = create_semantic_chunks(sentences, ai_model, SIMILARITY_THRESHOLD)
     print('--------------------- *************************** final chunk done')
-
+    
     #send Message to LLM
     send_message_to_llm.sending_chunks_to_gemini(final_chunks)
 
@@ -198,69 +222,72 @@ def run_full_pipeline():
     save_in_data.move()
 
 
-# # --- Configuration ---
-# PDF_FILE = ".//uploads//file.pdf"             # Path to your PDF file
-# MODEL_NAME = 'all-MiniLM-L6-v2'     # free AI model
-# # MODEL_NAME = 'BAAI/bge-large-en-v1.5'     # AI model we will use
+# --- Configuration ---
+PDF_FILE = ".//learned_document//file.pdf"             # Path to your PDF file
+MODEL_NAME = 'all-MiniLM-L6-v2'     # free AI model
+# MODEL_NAME = 'BAAI/bge-large-en-v1.5'     # AI model we will use
 
-# # This is "sensitivity" knob. Lower value = more chunks.
-# SIMILARITY_THRESHOLD = 0.5   
+# This is "sensitivity" knob. Lower value = more chunks.
+SIMILARITY_THRESHOLD = 0.5   
 
-# # 1. Get the raw text
-# raw_text = extract_text_from_pdf(PDF_FILE)
+# 1. Get the raw text
+raw_text = extract_text_from_pdf(PDF_FILE)
 
-# # 2. Split into sentences
-# sentences = split_text_into_sentences(raw_text)
+with open("raw_text.txt","w",encoding="utf-8") as f:
+    f.write(raw_text)
 
-# # 3. Load the AI Model
-# print("-> Loading the AI model (this may take a moment on first run)...")
-# ai_model = SentenceTransformer(MODEL_NAME)
+# 2. Split into sentences
+sentences = smart_split_text_into_sentences(raw_text)
 
-# # 4. Create the chunks
-# final_chunks = create_semantic_chunks(sentences, ai_model, SIMILARITY_THRESHOLD)
-# print('--------------------- *************************** final chunk done')
+# 3. Load the AI Model
+print("-> Loading the AI model (this may take a moment on first run)...")
+ai_model = SentenceTransformer(MODEL_NAME)
 
-
-# #send Message to LLM
-# send_message_to_llm.sending_chunks_to_gemini(final_chunks)
-
+# 4. Create the chunks
+final_chunks = create_semantic_chunks(sentences, ai_model, SIMILARITY_THRESHOLD)
+print('--------------------- *************************** final chunk done')
 
 
-# # add all chunck 
+#send Message to LLM
+send_message_to_llm.sending_chunks_to_gemini(final_chunks)
 
-# json_file_merge.merge_chunked_json_responses()
 
-# # Deleting all chuncks 
 
-# delete_all_chunk.deleteAll("./old_new_output_marger/output_from_gemeini_json/")
+# add all chunck 
 
-# # ==== merging old and new json file
+json_file_merge.merge_chunked_json_responses()
 
-# merged_data = mon.merge_gemini_outputs(
-#     ".//old_new_output_marger//old_json//old_.json",
-#     ".//old_new_output_marger//new_json/merged_response.json"
-# )
+# Deleting all chuncks 
 
-# # Optionally, save it:
-# with open(".//old_new_output_marger//old_json//old_.json", "w", encoding="utf-8") as f:
-#     json.dump(merged_data, f, indent=2, ensure_ascii=False)
+delete_all_chunk.deleteAll("./old_new_output_marger/output_from_gemeini_json/")
 
-# print("Merged new_ into merged_response.json")
+# ==== merging old and new json file
 
-# # convert into yaml file and save into data folder and domain folder
+merged_data = mon.merge_gemini_outputs(
+    ".//old_new_output_marger//old_json//old_.json",
+    ".//old_new_output_marger//new_json/merged_response.json"
+)
 
-# with open(".//old_new_output_marger//old_json//old_.json", "r", encoding="utf-8") as f:
-#   old_json_file_data = json.load(f)
-#   make_yaml.generate_final_rasa_yamls(old_json_file_data)
+# Optionally, save it:
+with open(".//old_new_output_marger//old_json//old_.json", "w", encoding="utf-8") as f:
+    json.dump(merged_data, f, indent=2, ensure_ascii=False)
 
-# print("EVERYTHING IS DONE CURRECTLY CHECK DATA_TEST FOLDER< THANK YOU")
+print("Merged new_ into merged_response.json")
 
-# # copyint uploaded document to a new folder 
-# copy.copy_folder_contents("./uploads", "./learned_document")
+# convert into yaml file and save into data folder and domain folder
 
-# # cleaning uploads folder 
-# delete_all_chunk.deleteAll("./uploads/")
-# delete_all_chunk.deleteAll("./data/")
-# # delete_all_chunk.deleteAll("./")
+with open(".//old_new_output_marger//old_json//old_.json", "r", encoding="utf-8") as f:
+  old_json_file_data = json.load(f)
+  make_yaml.generate_final_rasa_yamls(old_json_file_data)
 
-# save_in_data.move()
+print("EVERYTHING IS DONE CURRECTLY CHECK DATA_TEST FOLDER< THANK YOU")
+
+# copyint uploaded document to a new folder 
+copy.copy_folder_contents("./uploads", "./learned_document")
+
+# cleaning uploads folder 
+delete_all_chunk.deleteAll("./uploads/")
+delete_all_chunk.deleteAll("./data/")
+# delete_all_chunk.deleteAll("./")
+
+save_in_data.move()

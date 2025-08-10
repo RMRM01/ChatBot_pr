@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_blog_login",
+        "examples": [
+          "How do I log in to the blog?",
+          "What's the process for logging in?",
+          "I need to log in, what do I do?",
+          "Can you help me with the blog login?",
+          "Login instructions please."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_blog_login": [
+        {
+          "text": "To access the blog, you'll need to log in.  Further instructions are available on the blog's login page."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Login help story",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct_login_help",
+      "steps": [
+        {
+          "intent": "ask_blog_login"
+        },
+        {
+          "action": "utter_ask_blog_login"
+        }
+      ]
+    }
+  ]
+}

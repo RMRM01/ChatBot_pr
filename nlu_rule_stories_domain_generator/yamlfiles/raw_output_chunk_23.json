@@ -1,0 +1,50 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_calculator_stage_topic",
+        "examples": [
+          "What are the key topics in Calculator Stage 3?",
+          "Tell me about the topics covered in Calculator Stage 3",
+          "What's the curriculum for Calculator Stage 3?",
+          "Can you list the key topics of Calculator Stage 3?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_calculator_stage_topic": [
+        {
+          "text": "The key topic for Calculator Stage 3 is: react-router-dom setup"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for asking Calculator Stage 3 topics",
+      "steps": [
+        {
+          "intent": "ask_calculator_stage_topic"
+        },
+        {
+          "action": "utter_ask_calculator_stage_topic"
+        }
+      ]
+    }
+  ]
+}

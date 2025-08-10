@@ -1,0 +1,87 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_backend_service",
+        "examples": [
+          "What backend services do you use?",
+          "Which backend services are used?",
+          "What is the backend?",
+          "Tell me about the backend services.",
+          "What backend is this built on?"
+        ]
+      },
+      {
+        "name": "ask_key_skills",
+        "examples": [
+          "What are the key skills needed?",
+          "What skills are required?",
+          "List the key skills.",
+          "Tell me about the key skills."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_backend_service": [
+        {
+          "text": "The backend services used are Supabase and Firebase."
+        }
+      ],
+      "utter_ask_key_skills": [
+        {
+          "text": "Key skills are Supabase and Firebase."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about backend services",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "story": "User asks about key skills",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for backend service question",
+      "steps": [
+        {
+          "intent": "ask_backend_service"
+        },
+        {
+          "action": "utter_ask_backend_service"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for key skills question",
+      "steps": [
+        {
+          "intent": "ask_key_skills"
+        },
+        {
+          "action": "utter_ask_key_skills"
+        }
+      ]
+    }
+  ]
+}

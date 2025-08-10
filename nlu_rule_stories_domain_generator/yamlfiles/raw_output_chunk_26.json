@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_project_idea",
+        "examples": [
+          "What's a project idea?",
+          "I need a project idea.",
+          "Give me a project idea using React Router.",
+          "Suggest a project using React Router.",
+          "Looking for project inspiration with React Router."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_project_idea": [
+        {
+          "text": "One project idea is building a single-page application using React Router for navigation."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Ask for project idea",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Direct project idea request",
+      "steps": [
+        {
+          "intent": "ask_project_idea"
+        },
+        {
+          "action": "utter_ask_project_idea"
+        }
+      ]
+    }
+  ]
+}

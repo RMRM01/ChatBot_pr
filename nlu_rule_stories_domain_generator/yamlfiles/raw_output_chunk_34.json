@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_redux_backend_integration",
+        "examples": [
+          "What are the backend integration options in Codevolution's Redux playlist?",
+          "Tell me about backend integration in Codevolution's Redux Stage 6.",
+          "Explain the backend integration choices for Redux in Codevolution's YouTube series.",
+          "I need info on backend integration from Codevolution's Redux tutorial, Stage 6.",
+          "What are my options for integrating a backend with Redux in Codevolution's course?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_redux_backend_integration": [
+        {
+          "text": "Codevolution's Redux playlist, Stage 6, covers backend integration options.  The specific options aren't detailed in this short description."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about Redux backend integration options",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Direct question about Redux backend integration",
+      "steps": [
+        {
+          "intent": "ask_redux_backend_integration"
+        },
+        {
+          "action": "utter_ask_redux_backend_integration"
+        }
+      ]
+    }
+  ]
+}

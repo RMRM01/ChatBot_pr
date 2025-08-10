@@ -40,9 +40,9 @@ def sending_chunks_to_gemini(chunks):
 
 1. Think about what user **intents** could be handled based on this document.
 2. Name each intent clearly (e.g., ask_history, ask_location).
-3. For each intent, generate **3 to 5 different user expressions** (different ways to say the same intent).
+3. For each intent, generate **5 to 7 different user expressions** (different ways to say the same intent).
 4. For each intent, generate **one unique response** that the bot could say, based only on the information in the document.
-5. Then generate a **story** in this JSON format:
+5. Then generate a **story** in this JSON(DO NOT ADD ```json at the beginning and ``` at the end.) format:
    {
      "story": "story name",
      "steps": [
@@ -62,12 +62,17 @@ def sending_chunks_to_gemini(chunks):
 
 ⚠️ Requirements:
 
-- DO NOT ADD ```json at the beginning and ``` at the end.
+- you do not need to consider intent greet. you just focus on the current chunk. 
 - Every intent must be unique.
 - Every intent must have a corresponding response, story, and rule.
 - Every response must be named `utter_<intent_name>`.
 - The entire output must be returned in valid JSON with the following structure:
 - DO NOT ADD ```json at the beginning and ``` at the end.
+- Each rule must have exactly one user intent and one bot action—no multiple or ambiguous actions.
+- Each story must be a full dialogue with user intents and matching bot actions. 
+- Rules and stories must not contradict—if a rule predicts a response for an intent, stories with that intent must have the same response.
+
+3. Avoid any duplicate intents, responses, rules, or stories. All entries must be unique.
 
 {
   "nlu": {

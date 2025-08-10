@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_about_lists",
+        "examples": [
+          "Tell me about lists",
+          "What are lists?",
+          "Explain lists",
+          "What can you tell me about lists in javascript?",
+          "How do lists work?"
+        ]
+      },
+      {
+        "name": "ask_about_map",
+        "examples": [
+          "What is map()?",
+          "Explain the map() function",
+          "How does map() work?",
+          "Tell me about .map()",
+          "Describe the .map() method"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_about_lists": [
+        {
+          "text": "Lists are used to store multiple items in a single variable."
+        }
+      ],
+      "utter_ask_about_map": [
+        {
+          "text": ".map() is a higher-order function that creates a new array by applying a function to each element of an existing array."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about lists",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "story": "User asks about map",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "User asks about lists directly",
+      "steps": [
+        {
+          "intent": "ask_about_lists"
+        },
+        {
+          "action": "utter_ask_about_lists"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about map directly",
+      "steps": [
+        {
+          "intent": "ask_about_map"
+        },
+        {
+          "action": "utter_ask_about_map"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_object_destructuring",
+        "examples": [
+          "What is object destructuring?",
+          "Explain object destructuring",
+          "Tell me about object destructuring",
+          "Can you explain object destructuring?",
+          "What does object destructuring do?"
+        ]
+      },
+      {
+        "name": "ask_array_destructuring",
+        "examples": [
+          "What is array destructuring?",
+          "Explain array destructuring",
+          "Tell me about array destructuring",
+          "Can you explain array destructuring?",
+          "What does array destructuring do?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_object_destructuring": [
+        {
+          "text": "Object destructuring is a JavaScript feature that allows you to extract properties from objects and assign them to variables."
+        }
+      ],
+      "utter_ask_array_destructuring": [
+        {
+          "text": "Array destructuring is a JavaScript feature that allows you to unpack elements from arrays into distinct variables."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about object destructuring",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "story": "user asks about array destructuring",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "respond to object destructuring question",
+      "steps": [
+        {
+          "intent": "ask_object_destructuring"
+        },
+        {
+          "action": "utter_ask_object_destructuring"
+        }
+      ]
+    },
+    {
+      "rule": "respond to array destructuring question",
+      "steps": [
+        {
+          "intent": "ask_array_destructuring"
+        },
+        {
+          "action": "utter_ask_array_destructuring"
+        }
+      ]
+    }
+  ]
+}

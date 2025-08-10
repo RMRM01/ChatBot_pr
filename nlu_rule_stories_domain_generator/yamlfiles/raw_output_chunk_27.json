@@ -1,0 +1,125 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_dashboard_pages",
+        "examples": [
+          "What pages are in the dashboard?",
+          "Which pages does the dashboard have?",
+          "Tell me about the dashboard pages.",
+          "Can you list the dashboard pages?",
+          "What are the sections of the dashboard?"
+        ]
+      },
+      {
+        "name": "ask_recommended_tools",
+        "examples": [
+          "What tools are recommended?",
+          "Which tools do you suggest?",
+          "What are the suggested tools?",
+          "Recommend some tools.",
+          "What tools should I use?"
+        ]
+      },
+      {
+        "name": "ask_app_styling_stage",
+        "examples": [
+          "What stage is app styling?",
+          "What's the stage for styling?",
+          "Which stage is styling the app?",
+          "In what stage do I style the app?",
+          "What stage are we at for styling?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_dashboard_pages": [
+        {
+          "text": "The dashboard includes Home, Profile, and Notification pages."
+        }
+      ],
+      "utter_ask_recommended_tools": [
+        {
+          "text": "Recommended tools are mentioned in the document."
+        }
+      ],
+      "utter_ask_app_styling_stage": [
+        {
+          "text": "App styling is in Stage 4."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "story": "User asks about recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "story": "User asks about app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for dashboard pages",
+      "steps": [
+        {
+          "intent": "ask_dashboard_pages"
+        },
+        {
+          "action": "utter_ask_dashboard_pages"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for recommended tools",
+      "steps": [
+        {
+          "intent": "ask_recommended_tools"
+        },
+        {
+          "action": "utter_ask_recommended_tools"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for app styling stage",
+      "steps": [
+        {
+          "intent": "ask_app_styling_stage"
+        },
+        {
+          "action": "utter_ask_app_styling_stage"
+        }
+      ]
+    }
+  ]
+}

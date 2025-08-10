@@ -1,0 +1,92 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_javascript_course_stage",
+        "examples": [
+          "What stage is the React.js part?",
+          "Which stage covers React.js?",
+          "What's the stage for React.js Core Concepts?",
+          "In which stage can I find React.js?",
+          "React.js stage?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_javascript_course_stage": [
+        {
+          "text": "The React.js Core Concepts are covered in FreeCodeCamp's JavaScript Course Stage."
+        }
+      ],
+      "utter_ask_key_topics": [
+        {
+          "text": "The key topics are React.js Core Concepts."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "story": "user asks about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for asking about React.js stage",
+      "steps": [
+        {
+          "intent": "ask_javascript_course_stage"
+        },
+        {
+          "action": "utter_ask_javascript_course_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about key topics",
+      "steps": [
+        {
+          "intent": "ask_key_topics"
+        },
+        {
+          "action": "utter_ask_key_topics"
+        }
+      ]
+    }
+  ],
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_key_topics",
+        "examples": [
+          "What are the key topics?",
+          "What's covered in the course?",
+          "What are the main subjects?",
+          "Key topics please.",
+          "What are the important concepts?"
+        ]
+      }
+    ]
+  }
+}

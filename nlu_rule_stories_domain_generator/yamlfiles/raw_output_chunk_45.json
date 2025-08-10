@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_best_for_react_spas",
+        "examples": [
+          "What's the best platform for React SPAs?",
+          "Which platform is best suited for React single page applications?",
+          "Recommend a platform for building React SPAs.",
+          "I need a platform for my React SPA, what do you suggest?",
+          "What platform works well with React SPAs?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_best_for_react_spas": [
+        {
+          "text": "Netlify is best for React SPAs."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for best platform for React SPAs",
+      "steps": [
+        {
+          "intent": "ask_best_for_react_spas"
+        },
+        {
+          "action": "utter_ask_best_for_react_spas"
+        }
+      ]
+    }
+  ]
+}

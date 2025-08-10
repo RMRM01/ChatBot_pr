@@ -504,3 +504,387 @@ rules:
     steps:
       - intent: publish_portfolio_github
       - action: utter_publish_portfolio_github
+  - rule: Publish_GitHub_Rule
+    steps:
+      - intent: publish_github
+      - action: utter_publish_github
+  - rule: direct request for javascript.info
+    steps:
+      - intent: ask_javascript_info
+      - action: utter_ask_javascript_info
+  - rule: direct request for MDN JavaScript guide
+    steps:
+      - intent: ask_mozilla_developer_docs
+      - action: utter_ask_mozilla_developer_docs
+  - rule: rule for asking about React.js stage
+    steps:
+      - intent: ask_javascript_course_stage
+      - action: utter_ask_javascript_course_stage
+  - rule: rule for asking about key topics
+    steps:
+      - intent: ask_key_topics
+      - action: utter_ask_key_topics
+  - rule: Define React directly
+    steps:
+      - intent: define_react
+      - action: utter_define_react
+  - rule: Directly answer what is JSX syntax
+    steps:
+      - intent: ask_jsx_syntax
+      - action: utter_ask_jsx_syntax
+  - rule: rule for functional components question
+    steps:
+      - intent: ask_functional_components
+      - action: utter_ask_functional_components
+  - rule: Direct question about useState hook
+    steps:
+      - intent: ask_usestate_hook
+      - action: utter_ask_usestate_hook
+  - rule: rule for asking about props
+    steps:
+      - intent: ask_props
+      - action: utter_ask_props
+  - rule: rule for asking about event handling
+    steps:
+      - intent: ask_event_handling
+      - action: utter_ask_event_handling
+  - rule: User asks about conditional rendering directly
+    steps:
+      - intent: ask_conditional_rendering
+      - action: utter_ask_conditional_rendering
+  - rule: User asks about lists directly
+    steps:
+      - intent: ask_about_lists
+      - action: utter_ask_about_lists
+  - rule: User asks about map directly
+    steps:
+      - intent: ask_about_map
+      - action: utter_ask_about_map
+  - rule: Directly asking about forms
+    steps:
+      - intent: ask_forms
+      - action: utter_ask_forms
+  - rule: Directly asking about inputs
+    steps:
+      - intent: ask_inputs
+      - action: utter_ask_inputs
+  - rule: rule for objective
+    steps:
+      - intent: ask_objective
+      - action: utter_ask_objective
+  - rule: rule for technologies
+    steps:
+      - intent: ask_technologies
+      - action: utter_ask_technologies
+  - rule: rule for prerequisites
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_ask_prerequisites
+  - rule: direct_request_useEffect_resources
+    steps:
+      - intent: ask_useEffect_resources
+      - action: utter_ask_useEffect_resources
+  - rule: Directly answer official docs
+    steps:
+      - intent: ask_official_docs
+      - action: utter_ask_official_docs
+  - rule: Directly answer YouTube channels
+    steps:
+      - intent: ask_youtube_channels
+      - action: utter_ask_youtube_channels
+  - rule: Directly answer mini projects
+    steps:
+      - intent: ask_mini_projects
+      - action: utter_ask_mini_projects
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: Answer feature question
+    steps:
+      - intent: ask_features
+      - action: utter_ask_features
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - rule: Direct weather inquiry
+    steps:
+      - intent: ask_weather
+      - action: utter_ask_weather
+  - rule: Direct weather inquiry with location
+    steps:
+      - intent: ask_weather_location
+      - action: utter_ask_weather_location
+  - rule: Rule for asking Calculator Stage 3 topics
+    steps:
+      - intent: ask_calculator_stage_topic
+      - action: utter_ask_calculator_stage_topic
+  - rule: respond to navigation components question
+    steps:
+      - intent: ask_navigation_components
+      - action: utter_ask_navigation_components
+  - rule: respond to BrowserRouter question
+    steps:
+      - intent: ask_about_BrowserRouter
+      - action: utter_ask_about_BrowserRouter
+  - rule: respond to Routes question
+    steps:
+      - intent: ask_about_Routes
+      - action: utter_ask_about_Routes
+  - rule: respond to Route question
+    steps:
+      - intent: ask_about_Route
+      - action: utter_ask_about_Route
+  - rule: respond to Link question
+    steps:
+      - intent: ask_about_Link
+      - action: utter_ask_about_Link
+  - rule: respond to Navigate question
+    steps:
+      - intent: ask_about_Navigate
+      - action: utter_ask_about_Navigate
+  - rule: rule for asking about nested routes
+    steps:
+      - intent: ask_nested_routes
+      - action: utter_ask_nested_routes
+  - rule: rule for asking about 404 page resources
+    steps:
+      - intent: ask_404_page_resources
+      - action: utter_ask_404_page_resources
+  - rule: Direct project idea request
+    steps:
+      - intent: ask_project_idea
+      - action: utter_ask_project_idea
+  - rule: Rule for dashboard pages
+    steps:
+      - intent: ask_dashboard_pages
+      - action: utter_ask_dashboard_pages
+  - rule: Rule for recommended tools
+    steps:
+      - intent: ask_recommended_tools
+      - action: utter_ask_recommended_tools
+  - rule: Rule for app styling stage
+    steps:
+      - intent: ask_app_styling_stage
+      - action: utter_ask_app_styling_stage
+  - rule: define Tailwind on direct question
+    steps:
+      - intent: define_tailwind
+      - action: utter_define_tailwind
+  - rule: greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: answer features question
+    steps:
+      - intent: ask_features_tailwind
+      - action: utter_ask_features_tailwind
+  - rule: Directly asking about prerequisites
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_ask_prerequisites
+  - rule: Rule for CSS Modules inquiry
+    steps:
+      - intent: ask_css_modules
+      - action: utter_ask_css_modules
+  - rule: Rule for Styled Components inquiry
+    steps:
+      - intent: ask_styled_components
+      - action: utter_ask_styled_components
+  - rule: Rule for Scoped Styling Resources inquiry
+    steps:
+      - intent: ask_scoped_styling_resources
+      - action: utter_ask_scoped_styling_resources
+  - rule: direct_website_request
+    steps:
+      - intent: ask_tailwind_website
+      - action: utter_ask_tailwind_website
+  - rule: direct_what_is_tailwind
+    steps:
+      - intent: ask_what_is_tailwind
+      - action: utter_ask_what_is_tailwind
+  - rule: direct_features_request
+    steps:
+      - intent: ask_tailwind_features
+      - action: utter_ask_tailwind_features
+  - rule: Rule for asking about global state management
+    steps:
+      - intent: ask_global_state_management
+      - action: utter_ask_global_state_management
+  - rule: Rule for asking when to use global state
+    steps:
+      - intent: ask_when_to_use_global_state
+      - action: utter_ask_when_to_use_global_state
+  - rule: Rule for asking about global state options
+    steps:
+      - intent: ask_global_state_options
+      - action: utter_ask_global_state_options
+  - rule: rule for asking about React Context API
+    steps:
+      - intent: ask_react_context_api
+      - action: utter_ask_react_context_api
+  - rule: Directly answer Redux Toolkit resource question
+    steps:
+      - intent: ask_redux_toolkit_resource
+      - action: utter_ask_redux_toolkit_resource
+  - rule: Direct question about Redux backend integration
+    steps:
+      - intent: ask_redux_backend_integration
+      - action: utter_ask_redux_backend_integration
+  - rule: rule for backend language
+    steps:
+      - intent: ask_backend_language
+      - action: utter_ask_backend_language
+  - rule: rule for database
+    steps:
+      - intent: ask_database
+      - action: utter_ask_database
+  - rule: Rule for backend service question
+    steps:
+      - intent: ask_backend_service
+      - action: utter_ask_backend_service
+  - rule: Rule for key skills question
+    steps:
+      - intent: ask_key_skills
+      - action: utter_ask_key_skills
+  - rule: User asks about Axios directly
+    steps:
+      - intent: ask_about_axios
+      - action: utter_ask_about_axios
+  - rule: User asks about Fetch directly
+    steps:
+      - intent: ask_about_fetch
+      - action: utter_ask_about_fetch
+  - rule: Create operation rule
+    steps:
+      - intent: ask_create
+      - action: utter_ask_create
+  - rule: Read operation rule
+    steps:
+      - intent: ask_read
+      - action: utter_ask_read
+  - rule: Update operation rule
+    steps:
+      - intent: ask_update
+      - action: utter_ask_update
+  - rule: Delete operation rule
+    steps:
+      - intent: ask_delete
+      - action: utter_ask_delete
+  - rule: Rule for HTML experience question
+    steps:
+      - intent: ask_html_experience
+      - action: utter_ask_html_experience
+  - rule: Rule for CSS experience question
+    steps:
+      - intent: ask_css_experience
+      - action: utter_ask_css_experience
+  - rule: Rule for JavaScript experience question
+    steps:
+      - intent: ask_javascript_experience
+      - action: utter_ask_javascript_experience
+  - rule: direct login resource request
+    steps:
+      - intent: ask_login_resources
+      - action: utter_ask_login_resources
+  - rule: direct registration resource request
+    steps:
+      - intent: ask_register_resources
+      - action: utter_ask_register_resources
+  - rule: Greet user
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - rule: Direct answer to MERN definition
+    steps:
+      - intent: ask_mern_definition
+      - action: utter_ask_mern_definition
+  - rule: Direct answer about tutorial
+    steps:
+      - intent: ask_tutorial_availability
+      - action: utter_ask_tutorial_availability
+  - rule: direct_login_help
+    steps:
+      - intent: ask_blog_login
+      - action: utter_ask_blog_login
+  - rule: user asks what the app is
+    steps:
+      - intent: ask_about_app
+      - action: utter_ask_about_app
+  - rule: user asks about app features
+    steps:
+      - intent: ask_features
+      - action: utter_ask_features
+  - rule: rule_ask_deployment_stage
+    steps:
+      - intent: ask_deployment_stage
+      - action: utter_ask_deployment_stage
+  - rule: rule_ask_recommended_platforms
+    steps:
+      - intent: ask_recommended_platforms
+      - action: utter_ask_recommended_platforms
+  - rule: Rule for best platform for React SPAs
+    steps:
+      - intent: ask_best_for_react_spas
+      - action: utter_ask_best_for_react_spas
+  - rule: Rule for JavaScript refresher question
+    steps:
+      - intent: ask_javascript_refresher
+      - action: utter_ask_javascript_refresher
+  - rule: Rule for MongoDB integration question
+    steps:
+      - intent: ask_mongodb_integration
+      - action: utter_ask_mongodb_integration
+  - rule: Rule for Stage 1 topics question
+    steps:
+      - intent: ask_stage1_topics
+      - action: utter_ask_stage1_topics
+  - rule: Enroll in course rule
+    steps:
+      - intent: enroll_in_course
+      - action: utter_enroll_in_course
+  - rule: Check course availability rule
+    steps:
+      - intent: check_course_availability
+      - action: utter_check_course_availability
+  - rule: Get course information rule
+    steps:
+      - intent: get_course_information
+      - action: utter_get_course_information
+  - rule: Rule for ES6 syntax question
+    steps:
+      - intent: ask_es6_syntax
+      - action: utter_ask_es6_syntax
+  - rule: rule_map
+    steps:
+      - intent: ask_map_function
+      - action: utter_ask_map_function
+  - rule: rule_filter
+    steps:
+      - intent: ask_filter_function
+      - action: utter_ask_filter_function
+  - rule: rule_reduce
+    steps:
+      - intent: ask_reduce_function
+      - action: utter_ask_reduce_function
+  - rule: respond to object destructuring question
+    steps:
+      - intent: ask_object_destructuring
+      - action: utter_ask_object_destructuring
+  - rule: respond to array destructuring question
+    steps:
+      - intent: ask_array_destructuring
+      - action: utter_ask_array_destructuring
+  - rule: Rule for asking about promises
+    steps:
+      - intent: ask_promises
+      - action: utter_ask_promises
+  - rule: Rule for asking about async/await
+    steps:
+      - intent: ask_async_await
+      - action: utter_ask_async_await
+  - rule: Directly asking about DOM and Virtual DOM difference
+    steps:
+      - intent: ask_dom_virtual_dom_difference
+      - action: utter_ask_dom_virtual_dom_difference

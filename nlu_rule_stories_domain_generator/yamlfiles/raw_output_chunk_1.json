@@ -2,48 +2,48 @@
   "nlu": {
     "intents": [
       {
-        "name": "publish_portfolio_github",
+        "name": "ask_prerequisites",
         "examples": [
-          "How can I publish my portfolio projects?",
-          "Where should I host my portfolio projects?",
-          "I want to publish my portfolio, what platform do you recommend?",
-          "What's the best place to publish my portfolio?",
-          "How do I share my portfolio online?"
+          "What are the prerequisites?",
+          "What do I need to know beforehand?",
+          "Are there any prerequisites I should be aware of?",
+          "What are the pre-requisites for this?",
+          "Tell me about the prerequisites."
         ]
       }
     ]
   },
   "domain": {
     "responses": {
-      "utter_publish_portfolio_github": [
+      "utter_ask_prerequisites": [
         {
-          "text": "Use GitHub to publish all projects for your portfolio."
+          "text": "The document mentions prerequisites, but doesn't specify what they are.  Please check the document for further details."
         }
       ]
     }
   },
   "stories": [
     {
-      "story": "Publish portfolio on GitHub",
+      "story": "User asks about prerequisites",
       "steps": [
         {
-          "intent": "publish_portfolio_github"
+          "intent": "ask_prerequisites"
         },
         {
-          "action": "utter_publish_portfolio_github"
+          "action": "utter_ask_prerequisites"
         }
       ]
     }
   ],
   "rules": [
     {
-      "rule": "Directly asking about portfolio publishing",
+      "rule": "Directly asking about prerequisites",
       "steps": [
         {
-          "intent": "publish_portfolio_github"
+          "intent": "ask_prerequisites"
         },
         {
-          "action": "utter_publish_portfolio_github"
+          "action": "utter_ask_prerequisites"
         }
       ]
     }

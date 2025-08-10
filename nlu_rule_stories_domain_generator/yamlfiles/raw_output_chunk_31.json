@@ -1,0 +1,122 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_global_state_management",
+        "examples": [
+          "What is global state management?",
+          "Explain global state management in Tailwind.",
+          "Tell me about global state management for larger apps.",
+          "When should I use global state management?",
+          "What are the benefits of global state management?"
+        ]
+      },
+      {
+        "name": "ask_when_to_use_global_state",
+        "examples": [
+          "When do I need global state management?",
+          "In what situations should I use global state?",
+          "For which apps is global state management suitable?",
+          "Is global state management necessary for small apps?"
+        ]
+      },
+      {
+        "name": "ask_global_state_options",
+        "examples": [
+          "What options are available for global state management?",
+          "What are some ways to implement global state?",
+          "List the options for global state management in Tailwind."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_global_state_management": [
+        {
+          "text": "Global state management is for larger apps with shared state."
+        }
+      ],
+      "utter_ask_when_to_use_global_state": [
+        {
+          "text": "Use global state management for larger apps with shared state."
+        }
+      ],
+      "utter_ask_global_state_options": [
+        {
+          "text": "The document only mentions that options exist for global state management in larger apps, but doesn't specify them."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "story": "User asks when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "story": "User asks about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for asking about global state management",
+      "steps": [
+        {
+          "intent": "ask_global_state_management"
+        },
+        {
+          "action": "utter_ask_global_state_management"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking when to use global state",
+      "steps": [
+        {
+          "intent": "ask_when_to_use_global_state"
+        },
+        {
+          "action": "utter_ask_when_to_use_global_state"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for asking about global state options",
+      "steps": [
+        {
+          "intent": "ask_global_state_options"
+        },
+        {
+          "action": "utter_ask_global_state_options"
+        }
+      ]
+    }
+  ]
+}

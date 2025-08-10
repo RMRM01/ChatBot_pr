@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_jsx_syntax",
+        "examples": [
+          "What is JSX syntax?",
+          "Explain JSX syntax to me.",
+          "Tell me about JSX syntax.",
+          "Can you describe JSX syntax?",
+          "What's JSX syntax all about?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_jsx_syntax": [
+        {
+          "text": "JSX (JavaScript XML) is a syntax extension to JavaScript. It allows you to write HTML-like code within your JavaScript code.  It's primarily used with React, a JavaScript library for building user interfaces."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly answer what is JSX syntax",
+      "steps": [
+        {
+          "intent": "ask_jsx_syntax"
+        },
+        {
+          "action": "utter_ask_jsx_syntax"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_usestate_hook",
+        "examples": [
+          "What is useState hook?",
+          "Explain useState hook",
+          "Tell me about useState hook",
+          "What does useState do?",
+          "How to use useState hook?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_usestate_hook": [
+        {
+          "text": "useState is a Hook in React that lets you add state to functional components. It takes an initial state as an argument and returns an array with two elements: the current state value and a function to update it."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Direct question about useState hook",
+      "steps": [
+        {
+          "intent": "ask_usestate_hook"
+        },
+        {
+          "action": "utter_ask_usestate_hook"
+        }
+      ]
+    }
+  ]
+}

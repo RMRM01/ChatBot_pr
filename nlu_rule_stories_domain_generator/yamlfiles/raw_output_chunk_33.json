@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_redux_toolkit_resource",
+        "examples": [
+          "Where can I find Redux Toolkit resources?",
+          "What are the resources for Redux Toolkit?",
+          "I need some documentation on Redux Toolkit.",
+          "Show me the Redux Toolkit resources.",
+          "Can you provide a link to Redux Toolkit documentation?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_redux_toolkit_resource": [
+        {
+          "text": "Here's a link to Redux Toolkit resources: https://redux-toolkit.js.org/"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks for Redux Toolkit resources",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly answer Redux Toolkit resource question",
+      "steps": [
+        {
+          "intent": "ask_redux_toolkit_resource"
+        },
+        {
+          "action": "utter_ask_redux_toolkit_resource"
+        }
+      ]
+    }
+  ]
+}

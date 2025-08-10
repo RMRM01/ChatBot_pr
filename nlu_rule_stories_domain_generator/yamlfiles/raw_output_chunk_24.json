@@ -1,0 +1,231 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_navigation_components",
+        "examples": [
+          "What components are used for navigation?",
+          "Tell me about navigation components.",
+          "Which components handle routing?",
+          "Explain the navigation components.",
+          "What are the main navigation elements?"
+        ]
+      },
+      {
+        "name": "ask_about_BrowserRouter",
+        "examples": [
+          "What's BrowserRouter?",
+          "Tell me about BrowserRouter.",
+          "What does BrowserRouter do?",
+          "Explain BrowserRouter."
+        ]
+      },
+      {
+        "name": "ask_about_Routes",
+        "examples": [
+          "What are Routes?",
+          "Explain Routes.",
+          "What does Routes do?",
+          "Tell me about Routes."
+        ]
+      },
+      {
+        "name": "ask_about_Route",
+        "examples": [
+          "What is Route?",
+          "Tell me about Route.",
+          "What does Route do?",
+          "Explain Route."
+        ]
+      },
+      {
+        "name": "ask_about_Link",
+        "examples": [
+          "What is Link?",
+          "Tell me about Link.",
+          "What does Link do?",
+          "Explain Link."
+        ]
+      },
+      {
+        "name": "ask_about_Navigate",
+        "examples": [
+          "What is Navigate?",
+          "Tell me about Navigate.",
+          "What does Navigate do?",
+          "Explain Navigate."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_navigation_components": [
+        {
+          "text": "The main navigation components are BrowserRouter, Routes, Route, Link, and Navigate."
+        }
+      ],
+      "utter_ask_about_BrowserRouter": [
+        {
+          "text": "BrowserRouter is a component that provides the context for routing in React Router."
+        }
+      ],
+      "utter_ask_about_Routes": [
+        {
+          "text": "Routes is a component that renders a single child route matching the current location."
+        }
+      ],
+      "utter_ask_about_Route": [
+        {
+          "text": "Route is a component that renders an element based on the current location."
+        }
+      ],
+      "utter_ask_about_Link": [
+        {
+          "text": "Link is a component that allows you to navigate between routes without causing a full page reload."
+        }
+      ],
+      "utter_ask_about_Navigate": [
+        {
+          "text": "Navigate is a component that allows you to imperatively navigate to a different location."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about navigation components",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "story": "user asks about BrowserRouter",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Routes",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Route",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Link",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Navigate",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "respond to navigation components question",
+      "steps": [
+        {
+          "intent": "ask_navigation_components"
+        },
+        {
+          "action": "utter_ask_navigation_components"
+        }
+      ]
+    },
+    {
+      "rule": "respond to BrowserRouter question",
+      "steps": [
+        {
+          "intent": "ask_about_BrowserRouter"
+        },
+        {
+          "action": "utter_ask_about_BrowserRouter"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Routes question",
+      "steps": [
+        {
+          "intent": "ask_about_Routes"
+        },
+        {
+          "action": "utter_ask_about_Routes"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Route question",
+      "steps": [
+        {
+          "intent": "ask_about_Route"
+        },
+        {
+          "action": "utter_ask_about_Route"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Link question",
+      "steps": [
+        {
+          "intent": "ask_about_Link"
+        },
+        {
+          "action": "utter_ask_about_Link"
+        }
+      ]
+    },
+    {
+      "rule": "respond to Navigate question",
+      "steps": [
+        {
+          "intent": "ask_about_Navigate"
+        },
+        {
+          "action": "utter_ask_about_Navigate"
+        }
+      ]
+    }
+  ]
+}

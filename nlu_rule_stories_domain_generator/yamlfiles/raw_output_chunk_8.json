@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_dom_virtual_dom_difference",
+        "examples": [
+          "What's the difference between DOM and Virtual DOM?",
+          "Explain the difference between DOM and Virtual DOM.",
+          "Can you tell me about the differences between DOM and Virtual DOM?",
+          "What is the difference between the DOM and the Virtual DOM?",
+          "DOM vs Virtual DOM - what's the key difference?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_dom_virtual_dom_difference": [
+        {
+          "text": "I'm sorry, but I cannot answer that question. My knowledge base does not contain information on the difference between DOM and Virtual DOM."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly asking about DOM and Virtual DOM difference",
+      "steps": [
+        {
+          "intent": "ask_dom_virtual_dom_difference"
+        },
+        {
+          "action": "utter_ask_dom_virtual_dom_difference"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_weather",
+        "examples": [
+          "What's the weather like today?",
+          "Tell me the weather forecast.",
+          "How's the weather?",
+          "Give me a weather update.",
+          "What's the weather going to be like?"
+        ]
+      },
+      {
+        "name": "ask_weather_location",
+        "examples": [
+          "What's the weather in London?",
+          "Tell me the weather forecast for Paris.",
+          "How's the weather in New York?",
+          "Give me a weather update for Tokyo."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_weather": [
+        {
+          "text": "This is a weather app.  Please specify a location for a weather forecast."
+        }
+      ],
+      "utter_ask_weather_location": [
+        {
+          "text": "I need a location to provide a weather forecast. For example, try asking 'What's the weather in London?'"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Ask for weather",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "story": "Ask for weather at specific location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Direct weather inquiry",
+      "steps": [
+        {
+          "intent": "ask_weather"
+        },
+        {
+          "action": "utter_ask_weather"
+        }
+      ]
+    },
+    {
+      "rule": "Direct weather inquiry with location",
+      "steps": [
+        {
+          "intent": "ask_weather_location"
+        },
+        {
+          "action": "utter_ask_weather_location"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_about_app",
+        "examples": [
+          "What is this app?",
+          "Tell me about this app",
+          "What's this app all about?",
+          "Explain the app to me.",
+          "Can you describe the app?"
+        ]
+      },
+      {
+        "name": "ask_features",
+        "examples": [
+          "What can I do with this app?",
+          "What are the features?",
+          "What features does it offer?",
+          "Show me the app's capabilities."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_about_app": [
+        {
+          "text": "This is a Hall/Hostel Management App."
+        }
+      ],
+      "utter_ask_features": [
+        {
+          "text": "The app's features will be announced soon."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about the app",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "user asks what the app is",
+      "steps": [
+        {
+          "intent": "ask_about_app"
+        },
+        {
+          "action": "utter_ask_about_app"
+        }
+      ]
+    },
+    {
+      "rule": "user asks about app features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    }
+  ]
+}

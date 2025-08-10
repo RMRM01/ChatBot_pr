@@ -1,0 +1,86 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_deployment_stage",
+        "examples": [
+          "What stage is deployment?",
+          "What's the current deployment stage?",
+          "Which stage are we at in deployment?",
+          "Deployment stage?"
+        ]
+      },
+      {
+        "name": "ask_recommended_platforms",
+        "examples": [
+          "What platforms are recommended for deployment?",
+          "Which platforms are suggested for deployment?",
+          "Recommended deployment platforms?",
+          "What platforms should we deploy on?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_deployment_stage": [
+        {
+          "text": "The current stage is Stage 7: Deployment."
+        }
+      ],
+      "utter_ask_recommended_platforms": [
+        {
+          "text": "Recommended platforms for deployment are mentioned in the document but not specified."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Ask about deployment stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "story": "Ask about recommended platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule_ask_deployment_stage",
+      "steps": [
+        {
+          "intent": "ask_deployment_stage"
+        },
+        {
+          "action": "utter_ask_deployment_stage"
+        }
+      ]
+    },
+    {
+      "rule": "rule_ask_recommended_platforms",
+      "steps": [
+        {
+          "intent": "ask_recommended_platforms"
+        },
+        {
+          "action": "utter_ask_recommended_platforms"
+        }
+      ]
+    }
+  ]
+}

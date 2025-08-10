@@ -1,0 +1,53 @@
+```json
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_project_ideas",
+        "examples": [
+          "What project ideas do you have?",
+          "I need some project ideas.",
+          "Give me some project inspiration.",
+          "Looking for project ideas using Supabase.",
+          "Suggest some projects I can build with Supabase."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_project_ideas": [
+        {
+          "text": "Check out the Supabase documentation for project ideas.  They have a section dedicated to inspiring project ideas using their platform."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks for project ideas",
+      "steps": [
+        {
+          "intent": "ask_project_ideas"
+        },
+        {
+          "action": "utter_ask_project_ideas"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct_project_idea_request",
+      "steps": [
+        {
+          "intent": "ask_project_ideas"
+        },
+        {
+          "action": "utter_ask_project_ideas"
+        }
+      ]
+    }
+  ]
+}
+```

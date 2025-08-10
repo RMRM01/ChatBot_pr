@@ -1,0 +1,66 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_props",
+        "examples": [
+          "What are the props?",
+          "Tell me about the props.",
+          "What props are available?",
+          "Can you describe the props?"
+        ]
+      },
+      {
+        "name": "ask_event_handling",
+        "examples": [
+          "How is event handling managed?",
+          "What's your event handling system like?",
+          "Explain your event handling.",
+          "Tell me about event handling."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_props": [
+        {"text": "Information on props is not available in this document."}
+      ],
+      "utter_ask_event_handling": [
+        {"text": "Information on event handling is not available in this document."}
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about props",
+      "steps": [
+        {"intent": "ask_props"},
+        {"action": "utter_ask_props"}
+      ]
+    },
+    {
+      "story": "user asks about event handling",
+      "steps": [
+        {"intent": "ask_event_handling"},
+        {"action": "utter_ask_event_handling"}
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for asking about props",
+      "steps": [
+        {"intent": "ask_props"},
+        {"action": "utter_ask_props"}
+      ]
+    },
+    {
+      "rule": "rule for asking about event handling",
+      "steps": [
+        {"intent": "ask_event_handling"},
+        {"action": "utter_ask_event_handling"}
+      ]
+    }
+  ]
+}

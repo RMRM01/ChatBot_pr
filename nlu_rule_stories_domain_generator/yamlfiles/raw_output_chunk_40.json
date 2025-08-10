@@ -1,0 +1,131 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "greet",
+        "examples": [
+          "Hi",
+          "Hello",
+          "Hey there",
+          "Good morning",
+          "Greetings"
+        ]
+      },
+      {
+        "name": "ask_mern_definition",
+        "examples": [
+          "What is the MERN stack?",
+          "Explain the MERN stack",
+          "Tell me about MERN",
+          "What does MERN stand for?",
+          "Define MERN stack"
+        ]
+      },
+      {
+        "name": "ask_tutorial_availability",
+        "examples": [
+          "Do you have a tutorial on the MERN stack?",
+          "Is there a tutorial available?",
+          "Where can I find a MERN tutorial?",
+          "Show me a MERN tutorial",
+          "I want to learn MERN, do you have resources?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_greet": [
+        {
+          "text": "Hello! How can I help you today?"
+        }
+      ],
+      "utter_ask_mern_definition": [
+        {
+          "text": "MERN stands for MongoDB, Express.js, React, and Node.js.  It's a popular JavaScript stack for building web applications."
+        }
+      ],
+      "utter_ask_tutorial_availability": [
+        {
+          "text": "Yes, MongoDB provides a tutorial on the MERN stack. You can find it on their website."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User greets and asks about MERN",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "story": "User asks for a tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    },
+    {
+      "story": "User greets and asks for tutorial",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer to MERN definition",
+      "steps": [
+        {
+          "intent": "ask_mern_definition"
+        },
+        {
+          "action": "utter_ask_mern_definition"
+        }
+      ]
+    },
+    {
+      "rule": "Direct answer about tutorial",
+      "steps": [
+        {
+          "intent": "ask_tutorial_availability"
+        },
+        {
+          "action": "utter_ask_tutorial_availability"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_css_modules",
+        "examples": [
+          "Tell me about CSS Modules",
+          "What are CSS Modules?",
+          "Explain CSS Modules",
+          "What is CSS Modules?",
+          "Can you explain CSS Modules?"
+        ]
+      },
+      {
+        "name": "ask_styled_components",
+        "examples": [
+          "Tell me about Styled Components",
+          "What are Styled Components?",
+          "Explain Styled Components",
+          "What is Styled Components?",
+          "Can you explain Styled Components?"
+        ]
+      },
+      {
+        "name": "ask_scoped_styling_resources",
+        "examples": [
+          "Where can I find resources on scoped styling?",
+          "I need resources for scoped styling",
+          "Show me some resources on scoped styling",
+          "Resources on scoped styling please",
+          "Looking for information on scoped styling resources"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_css_modules": [
+        {
+          "text": "CSS Modules allow you to scope CSS to a specific component."
+        }
+      ],
+      "utter_ask_styled_components": [
+        {
+          "text": "Styled Components is a CSS-in-JS library that enables scoping styles to components."
+        }
+      ],
+      "utter_ask_scoped_styling_resources": [
+        {
+          "text": "The provided text only mentions CSS Modules and Styled Components as resources for scoped styling."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about CSS Modules",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Styled Components",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "story": "User asks for scoped styling resources",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Rule for CSS Modules inquiry",
+      "steps": [
+        {
+          "intent": "ask_css_modules"
+        },
+        {
+          "action": "utter_ask_css_modules"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Styled Components inquiry",
+      "steps": [
+        {
+          "intent": "ask_styled_components"
+        },
+        {
+          "action": "utter_ask_styled_components"
+        }
+      ]
+    },
+    {
+      "rule": "Rule for Scoped Styling Resources inquiry",
+      "steps": [
+        {
+          "intent": "ask_scoped_styling_resources"
+        },
+        {
+          "action": "utter_ask_scoped_styling_resources"
+        }
+      ]
+    }
+  ]
+}

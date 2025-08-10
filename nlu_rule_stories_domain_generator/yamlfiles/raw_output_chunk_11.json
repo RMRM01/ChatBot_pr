@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "define_react",
+        "examples": [
+          "What is React?",
+          "Explain React to me.",
+          "Tell me about React.",
+          "What's React?",
+          "Can you define React?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_define_react": [
+        {
+          "text": "I am not able to provide a definition for React based on the given text.  The document only contains the question 'What is React?'.  To get a definition, please search online or consult a relevant resource."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks for React definition",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Define React directly",
+      "steps": [
+        {
+          "intent": "define_react"
+        },
+        {
+          "action": "utter_define_react"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_backend_language",
+        "examples": [
+          "What backend language is used?",
+          "Which language is used for the backend?",
+          "Tell me about the backend technology.",
+          "What's the backend framework?",
+          "What programming language is used on the server-side?"
+        ]
+      },
+      {
+        "name": "ask_database",
+        "examples": [
+          "What database does it use?",
+          "Which database is used?",
+          "What database technology is used?",
+          "Tell me the database."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_backend_language": [
+        {
+          "text": "The backend uses Express.js."
+        }
+      ],
+      "utter_ask_database": [
+        {
+          "text": "The database used is MongoDB."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "story": "user asks about database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for backend language",
+      "steps": [
+        {
+          "intent": "ask_backend_language"
+        },
+        {
+          "action": "utter_ask_backend_language"
+        }
+      ]
+    },
+    {
+      "rule": "rule for database",
+      "steps": [
+        {
+          "intent": "ask_database"
+        },
+        {
+          "action": "utter_ask_database"
+        }
+      ]
+    }
+  ]
+}

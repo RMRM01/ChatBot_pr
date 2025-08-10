@@ -99,11 +99,101 @@ intents:
   - ask_performance_measures
   - publish_github
   - publish_portfolio_github
+  - ask_javascript_info
+  - ask_mozilla_developer_docs
+  - ask_javascript_course_stage
+  - ask_key_topics
+  - define_react
+  - ask_jsx_syntax
+  - ask_functional_components
+  - ask_usestate_hook
+  - ask_props
+  - ask_event_handling
+  - ask_conditional_rendering
+  - ask_about_lists
+  - ask_about_map
+  - ask_forms
+  - ask_inputs
+  - ask_objective
+  - ask_technologies
+  - ask_prerequisites
+  - ask_useEffect_resources
+  - ask_official_docs
+  - ask_youtube_channels
+  - ask_mini_projects
+  - ask_features
+  - goodbye
+  - ask_weather
+  - ask_weather_location
+  - ask_calculator_stage_topic
+  - ask_navigation_components
+  - ask_about_BrowserRouter
+  - ask_about_Routes
+  - ask_about_Route
+  - ask_about_Link
+  - ask_about_Navigate
+  - ask_nested_routes
+  - ask_404_page_resources
+  - ask_project_idea
+  - ask_dashboard_pages
+  - ask_recommended_tools
+  - ask_app_styling_stage
+  - define_tailwind
+  - ask_features_tailwind
+  - ask_css_modules
+  - ask_styled_components
+  - ask_scoped_styling_resources
+  - ask_what_is_tailwind
+  - ask_tailwind_features
+  - ask_tailwind_website
+  - ask_global_state_management
+  - ask_when_to_use_global_state
+  - ask_global_state_options
+  - ask_react_context_api
+  - ask_redux_toolkit_resource
+  - ask_redux_backend_integration
+  - ask_backend_language
+  - ask_database
+  - ask_backend_service
+  - ask_key_skills
+  - ask_about_axios
+  - ask_about_fetch
+  - ask_create
+  - ask_read
+  - ask_update
+  - ask_delete
+  - ask_html_experience
+  - ask_css_experience
+  - ask_javascript_experience
+  - ask_login_resources
+  - ask_register_resources
+  - ask_mern_definition
+  - ask_tutorial_availability
+  - ask_blog_login
+  - ask_about_app
+  - ask_deployment_stage
+  - ask_recommended_platforms
+  - ask_best_for_react_spas
+  - ask_javascript_refresher
+  - ask_mongodb_integration
+  - ask_stage1_topics
+  - enroll_in_course
+  - check_course_availability
+  - get_course_information
+  - ask_es6_syntax
+  - ask_map_function
+  - ask_filter_function
+  - ask_reduce_function
+  - ask_object_destructuring
+  - ask_array_destructuring
+  - ask_promises
+  - ask_async_await
+  - ask_dom_virtual_dom_difference
 responses:
   utter_ask_boat_ride_location:
     - text: The boat ride is at Dhaka’s busy Buriganga river, Sadarghat.
   utter_greet:
-    - text: Hey, How are you?
+    - text: Hello! Welcome to the To-Do List App.
   utter_bye:
     - text: best wishes for you!
   utter_ask_boat_ride_details:
@@ -353,3 +443,234 @@ responses:
     - text: Use GitHub to publish all projects for your portfolio.
   utter_publish_portfolio_github:
     - text: Use GitHub to publish all projects for your portfolio.
+  utter_ask_javascript_info:
+    - text: 'Here''s the link to javascript.info: https://javascript.info/'
+  utter_ask_mozilla_developer_docs:
+    - text: 'Here''s the link to the Mozilla Developer Network JavaScript Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'
+  utter_ask_javascript_course_stage:
+    - text: The React.js Core Concepts are covered in FreeCodeCamp's JavaScript Course
+        Stage.
+  utter_ask_key_topics:
+    - text: The key topics are React.js Core Concepts.
+  utter_define_react:
+    - text: I am not able to provide a definition for React based on the given text.  The
+        document only contains the question 'What is React?'.  To get a definition,
+        please search online or consult a relevant resource.
+  utter_ask_jsx_syntax:
+    - text: JSX (JavaScript XML) is a syntax extension to JavaScript. It allows you
+        to write HTML-like code within your JavaScript code.  It's primarily used
+        with React, a JavaScript library for building user interfaces.
+  utter_ask_functional_components:
+    - text: The document mentions 'Functional Components', but does not provide details
+        on what they are.
+  utter_ask_usestate_hook:
+    - text: 'useState is a Hook in React that lets you add state to functional components.
+        It takes an initial state as an argument and returns an array with two elements:
+        the current state value and a function to update it.'
+  utter_ask_props:
+    - text: Information on props is not available in this document.
+  utter_ask_event_handling:
+    - text: Information on event handling is not available in this document.
+  utter_ask_conditional_rendering:
+    - text: Conditional rendering is a technique used to dynamically render parts
+        of a user interface based on certain conditions.  It allows you to show or
+        hide elements, or change their content, based on the state of your application.
+  utter_ask_about_lists:
+    - text: Lists are used to store multiple items in a single variable.
+  utter_ask_about_map:
+    - text: .map() is a higher-order function that creates a new array by applying
+        a function to each element of an existing array.
+  utter_ask_forms:
+    - text: We offer various forms.  Please specify what type of form you're looking
+        for more information on.
+  utter_ask_inputs:
+    - text: The required inputs vary depending on the form. Please specify which form
+        you are using.
+  utter_ask_objective:
+    - text: The objective is to become proficient in building professional, scalable
+        Single Page Applications (SPAs) using React.js and modern web development
+        tools.
+  utter_ask_technologies:
+    - text: This roadmap focuses on React.js and modern web development tools.
+  utter_ask_prerequisites:
+    - text: This roadmap is for web developers with HTML, CSS, and JavaScript skills.
+  utter_ask_useEffect_resources:
+    - text: I don't have specific links to resources, but the document mentions that
+        resources exist for the useEffect hook.
+  utter_ask_official_docs:
+    - text: The official React documentation can be found at https://react.dev/learn
+  utter_ask_youtube_channels:
+    - text: Check out Codevolution and freeCodeCamp on YouTube for React tutorials.
+  utter_ask_mini_projects:
+    - text: I have a list of mini projects, but more information is needed to give
+        you specific recommendations.
+  utter_ask_features:
+    - text: This app allows you to create and manage to-do lists.
+  utter_goodbye:
+    - text: Goodbye! Have a great day!
+  utter_ask_weather:
+    - text: This is a weather app.  Please specify a location for a weather forecast.
+  utter_ask_weather_location:
+    - text: I need a location to provide a weather forecast. For example, try asking
+        'What's the weather in London?'
+  utter_ask_calculator_stage_topic:
+    - text: 'The key topic for Calculator Stage 3 is: react-router-dom setup'
+  utter_ask_navigation_components:
+    - text: The main navigation components are BrowserRouter, Routes, Route, Link,
+        and Navigate.
+  utter_ask_about_BrowserRouter:
+    - text: BrowserRouter is a component that provides the context for routing in
+        React Router.
+  utter_ask_about_Routes:
+    - text: Routes is a component that renders a single child route matching the current
+        location.
+  utter_ask_about_Route:
+    - text: Route is a component that renders an element based on the current location.
+  utter_ask_about_Link:
+    - text: Link is a component that allows you to navigate between routes without
+        causing a full page reload.
+  utter_ask_about_Navigate:
+    - text: Navigate is a component that allows you to imperatively navigate to a
+        different location.
+  utter_ask_nested_routes:
+    - text: The provided text only mentions nested routes and 404 pages as topics,
+        but doesn't offer an explanation.
+  utter_ask_404_page_resources:
+    - text: The provided text only mentions nested routes and 404 pages as topics,
+        but doesn't offer an explanation.
+  utter_ask_project_idea:
+    - text: One project idea is building a single-page application using React Router
+        for navigation.
+  utter_ask_dashboard_pages:
+    - text: The dashboard includes Home, Profile, and Notification pages.
+  utter_ask_recommended_tools:
+    - text: Recommended tools are mentioned in the document.
+  utter_ask_app_styling_stage:
+    - text: App styling is in Stage 4.
+  utter_define_tailwind:
+    - text: Tailwind CSS is a utility-first CSS framework.
+  utter_ask_features_tailwind:
+    - text: Tailwind CSS offers a wide range of pre-built utility classes for rapid
+        UI development.
+  utter_ask_css_modules:
+    - text: CSS Modules allow you to scope CSS to a specific component.
+  utter_ask_styled_components:
+    - text: Styled Components is a CSS-in-JS library that enables scoping styles to
+        components.
+  utter_ask_scoped_styling_resources:
+    - text: The provided text only mentions CSS Modules and Styled Components as resources
+        for scoped styling.
+  utter_ask_what_is_tailwind:
+    - text: Tailwind CSS is a utility-first CSS framework for rapidly building custom
+        designs.  It's known for its highly customizable nature and large community.
+  utter_ask_tailwind_features:
+    - text: Tailwind CSS offers pre-defined CSS utility classes, allowing for rapid
+        development and customization. It's responsive by default and provides tools
+        for managing design systems.
+  utter_ask_tailwind_website:
+    - text: The website for Tailwind CSS is tailwindcss.com
+  utter_ask_global_state_management:
+    - text: Global state management is for larger apps with shared state.
+  utter_ask_when_to_use_global_state:
+    - text: Use global state management for larger apps with shared state.
+  utter_ask_global_state_options:
+    - text: The document only mentions that options exist for global state management
+        in larger apps, but doesn't specify them.
+  utter_ask_react_context_api:
+    - text: React Context API is a built-in feature.
+  utter_ask_redux_toolkit_resource:
+    - text: 'Here''s a link to Redux Toolkit resources: https://redux-toolkit.js.org/'
+  utter_ask_redux_backend_integration:
+    - text: Codevolution's Redux playlist, Stage 6, covers backend integration options.  The
+        specific options aren't detailed in this short description.
+  utter_ask_backend_language:
+    - text: The backend uses Express.js.
+  utter_ask_database:
+    - text: The database used is MongoDB.
+  utter_ask_backend_service:
+    - text: The backend services used are Supabase and Firebase.
+  utter_ask_key_skills:
+    - text: Key skills are Supabase and Firebase.
+  utter_ask_about_axios:
+    - text: Axios is a popular JavaScript library used for making HTTP requests to
+        APIs.
+  utter_ask_about_fetch:
+    - text: Fetch is a built-in browser API for making HTTP requests to APIs.
+  utter_ask_create:
+    - text: The create operation adds new data to the system.
+  utter_ask_read:
+    - text: The read operation retrieves existing data from the system.
+  utter_ask_update:
+    - text: The update operation modifies existing data in the system.
+  utter_ask_delete:
+    - text: The delete operation removes data from the system.
+  utter_ask_html_experience:
+    - text: Yes, I have experience with HTML.
+  utter_ask_css_experience:
+    - text: Yes, I have experience with CSS.
+  utter_ask_javascript_experience:
+    - text: Yes, I have experience with JavaScript.
+  utter_ask_login_resources:
+    - text: Please refer to the Auth (Login/Register) Resources section for assistance
+        with login.
+  utter_ask_register_resources:
+    - text: Please refer to the Auth (Login/Register) Resources section for assistance
+        with registration.
+  utter_ask_mern_definition:
+    - text: MERN stands for MongoDB, Express.js, React, and Node.js.  It's a popular
+        JavaScript stack for building web applications.
+  utter_ask_tutorial_availability:
+    - text: Yes, MongoDB provides a tutorial on the MERN stack. You can find it on
+        their website.
+  utter_ask_blog_login:
+    - text: To access the blog, you'll need to log in.  Further instructions are available
+        on the blog's login page.
+  utter_ask_about_app:
+    - text: This is a Hall/Hostel Management App.
+  utter_ask_deployment_stage:
+    - text: 'The current stage is Stage 7: Deployment.'
+  utter_ask_recommended_platforms:
+    - text: Recommended platforms for deployment are mentioned in the document but
+        not specified.
+  utter_ask_best_for_react_spas:
+    - text: Netlify is best for React SPAs.
+  utter_ask_javascript_refresher:
+    - text: Yes, Stage 1 includes a JavaScript refresher.
+  utter_ask_mongodb_integration:
+    - text: MongoDB is optional, for backend integration.
+  utter_ask_stage1_topics:
+    - text: Stage 1 covers JavaScript Foundations.
+  utter_enroll_in_course:
+    - text: To enroll in a course, please visit our website and follow the instructions.
+  utter_check_course_availability:
+    - text: Course availability varies.  Please check our website for the most up-to-date
+        information.
+  utter_get_course_information:
+    - text: For course information, please visit our website.
+  utter_ask_es6_syntax:
+    - text: ES6+ introduces let and const for variable declarations, and arrow functions
+        for concise function expressions.
+  utter_ask_map_function:
+    - text: The .map() method creates a new array by applying a function to each element
+        of an existing array.
+  utter_ask_filter_function:
+    - text: The .filter() method creates a new array containing only the elements
+        that pass a certain condition (defined by a provided function).
+  utter_ask_reduce_function:
+    - text: The .reduce() method applies a function to each element of an array to
+        reduce it to a single value.
+  utter_ask_object_destructuring:
+    - text: Object destructuring is a JavaScript feature that allows you to extract
+        properties from objects and assign them to variables.
+  utter_ask_array_destructuring:
+    - text: Array destructuring is a JavaScript feature that allows you to unpack
+        elements from arrays into distinct variables.
+  utter_ask_promises:
+    - text: Promises are a way to handle asynchronous operations in JavaScript. They
+        represent the eventual result of an asynchronous operation.
+  utter_ask_async_await:
+    - text: Async/await makes asynchronous code look and behave a bit more like synchronous
+        code, making it easier to read and write. It's built on top of promises.
+  utter_ask_dom_virtual_dom_difference:
+    - text: I'm sorry, but I cannot answer that question. My knowledge base does not
+        contain information on the difference between DOM and Virtual DOM.

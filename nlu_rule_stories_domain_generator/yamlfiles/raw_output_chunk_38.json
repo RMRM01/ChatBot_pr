@@ -1,0 +1,162 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_create",
+        "examples": [
+          "How do I create a new record?",
+          "What's the process for creating data?",
+          "I need to add a new entry, how?",
+          "Explain the create operation.",
+          "Can you tell me about creating data?"
+        ]
+      },
+      {
+        "name": "ask_read",
+        "examples": [
+          "How do I retrieve existing data?",
+          "What's the process for reading data?",
+          "I need to access some records, how?",
+          "Explain the read operation.",
+          "Can you tell me about retrieving data?"
+        ]
+      },
+      {
+        "name": "ask_update",
+        "examples": [
+          "How do I modify an existing record?",
+          "What's the process for updating data?",
+          "I need to change some data, how?",
+          "Explain the update operation.",
+          "Can you tell me about modifying data?"
+        ]
+      },
+      {
+        "name": "ask_delete",
+        "examples": [
+          "How do I delete a record?",
+          "What's the process for deleting data?",
+          "I need to remove an entry, how?",
+          "Explain the delete operation.",
+          "Can you tell me about deleting data?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_create": [
+        {
+          "text": "The create operation adds new data to the system."
+        }
+      ],
+      "utter_ask_read": [
+        {
+          "text": "The read operation retrieves existing data from the system."
+        }
+      ],
+      "utter_ask_update": [
+        {
+          "text": "The update operation modifies existing data in the system."
+        }
+      ],
+      "utter_ask_delete": [
+        {
+          "text": "The delete operation removes data from the system."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Create operation story",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "story": "Read operation story",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "story": "Update operation story",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "story": "Delete operation story",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Create operation rule",
+      "steps": [
+        {
+          "intent": "ask_create"
+        },
+        {
+          "action": "utter_ask_create"
+        }
+      ]
+    },
+    {
+      "rule": "Read operation rule",
+      "steps": [
+        {
+          "intent": "ask_read"
+        },
+        {
+          "action": "utter_ask_read"
+        }
+      ]
+    },
+    {
+      "rule": "Update operation rule",
+      "steps": [
+        {
+          "intent": "ask_update"
+        },
+        {
+          "action": "utter_ask_update"
+        }
+      ]
+    },
+    {
+      "rule": "Delete operation rule",
+      "steps": [
+        {
+          "intent": "ask_delete"
+        },
+        {
+          "action": "utter_ask_delete"
+        }
+      ]
+    }
+  ]
+}

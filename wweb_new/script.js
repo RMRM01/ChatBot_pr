@@ -46,7 +46,7 @@ async function uploadPDF() {
 
   if (!response.ok) {
     const errorText = await response.text();
-    alert("❌ Upload failed: " + errorText);
+    alert("Upload failed: " + errorText);
     return;
   }
 

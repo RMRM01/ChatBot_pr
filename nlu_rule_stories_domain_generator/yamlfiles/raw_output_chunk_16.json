@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_conditional_rendering",
+        "examples": [
+          "What is conditional rendering?",
+          "Explain conditional rendering.",
+          "Tell me about conditional rendering",
+          "Can you explain conditional rendering?",
+          "What does conditional rendering mean?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_conditional_rendering": [
+        {
+          "text": "Conditional rendering is a technique used to dynamically render parts of a user interface based on certain conditions.  It allows you to show or hide elements, or change their content, based on the state of your application."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about conditional rendering",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "User asks about conditional rendering directly",
+      "steps": [
+        {
+          "intent": "ask_conditional_rendering"
+        },
+        {
+          "action": "utter_ask_conditional_rendering"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_map_function",
+        "examples": [
+          "What does the .map() method do?",
+          "Explain the map function.",
+          "Tell me about the .map() array method.",
+          "Describe the map array method.",
+          "What is .map() used for?"
+        ]
+      },
+      {
+        "name": "ask_filter_function",
+        "examples": [
+          "What does the .filter() method do?",
+          "Explain the filter function.",
+          "Tell me about the .filter() array method.",
+          "Describe the filter array method."
+        ]
+      },
+      {
+        "name": "ask_reduce_function",
+        "examples": [
+          "What does the .reduce() method do?",
+          "Explain the reduce function.",
+          "Tell me about the .reduce() array method.",
+          "Describe the reduce array method."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_map_function": [
+        {
+          "text": "The .map() method creates a new array by applying a function to each element of an existing array."
+        }
+      ],
+      "utter_ask_filter_function": [
+        {
+          "text": "The .filter() method creates a new array containing only the elements that pass a certain condition (defined by a provided function)."
+        }
+      ],
+      "utter_ask_reduce_function": [
+        {
+          "text": "The .reduce() method applies a function to each element of an array to reduce it to a single value."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "story": "user asks about reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule_map",
+      "steps": [
+        {
+          "intent": "ask_map_function"
+        },
+        {
+          "action": "utter_ask_map_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_filter",
+      "steps": [
+        {
+          "intent": "ask_filter_function"
+        },
+        {
+          "action": "utter_ask_filter_function"
+        }
+      ]
+    },
+    {
+      "rule": "rule_reduce",
+      "steps": [
+        {
+          "intent": "ask_reduce_function"
+        },
+        {
+          "action": "utter_ask_reduce_function"
+        }
+      ]
+    }
+  ]
+}

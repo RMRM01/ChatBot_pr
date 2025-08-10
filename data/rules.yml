@@ -280,10 +280,6 @@ rules:
     steps:
       - intent: ask_boat_ride_details
       - action: utter_ask_boat_ride_details
-  - rule: greet_rule
-    steps:
-      - intent: greet
-      - action: utter_greet
   - rule: describe_river_rule
     steps:
       - intent: describe_river

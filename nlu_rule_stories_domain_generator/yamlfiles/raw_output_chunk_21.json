@@ -1,0 +1,123 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "greet",
+        "examples": [
+          "Hello",
+          "Hi there",
+          "Hey",
+          "Good morning",
+          "Good evening"
+        ]
+      },
+      {
+        "name": "ask_features",
+        "examples": [
+          "What can this app do?",
+          "What are the features?",
+          "Tell me about the app's capabilities",
+          "What are its functions?"
+        ]
+      },
+      {
+        "name": "goodbye",
+        "examples": [
+          "Bye",
+          "Goodbye",
+          "See you later",
+          "Talk to you later"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_greet": [
+        {
+          "text": "Hello! Welcome to the To-Do List App."
+        }
+      ],
+      "utter_ask_features": [
+        {
+          "text": "This app allows you to create and manage to-do lists."
+        }
+      ],
+      "utter_goodbye": [
+        {
+          "text": "Goodbye! Have a great day!"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User greets the bot",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "story": "User asks about features",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "story": "User says goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Greet user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "Answer feature question",
+      "steps": [
+        {
+          "intent": "ask_features"
+        },
+        {
+          "action": "utter_ask_features"
+        }
+      ]
+    },
+    {
+      "rule": "Say goodbye",
+      "steps": [
+        {
+          "intent": "goodbye"
+        },
+        {
+          "action": "utter_goodbye"
+        }
+      ]
+    }
+  ]
+}

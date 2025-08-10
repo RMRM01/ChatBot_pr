@@ -1,0 +1,122 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "enroll_in_course",
+        "examples": [
+          "I want to enroll in a course.",
+          "How do I sign up for a class?",
+          "I'd like to register for a course.",
+          "Let me enroll in a class."
+        ]
+      },
+      {
+        "name": "check_course_availability",
+        "examples": [
+          "Are there any spots left in the course?",
+          "Is the course full?",
+          "What's the course availability?",
+          "How many spots are available?"
+        ]
+      },
+      {
+        "name": "get_course_information",
+        "examples": [
+          "Tell me about the course.",
+          "What's the course description?",
+          "Can I get some information on the course?",
+          "Give me details about the course."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_enroll_in_course": [
+        {
+          "text": "To enroll in a course, please visit our website and follow the instructions."
+        }
+      ],
+      "utter_check_course_availability": [
+        {
+          "text": "Course availability varies.  Please check our website for the most up-to-date information."
+        }
+      ],
+      "utter_get_course_information": [
+        {
+          "text": "For course information, please visit our website."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "Enroll in course story",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "story": "Check course availability story",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "story": "Get course information story",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Enroll in course rule",
+      "steps": [
+        {
+          "intent": "enroll_in_course"
+        },
+        {
+          "action": "utter_enroll_in_course"
+        }
+      ]
+    },
+    {
+      "rule": "Check course availability rule",
+      "steps": [
+        {
+          "intent": "check_course_availability"
+        },
+        {
+          "action": "utter_check_course_availability"
+        }
+      ]
+    },
+    {
+      "rule": "Get course information rule",
+      "steps": [
+        {
+          "intent": "get_course_information"
+        },
+        {
+          "action": "utter_get_course_information"
+        }
+      ]
+    }
+  ]
+}

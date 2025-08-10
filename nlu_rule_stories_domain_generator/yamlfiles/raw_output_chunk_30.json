@@ -1,0 +1,125 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_what_is_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Tell me about Tailwind CSS",
+          "Explain Tailwind CSS",
+          "What's Tailwind?",
+          "Can you describe Tailwind CSS?"
+        ]
+      },
+      {
+        "name": "ask_tailwind_features",
+        "examples": [
+          "What are the features of Tailwind CSS?",
+          "What are Tailwind's features?",
+          "What does Tailwind offer?",
+          "What are some of Tailwind's capabilities?",
+          "Tell me about Tailwind's features."
+        ]
+      },
+      {
+        "name": "ask_tailwind_website",
+        "examples": [
+          "What's the website for Tailwind CSS?",
+          "Where can I find more information about Tailwind?",
+          "What's the URL for Tailwind CSS?",
+          "Give me the link to the Tailwind CSS website.",
+          "Show me the Tailwind CSS website."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_what_is_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.  It's known for its highly customizable nature and large community."
+        }
+      ],
+      "utter_ask_tailwind_features": [
+        {
+          "text": "Tailwind CSS offers pre-defined CSS utility classes, allowing for rapid development and customization. It's responsive by default and provides tools for managing design systems."
+        }
+      ],
+      "utter_ask_tailwind_website": [
+        {
+          "text": "The website for Tailwind CSS is tailwindcss.com"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about Tailwind CSS",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about Tailwind features",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    },
+    {
+      "story": "user asks for the Tailwind website",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct_website_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_website"
+        },
+        {
+          "action": "utter_ask_tailwind_website"
+        }
+      ]
+    },
+    {
+      "rule": "direct_what_is_tailwind",
+      "steps": [
+        {
+          "intent": "ask_what_is_tailwind"
+        },
+        {
+          "action": "utter_ask_what_is_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "direct_features_request",
+      "steps": [
+        {
+          "intent": "ask_tailwind_features"
+        },
+        {
+          "action": "utter_ask_tailwind_features"
+        }
+      ]
+    }
+  ]
+}

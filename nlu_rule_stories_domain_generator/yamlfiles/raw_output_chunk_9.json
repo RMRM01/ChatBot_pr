@@ -1,0 +1,86 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_javascript_info",
+        "examples": [
+          "What's the JavaScript.info website?",
+          "Tell me about javascript.info",
+          "Can you give me the link to javascript.info?",
+          "I need the javascript.info website"
+        ]
+      },
+      {
+        "name": "ask_mozilla_developer_docs",
+        "examples": [
+          "What's the Mozilla Developer Network JavaScript guide?",
+          "Tell me about MDN's JavaScript documentation",
+          "Can you give me the link to MDN's JavaScript guide?",
+          "I need the MDN JavaScript documentation"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_javascript_info": [
+        {
+          "text": "Here's the link to javascript.info: https://javascript.info/"
+        }
+      ],
+      "utter_ask_mozilla_developer_docs": [
+        {
+          "text": "Here's the link to the Mozilla Developer Network JavaScript Guide: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks for javascript.info",
+      "steps": [
+        {
+          "intent": "ask_javascript_info"
+        },
+        {
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "story": "user asks for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct request for javascript.info",
+      "steps": [
+        {
+          "intent": "ask_javascript_info"
+        },
+        {
+          "action": "utter_ask_javascript_info"
+        }
+      ]
+    },
+    {
+      "rule": "direct request for MDN JavaScript guide",
+      "steps": [
+        {
+          "intent": "ask_mozilla_developer_docs"
+        },
+        {
+          "action": "utter_ask_mozilla_developer_docs"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_about_axios",
+        "examples": [
+          "What is Axios?",
+          "Tell me about Axios",
+          "Explain Axios",
+          "What's Axios used for?",
+          "What is Axios for API calls?"
+        ]
+      },
+      {
+        "name": "ask_about_fetch",
+        "examples": [
+          "What is Fetch?",
+          "Tell me about Fetch",
+          "Explain Fetch API",
+          "What is Fetch used for?",
+          "How does Fetch work with APIs?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_about_axios": [
+        {
+          "text": "Axios is a popular JavaScript library used for making HTTP requests to APIs."
+        }
+      ],
+      "utter_ask_about_fetch": [
+        {
+          "text": "Fetch is a built-in browser API for making HTTP requests to APIs."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about Axios",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "story": "User asks about Fetch",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "User asks about Axios directly",
+      "steps": [
+        {
+          "intent": "ask_about_axios"
+        },
+        {
+          "action": "utter_ask_about_axios"
+        }
+      ]
+    },
+    {
+      "rule": "User asks about Fetch directly",
+      "steps": [
+        {
+          "intent": "ask_about_fetch"
+        },
+        {
+          "action": "utter_ask_about_fetch"
+        }
+      ]
+    }
+  ]
+}

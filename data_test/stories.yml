@@ -512,3 +512,392 @@ stories:
     steps:
       - intent: publish_portfolio_github
       - action: utter_publish_portfolio_github
+  - story: Publish_GitHub_Story
+    steps:
+      - intent: publish_github
+      - action: utter_publish_github
+  - story: user asks for javascript.info
+    steps:
+      - intent: ask_javascript_info
+      - action: utter_ask_javascript_info
+  - story: user asks for MDN JavaScript guide
+    steps:
+      - intent: ask_mozilla_developer_docs
+      - action: utter_ask_mozilla_developer_docs
+  - story: user asks about React.js stage
+    steps:
+      - intent: ask_javascript_course_stage
+      - action: utter_ask_javascript_course_stage
+  - story: user asks about key topics
+    steps:
+      - intent: ask_key_topics
+      - action: utter_ask_key_topics
+  - story: User asks for React definition
+    steps:
+      - intent: define_react
+      - action: utter_define_react
+  - story: User asks about JSX syntax
+    steps:
+      - intent: ask_jsx_syntax
+      - action: utter_ask_jsx_syntax
+  - story: user asks about functional components
+    steps:
+      - intent: ask_functional_components
+      - action: utter_ask_functional_components
+  - story: User asks about useState hook
+    steps:
+      - intent: ask_usestate_hook
+      - action: utter_ask_usestate_hook
+  - story: user asks about props
+    steps:
+      - intent: ask_props
+      - action: utter_ask_props
+  - story: user asks about event handling
+    steps:
+      - intent: ask_event_handling
+      - action: utter_ask_event_handling
+  - story: User asks about conditional rendering
+    steps:
+      - intent: ask_conditional_rendering
+      - action: utter_ask_conditional_rendering
+  - story: User asks about lists
+    steps:
+      - intent: ask_about_lists
+      - action: utter_ask_about_lists
+  - story: User asks about map
+    steps:
+      - intent: ask_about_map
+      - action: utter_ask_about_map
+  - story: User asks about forms
+    steps:
+      - intent: ask_forms
+      - action: utter_ask_forms
+  - story: User asks about inputs
+    steps:
+      - intent: ask_inputs
+      - action: utter_ask_inputs
+  - story: user asks objective
+    steps:
+      - intent: ask_objective
+      - action: utter_ask_objective
+  - story: user asks technologies
+    steps:
+      - intent: ask_technologies
+      - action: utter_ask_technologies
+  - story: user asks prerequisites
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_ask_prerequisites
+  - story: user asks for useEffect resources
+    steps:
+      - intent: ask_useEffect_resources
+      - action: utter_ask_useEffect_resources
+  - story: Find official docs
+    steps:
+      - intent: ask_official_docs
+      - action: utter_ask_official_docs
+  - story: Find YouTube channels
+    steps:
+      - intent: ask_youtube_channels
+      - action: utter_ask_youtube_channels
+  - story: Find mini projects
+    steps:
+      - intent: ask_mini_projects
+      - action: utter_ask_mini_projects
+  - story: User greets the bot
+    steps:
+      - intent: greet
+      - action: utter_greet
+  - story: User asks about features
+    steps:
+      - intent: ask_features
+      - action: utter_ask_features
+  - story: User says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+  - story: Ask for weather
+    steps:
+      - intent: ask_weather
+      - action: utter_ask_weather
+  - story: Ask for weather at specific location
+    steps:
+      - intent: ask_weather_location
+      - action: utter_ask_weather_location
+  - story: User asks about Calculator Stage 3 topics
+    steps:
+      - intent: ask_calculator_stage_topic
+      - action: utter_ask_calculator_stage_topic
+  - story: user asks about navigation components
+    steps:
+      - intent: ask_navigation_components
+      - action: utter_ask_navigation_components
+  - story: user asks about BrowserRouter
+    steps:
+      - intent: ask_about_BrowserRouter
+      - action: utter_ask_about_BrowserRouter
+  - story: user asks about Routes
+    steps:
+      - intent: ask_about_Routes
+      - action: utter_ask_about_Routes
+  - story: user asks about Route
+    steps:
+      - intent: ask_about_Route
+      - action: utter_ask_about_Route
+  - story: user asks about Link
+    steps:
+      - intent: ask_about_Link
+      - action: utter_ask_about_Link
+  - story: user asks about Navigate
+    steps:
+      - intent: ask_about_Navigate
+      - action: utter_ask_about_Navigate
+  - story: user asks about nested routes
+    steps:
+      - intent: ask_nested_routes
+      - action: utter_ask_nested_routes
+  - story: user asks about 404 page resources
+    steps:
+      - intent: ask_404_page_resources
+      - action: utter_ask_404_page_resources
+  - story: Ask for project idea
+    steps:
+      - intent: ask_project_idea
+      - action: utter_ask_project_idea
+  - story: User asks about dashboard pages
+    steps:
+      - intent: ask_dashboard_pages
+      - action: utter_ask_dashboard_pages
+  - story: User asks about recommended tools
+    steps:
+      - intent: ask_recommended_tools
+      - action: utter_ask_recommended_tools
+  - story: User asks about app styling stage
+    steps:
+      - intent: ask_app_styling_stage
+      - action: utter_ask_app_styling_stage
+  - story: user greets and asks for definition
+    steps:
+      - intent: greet
+      - intent: define_tailwind
+      - action: utter_define_tailwind
+  - story: user asks about features
+    steps:
+      - intent: ask_features_tailwind
+      - action: utter_ask_features_tailwind
+  - story: user greets and asks about features
+    steps:
+      - intent: greet
+      - intent: ask_features_tailwind
+      - action: utter_ask_features_tailwind
+  - story: User asks about prerequisites
+    steps:
+      - intent: ask_prerequisites
+      - action: utter_ask_prerequisites
+  - story: User asks about CSS Modules
+    steps:
+      - intent: ask_css_modules
+      - action: utter_ask_css_modules
+  - story: User asks about Styled Components
+    steps:
+      - intent: ask_styled_components
+      - action: utter_ask_styled_components
+  - story: User asks for scoped styling resources
+    steps:
+      - intent: ask_scoped_styling_resources
+      - action: utter_ask_scoped_styling_resources
+  - story: user asks about Tailwind CSS
+    steps:
+      - intent: ask_what_is_tailwind
+      - action: utter_ask_what_is_tailwind
+  - story: user asks about Tailwind features
+    steps:
+      - intent: ask_tailwind_features
+      - action: utter_ask_tailwind_features
+  - story: user asks for the Tailwind website
+    steps:
+      - intent: ask_tailwind_website
+      - action: utter_ask_tailwind_website
+  - story: User asks about global state management
+    steps:
+      - intent: ask_global_state_management
+      - action: utter_ask_global_state_management
+  - story: User asks when to use global state
+    steps:
+      - intent: ask_when_to_use_global_state
+      - action: utter_ask_when_to_use_global_state
+  - story: User asks about global state options
+    steps:
+      - intent: ask_global_state_options
+      - action: utter_ask_global_state_options
+  - story: user asks about React Context API
+    steps:
+      - intent: ask_react_context_api
+      - action: utter_ask_react_context_api
+  - story: User asks for Redux Toolkit resources
+    steps:
+      - intent: ask_redux_toolkit_resource
+      - action: utter_ask_redux_toolkit_resource
+  - story: User asks about Redux backend integration options
+    steps:
+      - intent: ask_redux_backend_integration
+      - action: utter_ask_redux_backend_integration
+  - story: user asks about backend language
+    steps:
+      - intent: ask_backend_language
+      - action: utter_ask_backend_language
+  - story: user asks about database
+    steps:
+      - intent: ask_database
+      - action: utter_ask_database
+  - story: User asks about backend services
+    steps:
+      - intent: ask_backend_service
+      - action: utter_ask_backend_service
+  - story: User asks about key skills
+    steps:
+      - intent: ask_key_skills
+      - action: utter_ask_key_skills
+  - story: User asks about Axios
+    steps:
+      - intent: ask_about_axios
+      - action: utter_ask_about_axios
+  - story: User asks about Fetch
+    steps:
+      - intent: ask_about_fetch
+      - action: utter_ask_about_fetch
+  - story: Create operation story
+    steps:
+      - intent: ask_create
+      - action: utter_ask_create
+  - story: Read operation story
+    steps:
+      - intent: ask_read
+      - action: utter_ask_read
+  - story: Update operation story
+    steps:
+      - intent: ask_update
+      - action: utter_ask_update
+  - story: Delete operation story
+    steps:
+      - intent: ask_delete
+      - action: utter_ask_delete
+  - story: User asks about HTML experience
+    steps:
+      - intent: ask_html_experience
+      - action: utter_ask_html_experience
+  - story: User asks about CSS experience
+    steps:
+      - intent: ask_css_experience
+      - action: utter_ask_css_experience
+  - story: User asks about JavaScript experience
+    steps:
+      - intent: ask_javascript_experience
+      - action: utter_ask_javascript_experience
+  - story: user asks for login resources
+    steps:
+      - intent: ask_login_resources
+      - action: utter_ask_login_resources
+  - story: user asks for registration resources
+    steps:
+      - intent: ask_register_resources
+      - action: utter_ask_register_resources
+  - story: User greets and asks about MERN
+    steps:
+      - intent: greet
+      - intent: ask_mern_definition
+      - action: utter_ask_mern_definition
+  - story: User asks for a tutorial
+    steps:
+      - intent: ask_tutorial_availability
+      - action: utter_ask_tutorial_availability
+  - story: User greets and asks for tutorial
+    steps:
+      - intent: greet
+      - intent: ask_tutorial_availability
+      - action: utter_ask_tutorial_availability
+  - story: Login help story
+    steps:
+      - intent: ask_blog_login
+      - action: utter_ask_blog_login
+  - story: user asks about the app
+    steps:
+      - intent: ask_about_app
+      - action: utter_ask_about_app
+  - story: user asks about features
+    steps:
+      - intent: ask_features
+      - action: utter_ask_features
+  - story: Ask about deployment stage
+    steps:
+      - intent: ask_deployment_stage
+      - action: utter_ask_deployment_stage
+  - story: Ask about recommended platforms
+    steps:
+      - intent: ask_recommended_platforms
+      - action: utter_ask_recommended_platforms
+  - story: User asks about best platform for React SPAs
+    steps:
+      - intent: ask_best_for_react_spas
+      - action: utter_ask_best_for_react_spas
+  - story: User asks about JavaScript refresher
+    steps:
+      - intent: ask_javascript_refresher
+      - action: utter_ask_javascript_refresher
+  - story: User asks about MongoDB integration
+    steps:
+      - intent: ask_mongodb_integration
+      - action: utter_ask_mongodb_integration
+  - story: User asks about Stage 1 topics
+    steps:
+      - intent: ask_stage1_topics
+      - action: utter_ask_stage1_topics
+  - story: Enroll in course story
+    steps:
+      - intent: enroll_in_course
+      - action: utter_enroll_in_course
+  - story: Check course availability story
+    steps:
+      - intent: check_course_availability
+      - action: utter_check_course_availability
+  - story: Get course information story
+    steps:
+      - intent: get_course_information
+      - action: utter_get_course_information
+  - story: User asks about ES6 syntax
+    steps:
+      - intent: ask_es6_syntax
+      - action: utter_ask_es6_syntax
+  - story: user asks about map
+    steps:
+      - intent: ask_map_function
+      - action: utter_ask_map_function
+  - story: user asks about filter
+    steps:
+      - intent: ask_filter_function
+      - action: utter_ask_filter_function
+  - story: user asks about reduce
+    steps:
+      - intent: ask_reduce_function
+      - action: utter_ask_reduce_function
+  - story: user asks about object destructuring
+    steps:
+      - intent: ask_object_destructuring
+      - action: utter_ask_object_destructuring
+  - story: user asks about array destructuring
+    steps:
+      - intent: ask_array_destructuring
+      - action: utter_ask_array_destructuring
+  - story: User asks about promises
+    steps:
+      - intent: ask_promises
+      - action: utter_ask_promises
+  - story: User asks about async/await
+    steps:
+      - intent: ask_async_await
+      - action: utter_ask_async_await
+  - story: User asks about DOM and Virtual DOM difference
+    steps:
+      - intent: ask_dom_virtual_dom_difference
+      - action: utter_ask_dom_virtual_dom_difference
+action_listen

@@ -1,0 +1,51 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_useEffect_resources",
+        "examples": [
+          "Where can I find resources on useEffect?",
+          "I need some information about useEffect hook resources.",
+          "Tell me more about resources for useEffect hook.",
+          "Can you point me to some resources on useEffect?",
+          "I'm looking for learning materials on useEffect Hook."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_useEffect_resources": [
+        {
+          "text": "I don't have specific links to resources, but the document mentions that resources exist for the useEffect hook."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks for useEffect resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct_request_useEffect_resources",
+      "steps": [
+        {
+          "intent": "ask_useEffect_resources"
+        },
+        {
+          "action": "utter_ask_useEffect_resources"
+        }
+      ]
+    }
+  ]
+}

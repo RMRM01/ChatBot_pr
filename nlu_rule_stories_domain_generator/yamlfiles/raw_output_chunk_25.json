@@ -1,0 +1,87 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_nested_routes",
+        "examples": [
+          "What are nested routes?",
+          "Explain nested routes to me.",
+          "Tell me about nested routes.",
+          "Can you describe nested routes?",
+          "What do nested routes mean?"
+        ]
+      },
+      {
+        "name": "ask_404_page_resources",
+        "examples": [
+          "What are 404 page resources?",
+          "Explain 404 page resources.",
+          "Tell me about 404 page resources.",
+          "Can you describe 404 page resources?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_nested_routes": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ],
+      "utter_ask_404_page_resources": [
+        {
+          "text": "The provided text only mentions nested routes and 404 pages as topics, but doesn't offer an explanation."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "story": "user asks about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "rule for asking about nested routes",
+      "steps": [
+        {
+          "intent": "ask_nested_routes"
+        },
+        {
+          "action": "utter_ask_nested_routes"
+        }
+      ]
+    },
+    {
+      "rule": "rule for asking about 404 page resources",
+      "steps": [
+        {
+          "intent": "ask_404_page_resources"
+        },
+        {
+          "action": "utter_ask_404_page_resources"
+        }
+      ]
+    }
+  ]
+}

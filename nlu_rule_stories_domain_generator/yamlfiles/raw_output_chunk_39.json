@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_login_resources",
+        "examples": [
+          "Where can I find login resources?",
+          "I need help with logging in.",
+          "What are the resources for login?",
+          "Login resources please.",
+          "I'm having trouble logging in, where can I find help?"
+        ]
+      },
+      {
+        "name": "ask_register_resources",
+        "examples": [
+          "Where can I find registration resources?",
+          "I need help registering.",
+          "What are the resources for registration?",
+          "Registration resources please.",
+          "I'm having trouble registering, where can I find help?"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_login_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with login."
+        }
+      ],
+      "utter_ask_register_resources": [
+        {
+          "text": "Please refer to the Auth (Login/Register) Resources section for assistance with registration."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user asks for login resources",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "story": "user asks for registration resources",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "direct login resource request",
+      "steps": [
+        {
+          "intent": "ask_login_resources"
+        },
+        {
+          "action": "utter_ask_login_resources"
+        }
+      ]
+    },
+    {
+      "rule": "direct registration resource request",
+      "steps": [
+        {
+          "intent": "ask_register_resources"
+        },
+        {
+          "action": "utter_ask_register_resources"
+        }
+      ]
+    }
+  ]
+}

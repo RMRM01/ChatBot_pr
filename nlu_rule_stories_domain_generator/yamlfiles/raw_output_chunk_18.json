@@ -1,0 +1,88 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "ask_forms",
+        "examples": [
+          "What forms do you have?",
+          "Tell me about the available forms.",
+          "I need information on forms.",
+          "What forms are there?",
+          "Show me the forms."
+        ]
+      },
+      {
+        "name": "ask_inputs",
+        "examples": [
+          "What kind of inputs do you accept?",
+          "What information do you need?",
+          "What data do I need to provide?",
+          "Tell me about the required inputs.",
+          "Explain the inputs."
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_ask_forms": [
+        {
+          "text": "We offer various forms.  Please specify what type of form you're looking for more information on."
+        }
+      ],
+      "utter_ask_inputs": [
+        {
+          "text": "The required inputs vary depending on the form. Please specify which form you are using."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "User asks about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "story": "User asks about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "Directly asking about forms",
+      "steps": [
+        {
+          "intent": "ask_forms"
+        },
+        {
+          "action": "utter_ask_forms"
+        }
+      ]
+    },
+    {
+      "rule": "Directly asking about inputs",
+      "steps": [
+        {
+          "intent": "ask_inputs"
+        },
+        {
+          "action": "utter_ask_inputs"
+        }
+      ]
+    }
+  ]
+}

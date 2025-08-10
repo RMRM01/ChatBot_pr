@@ -1,0 +1,128 @@
+{
+  "nlu": {
+    "intents": [
+      {
+        "name": "greet",
+        "examples": [
+          "Hello",
+          "Hi there",
+          "Hey",
+          "Greetings"
+        ]
+      },
+      {
+        "name": "define_tailwind",
+        "examples": [
+          "What is Tailwind CSS?",
+          "Explain Tailwind CSS",
+          "Define Tailwind CSS",
+          "Tell me about Tailwind CSS"
+        ]
+      },
+      {
+        "name": "ask_features_tailwind",
+        "examples": [
+          "What are the features of Tailwind?",
+          "What does Tailwind offer?",
+          "What are Tailwind's key features?",
+          "Tell me about Tailwind's features"
+        ]
+      }
+    ]
+  },
+  "domain": {
+    "responses": {
+      "utter_greet": [
+        {
+          "text": "Hello! How can I help you with Tailwind CSS?"
+        }
+      ],
+      "utter_define_tailwind": [
+        {
+          "text": "Tailwind CSS is a utility-first CSS framework."
+        }
+      ],
+      "utter_ask_features_tailwind": [
+        {
+          "text": "Tailwind CSS offers a wide range of pre-built utility classes for rapid UI development."
+        }
+      ]
+    }
+  },
+  "stories": [
+    {
+      "story": "user greets and asks for definition",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "story": "user asks about features",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    },
+        {
+      "story": "user greets and asks about features",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    }
+  ],
+  "rules": [
+    {
+      "rule": "define Tailwind on direct question",
+      "steps": [
+        {
+          "intent": "define_tailwind"
+        },
+        {
+          "action": "utter_define_tailwind"
+        }
+      ]
+    },
+    {
+      "rule": "greet the user",
+      "steps": [
+        {
+          "intent": "greet"
+        },
+        {
+          "action": "utter_greet"
+        }
+      ]
+    },
+    {
+      "rule": "answer features question",
+      "steps": [
+        {
+          "intent": "ask_features_tailwind"
+        },
+        {
+          "action": "utter_ask_features_tailwind"
+        }
+      ]
+    }
+  ]
+}

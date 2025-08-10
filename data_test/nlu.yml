@@ -641,3 +641,580 @@ nlu:
       - I want to publish my portfolio, what platform do you recommend?
       - What's the best place to publish my portfolio?
       - How do I share my portfolio online?
+  - intent: ask_javascript_info
+    examples: |-
+      - What's the JavaScript.info website?
+      - Tell me about javascript.info
+      - Can you give me the link to javascript.info?
+      - I need the javascript.info website
+  - intent: ask_mozilla_developer_docs
+    examples: |-
+      - What's the Mozilla Developer Network JavaScript guide?
+      - Tell me about MDN's JavaScript documentation
+      - Can you give me the link to MDN's JavaScript guide?
+      - I need the MDN JavaScript documentation
+  - intent: ask_key_topics
+    examples: |-
+      - What are the key topics?
+      - What's covered in the course?
+      - What are the main subjects?
+      - Key topics please.
+      - What are the important concepts?
+  - intent: define_react
+    examples: |-
+      - What is React?
+      - Explain React to me.
+      - Tell me about React.
+      - What's React?
+      - Can you define React?
+  - intent: ask_jsx_syntax
+    examples: |-
+      - What is JSX syntax?
+      - Explain JSX syntax to me.
+      - Tell me about JSX syntax.
+      - Can you describe JSX syntax?
+      - What's JSX syntax all about?
+  - intent: ask_functional_components
+    examples: |-
+      - What are the functional components?
+      - Tell me about the functional components.
+      - Explain the functional components.
+      - Can you describe the functional components?
+      - What are the parts of the functional components?
+  - intent: ask_usestate_hook
+    examples: |-
+      - What is useState hook?
+      - Explain useState hook
+      - Tell me about useState hook
+      - What does useState do?
+      - How to use useState hook?
+  - intent: ask_props
+    examples: |-
+      - What are the props?
+      - Tell me about the props.
+      - What props are available?
+      - Can you describe the props?
+  - intent: ask_event_handling
+    examples: |-
+      - How is event handling managed?
+      - What's your event handling system like?
+      - Explain your event handling.
+      - Tell me about event handling.
+  - intent: ask_conditional_rendering
+    examples: |-
+      - What is conditional rendering?
+      - Explain conditional rendering.
+      - Tell me about conditional rendering
+      - Can you explain conditional rendering?
+      - What does conditional rendering mean?
+  - intent: ask_about_lists
+    examples: |-
+      - Tell me about lists
+      - What are lists?
+      - Explain lists
+      - What can you tell me about lists in javascript?
+      - How do lists work?
+  - intent: ask_about_map
+    examples: |-
+      - What is map()?
+      - Explain the map() function
+      - How does map() work?
+      - Tell me about .map()
+      - Describe the .map() method
+  - intent: ask_forms
+    examples: |-
+      - What forms do you have?
+      - Tell me about the available forms.
+      - I need information on forms.
+      - What forms are there?
+      - Show me the forms.
+  - intent: ask_inputs
+    examples: |-
+      - What kind of inputs do you accept?
+      - What information do you need?
+      - What data do I need to provide?
+      - Tell me about the required inputs.
+      - Explain the inputs.
+  - intent: ask_technologies
+    examples: |-
+      - What technologies are used?
+      - Which tools are involved?
+      - What's the tech stack?
+      - What technologies does this roadmap cover?
+  - intent: ask_prerequisites
+    examples: |-
+      - What are the prerequisites?
+      - What do I need to know beforehand?
+      - What skills are required?
+      - What's the prior knowledge needed?
+  - intent: ask_useEffect_resources
+    examples: |-
+      - Where can I find resources on useEffect?
+      - I need some information about useEffect hook resources.
+      - Tell me more about resources for useEffect hook.
+      - Can you point me to some resources on useEffect?
+      - I'm looking for learning materials on useEffect Hook.
+  - intent: ask_official_docs
+    examples: |-
+      - Where can I find the official React documentation?
+      - What's the URL for the official React docs?
+      - Give me a link to the official React documentation.
+      - I need the React official documentation link.
+  - intent: ask_youtube_channels
+    examples: |-
+      - Which YouTube channels teach React?
+      - Recommend some YouTube channels for learning React.
+      - What are some good React YouTube tutorials?
+      - Where can I find React tutorials on YouTube?
+  - intent: ask_mini_projects
+    examples: |-
+      - Do you have any mini projects for practicing React?
+      - I'm looking for some small React projects.
+      - Suggest some mini projects to improve my React skills.
+      - Where can I find some React mini projects?
+  - intent: ask_features
+    examples: |-
+      - What can this app do?
+      - What are the features?
+      - Tell me about the app's capabilities
+      - What are its functions?
+  - intent: goodbye
+    examples: |-
+      - Bye
+      - Goodbye
+      - See you later
+      - Talk to you later
+  - intent: ask_weather
+    examples: |-
+      - What's the weather like today?
+      - Tell me the weather forecast.
+      - How's the weather?
+      - Give me a weather update.
+      - What's the weather going to be like?
+  - intent: ask_weather_location
+    examples: |-
+      - What's the weather in London?
+      - Tell me the weather forecast for Paris.
+      - How's the weather in New York?
+      - Give me a weather update for Tokyo.
+  - intent: ask_calculator_stage_topic
+    examples: |-
+      - What are the key topics in Calculator Stage 3?
+      - Tell me about the topics covered in Calculator Stage 3
+      - What's the curriculum for Calculator Stage 3?
+      - Can you list the key topics of Calculator Stage 3?
+  - intent: ask_navigation_components
+    examples: |-
+      - What components are used for navigation?
+      - Tell me about navigation components.
+      - Which components handle routing?
+      - Explain the navigation components.
+      - What are the main navigation elements?
+  - intent: ask_about_BrowserRouter
+    examples: |-
+      - What's BrowserRouter?
+      - Tell me about BrowserRouter.
+      - What does BrowserRouter do?
+      - Explain BrowserRouter.
+  - intent: ask_about_Routes
+    examples: |-
+      - What are Routes?
+      - Explain Routes.
+      - What does Routes do?
+      - Tell me about Routes.
+  - intent: ask_about_Route
+    examples: |-
+      - What is Route?
+      - Tell me about Route.
+      - What does Route do?
+      - Explain Route.
+  - intent: ask_about_Link
+    examples: |-
+      - What is Link?
+      - Tell me about Link.
+      - What does Link do?
+      - Explain Link.
+  - intent: ask_about_Navigate
+    examples: |-
+      - What is Navigate?
+      - Tell me about Navigate.
+      - What does Navigate do?
+      - Explain Navigate.
+  - intent: ask_nested_routes
+    examples: |-
+      - What are nested routes?
+      - Explain nested routes to me.
+      - Tell me about nested routes.
+      - Can you describe nested routes?
+      - What do nested routes mean?
+  - intent: ask_404_page_resources
+    examples: |-
+      - What are 404 page resources?
+      - Explain 404 page resources.
+      - Tell me about 404 page resources.
+      - Can you describe 404 page resources?
+  - intent: ask_project_idea
+    examples: |-
+      - What's a project idea?
+      - I need a project idea.
+      - Give me a project idea using React Router.
+      - Suggest a project using React Router.
+      - Looking for project inspiration with React Router.
+  - intent: ask_dashboard_pages
+    examples: |-
+      - What pages are in the dashboard?
+      - Which pages does the dashboard have?
+      - Tell me about the dashboard pages.
+      - Can you list the dashboard pages?
+      - What are the sections of the dashboard?
+  - intent: ask_recommended_tools
+    examples: |-
+      - What tools are recommended?
+      - Which tools do you suggest?
+      - What are the suggested tools?
+      - Recommend some tools.
+      - What tools should I use?
+  - intent: ask_app_styling_stage
+    examples: |-
+      - What stage is app styling?
+      - What's the stage for styling?
+      - Which stage is styling the app?
+      - In what stage do I style the app?
+      - What stage are we at for styling?
+  - intent: define_tailwind
+    examples: |-
+      - What is Tailwind CSS?
+      - Explain Tailwind CSS
+      - Define Tailwind CSS
+      - Tell me about Tailwind CSS
+  - intent: ask_features_tailwind
+    examples: |-
+      - What are the features of Tailwind?
+      - What does Tailwind offer?
+      - What are Tailwind's key features?
+      - Tell me about Tailwind's features
+  - intent: ask_css_modules
+    examples: |-
+      - Tell me about CSS Modules
+      - What are CSS Modules?
+      - Explain CSS Modules
+      - What is CSS Modules?
+      - Can you explain CSS Modules?
+  - intent: ask_styled_components
+    examples: |-
+      - Tell me about Styled Components
+      - What are Styled Components?
+      - Explain Styled Components
+      - What is Styled Components?
+      - Can you explain Styled Components?
+  - intent: ask_scoped_styling_resources
+    examples: |-
+      - Where can I find resources on scoped styling?
+      - I need resources for scoped styling
+      - Show me some resources on scoped styling
+      - Resources on scoped styling please
+      - Looking for information on scoped styling resources
+  - intent: ask_what_is_tailwind
+    examples: |-
+      - What is Tailwind CSS?
+      - Tell me about Tailwind CSS
+      - Explain Tailwind CSS
+      - What's Tailwind?
+      - Can you describe Tailwind CSS?
+  - intent: ask_tailwind_features
+    examples: |-
+      - What are the features of Tailwind CSS?
+      - What are Tailwind's features?
+      - What does Tailwind offer?
+      - What are some of Tailwind's capabilities?
+      - Tell me about Tailwind's features.
+  - intent: ask_tailwind_website
+    examples: |-
+      - What's the website for Tailwind CSS?
+      - Where can I find more information about Tailwind?
+      - What's the URL for Tailwind CSS?
+      - Give me the link to the Tailwind CSS website.
+      - Show me the Tailwind CSS website.
+  - intent: ask_global_state_management
+    examples: |-
+      - What is global state management?
+      - Explain global state management in Tailwind.
+      - Tell me about global state management for larger apps.
+      - When should I use global state management?
+      - What are the benefits of global state management?
+  - intent: ask_when_to_use_global_state
+    examples: |-
+      - When do I need global state management?
+      - In what situations should I use global state?
+      - For which apps is global state management suitable?
+      - Is global state management necessary for small apps?
+  - intent: ask_global_state_options
+    examples: |-
+      - What options are available for global state management?
+      - What are some ways to implement global state?
+      - List the options for global state management in Tailwind.
+  - intent: ask_react_context_api
+    examples: |-
+      - What is React Context API?
+      - Tell me about React Context API
+      - Explain React Context API
+      - What's the React Context API?
+      - Can you explain the React Context API?
+  - intent: ask_redux_toolkit_resource
+    examples: |-
+      - Where can I find Redux Toolkit resources?
+      - What are the resources for Redux Toolkit?
+      - I need some documentation on Redux Toolkit.
+      - Show me the Redux Toolkit resources.
+      - Can you provide a link to Redux Toolkit documentation?
+  - intent: ask_redux_backend_integration
+    examples: |-
+      - What are the backend integration options in Codevolution's Redux playlist?
+      - Tell me about backend integration in Codevolution's Redux Stage 6.
+      - Explain the backend integration choices for Redux in Codevolution's YouTube series.
+      - I need info on backend integration from Codevolution's Redux tutorial, Stage 6.
+      - What are my options for integrating a backend with Redux in Codevolution's course?
+  - intent: ask_backend_language
+    examples: |-
+      - What backend language is used?
+      - Which language is used for the backend?
+      - Tell me about the backend technology.
+      - What's the backend framework?
+      - What programming language is used on the server-side?
+  - intent: ask_database
+    examples: |-
+      - What database does it use?
+      - Which database is used?
+      - What database technology is used?
+      - Tell me the database.
+  - intent: ask_backend_service
+    examples: |-
+      - What backend services do you use?
+      - Which backend services are used?
+      - What is the backend?
+      - Tell me about the backend services.
+      - What backend is this built on?
+  - intent: ask_key_skills
+    examples: |-
+      - What are the key skills needed?
+      - What skills are required?
+      - List the key skills.
+      - Tell me about the key skills.
+  - intent: ask_about_axios
+    examples: |-
+      - What is Axios?
+      - Tell me about Axios
+      - Explain Axios
+      - What's Axios used for?
+      - What is Axios for API calls?
+  - intent: ask_about_fetch
+    examples: |-
+      - What is Fetch?
+      - Tell me about Fetch
+      - Explain Fetch API
+      - What is Fetch used for?
+      - How does Fetch work with APIs?
+  - intent: ask_create
+    examples: |-
+      - How do I create a new record?
+      - What's the process for creating data?
+      - I need to add a new entry, how?
+      - Explain the create operation.
+      - Can you tell me about creating data?
+  - intent: ask_read
+    examples: |-
+      - How do I retrieve existing data?
+      - What's the process for reading data?
+      - I need to access some records, how?
+      - Explain the read operation.
+      - Can you tell me about retrieving data?
+  - intent: ask_update
+    examples: |-
+      - How do I modify an existing record?
+      - What's the process for updating data?
+      - I need to change some data, how?
+      - Explain the update operation.
+      - Can you tell me about modifying data?
+  - intent: ask_delete
+    examples: |-
+      - How do I delete a record?
+      - What's the process for deleting data?
+      - I need to remove an entry, how?
+      - Explain the delete operation.
+      - Can you tell me about deleting data?
+  - intent: ask_html_experience
+    examples: |-
+      - Do you have experience with HTML?
+      - What's your HTML experience?
+      - Have you worked with HTML before?
+      - Tell me about your HTML skills.
+  - intent: ask_css_experience
+    examples: |-
+      - Do you have experience with CSS?
+      - What about your CSS skills?
+      - How experienced are you with CSS?
+      - Tell me about your CSS experience.
+  - intent: ask_javascript_experience
+    examples: |-
+      - What's your JavaScript experience?
+      - Do you know JavaScript?
+      - Have you worked with JavaScript before?
+      - Tell me about your JavaScript skills.
+  - intent: ask_login_resources
+    examples: |-
+      - Where can I find login resources?
+      - I need help with logging in.
+      - What are the resources for login?
+      - Login resources please.
+      - I'm having trouble logging in, where can I find help?
+  - intent: ask_register_resources
+    examples: |-
+      - Where can I find registration resources?
+      - I need help registering.
+      - What are the resources for registration?
+      - Registration resources please.
+      - I'm having trouble registering, where can I find help?
+  - intent: ask_mern_definition
+    examples: |-
+      - What is the MERN stack?
+      - Explain the MERN stack
+      - Tell me about MERN
+      - What does MERN stand for?
+      - Define MERN stack
+  - intent: ask_tutorial_availability
+    examples: |-
+      - Do you have a tutorial on the MERN stack?
+      - Is there a tutorial available?
+      - Where can I find a MERN tutorial?
+      - Show me a MERN tutorial
+      - I want to learn MERN, do you have resources?
+  - intent: ask_blog_login
+    examples: |-
+      - How do I log in to the blog?
+      - What's the process for logging in?
+      - I need to log in, what do I do?
+      - Can you help me with the blog login?
+      - Login instructions please.
+  - intent: ask_about_app
+    examples: |-
+      - What is this app?
+      - Tell me about this app
+      - What's this app all about?
+      - Explain the app to me.
+      - Can you describe the app?
+  - intent: ask_deployment_stage
+    examples: |-
+      - What stage is deployment?
+      - What's the current deployment stage?
+      - Which stage are we at in deployment?
+      - Deployment stage?
+  - intent: ask_recommended_platforms
+    examples: |-
+      - What platforms are recommended for deployment?
+      - Which platforms are suggested for deployment?
+      - Recommended deployment platforms?
+      - What platforms should we deploy on?
+  - intent: ask_best_for_react_spas
+    examples: |-
+      - What's the best platform for React SPAs?
+      - Which platform is best suited for React single page applications?
+      - Recommend a platform for building React SPAs.
+      - I need a platform for my React SPA, what do you suggest?
+      - What platform works well with React SPAs?
+  - intent: ask_javascript_refresher
+    examples: |-
+      - Is there a JavaScript refresher?
+      - Do you offer a JavaScript refresher course?
+      - I need a JavaScript refresher, do you have one?
+      - Is the JavaScript section a refresher course?
+  - intent: ask_mongodb_integration
+    examples: |-
+      - What about MongoDB?
+      - Is MongoDB required?
+      - Do I need to know MongoDB?
+      - Is there MongoDB integration?
+  - intent: ask_stage1_topics
+    examples: |-
+      - What are the topics in Stage 1?
+      - Can you list the key topics for Stage 1?
+      - What does Stage 1 cover?
+      - Tell me about Stage 1
+  - intent: enroll_in_course
+    examples: |-
+      - I want to enroll in a course.
+      - How do I sign up for a class?
+      - I'd like to register for a course.
+      - Let me enroll in a class.
+  - intent: check_course_availability
+    examples: |-
+      - Are there any spots left in the course?
+      - Is the course full?
+      - What's the course availability?
+      - How many spots are available?
+  - intent: get_course_information
+    examples: |-
+      - Tell me about the course.
+      - What's the course description?
+      - Can I get some information on the course?
+      - Give me details about the course.
+  - intent: ask_es6_syntax
+    examples: |-
+      - What's new in ES6 syntax?
+      - Tell me about ES6+ features.
+      - What are some ES6+ additions?
+      - Explain ES6 syntax.
+      - I need information on ES6+.
+  - intent: ask_map_function
+    examples: |-
+      - What does the .map() method do?
+      - Explain the map function.
+      - Tell me about the .map() array method.
+      - Describe the map array method.
+      - What is .map() used for?
+  - intent: ask_filter_function
+    examples: |-
+      - What does the .filter() method do?
+      - Explain the filter function.
+      - Tell me about the .filter() array method.
+      - Describe the filter array method.
+  - intent: ask_reduce_function
+    examples: |-
+      - What does the .reduce() method do?
+      - Explain the reduce function.
+      - Tell me about the .reduce() array method.
+      - Describe the reduce array method.
+  - intent: ask_object_destructuring
+    examples: |-
+      - What is object destructuring?
+      - Explain object destructuring
+      - Tell me about object destructuring
+      - Can you explain object destructuring?
+      - What does object destructuring do?
+  - intent: ask_array_destructuring
+    examples: |-
+      - What is array destructuring?
+      - Explain array destructuring
+      - Tell me about array destructuring
+      - Can you explain array destructuring?
+      - What does array destructuring do?
+  - intent: ask_promises
+    examples: |-
+      - What are promises?
+      - Explain promises to me.
+      - Tell me about promises.
+      - Can you explain promises in Javascript?
+      - What do promises do?
+  - intent: ask_async_await
+    examples: |-
+      - What is async/await?
+      - Explain async/await.
+      - Tell me about async/await.
+      - How does async/await work?
+      - What are the benefits of async/await?
+  - intent: ask_dom_virtual_dom_difference
+    examples: |-
+      - What's the difference between DOM and Virtual DOM?
+      - Explain the difference between DOM and Virtual DOM.
+      - Can you tell me about the differences between DOM and Virtual DOM?
+      - What is the difference between the DOM and the Virtual DOM?
+      - DOM vs Virtual DOM - what's the key difference?
