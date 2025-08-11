@@ -17,6 +17,8 @@ def get_latest_model(path="models"):
 
 app = Flask(__name__)
 CORS(app)
+
+
 UPLOAD_FOLDER = './uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 

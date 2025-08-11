@@ -6,6 +6,7 @@ import pymysql
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 import json
+import subprocess
 
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
@@ -20,10 +21,11 @@ app.secret_key = os.urandom(24)
 #     SESSION_COOKIE_SECURE=True,
 # )
 # Database configuration
+
 db_config = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'rimon1610',  # Change to your DB password
+    'password': 'Rimon161@0',  # Change to your DB password
     'database': 'chatbot_db',
     'cursorclass': pymysql.cursors.DictCursor
 }
@@ -122,7 +124,6 @@ def check_auth():
 
 # Save conversation
 @app.route('/save-conversation', methods=['POST'])
-@login_required
 def save_conversation():
     data = request.json
     conversation_data = data.get('conversation')
@@ -147,7 +148,6 @@ def save_conversation():
 
 # Load conversations
 @app.route('/get-conversations', methods=['GET'])
-@login_required
 def get_conversations():
     try:
         conn = get_db_connection()
@@ -166,12 +166,16 @@ def get_conversations():
 
 # Chat endpoint that proxies message to Rasa server
 @app.route('/chat', methods=['POST'])
-@login_required
 def chat():
+    print("Function triggered")
     data = request.json
+    
+
     user_message = data.get("message", "")
     if not user_message:
         return jsonify({"error": "No message provided"}), 400
+    # else:
+    #     return jsonify({"response": "good"}), 200
 
     try:
         rasa_response = requests.post(
@@ -179,9 +183,60 @@ def chat():
             json={"sender": "user", "message": user_message}
         )
         rasa_response.raise_for_status()
-        return jsonify({"responses": rasa_response.json()})
+
+        rasa_data = rasa_response.json()
+        print("Rasa replied with:", rasa_data)
+
+        return jsonify({"responses": rasa_data})
     except requests.exceptions.RequestException as e:
         return jsonify({"error": "Failed to contact Rasa server", "details": str(e)}), 500
+
+
+
+# --------- UP load pdf 
+
+
+
+@app.route('/upload-pdf', methods=['POST'])
+def upload_pdf():
+    UPLOAD_FOLDER = './uploads'
+    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+    if 'file' not in request.files:
+        return jsonify({"error": "No file part"}), 400
+
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({"error": "No selected file"}), 400
+    file.filename="file.pdf"
+    file_path = os.path.join(UPLOAD_FOLDER, file.filename)
+    file.save(file_path)
+    print(file_path)
+    return jsonify({"responses": "file Uploaded"}),200
+# reading the file 
+
+    # main_file.run_full_pipeline()
+    # # chunks = making_chunk(file_path)
+  
+    
+    # # After pipeline runs
+    # subprocess.run(["rasa", "train"], check=True)
+
+    # #getting latest modell
+    # latest_model = get_latest_model()
+    # if latest_model:
+    #     response = requests.put("http://localhost:5005/model", json={"model_file": latest_model})
+    #     print("Model reload response:", response.status_code)
+
+    # chunks=[]
+    # rasa_responses = []
+    # for chunk in chunks:
+    #     rasa_response = requests.post(
+    #         'http://localhost:5005/webhooks/rest/webhook',
+    #         json={"sender": "user", "message": chunk}
+    #     )
+    #     rasa_responses.append(rasa_response.json())
+
+    # return jsonify({"responses": rasa_responses})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)

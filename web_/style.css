@@ -1,155 +1,384 @@
+    :root {
+      --primary-color: #4361ee;
+      --secondary-color: #3f37c9;
+      --accent-color: #4895ef;
+      --light-color: #f8f9fa;
+      --dark-color: #212529;
+      --success-color: #4bb543;
+      --error-color: #ff3333;
+      --bot-bubble: #f1f1f1;
+      --user-bubble: #4361ee;
+      --user-text: white;
+    }
 
-/* Add these styles to your existing CSS */
+    /* Reset & base */
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fb;
+      color: var(--dark-color);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-/* Auth Modal Styles */
-.modal {
-  display: flex;
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-}
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-.modal-content {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 400px;
-  position: relative;
-}
+    header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
 
-.close-modal {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
+    h1 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
 
-.auth-form {
-  display: none;
-}
+    .subtitle {
+      color: #666;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
 
-.auth-form.active {
-  display: block;
-}
+    .user-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
 
-.form-group {
-  margin-bottom: 1rem;
-}
+    .logout-btn {
+      background-color: var(--error-color);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.25s ease;
+    }
+    .logout-btn:hover,
+    .logout-btn:focus {
+      background-color: #cc2929;
+      outline-offset: 2px;
+      outline: 2px solid #ff6666;
+    }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-}
+    .chat-container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
 
-.form-group input {
-  width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  font-size: 1rem;
-}
+    .chat-header {
+      background-color: var(--primary-color);
+      color: #fff;
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-weight: 600;
+    }
 
-.auth-btn {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 1rem;
-  margin-top: 1rem;
-}
+    .chat-box {
+      flex: 1;
+      padding: 1.5rem 1.25rem;
+      max-height: 400px;
+      overflow-y: scroll;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      scroll-behavior: smooth;
+    }
 
-.auth-btn:hover {
-  background-color: var(--secondary-color);
-}
+    .message {
+      max-width: 80%;
+      padding: 0.75rem 1rem;
+      border-radius: 12px;
+      line-height: 1.5;
+      position: relative;
+      animation: fadeIn 0.3s ease-out forwards;
+      word-wrap: break-word;
+    }
 
-.auth-switch {
-  text-align: center;
-  margin-top: 1rem;
-}
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-.auth-switch a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
+    .bot-message {
+      align-self: flex-start;
+      background-color: var(--bot-bubble);
+      border-top-left-radius: 4px;
+      color: var(--dark-color);
+    }
 
-.auth-switch a:hover {
-  text-decoration: underline;
-}
+    .user-message {
+      align-self: flex-end;
+      background-color: var(--user-bubble);
+      color: var(--user-text);
+      border-top-right-radius: 4px;
+      font-weight: 500;
+    }
 
-/* User Info Styles */
-.user-info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
+    .message-time {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+      display: block;
+      text-align: right;
+    }
 
-.logout-btn {
-  background-color: var(--error-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
+    .chat-controls {
+      display: flex;
+      padding: 1rem 1.25rem;
+      background-color: #fff;
+      border-top: 1px solid #eee;
+    }
 
-/* Conversation History Styles */
-.conversation-history {
-  margin-bottom: 1rem;
-  position: relative;
-}
+    #chat-form {
+      display: flex;
+      width: 100%;
+      gap: 0.5rem;
+    }
 
-#show-history-btn {
-  background-color: var(--accent-color);
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-}
+    #user-input {
+      flex: 1;
+      padding: 0.75rem 1.25rem;
+      border: 1px solid #ddd;
+      border-radius: 24px;
+      font-size: 1rem;
+      outline-offset: 2px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    #user-input:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 5px var(--accent-color);
+    }
 
-.history-panel {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 1rem;
-  z-index: 10;
-  max-height: 300px;
-  overflow-y: auto;
-}
+    #chat-form button {
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 0 1.5rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+    #chat-form button:disabled {
+      background-color: #a3bffa;
+      cursor: not-allowed;
+    }
+    #chat-form button:hover:not(:disabled),
+    #chat-form button:focus:not(:disabled) {
+      background-color: var(--secondary-color);
+      outline-offset: 2px;
+      outline: 2px solid var(--secondary-color);
+    }
 
-.history-panel h3 {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 100;
+      inset: 0; /* shorthand for top/right/bottom/left = 0 */
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
 
-.conversation-item {
-  padding: 0.5rem;
-  border-bottom: 1px solid #eee;
-  cursor: pointer;
-}
+    .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    }
 
-.conversation-item:hover {
-  background-color: #f5f5f5;
-}
+    .close-modal {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--dark-color);
+      transition: color 0.2s ease;
+    }
+    .close-modal:hover,
+    .close-modal:focus {
+      color: var(--primary-color);
+      outline-offset: 2px;
+      outline: 2px solid var(--primary-color);
+    }
 
-.conversation-item:last-child {
-  border-bottom: none;
-}
+    .auth-form {
+      display: none;
+    }
+
+    .auth-form.active {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .form-group input:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 5px var(--accent-color);
+      outline: none;
+    }
+
+    .auth-btn {
+      width: 100%;
+      padding: 0.75rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      transition: background-color 0.25s ease;
+    }
+    .auth-btn:hover,
+    .auth-btn:focus {
+      background-color: var(--secondary-color);
+      outline-offset: 2px;
+      outline: 2px solid var(--secondary-color);
+    }
+
+    .auth-switch {
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .auth-switch a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .auth-switch a:hover,
+    .auth-switch a:focus {
+      text-decoration: underline;
+      outline-offset: 2px;
+      outline: 2px solid var(--primary-color);
+    }
+
+    .upload-section {
+      margin-top: 1rem;
+    }
+
+    .upload-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .upload-controls {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    #pdf-upload {
+      flex: 1;
+      padding: 0.4rem 0.8rem;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .upload-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.25s ease;
+    }
+    .upload-btn:disabled,
+    #pdf-upload:disabled {
+      background-color: #a3bffa;
+      cursor: not-allowed;
+    }
+    .upload-btn:hover:not(:disabled),
+    .upload-btn:focus:not(:disabled) {
+      background-color: var(--secondary-color);
+      outline-offset: 2px;
+      outline: 2px solid var(--secondary-color);
+    }
+
+    .status-message {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--dark-color);
+      min-height: 1.2em;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      .message {
+        max-width: 90%;
+      }
+    }
